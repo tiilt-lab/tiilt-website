@@ -1,12 +1,14 @@
-@font-face{
+@font-face {
     font-family: 'Plex';
     src: url('../fonts/IBMPlexSans-Light.woff') format('woff');
 }
+
 html {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
+
 *,
 *::before,
 *::after {
@@ -17,19 +19,168 @@ html {
 
 body {
     background-color: #eee;
-    height: 100%;
-    font-family: 'Plex','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Plex', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
 }
 
 a {
     text-decoration: none;
     color: rgb(87, 87, 87);
-}
-.example {
-    display: grid;
-    transition: all .5s;
-    user-select: none;
-    background: linear-gradient(to bottom, white, black);
+    font-weight: bold;
+    height: 100%;
 }
 
+a:link,
+a:visited {
+    color: #5D6063;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+ /* Mobile Styles Start*/
+@media only screen and (max-width: 600px) {
+    .navbar {
+        // position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+        background: #D6E9FE;
+        a:hover#burger {}
+        div {
+            height: 50px;
+            width: 50px;
+            padding: 4px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        ul {
+            list-style: none;
+            padding-top: 5px;
+            li {
+                text-align: right;
+            }
+        }
+    }
+    .content {
+        outline: 1px red solid;
+        width: 100%;
+        margin: 0 auto;
+        .showcase {
+            position: relative;
+            .title {
+                display: none;
+                font-size: 28px;
+                outline: 1px lightcoral solid;
+                width: 148px;
+                word-break: keep-all;
+                position: absolute;
+                top: 30px;
+            }
+            .pictures {
+                position: relative;
+                outline: 1px blue solid;
+                height: 300px;
+                width: 100%;
+                margin-left: auto;
+            }
+        }
+        .about {
+            position: relative;
+            .backdrop {
+                color: #70809077;
+                font-size: 3em;
+                position: absolute;
+                bottom: 275px;
+
+            }
+            .about_words {
+                width: 92%;
+                margin-left: auto;
+                font-size: .7em;
+            }
+        }
+    }
+}
+ /* Mobile Styles Done*/
+    /* Tablet Styles */
+    // @media only screen and (min-width: 401px) and (max-width: 960px) {
+    //      }
+/* Desktop Styles Start*/
+
+
+@media only screen and (min-width: 601px) {
+    .navbar {
+        width: 82%;
+        padding: 50px 0;
+        margin: 0 auto;
+        display: flex;
+        outline: 1px green solid;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            height: 100px;
+            width: 100px;
+            padding: 4px;
+            img {
+                max-height: 100%;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            li:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+    .content {
+        outline: 1px red solid;
+        width: 82%;
+        margin: 0 auto;
+        .showcase {
+            position: relative;
+            .title {
+                font-size: 28px;
+                outline: 1px lightcoral solid;
+                width: 148px;
+                word-break: keep-all;
+                position: absolute;
+                top: 30px;
+            }
+            .pictures {
+                position: relative;
+                outline: 1px blue solid;
+                height: 330px;
+                width: 92%;
+                margin-left: auto;
+            }
+            margin-bottom: 100px;
+        }
+        .about {
+            position: relative;
+            margin-top: 40px;
+            .backdrop {
+                color: #70809077;
+                font-size: 6em;
+                position: absolute;
+                bottom: 200px;
+            }
+            .about_words {
+                width: 92%;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+/* Desktop Styles Done*/

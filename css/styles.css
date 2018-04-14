@@ -16,19 +16,134 @@ html {
 
 body {
   background-color: #eee;
-  height: 100%;
-  font-family: 'Plex','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  font-family: 'Plex', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em; }
 
 a {
   text-decoration: none;
-  color: #575757; }
+  color: #575757;
+  font-weight: bold;
+  height: 100%; }
 
-.example {
-  display: grid;
-  transition: all .5s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: linear-gradient(to bottom, white, black); }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3Mvc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxvQkFBbUI7RUFDbkIsMkRBQTBELEVBQUE7O0FBRTlEO0VBQ0ksdUJBQXNCO0VBQ3RCLFlBQVc7RUFDWCxhQUFZLEVBQ2Y7O0FBQ0Q7OztFQUdJLG9CQUFtQjtFQUNuQixZQUFXO0VBQ1gsYUFBWSxFQUNmOztBQUVEO0VBQ0ksdUJBQXNCO0VBQ3RCLGFBQVk7RUFDWiw2R0FBNEcsRUFDL0c7O0FBRUQ7RUFDSSxzQkFBcUI7RUFDckIsZUFBc0IsRUFDekI7O0FBQ0Q7RUFDSSxjQUFhO0VBQ2Isb0JBQW1CO0VBQ25CLDBCQUFpQjtLQUFqQix1QkFBaUI7TUFBakIsc0JBQWlCO1VBQWpCLGtCQUFpQjtFQUNqQixxREFBb0QsRUFDdkQiLCJmaWxlIjoic3R5bGVzLmNzcyJ9 */
+a:link,
+a:visited {
+  color: #5D6063;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+li {
+  list-style: none; }
+
+/* Mobile Styles Start*/
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    background: #D6E9FE; }
+    .navbar div {
+      height: 50px;
+      width: 50px;
+      padding: 4px; }
+      .navbar div img {
+        max-width: 100%;
+        max-height: 100%; }
+    .navbar ul {
+      list-style: none;
+      padding-top: 5px; }
+      .navbar ul li {
+        text-align: right; }
+  .content {
+    outline: 1px red solid;
+    width: 100%;
+    margin: 0 auto; }
+    .content .showcase {
+      position: relative; }
+      .content .showcase .title {
+        display: none;
+        font-size: 28px;
+        outline: 1px lightcoral solid;
+        width: 148px;
+        word-break: keep-all;
+        position: absolute;
+        top: 30px; }
+      .content .showcase .pictures {
+        position: relative;
+        outline: 1px blue solid;
+        height: 300px;
+        width: 100%;
+        margin-left: auto; }
+    .content .about {
+      position: relative; }
+      .content .about .backdrop {
+        color: #70809077;
+        font-size: 3em;
+        position: absolute;
+        bottom: 275px; }
+      .content .about .about_words {
+        width: 92%;
+        margin-left: auto;
+        font-size: .7em; } }
+
+/* Mobile Styles Done*/
+/* Tablet Styles */
+/* Desktop Styles Start*/
+@media only screen and (min-width: 601px) {
+  .navbar {
+    width: 82%;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    outline: 1px green solid;
+    justify-content: space-between;
+    align-items: center; }
+    .navbar div {
+      height: 100px;
+      width: 100px;
+      padding: 4px; }
+      .navbar div img {
+        max-height: 100%; }
+    .navbar ul {
+      display: flex;
+      justify-content: space-between;
+      width: 600px; }
+      .navbar ul li:nth-child(1) {
+        display: none; }
+  .content {
+    outline: 1px red solid;
+    width: 82%;
+    margin: 0 auto; }
+    .content .showcase {
+      position: relative;
+      margin-bottom: 100px; }
+      .content .showcase .title {
+        font-size: 28px;
+        outline: 1px lightcoral solid;
+        width: 148px;
+        word-break: keep-all;
+        position: absolute;
+        top: 30px; }
+      .content .showcase .pictures {
+        position: relative;
+        outline: 1px blue solid;
+        height: 330px;
+        width: 92%;
+        margin-left: auto; }
+    .content .about {
+      position: relative;
+      margin-top: 40px; }
+      .content .about .backdrop {
+        color: #70809077;
+        font-size: 6em;
+        position: absolute;
+        bottom: 200px; }
+      .content .about .about_words {
+        width: 92%;
+        margin-left: auto; } }
+
+/* Desktop Styles Done*/
+
+/*# sourceMappingURL=styles.css.map */

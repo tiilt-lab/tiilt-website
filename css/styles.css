@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Plex';
+  src: url("../fonts/IBMPlexSans-Light.woff") format("woff"); }
+
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #eee;
+  height: 100%;
+  font-family: 'Plex','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #575757; }
+
+.example {
+  display: grid;
+  transition: all .5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: linear-gradient(to bottom, white, black); }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3Mvc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxvQkFBbUI7RUFDbkIsMkRBQTBELEVBQUE7O0FBRTlEO0VBQ0ksdUJBQXNCO0VBQ3RCLFlBQVc7RUFDWCxhQUFZLEVBQ2Y7O0FBQ0Q7OztFQUdJLG9CQUFtQjtFQUNuQixZQUFXO0VBQ1gsYUFBWSxFQUNmOztBQUVEO0VBQ0ksdUJBQXNCO0VBQ3RCLGFBQVk7RUFDWiw2R0FBNEcsRUFDL0c7O0FBRUQ7RUFDSSxzQkFBcUI7RUFDckIsZUFBc0IsRUFDekI7O0FBQ0Q7RUFDSSxjQUFhO0VBQ2Isb0JBQW1CO0VBQ25CLDBCQUFpQjtLQUFqQix1QkFBaUI7TUFBakIsc0JBQWlCO1VBQWpCLGtCQUFpQjtFQUNqQixxREFBb0QsRUFDdkQiLCJmaWxlIjoic3R5bGVzLmNzcyJ9 */

@@ -26,7 +26,7 @@ body {
 a {
   text-decoration: none;
   color: rgb(87, 87, 87);
-  font-weight: bold;
+  font-weight: 600;
   height: 100%;
 }
 
@@ -43,6 +43,13 @@ a:hover {
 li {
   list-style: none;
 }
+
+/* TEXT DECORATION */
+
+.bold {
+  font-weight: bold;
+}
+
 /* Mobile Styles Start*/
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -216,8 +223,12 @@ li {
   }
   .content .project .proj-flex {
     display: flex;
+    justify-content: space-between;
+    padding: 1.25em .75em .0em 3em;
+  }
+  .content .project .proj-flex div {
+    display: flex;
     justify-content: flex-start;
-    padding: .75em .75em .0em 3em;
   }
   .content .project .team ul, .content .project .team p {
     font-size: .75em;

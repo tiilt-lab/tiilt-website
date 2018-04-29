@@ -1,3 +1,4 @@
+@import './people.scss';
 @font-face {
   font-family: 'Plex';
   src: url('../fonts/IBMPlexSans-Light.woff') format('woff');
@@ -9,7 +10,7 @@ html {
   padding: 0px;
 }
 
-*,
+*, 
 *::before,
 *::after {
   box-sizing: inherit;
@@ -71,7 +72,7 @@ li {
     }
   }
   .content {
-    outline: 1px red solid;
+    // outline: 1px red solid;
     width: 100%;
     margin: 0 auto;
     .showcase {
@@ -193,7 +194,7 @@ li {
   }
   .content .project .title {
     font-size: 28px;
-    outline: 1px lightcoral solid;
+    // outline: 1px lightcoral solid;
     width: 148px;
     word-break: keep-all;
     position: absolute;

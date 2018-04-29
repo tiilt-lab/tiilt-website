@@ -1,3 +1,19 @@
+.content {
+  width: 100%; }
+  .content .person {
+    display: flex;
+    width: 75%;
+    align-items: flex-end;
+    padding-top: 1em;
+    margin: auto; }
+    .content .person div {
+      padding: 0 1em; }
+      .content .person div h1 {
+        font-size: 1.2em;
+        padding-bottom: .1em; }
+      .content .person div p {
+        font-size: .6em; }
+
 @font-face {
   font-family: 'Plex';
   src: url("../fonts/IBMPlexSans-Light.woff") format("woff"); }
@@ -57,7 +73,6 @@ li {
       .navbar ul li {
         text-align: right; }
   .content {
-    /* outline: 1px red solid; */
     width: 100%;
     margin: 0 auto; }
     .content .showcase {
@@ -65,14 +80,14 @@ li {
       .content .showcase .title {
         display: none;
         font-size: 28px;
-        /* outline: 1px lightcoral solid; */
+        outline: 1px lightcoral solid;
         width: 148px;
         word-break: keep-all;
         position: absolute;
         top: 30px; }
       .content .showcase .pictures {
         position: relative;
-        /* outline: 1px blue solid; */
+        outline: 1px blue solid;
         height: 300px;
         width: 100%;
         margin-left: auto; }
@@ -97,7 +112,7 @@ li {
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    /* outline: 1px green solid; */
+    outline: 1px green solid;
     justify-content: space-between;
     align-items: center; }
     .navbar div {
@@ -113,7 +128,7 @@ li {
       .navbar ul li:nth-child(1) {
         display: none; }
   .content {
-    /* outline: 1px red solid; */
+    outline: 1px red solid;
     width: 82%;
     margin: 0 auto; }
     .content .showcase {
@@ -121,7 +136,7 @@ li {
       margin-bottom: 100px; }
       .content .showcase .title {
         font-size: 28px;
-        /* outline: 1px lightcoral solid; */
+        outline: 1px lightcoral solid;
         width: 148px;
         word-break: keep-all;
         position: absolute;
@@ -142,7 +157,54 @@ li {
         top: -95px; }
       .content .about .about_words {
         width: 92%;
-        margin-left: auto; } }
+        margin-left: auto; }
+  /* Project Page */
+  .proj-des {
+    font-size: .75em;
+    padding-top: 1em; }
+  .content .project {
+    position: relative;
+    margin-bottom: 50px; }
+  .content .project .title {
+    font-size: 28px;
+    width: 148px;
+    word-break: keep-all;
+    position: absolute;
+    top: 30px; }
+  .content .project .long-title {
+    width: 300px; }
+  .content .project .pictures {
+    position: relative;
+    outline: 1px blue solid;
+    height: 330px;
+    width: 92%;
+    margin-left: auto; }
+  .content .project .sub-projects ul {
+    font-size: .75em;
+    margin-right: 2em;
+    list-style-type: circle; }
+  .content .project .proj-flex {
+    display: flex;
+    justify-content: flex-start;
+    padding: .75em .75em .0em 3em; }
+  .content .project .team ul, .content .project .team p {
+    font-size: .75em;
+    margin-right: 2em; }
+  /* Papers Page */
+  .content .papers {
+    font-size: .75em;
+    position: relative;
+    margin-top: 100px; }
+  .content .papers .backdrop {
+    color: #70809077;
+    font-size: 8em;
+    position: absolute;
+    top: -100px;
+    left: 0px; }
+  .content .papers .paper {
+    width: 92%;
+    margin-left: auto;
+    margin-bottom: 15px; } }
 
 /* Desktop Styles Done*/
 

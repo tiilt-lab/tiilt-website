@@ -38,7 +38,7 @@ body {
 a {
   text-decoration: none;
   color: #575757;
-  font-weight: bold;
+  font-weight: 600;
   height: 100%; }
 
 a:link,
@@ -51,6 +51,10 @@ a:hover {
 
 li {
   list-style: none; }
+
+/* TEXT DECORATION */
+.bold {
+  font-weight: bold; }
 
 /* Mobile Styles Start*/
 @media only screen and (max-width: 600px) {
@@ -185,8 +189,11 @@ li {
     list-style-type: circle; }
   .content .project .proj-flex {
     display: flex;
-    justify-content: flex-start;
-    padding: .75em .75em .0em 3em; }
+    justify-content: space-between;
+    padding: 1.25em .75em .0em 3em; }
+  .content .project .proj-flex div {
+    display: flex;
+    justify-content: flex-start; }
   .content .project .team ul, .content .project .team p {
     font-size: .75em;
     margin-right: 2em; }

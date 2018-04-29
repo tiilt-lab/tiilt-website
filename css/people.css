@@ -1,0 +1,17 @@
+.content {
+  width: 100%; }
+  .content .person {
+    display: flex;
+    width: 75%;
+    align-items: flex-end;
+    padding-top: 1em;
+    margin: auto; }
+    .content .person div {
+      padding: 0 1em; }
+      .content .person div h1 {
+        font-size: 1.2em;
+        padding-bottom: .1em; }
+      .content .person div p {
+        font-size: .6em; }
+
+/*# sourceMappingURL=people.css.map */

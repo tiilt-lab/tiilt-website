@@ -8,7 +8,7 @@
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar 'scss/**/*.scss' -c 'npm run sass:build'",
     "dev": "npm-run-all -p sass:*",
-    "watch" : "node-sass-chokidar --source-map true scss/ -o css/ --watch"
+    "watch": "node-sass-chokidar --source-map true scss/ -o css/ --watch"
   },
   "keywords": [],
   "author": "",

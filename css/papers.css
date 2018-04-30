@@ -1,0 +1,23 @@
+.content .papers {
+  font-size: .75em;
+  position: relative;
+  margin-top: 100px; }
+
+.content .papers .backdrop {
+  color: #70809077;
+  font-size: 8em;
+  position: absolute;
+  top: -100px;
+  left: 0px; }
+
+.content .papers .paper {
+  width: 92%;
+  margin-left: auto;
+  margin-bottom: 15px; }
+
+.content .papers .paper a {
+  text-align: right;
+  color: palevioletred;
+  font-weight: bold; }
+
+/*# sourceMappingURL=papers.css.map */

@@ -1,0 +1,76 @@
+.proj-flex a {
+  color: palevioletred !important; }
+
+@media only screen and (max-width: 600px) {
+  .proj-des {
+    padding-top: 1em;
+    font-size: .75em; }
+  .content {
+    padding: 1em; }
+  .project {
+    position: relative;
+    margin-bottom: 50px; }
+    .project .title {
+      font-size: 36px;
+      word-break: keep-all; }
+    .project .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 25vh;
+      width: 92%;
+      margin-left: auto;
+      margin-top: 10px; }
+    .project .sub-projects ul {
+      font-size: .75em;
+      margin-right: 2em;
+      list-style-type: circle; }
+    .project .proj-flex {
+      justify-content: flex-end;
+      padding: 1.25em .75em .0em 3em; }
+      .project .proj-flex div:not(:first-child) {
+        display: none; }
+      .project .proj-flex div {
+        display: flex;
+        justify-content: flex-end; }
+    .project .team {
+      justify-content: flex-end !important; }
+      .project .team ul, .project .team p {
+        font-size: .75em;
+        margin-right: 2em; } }
+
+@media only screen and (min-width: 601px) {
+  .proj-des {
+    font-size: .75em;
+    padding-top: 1em; }
+  .content .project {
+    position: relative;
+    margin-bottom: 50px; }
+    .content .project .title {
+      font-size: 28px;
+      word-break: keep-all;
+      position: absolute;
+      top: 30px; }
+    .content .project .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 330px;
+      width: 92%;
+      margin-left: auto; }
+    .content .project .sub-projects ul {
+      font-size: .75em;
+      margin-right: 2em;
+      list-style-type: circle; }
+    .content .project .proj-flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25em .75em .0em 3em; }
+      .content .project .proj-flex div {
+        display: flex;
+        justify-content: flex-start; }
+    .content .project .team {
+      justify-content: flex-end !important; }
+      .content .project .team ul, .content .project .team p {
+        font-size: .75em;
+        margin-right: 2em; } }
+
+/*# sourceMappingURL=projects.css.map */

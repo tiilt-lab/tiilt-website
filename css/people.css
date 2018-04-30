@@ -1,17 +1,42 @@
 .content {
   width: 100%; }
-  .content .person {
+  .content .people-group {
     display: flex;
-    width: 75%;
+    margin-bottom: 2rem; }
+  .content .new-group {
+    position: relative;
+    margin-top: 110px; }
+    .content .new-group .backdrop {
+      color: #70809077;
+      font-size: 4em;
+      position: absolute;
+      top: -110px; }
+  .content #second {
+    margin-top: 140px !important; }
+  .content .solo {
+    width: 100% !important; }
+  .content .person {
+    width: 50%;
+    display: flex;
     align-items: flex-end;
     padding-top: 1em;
     margin: auto; }
     .content .person div {
+      width: 100%;
       padding: 0 1em; }
       .content .person div h1 {
         font-size: 1.2em;
         padding-bottom: .1em; }
+      .content .person div h2 {
+        font-size: 1em;
+        padding-bottom: .3em; }
       .content .person div p {
         font-size: .6em; }
+
+@media only screen and (max-width: 600px) {
+  .people-group {
+    flex-direction: column; }
+  .person {
+    width: 80%; } }
 
 /*# sourceMappingURL=people.css.map */

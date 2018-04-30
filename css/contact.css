@@ -1,6 +1,72 @@
-/* Contact */
-.backdrop {
-  color: #70809077;
-  font-size: 4em; }
+/* Mobile Styles Start*/
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    background: #D6E9FE; }
+    .navbar div {
+      height: 50px;
+      width: 50px;
+      padding: 4px; }
+      .navbar div img {
+        max-width: 100%;
+        max-height: 100%; }
+    .navbar ul {
+      list-style: none;
+      padding-top: 5px; }
+      .navbar ul li {
+        text-align: right; }
+  .content {
+    width: 100%;
+    margin: 0 auto; }
+    .content .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 350px;
+      width: 100%;
+      margin-left: auto; }
+    .content .contact {
+      margin-top: 75px;
+      position: relative; }
+      .content .contact .backdrop {
+        color: #70809077;
+        font-size: 3em;
+        position: absolute;
+        top: -85px; }
+      .content .contact .blurb {
+        width: 92%;
+        margin-left: auto;
+        font-size: .7em; }
+      .content .contact .contact-links {
+        margin-top: 2rem;
+        text-align: center; } }
+
+@media only screen and (min-width: 601px) {
+  .content {
+    width: 82%;
+    margin: 0 auto;
+    margin-bottom: 100px; }
+    .content .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 500px;
+      width: 100%;
+      margin-left: auto; }
+    .content .contact {
+      position: relative;
+      margin-top: 80px; }
+      .content .contact .backdrop {
+        color: #70809077;
+        font-size: 6em;
+        position: absolute;
+        top: -95px; }
+      .content .contact .blurb {
+        width: 92%;
+        margin-left: auto; }
+    .content .contact-links {
+      margin-top: 3rem;
+      text-align: center; } }
 
 /*# sourceMappingURL=contact.css.map */

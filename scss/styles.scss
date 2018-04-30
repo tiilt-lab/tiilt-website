@@ -24,9 +24,9 @@ html {
 body {
   background-color: #fff;
   font-family: 'Plex', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.5em;
-  max-width: 50em !important;
-  margin: auto;
+  font-size: 1.3em;
+  max-width: 1200px !important;
+    margin: auto;
 }
 
 a {
@@ -151,6 +151,7 @@ li {
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
+    font-size: 1.2em;
     // outline: 1px green solid;
     justify-content: space-between;
     align-items: center;

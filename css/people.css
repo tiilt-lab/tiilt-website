@@ -26,12 +26,12 @@
       padding: 0 1em; }
       .content .person div h1 {
         font-size: 1.2em;
-        padding-bottom: .1em; }
+        padding-bottom: 0.1em; }
       .content .person div h2 {
         font-size: 1em;
-        padding-bottom: .3em; }
+        padding-bottom: 0.3em; }
       .content .person div p {
-        font-size: .6em; }
+        font-size: 0.6em; }
 
 @media only screen and (max-width: 600px) {
   .people-group {

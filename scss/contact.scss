@@ -7,88 +7,102 @@
     width: 100%;
     padding: 5px;
     background: #D6E9FE;
+
     a:hover#burger {}
+
     div {
       height: 50px;
       width: 50px;
       padding: 4px;
+
       img {
         max-width: 100%;
         max-height: 100%;
       }
     }
+
     ul {
       list-style: none;
       padding-top: 5px;
+
       li {
         text-align: right;
       }
     }
   }
+
   .content {
     // outline: 1px red solid;
     width: 100%;
     margin: 0 auto;
-      .pictures {
-        position: relative;
-        outline: 1px blue solid;
-        height: 350px;
-        width: 100%;
-        margin-left: auto;
-      }
+
+    .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 350px;
+      width: 100%;
+      margin-left: auto;
+    }
+
     .contact {
       margin-top: 75px;
       position: relative;
+
       .backdrop {
         color: #70809077;
         font-size: 3em;
         position: absolute;
         top: -85px;
-
       }
+
       .blurb {
         width: 92%;
         margin-left: auto;
-        font-size: .7em;
+        font-size: 0.7em;
       }
+
       .contact-links {
-          margin-top: 2rem;
-          text-align: center;
+        margin-top: 2rem;
+        text-align: center;
       }
     }
   }
 }
-
 @media only screen and (min-width: 601px) {
   .content {
     // outline: 1px red solid;
     width: 82%;
     margin: 0 auto;
-      .pictures {
-        position: relative;
-        outline: 1px blue solid;
-        height: 500px;
-        width: 100%;
-        margin-left: auto;
-      }
-      margin-bottom: 100px;
+
+    .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 500px;
+      width: 100%;
+      margin-left: auto;
+    }
+    margin-bottom: 100px;
+
     .contact {
       position: relative;
       margin-top: 80px;
+
       .backdrop {
         color: #70809077;
         font-size: 6em;
         position: absolute;
         top: -95px;
       }
+
       .blurb {
         width: 92%;
         margin-left: auto;
       }
     }
-      .contact-links {
-          margin-top: 3rem;
-          text-align: center;
-      }
+
+    .contact-links {
+      margin-top: 3rem;
+      text-align: center;
+    }
   }
 }

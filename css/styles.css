@@ -26,12 +26,12 @@
       padding: 0 1em; }
       .content .person div h1 {
         font-size: 1.2em;
-        padding-bottom: .1em; }
+        padding-bottom: 0.1em; }
       .content .person div h2 {
         font-size: 1em;
-        padding-bottom: .3em; }
+        padding-bottom: 0.3em; }
       .content .person div p {
-        font-size: .6em; }
+        font-size: 0.6em; }
 
 @media only screen and (max-width: 600px) {
   .people-group {
@@ -79,7 +79,7 @@
       .content .contact .blurb {
         width: 92%;
         margin-left: auto;
-        font-size: .7em; }
+        font-size: 0.7em; }
       .content .contact .contact-links {
         margin-top: 2rem;
         text-align: center; } }
@@ -116,7 +116,7 @@
 @media only screen and (max-width: 600px) {
   .proj-des {
     padding-top: 1em;
-    font-size: .75em; }
+    font-size: 0.75em; }
   .content {
     padding: 1em; }
   .project {
@@ -133,12 +133,12 @@
       margin-left: auto;
       margin-top: 10px; }
     .project .sub-projects ul {
-      font-size: .75em;
+      font-size: 0.75em;
       margin-right: 2em;
       list-style-type: circle; }
     .project .proj-flex {
       justify-content: flex-end;
-      padding: 1.25em .75em .0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3em; }
       .project .proj-flex div:not(:first-child) {
         display: none; }
       .project .proj-flex div {
@@ -146,13 +146,14 @@
         justify-content: flex-end; }
     .project .team {
       justify-content: flex-end !important; }
-      .project .team ul, .project .team p {
-        font-size: .75em;
+      .project .team p,
+      .project .team ul {
+        font-size: 0.75em;
         margin-right: 2em; } }
 
 @media only screen and (min-width: 601px) {
   .proj-des {
-    font-size: .75em;
+    font-size: 0.75em;
     padding-top: 1em; }
   .content .project {
     position: relative;
@@ -169,24 +170,25 @@
       width: 92%;
       margin-left: auto; }
     .content .project .sub-projects ul {
-      font-size: .75em;
+      font-size: 0.75em;
       margin-right: 2em;
       list-style-type: circle; }
     .content .project .proj-flex {
       display: flex;
       justify-content: space-between;
-      padding: 1.25em .75em .0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3em; }
       .content .project .proj-flex div {
         display: flex;
         justify-content: flex-start; }
     .content .project .team {
       justify-content: flex-end !important; }
-      .content .project .team ul, .content .project .team p {
-        font-size: .75em;
+      .content .project .team p,
+      .content .project .team ul {
+        font-size: 0.75em;
         margin-right: 2em; } }
 
 .content .papers {
-  font-size: .75em;
+  font-size: 0.75em;
   position: relative;
   margin-top: 100px; }
 
@@ -195,7 +197,7 @@
   font-size: 8em;
   position: absolute;
   top: -100px;
-  left: 0px; }
+  left: 0; }
 
 .content .papers .paper {
   width: 92%;
@@ -213,15 +215,15 @@
 
 html {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
 
 body {
   background-color: #fff;
@@ -307,7 +309,7 @@ li {
       .content .about .about_words {
         width: 92%;
         margin-left: auto;
-        font-size: .7em; } }
+        font-size: 0.7em; } }
 
 /* Mobile Styles Done*/
 /* Tablet Styles */

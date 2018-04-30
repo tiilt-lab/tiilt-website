@@ -1,5 +1,5 @@
 .content .papers {
-  font-size: .75em;
+  font-size: 0.75em;
   position: relative;
   margin-top: 100px; }
 
@@ -8,7 +8,7 @@
   font-size: 8em;
   position: absolute;
   top: -100px;
-  left: 0px; }
+  left: 0; }
 
 .content .papers .paper {
   width: 92%;

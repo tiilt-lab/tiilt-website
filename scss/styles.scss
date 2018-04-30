@@ -1,4 +1,6 @@
 @import './people.scss';
+@import './contact.scss';
+
 @font-face {
   font-family: 'Plex';
   src: url('../fonts/IBMPlexSans-Light.woff') format('woff');
@@ -131,7 +133,7 @@ li {
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    outline: 1px green solid;
+    // outline: 1px green solid;
     justify-content: space-between;
     align-items: center;
     div {
@@ -145,21 +147,21 @@ li {
     ul {
       display: flex;
       justify-content: space-between;
-      width: 600px;
+      width: 800px;
       li:nth-child(1) {
         display: none;
       }
     }
   }
   .content {
-    outline: 1px red solid;
+    // outline: 1px red solid;
     width: 82%;
     margin: 0 auto;
     .showcase {
       position: relative;
       .title {
         font-size: 28px;
-        outline: 1px lightcoral solid;
+        // outline: 1px lightcoral solid;
         width: 148px;
         word-break: keep-all;
         position: absolute;
@@ -195,45 +197,48 @@ li {
     font-size: .75em;
     padding-top: 1em;
   }
+  
   .content .project {
     position: relative;
     margin-bottom: 50px;
-  }
-  .content .project .title {
-    font-size: 28px;
-    // outline: 1px lightcoral solid;
-    width: 148px;
-    word-break: keep-all;
-    position: absolute;
-    top: 30px;
-  }
-  .content .project .long-title {
-    width: 300px;
-  }
-  .content .project .pictures {
-    position: relative;
-    outline: 1px blue solid;
-    height: 330px;
-    width: 92%;
-    margin-left: auto;
-  }
-  .content .project .sub-projects ul {
-    font-size: .75em;
-    margin-right: 2em;
-    list-style-type: circle;
-  }
-  .content .project .proj-flex {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25em .75em .0em 3em;
-  }
-  .content .project .proj-flex div {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .content .project .team ul, .content .project .team p {
-    font-size: .75em;
-    margin-right: 2em;
+    .title {
+      font-size: 28px;
+      // outline: 1px lightcoral solid;
+      width: 148px;
+      word-break: keep-all;
+      position: absolute;
+      top: 30px;
+    }
+    .long-title {
+      width: 300px;
+    }
+    .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 330px;
+      width: 92%;
+      margin-left: auto;
+    }
+    .sub-projects ul {
+      font-size: .75em;
+      margin-right: 2em;
+      list-style-type: circle;
+    }
+    .proj-flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25em .75em .0em 3em;
+      div {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+    .team {
+      ul, p {
+        font-size: .75em;
+        margin-right: 2em;
+      }
+    }
   }
 
   /* Papers Page */

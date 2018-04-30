@@ -14,6 +14,11 @@
       .content .person div p {
         font-size: .6em; }
 
+/* Contact */
+.backdrop {
+  color: #70809077;
+  font-size: 4em; }
+
 @font-face {
   font-family: 'Plex';
   src: url("../fonts/IBMPlexSans-Light.woff") format("woff"); }
@@ -116,7 +121,6 @@ li {
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    outline: 1px green solid;
     justify-content: space-between;
     align-items: center; }
     .navbar div {
@@ -128,11 +132,10 @@ li {
     .navbar ul {
       display: flex;
       justify-content: space-between;
-      width: 600px; }
+      width: 800px; }
       .navbar ul li:nth-child(1) {
         display: none; }
   .content {
-    outline: 1px red solid;
     width: 82%;
     margin: 0 auto; }
     .content .showcase {
@@ -140,7 +143,6 @@ li {
       margin-bottom: 100px; }
       .content .showcase .title {
         font-size: 28px;
-        outline: 1px lightcoral solid;
         width: 148px;
         word-break: keep-all;
         position: absolute;
@@ -169,34 +171,34 @@ li {
   .content .project {
     position: relative;
     margin-bottom: 50px; }
-  .content .project .title {
-    font-size: 28px;
-    width: 148px;
-    word-break: keep-all;
-    position: absolute;
-    top: 30px; }
-  .content .project .long-title {
-    width: 300px; }
-  .content .project .pictures {
-    position: relative;
-    outline: 1px blue solid;
-    height: 330px;
-    width: 92%;
-    margin-left: auto; }
-  .content .project .sub-projects ul {
-    font-size: .75em;
-    margin-right: 2em;
-    list-style-type: circle; }
-  .content .project .proj-flex {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25em .75em .0em 3em; }
-  .content .project .proj-flex div {
-    display: flex;
-    justify-content: flex-start; }
-  .content .project .team ul, .content .project .team p {
-    font-size: .75em;
-    margin-right: 2em; }
+    .content .project .title {
+      font-size: 28px;
+      width: 148px;
+      word-break: keep-all;
+      position: absolute;
+      top: 30px; }
+    .content .project .long-title {
+      width: 300px; }
+    .content .project .pictures {
+      position: relative;
+      outline: 1px blue solid;
+      height: 330px;
+      width: 92%;
+      margin-left: auto; }
+    .content .project .sub-projects ul {
+      font-size: .75em;
+      margin-right: 2em;
+      list-style-type: circle; }
+    .content .project .proj-flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25em .75em .0em 3em; }
+      .content .project .proj-flex div {
+        display: flex;
+        justify-content: flex-start; }
+    .content .project .team ul, .content .project .team p {
+      font-size: .75em;
+      margin-right: 2em; }
   /* Papers Page */
   .content .papers {
     font-size: .75em;

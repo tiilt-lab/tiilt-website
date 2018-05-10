@@ -223,7 +223,8 @@
 html {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 16px; }
 
 *,
 *::after,
@@ -260,7 +261,7 @@ nav li {
   list-style: none; }
 
 ol {
-  margin: .75rem;
+  margin: 0.75rem;
   padding-left: 4rem; }
 
 /* TEXT DECORATION */
@@ -304,7 +305,7 @@ section:hover .backdrop {
       position: relative; }
       .content .showcase .title {
         display: none;
-        font-size: 28px;
+        font-size: 2rem;
         outline: 1px lightcoral solid;
         width: 148px;
         word-break: keep-all;
@@ -318,7 +319,8 @@ section:hover .backdrop {
         margin-left: auto; }
     .content .about {
       margin-top: 75px;
-      position: relative; }
+      position: relative;
+      margin-bottom: 100px; }
       .content .about .backdrop {
         color: #70809077;
         font-size: 3rem;
@@ -327,7 +329,7 @@ section:hover .backdrop {
       .content .about .about_words {
         width: 92%;
         margin-left: auto;
-        font-size: 0.7rem; } }
+        font-size: 1rem; } }
 
 /* Mobile Styles Done*/
 /* Tablet Styles */
@@ -338,7 +340,7 @@ section:hover .backdrop {
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     justify-content: space-between;
     align-items: center; }
     .navbar div {
@@ -350,7 +352,7 @@ section:hover .backdrop {
     .navbar ul {
       display: flex;
       justify-content: space-between;
-      width: 400px; }
+      width: 350px; }
       .navbar ul li:nth-child(1) {
         display: none; }
   .content {
@@ -360,25 +362,28 @@ section:hover .backdrop {
       position: relative;
       margin-bottom: 100px; }
       .content .showcase .title {
-        font-size: 28px;
-        width: 148px;
+        font-size: 2.5rem;
+        background-color: #fff;
+        width: calc(100% - 2rem);
         word-break: keep-all;
         position: absolute;
         top: 30px; }
       .content .showcase .pictures {
         position: relative;
-        outline: 1px blue solid;
+        background: #d6e9fe;
         height: 500px;
         width: 92%;
-        margin-left: auto; }
+        margin-left: auto;
+        z-index: -1; }
     .content .about {
       position: relative;
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-bottom: 90px; }
       .content .about .backdrop {
         color: #70809077;
         font-size: 6rem;
         position: absolute;
-        top: -95px; }
+        top: -4.2rem; }
       .content .about .about_words {
         width: 92%;
         margin-left: auto; } }

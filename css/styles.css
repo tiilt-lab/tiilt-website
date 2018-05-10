@@ -1,37 +1,44 @@
 .content {
   width: 100%; }
   .content .people-group {
+    display: block; }
+  .content .people-group .people-row {
     display: flex;
     margin-bottom: 2rem; }
+  .content .name-container {
+    display: block; }
   .content .new-group {
     position: relative;
-    margin-top: 110px; }
+    margin-top: 70px; }
     .content .new-group .backdrop {
       color: #70809077;
-      font-size: 4em;
+      font-size: 4rem;
       position: absolute;
-      top: -110px; }
+      top: -50px;
+      z-index: -1; }
   .content #second {
-    margin-top: 140px !important; }
+    margin-top: 70px !important; }
   .content .solo {
     width: 100% !important; }
   .content .person {
     width: 50%;
     display: flex;
     align-items: flex-end;
-    padding-top: 1em;
+    padding-top: 1rem;
     margin: auto; }
+    .content .person img {
+      border: 1px solid black; }
     .content .person div {
       width: 100%;
-      padding: 0 1em; }
+      padding: 0 1rem; }
       .content .person div h1 {
-        font-size: 1.2em;
-        padding-bottom: 0.1em; }
+        font-size: 1.2rem;
+        padding-bottom: 0.1rem; }
       .content .person div h2 {
-        font-size: 1em;
-        padding-bottom: 0.3em; }
+        font-size: 1rem;
+        padding-bottom: 0.3rem; }
       .content .person div p {
-        font-size: 0.6em; }
+        font-size: 0.6rem; }
 
 @media only screen and (max-width: 600px) {
   .people-group {
@@ -73,13 +80,13 @@
       position: relative; }
       .content .contact .backdrop {
         color: #70809077;
-        font-size: 3em;
+        font-size: 3rem;
         position: absolute;
         top: -85px; }
       .content .contact .blurb {
         width: 92%;
         margin-left: auto;
-        font-size: 0.7em; }
+        font-size: 0.7rem; }
       .content .contact .contact-links {
         margin-top: 2rem;
         text-align: center; } }
@@ -100,7 +107,7 @@
       margin-top: 80px; }
       .content .contact .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
         top: -95px; }
       .content .contact .blurb {
@@ -115,10 +122,10 @@
 
 @media only screen and (max-width: 600px) {
   .proj-des {
-    padding-top: 1em;
-    font-size: 0.75em; }
+    padding-top: 1rem;
+    font-size: 1rem; }
   .content {
-    padding: 1em; }
+    padding: 1rem; }
   .project {
     position: relative;
     margin-bottom: 50px; }
@@ -133,12 +140,12 @@
       margin-left: auto;
       margin-top: 10px; }
     .project .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
+      font-size: 1rem;
+      margin-right: 2rem;
       list-style-type: circle; }
     .project .proj-flex {
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3rem; }
       .project .proj-flex div:not(:first-child) {
         display: none; }
       .project .proj-flex div {
@@ -148,13 +155,13 @@
       justify-content: flex-end !important; }
       .project .team p,
       .project .team ul {
-        font-size: 0.75em;
-        margin-right: 2em; } }
+        font-size: 0.75rem;
+        margin-right: 2rem; } }
 
 @media only screen and (min-width: 601px) {
   .proj-des {
-    font-size: 0.75em;
-    padding-top: 1em; }
+    font-size: 1rem;
+    padding-top: 1rem; }
   .content .project {
     position: relative;
     margin-bottom: 50px; }
@@ -170,13 +177,13 @@
       width: 92%;
       margin-left: auto; }
     .content .project .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
+      font-size: 1rem;
+      margin-right: 2rem;
       list-style-type: circle; }
     .content .project .proj-flex {
       display: flex;
       justify-content: space-between;
-      padding: 1.25em 0.75em 0.0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3rem; }
       .content .project .proj-flex div {
         display: flex;
         justify-content: flex-start; }
@@ -184,17 +191,17 @@
       justify-content: flex-end !important; }
       .content .project .team p,
       .content .project .team ul {
-        font-size: 0.75em;
-        margin-right: 2em; } }
+        font-size: 0.75rem;
+        margin-right: 2rem; } }
 
 .content .papers {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   position: relative;
   margin-top: 100px; }
 
 .content .papers .backdrop {
   color: #70809077;
-  font-size: 8em;
+  font-size: 8rem;
   position: absolute;
   top: -100px;
   left: 0; }
@@ -210,7 +217,7 @@
   font-weight: bold; }
 
 @font-face {
-  font-family: 'Plex';
+  font-family: "Plex";
   src: url("../fonts/IBMPlexSans-Light.woff") format("woff"); }
 
 html {
@@ -227,10 +234,13 @@ html {
 
 body {
   background-color: #fff;
-  font-family: 'Plex', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.3em;
+  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto; }
+
+p {
+  line-height: 1.5rem; }
 
 a {
   text-decoration: none;
@@ -240,33 +250,41 @@ a {
 
 a:link,
 a:visited {
-  color: #5D6063;
+  color: #5d6063;
   text-decoration: none; }
 
 a:hover {
-  text-decoration: underline; }
+  font-style: italic; }
 
-li {
+nav li {
   list-style: none; }
+
+ol {
+  margin: .75rem;
+  padding-left: 4rem; }
 
 /* TEXT DECORATION */
 .bold {
   font-weight: bold; }
 
 .current-page {
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: underline; }
+
+section:hover .backdrop {
+  font-style: italic; }
 
 .backdrop {
   color: rgba(1, 1, 230, 0.08) !important; }
 
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE; }
+    background: #d6e9fe; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -303,24 +321,24 @@ li {
       position: relative; }
       .content .about .backdrop {
         color: #70809077;
-        font-size: 3em;
+        font-size: 3rem;
         position: absolute;
         top: -85px; }
       .content .about .about_words {
         width: 92%;
         margin-left: auto;
-        font-size: 0.7em; } }
+        font-size: 0.7rem; } }
 
 /* Mobile Styles Done*/
 /* Tablet Styles */
 /* Desktop Styles Start*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .navbar {
     width: 82%;
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     justify-content: space-between;
     align-items: center; }
     .navbar div {
@@ -332,7 +350,7 @@ li {
     .navbar ul {
       display: flex;
       justify-content: space-between;
-      width: 500px; }
+      width: 400px; }
       .navbar ul li:nth-child(1) {
         display: none; }
   .content {
@@ -358,7 +376,7 @@ li {
       margin-top: 40px; }
       .content .about .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
         top: -95px; }
       .content .about .about_words {

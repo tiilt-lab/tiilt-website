@@ -1,37 +1,44 @@
 .content {
   width: 100%; }
   .content .people-group {
+    display: block; }
+  .content .people-group .people-row {
     display: flex;
     margin-bottom: 2rem; }
+  .content .name-container {
+    display: block; }
   .content .new-group {
     position: relative;
-    margin-top: 110px; }
+    margin-top: 70px; }
     .content .new-group .backdrop {
       color: #70809077;
-      font-size: 4em;
+      font-size: 4rem;
       position: absolute;
-      top: -110px; }
+      top: -50px;
+      z-index: -1; }
   .content #second {
-    margin-top: 140px !important; }
+    margin-top: 70px !important; }
   .content .solo {
     width: 100% !important; }
   .content .person {
     width: 50%;
     display: flex;
     align-items: flex-end;
-    padding-top: 1em;
+    padding-top: 1rem;
     margin: auto; }
+    .content .person img {
+      border: 1px solid black; }
     .content .person div {
       width: 100%;
-      padding: 0 1em; }
+      padding: 0 1rem; }
       .content .person div h1 {
-        font-size: 1.2em;
-        padding-bottom: 0.1em; }
+        font-size: 1.2rem;
+        padding-bottom: 0.1rem; }
       .content .person div h2 {
-        font-size: 1em;
-        padding-bottom: 0.3em; }
+        font-size: 1rem;
+        padding-bottom: 0.3rem; }
       .content .person div p {
-        font-size: 0.6em; }
+        font-size: 0.6rem; }
 
 @media only screen and (max-width: 600px) {
   .people-group {

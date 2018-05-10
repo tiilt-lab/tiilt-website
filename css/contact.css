@@ -32,13 +32,13 @@
       position: relative; }
       .content .contact .backdrop {
         color: #70809077;
-        font-size: 3em;
+        font-size: 3rem;
         position: absolute;
         top: -85px; }
       .content .contact .blurb {
         width: 92%;
         margin-left: auto;
-        font-size: 0.7em; }
+        font-size: 0.7rem; }
       .content .contact .contact-links {
         margin-top: 2rem;
         text-align: center; } }
@@ -59,7 +59,7 @@
       margin-top: 80px; }
       .content .contact .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
         top: -95px; }
       .content .contact .blurb {

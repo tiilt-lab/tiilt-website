@@ -3,10 +3,10 @@
 
 @media only screen and (max-width: 600px) {
   .proj-des {
-    padding-top: 1em;
-    font-size: 0.75em; }
+    padding-top: 1rem;
+    font-size: 1rem; }
   .content {
-    padding: 1em; }
+    padding: 1rem; }
   .project {
     position: relative;
     margin-bottom: 50px; }
@@ -21,12 +21,12 @@
       margin-left: auto;
       margin-top: 10px; }
     .project .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
+      font-size: 1rem;
+      margin-right: 2rem;
       list-style-type: circle; }
     .project .proj-flex {
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3rem; }
       .project .proj-flex div:not(:first-child) {
         display: none; }
       .project .proj-flex div {
@@ -36,13 +36,13 @@
       justify-content: flex-end !important; }
       .project .team p,
       .project .team ul {
-        font-size: 0.75em;
-        margin-right: 2em; } }
+        font-size: 0.75rem;
+        margin-right: 2rem; } }
 
 @media only screen and (min-width: 601px) {
   .proj-des {
-    font-size: 0.75em;
-    padding-top: 1em; }
+    font-size: 1rem;
+    padding-top: 1rem; }
   .content .project {
     position: relative;
     margin-bottom: 50px; }
@@ -58,13 +58,13 @@
       width: 92%;
       margin-left: auto; }
     .content .project .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
+      font-size: 1rem;
+      margin-right: 2rem;
       list-style-type: circle; }
     .content .project .proj-flex {
       display: flex;
       justify-content: space-between;
-      padding: 1.25em 0.75em 0.0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3rem; }
       .content .project .proj-flex div {
         display: flex;
         justify-content: flex-start; }
@@ -72,7 +72,7 @@
       justify-content: flex-end !important; }
       .content .project .team p,
       .content .project .team ul {
-        font-size: 0.75em;
-        margin-right: 2em; } }
+        font-size: 0.75rem;
+        margin-right: 2rem; } }
 
 /*# sourceMappingURL=projects.css.map */

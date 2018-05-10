@@ -3,12 +3,12 @@
 }
 @media only screen and (max-width: 600px) {
   .proj-des {
-    padding-top: 1em;
-    font-size: 0.75em;
+    padding-top: 1rem;
+    font-size: 1rem;
   }
 
   .content {
-    padding: 1em;
+    padding: 1rem;
   }
 
   .project {
@@ -30,8 +30,8 @@
     }
 
     .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
+      font-size: 1rem;
+      margin-right: 2rem;
       list-style-type: circle;
     }
 
@@ -40,7 +40,7 @@
         display: none;
       }
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3em;
+      padding: 1.25em 0.75em 0.0em 3rem;
 
       div {
         display: flex;
@@ -53,16 +53,16 @@
 
       p,
       ul {
-        font-size: 0.75em;
-        margin-right: 2em;
+        font-size: 0.75rem;
+        margin-right: 2rem;
       }
     }
   }
 }
 @media only screen and (min-width: 601px) {
   .proj-des {
-    font-size: 0.75em;
-    padding-top: 1em;
+    font-size: 1rem;
+    padding-top: 1rem;
   }
 
   .content .project {
@@ -86,15 +86,15 @@
     }
 
     .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
+      font-size: 1rem;;
+      margin-right: 2rem;
       list-style-type: circle;
     }
 
     .proj-flex {
       display: flex;
       justify-content: space-between;
-      padding: 1.25em 0.75em 0.0em 3em;
+      padding: 1.25em 0.75em 0.0em 3rem;
 
       div {
         display: flex;
@@ -107,8 +107,8 @@
 
       p,
       ul {
-        font-size: 0.75em;
-        margin-right: 2em;
+        font-size: 0.75rem;
+        margin-right: 2rem;
       }
     }
   }

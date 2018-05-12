@@ -235,7 +235,7 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto; }
@@ -272,7 +272,13 @@ ol {
   font-weight: bold;
   text-decoration: underline; }
 
-section:hover .backdrop {
+.one-word-per-line {
+  word-spacing: 200px; }
+
+.textblock:hover .backdrop {
+  font-style: italic; }
+
+.flexblock div:hover .backdrop {
   font-style: italic; }
 
 .backdrop {
@@ -317,16 +323,16 @@ section:hover .backdrop {
         height: 350px;
         width: 100%;
         margin-left: auto; }
-    .content .about {
+    .content .textblock {
       margin-top: 75px;
       position: relative;
       margin-bottom: 100px; }
-      .content .about .backdrop {
+      .content .textblock .backdrop {
         color: #70809077;
         font-size: 3rem;
         position: absolute;
         top: -85px; }
-      .content .about .about_words {
+      .content .textblock .about_words {
         width: 92%;
         margin-left: auto;
         font-size: 1rem; } }
@@ -363,8 +369,7 @@ section:hover .backdrop {
       margin-bottom: 100px; }
       .content .showcase .title {
         font-size: 2.5rem;
-        background-color: #fff;
-        width: calc(100% - 2rem);
+        width: 10%;
         word-break: keep-all;
         position: absolute;
         top: 30px; }
@@ -375,18 +380,49 @@ section:hover .backdrop {
         width: 92%;
         margin-left: auto;
         z-index: -1; }
-    .content .about {
+    .content .textblock {
       position: relative;
       margin-top: 40px;
       margin-bottom: 90px; }
-      .content .about .backdrop {
+      .content .textblock .backdrop {
         color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -4.2rem; }
-      .content .about .about_words {
+      .content .textblock p,
+      .content .textblock ul,
+      .content .textblock ol {
         width: 92%;
-        margin-left: auto; } }
+        margin-left: auto; }
+    .content .flexblock {
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: 90px;
+      display: flex;
+      justify-content: space-between; }
+      .content .flexblock p,
+      .content .flexblock ul,
+      .content .flexblock ol {
+        width: 95%;
+        margin-left: auto; }
+      .content .flexblock .backdrop {
+        color: #70809077;
+        font-size: 6rem;
+        position: absolute;
+        top: -4.2rem; }
+      .content .flexblock .project-peek {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 47%; }
+        .content .flexblock .project-peek div {
+          width: 95%;
+          margin-left: auto;
+          margin-bottom: 1rem; }
+      .content .flexblock .twitter {
+        background: #5d6063;
+        width: 47%;
+        height: 100px; } }
 
 /* Desktop Styles Done*/
 

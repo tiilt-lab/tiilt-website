@@ -1,10 +1,15 @@
 .proj-flex a {
   color: palevioletred !important;
 }
-@media only screen and (max-width: 600px) {
+
+ul {
+  list-style: none;
+}
+@media only screen and (max-width: 640px) {
   .proj-des {
     padding-top: 1rem;
-    font-size: 1rem;
+    width: 95%;
+    margin-left: auto;
   }
 
   .content {
@@ -16,23 +21,22 @@
     margin-bottom: 50px;
 
     .title {
-      font-size: 36px;
+      font-size: 2.5rem;
       word-break: keep-all;
     }
 
     .pictures {
       position: relative;
       outline: 1px blue solid;
+      background: #d6e9fe;
       height: 25vh;
-      width: 92%;
+      width: 100%;
       margin-left: auto;
       margin-top: 10px;
     }
 
     .sub-projects ul {
-      font-size: 1rem;
       margin-right: 2rem;
-      list-style-type: circle;
     }
 
     .proj-flex {
@@ -59,9 +63,8 @@
     }
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .proj-des {
-    font-size: 1rem;
     padding-top: 1rem;
   }
 
@@ -70,8 +73,7 @@
     margin-bottom: 50px;
 
     .title {
-      font-size: 28px;
-      // outline: 1px lightcoral solid;
+      font-size: 2.5rem;
       word-break: keep-all;
       position: absolute;
       top: 30px;
@@ -80,15 +82,14 @@
     .pictures {
       position: relative;
       outline: 1px blue solid;
-      height: 330px;
+      background: #d6e9fe;
+      height: 500px;
       width: 92%;
       margin-left: auto;
     }
 
     .sub-projects ul {
-      font-size: 1rem;;
       margin-right: 2rem;
-      list-style-type: circle;
     }
 
     .proj-flex {

@@ -60,7 +60,13 @@ ol {
   margin: 0.75rem;
   padding-left: 4rem;
 }
+
+.pictures {
+  z-index: -1;
+}
+
 /* TEXT DECORATION */
+
 .bold {
   font-weight: bold;
 }
@@ -71,8 +77,8 @@ ol {
 }
 
 .one-word-per-line {
-    word-spacing: 200px; 
-} 
+  word-spacing: 200px;
+}
 
 .textblock:hover {
   .backdrop {
@@ -91,6 +97,9 @@ ol {
 }
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
+  html {
+    font-size: 13px;
+  }
   .navbar {
     // position: fixed;
     display: flex;
@@ -98,9 +107,6 @@ ol {
     width: 100%;
     padding: 5px;
     background: #d6e9fe;
-
-    // a:hover#burger {
-    // }
 
     div {
       height: 50px;
@@ -124,8 +130,7 @@ ol {
   }
 
   .content {
-    // outline: 1px red solid;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 
     .showcase {
@@ -134,7 +139,6 @@ ol {
       .title {
         display: none;
         font-size: 2rem;
-        outline: 1px lightcoral solid;
         width: 148px;
         word-break: keep-all;
         position: absolute;
@@ -151,14 +155,14 @@ ol {
     }
 
     .textblock {
-      margin-top: 75px;
+      margin-top: 65px;
       position: relative;
 
       .backdrop {
         color: #70809077;
-        font-size: 3rem;
+        font-size: 6rem;
         position: absolute;
-        top: -85px;
+        top: -45px;
       }
 
       .about_words {
@@ -166,7 +170,59 @@ ol {
         margin-left: auto;
         font-size: 1rem;
       }
-      margin-bottom: 100px;
+    }
+
+    .flexblock {
+      position: relative;
+      margin-top: 65px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      p,
+      ul,
+      ol {
+        width: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+      }
+
+      .backdrop {
+        color: #70809077;
+        font-size: 6rem;
+        position: absolute;
+        top: -45px;
+      }
+
+      .project-peek {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+
+        div {
+          // background: #5d6063;
+          width: 95%;
+          margin-left: auto;
+          // height: 100px;
+          margin-bottom: 1rem;
+        }
+
+        .proj-link {
+          text-align: right;
+        }
+      }
+      .twitter {
+        margin-top: 3rem;
+        background: #5d6063;
+        width: 100%;
+        height: 200px;
+
+                .backdrop {
+          position: relative;
+          top: -45px;
+        }
+      }
     }
   }
 }
@@ -207,7 +263,6 @@ ol {
   }
 
   .content {
-    // outline: 1px red solid;
     width: 82%;
     margin: 0 auto;
 
@@ -216,8 +271,6 @@ ol {
 
       .title {
         font-size: 2.5rem;
-        // background-color: #fff;
-        // outline: 1px lightcoral solid;
         width: 10%;
         word-break: keep-all;
         position: absolute;
@@ -266,14 +319,15 @@ ol {
       ul,
       ol {
         width: 95%;
+        margin-top: 0.5rem;
         margin-left: auto;
       }
 
       .backdrop {
         color: #70809077;
-        font-size: 6rem;
+        font-size: calc(3rem + 3vw);
         position: absolute;
-        top: -4.2rem;
+        top: calc(-15px - 3vw);
       }
 
       .project-peek {
@@ -289,11 +343,14 @@ ol {
           // height: 100px;
           margin-bottom: 1rem;
         }
+
+        .proj-link {
+          text-align: right;
+        }
       }
       .twitter {
         background: #5d6063;
         width: 47%;
-        height: 100px;
       }
     }
   }

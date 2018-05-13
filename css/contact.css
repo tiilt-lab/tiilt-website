@@ -1,11 +1,11 @@
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE; }
+    background: #d6e9fe; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -27,23 +27,21 @@
       height: 350px;
       width: 100%;
       margin-left: auto; }
-    .content .contact {
-      margin-top: 75px;
-      position: relative; }
-      .content .contact .backdrop {
-        color: #70809077;
-        font-size: 3em;
-        position: absolute;
-        top: -85px; }
-      .content .contact .blurb {
-        width: 92%;
-        margin-left: auto;
-        font-size: 0.7em; }
-      .content .contact .contact-links {
-        margin-top: 2rem;
-        text-align: center; } }
+  .flexbox {
+    margin-top: 3rem;
+    width: 92%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    .flexbox div {
+      width: 40%; }
+    .flexbox b {
+      line-height: 2rem; }
+    .flexbox a {
+      font-weight: normal;
+      color: palevioletred; } }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .content {
     width: 82%;
     margin: 0 auto;
@@ -53,20 +51,31 @@
       outline: 1px blue solid;
       height: 500px;
       width: 100%;
-      margin-left: auto; }
+      margin-left: auto;
+      margin-bottom: 100px; }
     .content .contact {
       position: relative;
       margin-top: 80px; }
       .content .contact .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
-        top: -95px; }
+        top: -3.5rem; }
       .content .contact .blurb {
         width: 92%;
         margin-left: auto; }
-    .content .contact-links {
+    .content .flexbox {
       margin-top: 3rem;
-      text-align: center; } }
+      width: 92%;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between; }
+      .content .flexbox div {
+        width: 40%; }
+      .content .flexbox b {
+        line-height: 2rem; }
+      .content .flexbox a {
+        font-weight: normal;
+        color: palevioletred; } }
 
 /*# sourceMappingURL=contact.css.map */

@@ -1,16 +1,17 @@
-@import './people.scss';
-@import './contact.scss';
-@import './projects.scss';
-@import './papers.scss';
+@import "./people.scss";
+@import "./contact.scss";
+@import "./projects.scss";
+@import "./papers.scss";
 @font-face {
-  font-family: 'Plex';
-  src: url("../fonts/IBMPlexSans-Light.woff") format('woff');
+  font-family: "Plex";
+  src: url("../fonts/IBMPlexSans-Light.woff") format("woff");
 }
 
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 *,
@@ -23,10 +24,15 @@ html {
 
 body {
   background-color: #fff;
-  font-family: 'Plex', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.3em;
+  font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3rem;
   max-width: 1200px !important;
-    margin: auto;
+  margin: auto;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 a {
@@ -38,40 +44,69 @@ a {
 
 a:link,
 a:visited {
-  color: #5D6063;
+  color: #5d6063;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  font-style: italic;
 }
 
-li {
+nav li {
   list-style: none;
 }
+
+ol {
+  margin: 0.75rem;
+  padding-left: 4rem;
+}
+
+.pictures {
+  z-index: -1;
+}
+
 /* TEXT DECORATION */
+
 .bold {
   font-weight: bold;
 }
 
 .current-page {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.one-word-per-line {
+  word-spacing: 200px;
+}
+
+.textblock:hover {
+  .backdrop {
+    font-style: italic;
+  }
+}
+
+.flexblock div:hover {
+  .backdrop {
+    font-style: italic;
+  }
 }
 
 .backdrop {
-  color: rgba(1, 1, 230, .08) !important;
+  color: rgba(1, 1, 230, 0.08) !important;
 }
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 13px;
+  }
   .navbar {
     // position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE;
-
-    a:hover#burger {}
+    background: #d6e9fe;
 
     div {
       height: 50px;
@@ -95,8 +130,7 @@ li {
   }
 
   .content {
-    // outline: 1px red solid;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 
     .showcase {
@@ -104,8 +138,7 @@ li {
 
       .title {
         display: none;
-        font-size: 28px;
-        outline: 1px lightcoral solid;
+        font-size: 2rem;
         width: 148px;
         word-break: keep-all;
         position: absolute;
@@ -121,21 +154,74 @@ li {
       }
     }
 
-    .about {
-      margin-top: 75px;
+    .textblock {
+      margin-top: 65px;
       position: relative;
 
       .backdrop {
         color: #70809077;
-        font-size: 3em;
+        font-size: 6rem;
         position: absolute;
-        top: -85px;
+        top: -45px;
       }
 
       .about_words {
         width: 92%;
         margin-left: auto;
-        font-size: 0.7em;
+        font-size: 1rem;
+      }
+    }
+
+    .flexblock {
+      position: relative;
+      margin-top: 65px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      p,
+      ul,
+      ol {
+        width: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+      }
+
+      .backdrop {
+        color: #70809077;
+        font-size: 6rem;
+        position: absolute;
+        top: -45px;
+      }
+
+      .project-peek {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+
+        div {
+          // background: #5d6063;
+          width: 95%;
+          margin-left: auto;
+          // height: 100px;
+          margin-bottom: 1rem;
+        }
+
+        .proj-link {
+          text-align: right;
+        }
+      }
+      .twitter {
+        margin-top: 3rem;
+        background: #5d6063;
+        width: 100%;
+        height: 200px;
+
+                .backdrop {
+          position: relative;
+          top: -45px;
+        }
       }
     }
   }
@@ -145,14 +231,13 @@ li {
 // @media only screen and (min-width: 401px) and (max-width: 960px) {
 //      }
 /* Desktop Styles Start*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .navbar {
     width: 82%;
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    font-size: 1.2em;
-    // outline: 1px green solid;
+    font-size: 1.3rem;
     justify-content: space-between;
     align-items: center;
 
@@ -169,7 +254,7 @@ li {
     ul {
       display: flex;
       justify-content: space-between;
-      width: 500px;
+      width: 350px;
 
       li:nth-child(1) {
         display: none;
@@ -178,7 +263,6 @@ li {
   }
 
   .content {
-    // outline: 1px red solid;
     width: 82%;
     margin: 0 auto;
 
@@ -186,9 +270,8 @@ li {
       position: relative;
 
       .title {
-        font-size: 28px;
-        // outline: 1px lightcoral solid;
-        width: 148px;
+        font-size: 2.5rem;
+        width: 10%;
         word-break: keep-all;
         position: absolute;
         top: 30px;
@@ -196,28 +279,82 @@ li {
 
       .pictures {
         position: relative;
-        outline: 1px blue solid;
+        background: #d6e9fe;
         height: 500px;
         width: 92%;
         margin-left: auto;
+        z-index: -1;
+        margin-bottom: 100px;
       }
-      margin-bottom: 100px;
     }
 
-    .about {
+    .textblock {
       position: relative;
       margin-top: 40px;
+      margin-bottom: 90px;
 
       .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
-        top: -95px;
+        top: -4.2rem;
       }
 
-      .about_words {
+      p,
+      ul,
+      ol {
         width: 92%;
         margin-left: auto;
+      }
+    }
+
+    .flexblock {
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: 90px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        position: relative;
+      }
+
+      p,
+      ul,
+      ol {
+        width: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+      }
+
+      .backdrop {
+        color: #70809077;
+        font-size: calc(3rem + 3vw);
+        position: absolute;
+        top: calc(-15px - 3vw);
+      }
+
+      .project-peek {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 47%;
+
+        div {
+          // background: #5d6063;
+          width: 95%;
+          margin-left: auto;
+          // height: 100px;
+          margin-bottom: 1rem;
+        }
+
+        .proj-link {
+          text-align: right;
+        }
+      }
+      .twitter {
+        background: #5d6063;
+        width: 47%;
       }
     }
   }

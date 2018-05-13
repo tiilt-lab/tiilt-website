@@ -1,42 +1,43 @@
 .content {
+  margin-top: 50px;
   width: 100%; }
+  .content .backdrop {
+    color: #70809077;
+    font-size: 6rem;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -1; }
+  .content .people-group:first-child {
+    margin-top: 50px; }
   .content .people-group {
     display: flex;
-    margin-bottom: 2rem; }
-  .content .new-group {
-    position: relative;
-    margin-top: 110px; }
-    .content .new-group .backdrop {
-      color: #70809077;
-      font-size: 4em;
-      position: absolute;
-      top: -110px; }
-  .content #second {
-    margin-top: 140px !important; }
-  .content .solo {
-    width: 100% !important; }
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    position: relative; }
+  .content .people-column {
+    width: 48%;
+    margin-left: 4%; }
   .content .person {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    padding-top: 1em;
-    margin: auto; }
-    .content .person div {
+    width: 100%;
+    margin-bottom: 2rem; }
+    .content .person img {
       width: 100%;
-      padding: 0 1em; }
-      .content .person div h1 {
-        font-size: 1.2em;
-        padding-bottom: 0.1em; }
-      .content .person div h2 {
-        font-size: 1em;
-        padding-bottom: 0.3em; }
-      .content .person div p {
-        font-size: 0.6em; }
+      height: auto;
+      border: 1px solid black; }
+    .content .person h1 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem; }
 
-@media only screen and (max-width: 600px) {
-  .people-group {
-    flex-direction: column; }
-  .person {
-    width: 80%; } }
+@media only screen and (max-width: 640px) {
+  .content .people-group {
+    flex-direction: column;
+    width: 100%; }
+  .content .people-column {
+    width: 100%;
+    margin-left: 0; }
+  .content .backdrop {
+    top: -55px; } }
 
 /*# sourceMappingURL=people.css.map */

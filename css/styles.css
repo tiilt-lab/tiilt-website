@@ -1,52 +1,53 @@
 .content {
+  margin-top: 50px;
   width: 100%; }
+  .content .backdrop {
+    color: #70809077;
+    font-size: 6rem;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -1; }
+  .content .people-group:first-child {
+    margin-top: 50px; }
   .content .people-group {
     display: flex;
-    margin-bottom: 2rem; }
-  .content .new-group {
-    position: relative;
-    margin-top: 110px; }
-    .content .new-group .backdrop {
-      color: #70809077;
-      font-size: 4em;
-      position: absolute;
-      top: -110px; }
-  .content #second {
-    margin-top: 140px !important; }
-  .content .solo {
-    width: 100% !important; }
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    position: relative; }
+  .content .people-column {
+    width: 48%;
+    margin-left: 4%; }
   .content .person {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    padding-top: 1em;
-    margin: auto; }
-    .content .person div {
+    width: 100%;
+    margin-bottom: 2rem; }
+    .content .person img {
       width: 100%;
-      padding: 0 1em; }
-      .content .person div h1 {
-        font-size: 1.2em;
-        padding-bottom: 0.1em; }
-      .content .person div h2 {
-        font-size: 1em;
-        padding-bottom: 0.3em; }
-      .content .person div p {
-        font-size: 0.6em; }
+      height: auto;
+      border: 1px solid black; }
+    .content .person h1 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem; }
 
-@media only screen and (max-width: 600px) {
-  .people-group {
-    flex-direction: column; }
-  .person {
-    width: 80%; } }
+@media only screen and (max-width: 640px) {
+  .content .people-group {
+    flex-direction: column;
+    width: 100%; }
+  .content .people-column {
+    width: 100%;
+    margin-left: 0; }
+  .content .backdrop {
+    top: -55px; } }
 
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE; }
+    background: #d6e9fe; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -68,23 +69,21 @@
       height: 350px;
       width: 100%;
       margin-left: auto; }
-    .content .contact {
-      margin-top: 75px;
-      position: relative; }
-      .content .contact .backdrop {
-        color: #70809077;
-        font-size: 3em;
-        position: absolute;
-        top: -85px; }
-      .content .contact .blurb {
-        width: 92%;
-        margin-left: auto;
-        font-size: 0.7em; }
-      .content .contact .contact-links {
-        margin-top: 2rem;
-        text-align: center; } }
+  .flexbox {
+    margin-top: 3rem;
+    width: 92%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    .flexbox div {
+      width: 40%; }
+    .flexbox b {
+      line-height: 2rem; }
+    .flexbox a {
+      font-weight: normal;
+      color: palevioletred; } }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .content {
     width: 82%;
     margin: 0 auto;
@@ -94,51 +93,65 @@
       outline: 1px blue solid;
       height: 500px;
       width: 100%;
-      margin-left: auto; }
+      margin-left: auto;
+      margin-bottom: 100px; }
     .content .contact {
       position: relative;
       margin-top: 80px; }
       .content .contact .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
-        top: -95px; }
+        top: -3.5rem; }
       .content .contact .blurb {
         width: 92%;
         margin-left: auto; }
-    .content .contact-links {
+    .content .flexbox {
       margin-top: 3rem;
-      text-align: center; } }
+      width: 92%;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between; }
+      .content .flexbox div {
+        width: 40%; }
+      .content .flexbox b {
+        line-height: 2rem; }
+      .content .flexbox a {
+        font-weight: normal;
+        color: palevioletred; } }
 
 .proj-flex a {
   color: palevioletred !important; }
 
-@media only screen and (max-width: 600px) {
+ul {
+  list-style: none; }
+
+@media only screen and (max-width: 640px) {
   .proj-des {
-    padding-top: 1em;
-    font-size: 0.75em; }
+    padding-top: 1rem;
+    width: 95%;
+    margin-left: auto; }
   .content {
-    padding: 1em; }
+    padding: 1rem; }
   .project {
     position: relative;
     margin-bottom: 50px; }
     .project .title {
-      font-size: 36px;
+      font-size: 2.5rem;
       word-break: keep-all; }
     .project .pictures {
       position: relative;
       outline: 1px blue solid;
+      background: #d6e9fe;
       height: 25vh;
-      width: 92%;
+      width: 100%;
       margin-left: auto;
       margin-top: 10px; }
     .project .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
-      list-style-type: circle; }
+      margin-right: 2rem; }
     .project .proj-flex {
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3rem; }
       .project .proj-flex div:not(:first-child) {
         display: none; }
       .project .proj-flex div {
@@ -148,35 +161,32 @@
       justify-content: flex-end !important; }
       .project .team p,
       .project .team ul {
-        font-size: 0.75em;
-        margin-right: 2em; } }
+        margin-right: 2rem; } }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .proj-des {
-    font-size: 0.75em;
-    padding-top: 1em; }
+    padding-top: 1rem; }
   .content .project {
     position: relative;
     margin-bottom: 50px; }
     .content .project .title {
-      font-size: 28px;
+      font-size: 2.5rem;
       word-break: keep-all;
       position: absolute;
       top: 30px; }
     .content .project .pictures {
       position: relative;
       outline: 1px blue solid;
-      height: 330px;
+      background: #d6e9fe;
+      height: 500px;
       width: 92%;
       margin-left: auto; }
     .content .project .sub-projects ul {
-      font-size: 0.75em;
-      margin-right: 2em;
-      list-style-type: circle; }
+      margin-right: 2rem; }
     .content .project .proj-flex {
       display: flex;
       justify-content: space-between;
-      padding: 1.25em 0.75em 0.0em 3em; }
+      padding: 1.25em 0.75em 0.0em 3rem; }
       .content .project .proj-flex div {
         display: flex;
         justify-content: flex-start; }
@@ -184,39 +194,42 @@
       justify-content: flex-end !important; }
       .content .project .team p,
       .content .project .team ul {
-        font-size: 0.75em;
-        margin-right: 2em; } }
+        margin-right: 2rem; } }
 
 .content .papers {
-  font-size: 0.75em;
   position: relative;
   margin-top: 100px; }
 
 .content .papers .backdrop {
   color: #70809077;
-  font-size: 8em;
+  font-size: 10rem;
   position: absolute;
-  top: -100px;
+  top: -70px;
   left: 0; }
 
 .content .papers .paper {
   width: 92%;
+  line-height: 1.75rem;
   margin-left: auto;
-  margin-bottom: 15px; }
-
-.content .papers .paper a {
-  text-align: right;
   color: palevioletred;
-  font-weight: bold; }
+  margin-bottom: 20px; }
+  .content .papers .paper a {
+    text-align: right;
+    font-weight: bold;
+    color: palevioletred; }
+  .content .papers .paper p {
+    margin-bottom: .5rem;
+    color: black; }
 
 @font-face {
-  font-family: 'Plex';
+  font-family: "Plex";
   src: url("../fonts/IBMPlexSans-Light.woff") format("woff"); }
 
 html {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 16px; }
 
 *,
 *::after,
@@ -227,10 +240,13 @@ html {
 
 body {
   background-color: #fff;
-  font-family: 'Plex', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.3em;
+  font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto; }
+
+p {
+  line-height: 1.5rem; }
 
 a {
   text-decoration: none;
@@ -240,33 +256,52 @@ a {
 
 a:link,
 a:visited {
-  color: #5D6063;
+  color: #5d6063;
   text-decoration: none; }
 
 a:hover {
-  text-decoration: underline; }
+  font-style: italic; }
 
-li {
+nav li {
   list-style: none; }
+
+ol {
+  margin: 0.75rem;
+  padding-left: 4rem; }
+
+.pictures {
+  z-index: -1; }
 
 /* TEXT DECORATION */
 .bold {
   font-weight: bold; }
 
 .current-page {
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: underline; }
+
+.one-word-per-line {
+  word-spacing: 200px; }
+
+.textblock:hover .backdrop {
+  font-style: italic; }
+
+.flexblock div:hover .backdrop {
+  font-style: italic; }
 
 .backdrop {
   color: rgba(1, 1, 230, 0.08) !important; }
 
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 13px; }
   .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE; }
+    background: #d6e9fe; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -280,14 +315,13 @@ li {
       .navbar ul li {
         text-align: right; }
   .content {
-    width: 100%;
+    width: 90%;
     margin: 0 auto; }
     .content .showcase {
       position: relative; }
       .content .showcase .title {
         display: none;
-        font-size: 28px;
-        outline: 1px lightcoral solid;
+        font-size: 2rem;
         width: 148px;
         word-break: keep-all;
         position: absolute;
@@ -298,29 +332,65 @@ li {
         height: 350px;
         width: 100%;
         margin-left: auto; }
-    .content .about {
-      margin-top: 75px;
+    .content .textblock {
+      margin-top: 65px;
       position: relative; }
-      .content .about .backdrop {
+      .content .textblock .backdrop {
         color: #70809077;
-        font-size: 3em;
+        font-size: 6rem;
         position: absolute;
-        top: -85px; }
-      .content .about .about_words {
+        top: -45px; }
+      .content .textblock .about_words {
         width: 92%;
         margin-left: auto;
-        font-size: 0.7em; } }
+        font-size: 1rem; }
+    .content .flexblock {
+      position: relative;
+      margin-top: 65px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      .content .flexblock p,
+      .content .flexblock ul,
+      .content .flexblock ol {
+        width: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto; }
+      .content .flexblock .backdrop {
+        color: #70809077;
+        font-size: 6rem;
+        position: absolute;
+        top: -45px; }
+      .content .flexblock .project-peek {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%; }
+        .content .flexblock .project-peek div {
+          width: 95%;
+          margin-left: auto;
+          margin-bottom: 1rem; }
+        .content .flexblock .project-peek .proj-link {
+          text-align: right; }
+      .content .flexblock .twitter {
+        margin-top: 3rem;
+        background: #5d6063;
+        width: 100%;
+        height: 200px; }
+        .content .flexblock .twitter .backdrop {
+          position: relative;
+          top: -45px; } }
 
 /* Mobile Styles Done*/
 /* Tablet Styles */
 /* Desktop Styles Start*/
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .navbar {
     width: 82%;
     padding: 50px 0;
     margin: 0 auto;
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.3rem;
     justify-content: space-between;
     align-items: center; }
     .navbar div {
@@ -332,38 +402,75 @@ li {
     .navbar ul {
       display: flex;
       justify-content: space-between;
-      width: 500px; }
+      width: 350px; }
       .navbar ul li:nth-child(1) {
         display: none; }
   .content {
     width: 82%;
     margin: 0 auto; }
     .content .showcase {
-      position: relative;
-      margin-bottom: 100px; }
+      position: relative; }
       .content .showcase .title {
-        font-size: 28px;
-        width: 148px;
+        font-size: 2.5rem;
+        width: 10%;
         word-break: keep-all;
         position: absolute;
         top: 30px; }
       .content .showcase .pictures {
         position: relative;
-        outline: 1px blue solid;
+        background: #d6e9fe;
         height: 500px;
         width: 92%;
-        margin-left: auto; }
-    .content .about {
+        margin-left: auto;
+        z-index: -1;
+        margin-bottom: 100px; }
+    .content .textblock {
       position: relative;
-      margin-top: 40px; }
-      .content .about .backdrop {
+      margin-top: 40px;
+      margin-bottom: 90px; }
+      .content .textblock .backdrop {
         color: #70809077;
-        font-size: 6em;
+        font-size: 6rem;
         position: absolute;
-        top: -95px; }
-      .content .about .about_words {
+        top: -4.2rem; }
+      .content .textblock p,
+      .content .textblock ul,
+      .content .textblock ol {
         width: 92%;
-        margin-left: auto; } }
+        margin-left: auto; }
+    .content .flexblock {
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: 90px;
+      display: flex;
+      justify-content: space-between; }
+      .content .flexblock div {
+        position: relative; }
+      .content .flexblock p,
+      .content .flexblock ul,
+      .content .flexblock ol {
+        width: 95%;
+        margin-top: 0.5rem;
+        margin-left: auto; }
+      .content .flexblock .backdrop {
+        color: #70809077;
+        font-size: calc(3rem + 3vw);
+        position: absolute;
+        top: calc(-15px - 3vw); }
+      .content .flexblock .project-peek {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 47%; }
+        .content .flexblock .project-peek div {
+          width: 95%;
+          margin-left: auto;
+          margin-bottom: 1rem; }
+        .content .flexblock .project-peek .proj-link {
+          text-align: right; }
+      .content .flexblock .twitter {
+        background: #5d6063;
+        width: 47%; } }
 
 /* Desktop Styles Done*/
 

@@ -24,7 +24,8 @@ ul {
       height: 25vh;
       width: 100%;
       margin-left: auto;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-bottom: 0px; }
     .project .sub-projects ul {
       margin-right: 2rem; }
     .project .proj-flex {
@@ -58,7 +59,8 @@ ul {
       background: #d6e9fe;
       height: 500px;
       width: 92%;
-      margin-left: auto; }
+      margin-left: auto;
+      margin-bottom: 0px; }
     .content .project .sub-projects ul {
       margin-right: 2rem; }
     .content .project .proj-flex {

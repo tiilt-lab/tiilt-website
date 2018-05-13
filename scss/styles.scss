@@ -23,7 +23,9 @@ html {
 }
 
 body {
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: #ffffff;
+  // background-image: linear-gradient(0deg, #ffffff 50%, #FFF5F5 100%);
   font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
@@ -218,7 +220,7 @@ ol {
         width: 100%;
         height: 200px;
 
-                .backdrop {
+        .backdrop {
           position: relative;
           top: -45px;
         }

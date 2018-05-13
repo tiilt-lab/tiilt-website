@@ -146,7 +146,8 @@ ul {
       height: 25vh;
       width: 100%;
       margin-left: auto;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-bottom: 0px; }
     .project .sub-projects ul {
       margin-right: 2rem; }
     .project .proj-flex {
@@ -180,7 +181,8 @@ ul {
       background: #d6e9fe;
       height: 500px;
       width: 92%;
-      margin-left: auto; }
+      margin-left: auto;
+      margin-bottom: 0px; }
     .content .project .sub-projects ul {
       margin-right: 2rem; }
     .content .project .proj-flex {
@@ -239,7 +241,7 @@ html {
   padding: 0; }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;

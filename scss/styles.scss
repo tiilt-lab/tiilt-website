@@ -284,8 +284,8 @@ ol {
         width: 92%;
         margin-left: auto;
         z-index: -1;
+        margin-bottom: 100px;
       }
-      margin-bottom: 100px;
     }
 
     .textblock {
@@ -314,6 +314,10 @@ ol {
       margin-bottom: 90px;
       display: flex;
       justify-content: space-between;
+
+      div {
+        position: relative;
+      }
 
       p,
       ul,

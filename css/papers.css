@@ -1,23 +1,26 @@
 .content .papers {
-  font-size: 0.75rem;
   position: relative;
   margin-top: 100px; }
 
 .content .papers .backdrop {
   color: #70809077;
-  font-size: 8rem;
+  font-size: 10rem;
   position: absolute;
-  top: -100px;
+  top: -70px;
   left: 0; }
 
 .content .papers .paper {
   width: 92%;
+  line-height: 1.75rem;
   margin-left: auto;
-  margin-bottom: 15px; }
-
-.content .papers .paper a {
-  text-align: right;
   color: palevioletred;
-  font-weight: bold; }
+  margin-bottom: 20px; }
+  .content .papers .paper a {
+    text-align: right;
+    font-weight: bold;
+    color: palevioletred; }
+  .content .papers .paper p {
+    margin-bottom: .5rem;
+    color: black; }
 
 /*# sourceMappingURL=papers.css.map */

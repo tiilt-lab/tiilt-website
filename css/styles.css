@@ -1,59 +1,53 @@
 .content {
+  margin-top: 50px;
   width: 100%; }
+  .content .backdrop {
+    color: #70809077;
+    font-size: 6rem;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -1; }
+  .content .people-group:first-child {
+    margin-top: 50px; }
   .content .people-group {
-    display: block; }
-  .content .people-group .people-row {
     display: flex;
-    margin-bottom: 2rem; }
-  .content .name-container {
-    display: block; }
-  .content .new-group {
-    position: relative;
-    margin-top: 70px; }
-    .content .new-group .backdrop {
-      color: #70809077;
-      font-size: 4rem;
-      position: absolute;
-      top: -50px;
-      z-index: -1; }
-  .content #second {
-    margin-top: 70px !important; }
-  .content .solo {
-    width: 100% !important; }
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    position: relative; }
+  .content .people-column {
+    width: 48%;
+    margin-left: 4%; }
   .content .person {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    padding-top: 1rem;
-    margin: auto; }
+    width: 100%;
+    margin-bottom: 2rem; }
     .content .person img {
-      border: 1px solid black; }
-    .content .person div {
       width: 100%;
-      padding: 0 1rem; }
-      .content .person div h1 {
-        font-size: 1.2rem;
-        padding-bottom: 0.1rem; }
-      .content .person div h2 {
-        font-size: 1rem;
-        padding-bottom: 0.3rem; }
-      .content .person div p {
-        font-size: 0.6rem; }
+      height: auto;
+      border: 1px solid black; }
+    .content .person h1 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem; }
 
-@media only screen and (max-width: 600px) {
-  .people-group {
-    flex-direction: column; }
-  .person {
-    width: 80%; } }
+@media only screen and (max-width: 640px) {
+  .content .people-group {
+    flex-direction: column;
+    width: 100%; }
+  .content .people-column {
+    width: 100%;
+    margin-left: 0; }
+  .content .backdrop {
+    top: -55px; } }
 
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE; }
+    background: #d6e9fe; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -75,23 +69,21 @@
       height: 350px;
       width: 100%;
       margin-left: auto; }
-    .content .contact {
-      margin-top: 75px;
-      position: relative; }
-      .content .contact .backdrop {
-        color: #70809077;
-        font-size: 3rem;
-        position: absolute;
-        top: -85px; }
-      .content .contact .blurb {
-        width: 92%;
-        margin-left: auto;
-        font-size: 0.7rem; }
-      .content .contact .contact-links {
-        margin-top: 2rem;
-        text-align: center; } }
+  .flexbox {
+    margin-top: 3rem;
+    width: 92%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    .flexbox div {
+      width: 40%; }
+    .flexbox b {
+      line-height: 2rem; }
+    .flexbox a {
+      font-weight: normal;
+      color: palevioletred; } }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .content {
     width: 82%;
     margin: 0 auto;
@@ -101,7 +93,8 @@
       outline: 1px blue solid;
       height: 500px;
       width: 100%;
-      margin-left: auto; }
+      margin-left: auto;
+      margin-bottom: 100px; }
     .content .contact {
       position: relative;
       margin-top: 80px; }
@@ -109,13 +102,23 @@
         color: #70809077;
         font-size: 6rem;
         position: absolute;
-        top: -95px; }
+        top: -3.5rem; }
       .content .contact .blurb {
         width: 92%;
         margin-left: auto; }
-    .content .contact-links {
+    .content .flexbox {
       margin-top: 3rem;
-      text-align: center; } }
+      width: 92%;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between; }
+      .content .flexbox div {
+        width: 40%; }
+      .content .flexbox b {
+        line-height: 2rem; }
+      .content .flexbox a {
+        font-weight: normal;
+        color: palevioletred; } }
 
 .proj-flex a {
   color: palevioletred !important; }
@@ -158,7 +161,6 @@ ul {
       justify-content: flex-end !important; }
       .project .team p,
       .project .team ul {
-        font-size: 0.75rem;
         margin-right: 2rem; } }
 
 @media only screen and (min-width: 640px) {
@@ -192,30 +194,32 @@ ul {
       justify-content: flex-end !important; }
       .content .project .team p,
       .content .project .team ul {
-        font-size: 0.75rem;
         margin-right: 2rem; } }
 
 .content .papers {
-  font-size: 0.75rem;
   position: relative;
   margin-top: 100px; }
 
 .content .papers .backdrop {
   color: #70809077;
-  font-size: 8rem;
+  font-size: 10rem;
   position: absolute;
-  top: -100px;
+  top: -70px;
   left: 0; }
 
 .content .papers .paper {
   width: 92%;
+  line-height: 1.75rem;
   margin-left: auto;
-  margin-bottom: 15px; }
-
-.content .papers .paper a {
-  text-align: right;
   color: palevioletred;
-  font-weight: bold; }
+  margin-bottom: 20px; }
+  .content .papers .paper a {
+    text-align: right;
+    font-weight: bold;
+    color: palevioletred; }
+  .content .papers .paper p {
+    margin-bottom: .5rem;
+    color: black; }
 
 @font-face {
   font-family: "Plex";
@@ -405,8 +409,7 @@ ol {
     width: 82%;
     margin: 0 auto; }
     .content .showcase {
-      position: relative;
-      margin-bottom: 100px; }
+      position: relative; }
       .content .showcase .title {
         font-size: 2.5rem;
         width: 10%;
@@ -419,7 +422,8 @@ ol {
         height: 500px;
         width: 92%;
         margin-left: auto;
-        z-index: -1; }
+        z-index: -1;
+        margin-bottom: 100px; }
     .content .textblock {
       position: relative;
       margin-top: 40px;
@@ -440,6 +444,8 @@ ol {
       margin-bottom: 90px;
       display: flex;
       justify-content: space-between; }
+      .content .flexblock div {
+        position: relative; }
       .content .flexblock p,
       .content .flexblock ul,
       .content .flexblock ol {

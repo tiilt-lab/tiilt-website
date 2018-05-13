@@ -1,14 +1,15 @@
 /* Mobile Styles Start*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .navbar {
     // position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px;
-    background: #D6E9FE;
+    background: #d6e9fe;
 
-    a:hover#burger {}
+    a:hover#burger {
+    }
 
     div {
       height: 50px;
@@ -37,38 +38,36 @@
     margin: 0 auto;
 
     .pictures {
-      position: relative;
-      outline: 1px blue solid;
-      height: 350px;
-      width: 100%;
-      margin-left: auto;
-    }
-
-    .contact {
-      margin-top: 75px;
-      position: relative;
-
-      .backdrop {
-        color: #70809077;
-        font-size: 3rem;
-        position: absolute;
-        top: -85px;
-      }
-
-      .blurb {
-        width: 92%;
+        position: relative;
+        outline: 1px blue solid;
+        height: 350px;
+        width: 100%;
         margin-left: auto;
-        font-size: 0.7rem;
+      }
+  }
+
+  .flexbox {
+      margin-top: 3rem;
+      width: 92%;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        width: 40%;
       }
 
-      .contact-links {
-        margin-top: 2rem;
-        text-align: center;
+      b {
+        line-height: 2rem;
+      }
+
+      a {
+        font-weight: normal;
+        color: palevioletred;
       }
     }
-  }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 640px) {
   .content {
     // outline: 1px red solid;
     width: 82%;
@@ -80,6 +79,7 @@
       height: 500px;
       width: 100%;
       margin-left: auto;
+      margin-bottom: 100px;
     }
     margin-bottom: 100px;
 
@@ -91,7 +91,7 @@
         color: #70809077;
         font-size: 6rem;
         position: absolute;
-        top: -95px;
+        top: -3.5rem;
       }
 
       .blurb {
@@ -100,9 +100,25 @@
       }
     }
 
-    .contact-links {
+    .flexbox {
       margin-top: 3rem;
-      text-align: center;
+      width: 92%;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        width: 40%;
+      }
+
+      b {
+        line-height: 2rem;
+      }
+
+      a {
+        font-weight: normal;
+        color: palevioletred;
+      }
     }
   }
 }

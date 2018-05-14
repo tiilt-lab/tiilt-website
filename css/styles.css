@@ -408,7 +408,7 @@ section:not(.flexblock):hover .backdrop {
           text-align: right; }
       .content .flexblock .twitter {
         margin-top: 3rem;
-        background: #5d6063;
+        background: rgba(94, 97, 100, 0.171);
         width: 100%;
         height: 200px; }
         .content .flexblock .twitter .backdrop {
@@ -503,7 +503,7 @@ section:not(.flexblock):hover .backdrop {
         .content .flexblock .project-peek .proj-link {
           text-align: right; }
       .content .flexblock .twitter {
-        background: #5d6063;
+        background: rgba(94, 97, 100, 0.171);
         width: 47%; } }
 
 /* Desktop Styles Done*/

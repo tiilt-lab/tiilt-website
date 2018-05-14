@@ -13,12 +13,9 @@
   width: 92%;
   line-height: 1.75rem;
   margin-left: auto;
-  color: palevioletred;
   margin-bottom: 20px; }
   .content .papers .paper a {
-    text-align: right;
-    font-weight: bold;
-    color: palevioletred; }
+    text-align: right; }
   .content .papers .paper p {
     margin-bottom: .5rem;
     color: black; }

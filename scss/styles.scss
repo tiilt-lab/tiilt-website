@@ -23,10 +23,9 @@ html {
 }
 
 body {
-  // background-color: #fff;
   background-color: #ffffff;
   // background-image: linear-gradient(0deg, #ffffff 50%, #FFF5F5 100%);
-  font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode",
+  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;
@@ -34,7 +33,7 @@ body {
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 a {
@@ -46,12 +45,12 @@ a {
 
 a:link,
 a:visited {
-  color: #5d6063;
   text-decoration: none;
 }
 
 a:hover {
   font-style: italic;
+  // letter-spacing: .px;
 }
 
 nav li {
@@ -74,23 +73,29 @@ ol {
 }
 
 .current-page {
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: bold !important;
+  border-bottom: black solid 2px;
 }
 
 .one-word-per-line {
   word-spacing: 200px;
 }
 
-.textblock:hover {
+ div:not(.content):hover {
   .backdrop {
     font-style: italic;
   }
 }
 
-.flexblock div:hover {
+section:not(.flexblock):hover {
   .backdrop {
     font-style: italic;
+  }
+}
+
+.content {
+  a {
+    color: palevioletred;
   }
 }
 

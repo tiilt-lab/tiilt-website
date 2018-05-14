@@ -78,10 +78,7 @@
     .flexbox div {
       width: 40%; }
     .flexbox b {
-      line-height: 2rem; }
-    .flexbox a {
-      font-weight: normal;
-      color: palevioletred; } }
+      line-height: 2rem; } }
 
 @media only screen and (min-width: 640px) {
   .content {
@@ -115,10 +112,7 @@
       .content .flexbox div {
         width: 40%; }
       .content .flexbox b {
-        line-height: 2rem; }
-      .content .flexbox a {
-        font-weight: normal;
-        color: palevioletred; } }
+        line-height: 2rem; } }
 
 .proj-flex a {
   color: palevioletred !important; }
@@ -169,7 +163,7 @@ ul {
     padding-top: 1rem; }
   .content .project {
     position: relative;
-    margin-bottom: 50px; }
+    margin-bottom: 5rem; }
     .content .project .title {
       font-size: 2.5rem;
       word-break: keep-all;
@@ -182,7 +176,7 @@ ul {
       height: 500px;
       width: 92%;
       margin-left: auto;
-      margin-bottom: 0px; }
+      margin-bottom: 1rem; }
     .content .project .sub-projects ul {
       margin-right: 2rem; }
     .content .project .proj-flex {
@@ -213,12 +207,9 @@ ul {
   width: 92%;
   line-height: 1.75rem;
   margin-left: auto;
-  color: palevioletred;
   margin-bottom: 20px; }
   .content .papers .paper a {
-    text-align: right;
-    font-weight: bold;
-    color: palevioletred; }
+    text-align: right; }
   .content .papers .paper p {
     margin-bottom: .5rem;
     color: black; }
@@ -242,13 +233,13 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Inconsolata", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto; }
 
 p {
-  line-height: 1.5rem; }
+  line-height: 1.6rem; }
 
 a {
   text-decoration: none;
@@ -258,7 +249,6 @@ a {
 
 a:link,
 a:visited {
-  color: #5d6063;
   text-decoration: none; }
 
 a:hover {
@@ -279,17 +269,20 @@ ol {
   font-weight: bold; }
 
 .current-page {
-  font-weight: bold;
-  text-decoration: underline; }
+  font-weight: bold !important;
+  border-bottom: black solid 2px; }
 
 .one-word-per-line {
   word-spacing: 200px; }
 
-.textblock:hover .backdrop {
+div:not(.content):hover .backdrop {
   font-style: italic; }
 
-.flexblock div:hover .backdrop {
+section:not(.flexblock):hover .backdrop {
   font-style: italic; }
+
+.content a {
+  color: palevioletred; }
 
 .backdrop {
   color: rgba(1, 1, 230, 0.08) !important; }

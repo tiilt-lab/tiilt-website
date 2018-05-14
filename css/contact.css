@@ -36,10 +36,7 @@
     .flexbox div {
       width: 40%; }
     .flexbox b {
-      line-height: 2rem; }
-    .flexbox a {
-      font-weight: normal;
-      color: palevioletred; } }
+      line-height: 2rem; } }
 
 @media only screen and (min-width: 640px) {
   .content {
@@ -73,9 +70,6 @@
       .content .flexbox div {
         width: 40%; }
       .content .flexbox b {
-        line-height: 2rem; }
-      .content .flexbox a {
-        font-weight: normal;
-        color: palevioletred; } }
+        line-height: 2rem; } }
 
 /*# sourceMappingURL=contact.css.map */

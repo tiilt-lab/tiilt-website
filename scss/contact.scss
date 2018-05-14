@@ -8,9 +8,6 @@
     padding: 5px;
     background: #d6e9fe;
 
-    a:hover#burger {
-    }
-
     div {
       height: 50px;
       width: 50px;
@@ -60,11 +57,6 @@
       b {
         line-height: 2rem;
       }
-
-      a {
-        font-weight: normal;
-        color: palevioletred;
-      }
     }
 }
 @media only screen and (min-width: 640px) {
@@ -113,11 +105,6 @@
 
       b {
         line-height: 2rem;
-      }
-
-      a {
-        font-weight: normal;
-        color: palevioletred;
       }
     }
   }

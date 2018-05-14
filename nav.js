@@ -4,6 +4,6 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById('myNav').style.height = '0%';
-    document.getElementById('myNav').style.width = '0%';
+    document.getElementById('myNav').style.height = '';
+    document.getElementById('myNav').style.width = '';
 }

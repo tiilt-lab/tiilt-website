@@ -13,12 +13,12 @@
   <nav class="navbar">
     <div>
       <a href="#">
-        <img src="img/logo.svg" alt="TIILT"> </a>
+        <img src="img/logo.svg" alt="TIILT">
+      </a>
     </div>
-    <ul>
-      <li>
-        <a href="#" id="burger"></a>
-      </li>
+    <a href="#" id="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
+    <ul id="myNav" class="overlay">
+      <li><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></li>
       <li>
         <a href="people.html">people</a>
       </li>
@@ -86,7 +86,7 @@
       </div>
     </section>
   </div>
-
+<script src="nav.js"></script>
 </body>
 
 </html>

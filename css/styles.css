@@ -295,8 +295,9 @@ section:not(.flexblock):hover .backdrop {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5px;
-    background: #d6e9fe; }
+    padding: 5px 10px;
+    border-bottom: mintcream solid 1px;
+    z-index: 10; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -306,9 +307,45 @@ section:not(.flexblock):hover .backdrop {
         max-height: 100%; }
     .navbar ul {
       list-style: none;
-      padding-top: 5px; }
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
       .navbar ul li {
         text-align: right; }
+    .navbar .overlay {
+      height: 0%;
+      width: 0%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s; }
+    .navbar .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px; }
+    .navbar .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s; }
+    .navbar .overlay a:hover,
+    .navbar .overlay a:focus {
+      color: #f1f1f1; }
+    .navbar .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px; }
   .content {
     width: 90%;
     margin: 0 auto; }
@@ -380,6 +417,10 @@ section:not(.flexblock):hover .backdrop {
 /* Tablet Styles */
 /* Desktop Styles Start*/
 @media only screen and (min-width: 640px) {
+  #burger {
+    display: none; }
+  #closebtn {
+    display: none; }
   .navbar {
     width: 82%;
     padding: 50px 0;
@@ -398,8 +439,6 @@ section:not(.flexblock):hover .backdrop {
       display: flex;
       justify-content: space-between;
       width: 350px; }
-      .navbar ul li:nth-child(1) {
-        display: none; }
   .content {
     width: 82%;
     margin: 0 auto; }
@@ -413,7 +452,7 @@ section:not(.flexblock):hover .backdrop {
         top: 30px; }
       .content .showcase .pictures {
         position: relative;
-        background: #d6e9fe;
+        background: #ffffff;
         height: 500px;
         width: 92%;
         margin-left: auto;

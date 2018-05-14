@@ -23,10 +23,8 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  // background-image: linear-gradient(0deg, #ffffff 50%, #FFF5F5 100%);
-  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode",
-    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #ffffff; // background-image: linear-gradient(0deg, #ffffff 50%, #FFF5F5 100%);
+  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto;
@@ -49,8 +47,7 @@ a:visited {
 }
 
 a:hover {
-  font-style: italic;
-  // letter-spacing: .px;
+  font-style: italic; // letter-spacing: .px;
 }
 
 nav li {
@@ -81,7 +78,7 @@ ol {
   word-spacing: 200px;
 }
 
- div:not(.content):hover {
+div:not(.content):hover {
   .backdrop {
     font-style: italic;
   }
@@ -102,7 +99,9 @@ section:not(.flexblock):hover {
 .backdrop {
   color: rgba(1, 1, 230, 0.08) !important;
 }
+
 /* Mobile Styles Start*/
+
 @media only screen and (max-width: 640px) {
   html {
     font-size: 13px;
@@ -112,37 +111,72 @@ section:not(.flexblock):hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5px;
-    background: #d6e9fe;
-
+    padding: 5px 10px;
+    border-bottom: mintcream solid 1px;
+    z-index: 10;
     div {
       height: 50px;
       width: 50px;
       padding: 4px;
-
       img {
         max-width: 100%;
         max-height: 100%;
       }
     }
-
     ul {
       list-style: none;
       padding-top: 5px;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       li {
         text-align: right;
       }
     }
+    .overlay {
+      height: 0%;
+      width: 0%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
   }
-
   .content {
     width: 90%;
     margin: 0 auto;
-
     .showcase {
       position: relative;
-
       .title {
         display: none;
         font-size: 2rem;
@@ -151,7 +185,6 @@ section:not(.flexblock):hover {
         position: absolute;
         top: 30px;
       }
-
       .pictures {
         position: relative;
         outline: 1px blue solid;
@@ -160,32 +193,27 @@ section:not(.flexblock):hover {
         margin-left: auto;
       }
     }
-
     .textblock {
       margin-top: 65px;
       position: relative;
-
       .backdrop {
         color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -45px;
       }
-
       .about_words {
         width: 92%;
         margin-left: auto;
         font-size: 1rem;
       }
     }
-
     .flexblock {
       position: relative;
       margin-top: 65px;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-
       p,
       ul,
       ol {
@@ -193,28 +221,23 @@ section:not(.flexblock):hover {
         margin-top: 0.5rem;
         margin-left: auto;
       }
-
       .backdrop {
         color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -45px;
       }
-
       .project-peek {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
         width: 100%;
-
         div {
           // background: #5d6063;
           width: 95%;
-          margin-left: auto;
-          // height: 100px;
+          margin-left: auto; // height: 100px;
           margin-bottom: 1rem;
         }
-
         .proj-link {
           text-align: right;
         }
@@ -224,7 +247,6 @@ section:not(.flexblock):hover {
         background: #5d6063;
         width: 100%;
         height: 200px;
-
         .backdrop {
           position: relative;
           top: -45px;
@@ -233,12 +255,22 @@ section:not(.flexblock):hover {
     }
   }
 }
+
 /* Mobile Styles Done*/
+
 /* Tablet Styles */
+
 // @media only screen and (min-width: 401px) and (max-width: 960px) {
 //      }
 /* Desktop Styles Start*/
+
 @media only screen and (min-width: 640px) {
+  #burger{
+    display: none;
+  }
+  #closebtn{
+    display: none;
+  }
   .navbar {
     width: 82%;
     padding: 50px 0;
@@ -247,35 +279,25 @@ section:not(.flexblock):hover {
     font-size: 1.3rem;
     justify-content: space-between;
     align-items: center;
-
     div {
       height: 100px;
       width: 100px;
       padding: 4px;
-
       img {
         max-height: 100%;
       }
     }
-
     ul {
       display: flex;
       justify-content: space-between;
       width: 350px;
-
-      li:nth-child(1) {
-        display: none;
-      }
     }
   }
-
   .content {
     width: 82%;
     margin: 0 auto;
-
     .showcase {
       position: relative;
-
       .title {
         font-size: 2.5rem;
         width: 10%;
@@ -283,10 +305,9 @@ section:not(.flexblock):hover {
         position: absolute;
         top: 30px;
       }
-
       .pictures {
         position: relative;
-        background: #d6e9fe;
+        background: #ffffff;
         height: 500px;
         width: 92%;
         margin-left: auto;
@@ -294,19 +315,16 @@ section:not(.flexblock):hover {
         margin-bottom: 100px;
       }
     }
-
     .textblock {
       position: relative;
       margin-top: 40px;
       margin-bottom: 90px;
-
       .backdrop {
         color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -4.2rem;
       }
-
       p,
       ul,
       ol {
@@ -314,18 +332,15 @@ section:not(.flexblock):hover {
         margin-left: auto;
       }
     }
-
     .flexblock {
       position: relative;
       margin-top: 40px;
       margin-bottom: 90px;
       display: flex;
       justify-content: space-between;
-
       div {
         position: relative;
       }
-
       p,
       ul,
       ol {
@@ -333,28 +348,23 @@ section:not(.flexblock):hover {
         margin-top: 0.5rem;
         margin-left: auto;
       }
-
       .backdrop {
         color: #70809077;
         font-size: calc(3rem + 3vw);
         position: absolute;
         top: calc(-15px - 3vw);
       }
-
       .project-peek {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
         width: 47%;
-
         div {
           // background: #5d6063;
           width: 95%;
-          margin-left: auto;
-          // height: 100px;
+          margin-left: auto; // height: 100px;
           margin-bottom: 1rem;
         }
-
         .proj-link {
           text-align: right;
         }
@@ -366,4 +376,5 @@ section:not(.flexblock):hover {
     }
   }
 }
+
 /* Desktop Styles Done*/

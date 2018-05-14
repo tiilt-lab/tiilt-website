@@ -2,14 +2,6 @@
   margin-top: 50px;
   width: 100%;
 
-  .backdrop {
-    color: #70809077;
-    font-size: 6rem;
-    position: absolute;
-    top: -70px;
-    left: 0;
-    z-index: -1;
-  }
 
   .people-group:first-child {
     margin-top: 50px;
@@ -24,7 +16,7 @@
   }
 
   .people-column {
-    width: 48%;
+    width: 45%;
     margin-left: 4%;
   }
 
@@ -49,6 +41,10 @@
     .people-group {
       flex-direction: column;
       width: 100%;
+      div {
+        width: 96%;
+        margin-left: auto;
+      }
     }
     .people-column {
       width: 100%;

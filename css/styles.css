@@ -1,13 +1,6 @@
 .content {
   margin-top: 50px;
   width: 100%; }
-  .content .backdrop {
-    color: #70809077;
-    font-size: 6rem;
-    position: absolute;
-    top: -70px;
-    left: 0;
-    z-index: -1; }
   .content .people-group:first-child {
     margin-top: 50px; }
   .content .people-group {
@@ -17,7 +10,7 @@
     margin-left: auto;
     position: relative; }
   .content .people-column {
-    width: 48%;
+    width: 45%;
     margin-left: 4%; }
   .content .person {
     width: 100%;
@@ -34,6 +27,9 @@
   .content .people-group {
     flex-direction: column;
     width: 100%; }
+    .content .people-group div {
+      width: 96%;
+      margin-left: auto; }
   .content .people-column {
     width: 100%;
     margin-left: 0; }
@@ -199,7 +195,6 @@ ul {
   margin-top: 100px; }
 
 .content .papers .backdrop {
-  color: #70809077;
   font-size: 10rem;
   position: absolute;
   top: -90px;
@@ -271,8 +266,21 @@ ol {
 .current-page {
   border-bottom: black solid 2px; }
 
-.one-word-per-line {
-  word-spacing: 200px; }
+.backdrop {
+  color: rgba(107, 107, 212, 0.2);
+  position: absolute;
+  left: 0;
+  z-index: -10; }
+
+@media only screen and (min-width: 1000px) {
+  .backdrop {
+    font-size: 6rem;
+    top: -65px; } }
+
+@media only screen and (min-width: 800px) {
+  .backdrop {
+    font-size: 5rem;
+    top: -55px; } }
 
 div:not(.content):hover .backdrop {
   font-style: italic; }
@@ -286,9 +294,6 @@ section:not(.flexblock):hover .backdrop {
 
 .content a:hover {
   font-style: italic; }
-
-.backdrop {
-  color: rgba(107, 107, 212, 0.2) !important; }
 
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
@@ -353,10 +358,14 @@ section:not(.flexblock):hover .backdrop {
   .content {
     width: 90%;
     margin: 5vw auto; }
+    .content .backdrop {
+      font-size: 6rem;
+      top: -55px; }
     .content .showcase {
       position: relative; }
       .content .showcase .title {
         display: none;
+        word-spacing: 200px;
         font-size: 2rem;
         width: 148px;
         word-break: keep-all;
@@ -371,10 +380,6 @@ section:not(.flexblock):hover .backdrop {
     .content .textblock {
       margin-top: 65px;
       position: relative; }
-      .content .textblock .backdrop {
-        font-size: 6rem;
-        position: absolute;
-        top: -45px; }
       .content .textblock .about_words {
         width: 92%;
         margin-left: auto;
@@ -391,10 +396,6 @@ section:not(.flexblock):hover .backdrop {
         width: 95%;
         margin-top: 0.5rem;
         margin-left: auto; }
-      .content .flexblock .backdrop {
-        font-size: 6rem;
-        position: absolute;
-        top: -45px; }
       .content .flexblock .project-peek {
         display: flex;
         justify-content: flex-end;
@@ -408,16 +409,13 @@ section:not(.flexblock):hover .backdrop {
           text-align: right; }
       .content .flexblock .twitter {
         margin-top: 3rem;
-        background: rgba(94, 97, 100, 0.171);
+        outline: 1px blue solid;
         width: 100%;
-        height: 200px; }
-        .content .flexblock .twitter .backdrop {
-          position: relative;
-          top: -45px; } }
+        height: 200px;
+        position: relative; } }
 
-/* Mobile Styles Done*/
-/* Tablet Styles */
-/* Desktop Styles Start*/
+/* Mobile Styles Done */
+/* Desktop Styles Start */
 @media only screen and (min-width: 640px) {
   #burger {
     display: none; }
@@ -444,6 +442,9 @@ section:not(.flexblock):hover .backdrop {
   .content {
     width: 82%;
     margin: 0 auto; }
+    .content .backdrop {
+      font-size: 4rem;
+      top: -45px; }
     .content .showcase {
       position: relative; }
       .content .showcase .title {
@@ -452,6 +453,9 @@ section:not(.flexblock):hover .backdrop {
         word-break: keep-all;
         position: absolute;
         top: 30px; }
+        .content .showcase .title span {
+          padding-right: 10px;
+          padding-left: 5px; }
       .content .showcase .pictures {
         position: relative;
         background: #ffffff;
@@ -464,10 +468,6 @@ section:not(.flexblock):hover .backdrop {
       position: relative;
       margin-top: 40px;
       margin-bottom: 90px; }
-      .content .textblock .backdrop {
-        font-size: 6rem;
-        position: absolute;
-        top: -4.2rem; }
       .content .textblock p,
       .content .textblock ul,
       .content .textblock ol {
@@ -487,10 +487,6 @@ section:not(.flexblock):hover .backdrop {
         width: 95%;
         margin-top: 0.5rem;
         margin-left: auto; }
-      .content .flexblock .backdrop {
-        font-size: calc(3rem + 3vw);
-        position: absolute;
-        top: calc(-15px - 3vw); }
       .content .flexblock .project-peek {
         display: flex;
         justify-content: flex-end;
@@ -503,7 +499,7 @@ section:not(.flexblock):hover .backdrop {
         .content .flexblock .project-peek .proj-link {
           text-align: right; }
       .content .flexblock .twitter {
-        background: rgba(94, 97, 100, 0.171);
+        outline: 1px blue solid;
         width: 47%; } }
 
 /* Desktop Styles Done*/

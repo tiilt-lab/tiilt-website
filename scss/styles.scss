@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background-color: #ffffff; // background-image: linear-gradient(0deg, #ffffff 50%, #FFF5F5 100%);
+  background-color: #ffffff;
   font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
@@ -46,8 +46,6 @@ a:link,
 a:visited {
   text-decoration: none;
 }
-
-
 
 nav li {
   list-style: none;
@@ -73,8 +71,25 @@ ol {
   border-bottom: black solid 2px;
 }
 
-.one-word-per-line {
-  word-spacing: 200px;
+.backdrop {
+  color: rgba(107, 107, 212, 0.2);
+  position: absolute;
+  left: 0;
+  z-index: -10;
+}
+
+@media only screen and (min-width: 1000px) {
+  .backdrop {
+    font-size: 6rem;
+    top: -65px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .backdrop {
+    font-size: 5rem;
+    top: -55px;
+  }
 }
 
 div:not(.content):hover {
@@ -96,12 +111,8 @@ section:not(.flexblock):hover {
     // border-bottom: 1px solid #f097b5;
   }
   a:hover {
-  font-style: italic; // letter-spacing: .px;
-}
-}
-
-.backdrop {
-  color: rgba(107, 107, 212, 0.2) !important;
+    font-style: italic; // letter-spacing: .px;
+  }
 }
 
 /* Mobile Styles Start*/
@@ -180,10 +191,15 @@ section:not(.flexblock):hover {
   .content {
     width: 90%;
     margin: 5vw auto;
+    .backdrop {
+      font-size: 6rem;
+      top: -55px;
+    }
     .showcase {
       position: relative;
       .title {
         display: none;
+        word-spacing: 200px;
         font-size: 2rem;
         width: 148px;
         word-break: keep-all;
@@ -201,11 +217,6 @@ section:not(.flexblock):hover {
     .textblock {
       margin-top: 65px;
       position: relative;
-      .backdrop {
-        font-size: 6rem;
-        position: absolute;
-        top: -45px;
-      }
       .about_words {
         width: 92%;
         margin-left: auto;
@@ -225,11 +236,6 @@ section:not(.flexblock):hover {
         margin-top: 0.5rem;
         margin-left: auto;
       }
-      .backdrop {
-        font-size: 6rem;
-        position: absolute;
-        top: -45px;
-      }
       .project-peek {
         display: flex;
         justify-content: flex-end;
@@ -247,25 +253,18 @@ section:not(.flexblock):hover {
       }
       .twitter {
         margin-top: 3rem;
-        background: hsla(210, 3%, 38%, 0.171);
+        outline: 1px blue solid;
         width: 100%;
         height: 200px;
-        .backdrop {
-          position: relative;
-          top: -45px;
-        }
+        position: relative;
       }
     }
   }
 }
 
-/* Mobile Styles Done*/
+/* Mobile Styles Done */
 
-/* Tablet Styles */
-
-// @media only screen and (min-width: 401px) and (max-width: 960px) {
-//      }
-/* Desktop Styles Start*/
+/* Desktop Styles Start */
 
 @media only screen and (min-width: 640px) {
   #burger {
@@ -299,6 +298,10 @@ section:not(.flexblock):hover {
   .content {
     width: 82%;
     margin: 0 auto;
+    .backdrop {
+      font-size: 4rem;
+      top: -45px;
+    }
     .showcase {
       position: relative;
       .title {
@@ -307,6 +310,12 @@ section:not(.flexblock):hover {
         word-break: keep-all;
         position: absolute;
         top: 30px;
+        // background: palevioletred;
+        span {
+          
+          padding-right: 10px;
+          padding-left: 5px;
+        }
       }
       .pictures {
         position: relative;
@@ -322,11 +331,6 @@ section:not(.flexblock):hover {
       position: relative;
       margin-top: 40px;
       margin-bottom: 90px;
-      .backdrop {
-        font-size: 6rem;
-        position: absolute;
-        top: -4.2rem;
-      }
       p,
       ul,
       ol {
@@ -350,11 +354,6 @@ section:not(.flexblock):hover {
         margin-top: 0.5rem;
         margin-left: auto;
       }
-      .backdrop {
-        font-size: calc(3rem + 3vw);
-        position: absolute;
-        top: calc(-15px - 3vw);
-      }
       .project-peek {
         display: flex;
         justify-content: flex-end;
@@ -371,7 +370,7 @@ section:not(.flexblock):hover {
         }
       }
       .twitter {
-        background: hsla(210, 3%, 38%, 0.171);
+        outline: 1px blue solid;
         width: 47%;
       }
     }

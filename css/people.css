@@ -1,13 +1,6 @@
 .content {
   margin-top: 50px;
   width: 100%; }
-  .content .backdrop {
-    color: #70809077;
-    font-size: 6rem;
-    position: absolute;
-    top: -70px;
-    left: 0;
-    z-index: -1; }
   .content .people-group:first-child {
     margin-top: 50px; }
   .content .people-group {
@@ -17,7 +10,7 @@
     margin-left: auto;
     position: relative; }
   .content .people-column {
-    width: 48%;
+    width: 45%;
     margin-left: 4%; }
   .content .person {
     width: 100%;
@@ -34,6 +27,9 @@
   .content .people-group {
     flex-direction: column;
     width: 100%; }
+    .content .people-group div {
+      width: 96%;
+      margin-left: auto; }
   .content .people-column {
     width: 100%;
     margin-left: 0; }

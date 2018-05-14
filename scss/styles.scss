@@ -24,7 +24,8 @@ html {
 
 body {
   background-color: #ffffff; // background-image: linear-gradient(0deg, #ffffff 50%, #FFF5F5 100%);
-  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto;
@@ -46,12 +47,11 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  font-style: italic; // letter-spacing: .px;
-}
+
 
 nav li {
   list-style: none;
+  padding: 2px;
 }
 
 ol {
@@ -70,7 +70,6 @@ ol {
 }
 
 .current-page {
-  font-weight: bold !important;
   border-bottom: black solid 2px;
 }
 
@@ -92,12 +91,17 @@ section:not(.flexblock):hover {
 
 .content {
   a {
-    color: palevioletred;
+    color: #f097b5;
+    line-height: 1.75rem;
+    // border-bottom: 1px solid #f097b5;
   }
+  a:hover {
+  font-style: italic; // letter-spacing: .px;
+}
 }
 
 .backdrop {
-  color: rgba(1, 1, 230, 0.08) !important;
+  color: rgba(107, 107, 212, 0.2) !important;
 }
 
 /* Mobile Styles Start*/
@@ -112,7 +116,8 @@ section:not(.flexblock):hover {
     justify-content: space-between;
     width: 100%;
     padding: 5px 10px;
-    border-bottom: mintcream solid 1px;
+    background: hsla(340, 75%, 77%, 0.123);
+    border-bottom: black solid 1px;
     z-index: 10;
     div {
       height: 50px;
@@ -174,7 +179,7 @@ section:not(.flexblock):hover {
   }
   .content {
     width: 90%;
-    margin: 0 auto;
+    margin: 5vw auto;
     .showcase {
       position: relative;
       .title {
@@ -197,7 +202,6 @@ section:not(.flexblock):hover {
       margin-top: 65px;
       position: relative;
       .backdrop {
-        color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -45px;
@@ -222,7 +226,6 @@ section:not(.flexblock):hover {
         margin-left: auto;
       }
       .backdrop {
-        color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -45px;
@@ -265,10 +268,10 @@ section:not(.flexblock):hover {
 /* Desktop Styles Start*/
 
 @media only screen and (min-width: 640px) {
-  #burger{
+  #burger {
     display: none;
   }
-  #closebtn{
+  #closebtn {
     display: none;
   }
   .navbar {
@@ -290,7 +293,7 @@ section:not(.flexblock):hover {
     ul {
       display: flex;
       justify-content: space-between;
-      width: 350px;
+      width: 450px;
     }
   }
   .content {
@@ -320,7 +323,6 @@ section:not(.flexblock):hover {
       margin-top: 40px;
       margin-bottom: 90px;
       .backdrop {
-        color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -4.2rem;
@@ -349,7 +351,6 @@ section:not(.flexblock):hover {
         margin-left: auto;
       }
       .backdrop {
-        color: #70809077;
         font-size: calc(3rem + 3vw);
         position: absolute;
         top: calc(-15px - 3vw);

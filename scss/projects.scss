@@ -68,6 +68,13 @@ ul {
     padding-top: 1rem;
   }
 
+  .no-photo {
+    .title {
+      position: relative !important;
+      margin-bottom: 3rem;
+    }
+  }
+
   .content .project {
     position: relative;
     margin-bottom: 5rem;

@@ -46,8 +46,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5px;
-    background: #d6e9fe; }
+    padding: 5px; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -161,6 +160,9 @@ ul {
 @media only screen and (min-width: 640px) {
   .proj-des {
     padding-top: 1rem; }
+  .no-photo .title {
+    position: relative !important;
+    margin-bottom: 3rem; }
   .content .project {
     position: relative;
     margin-bottom: 5rem; }
@@ -200,7 +202,7 @@ ul {
   color: #70809077;
   font-size: 10rem;
   position: absolute;
-  top: -70px;
+  top: -90px;
   left: 0; }
 
 .content .papers .paper {
@@ -251,11 +253,9 @@ a:link,
 a:visited {
   text-decoration: none; }
 
-a:hover {
-  font-style: italic; }
-
 nav li {
-  list-style: none; }
+  list-style: none;
+  padding: 2px; }
 
 ol {
   margin: 0.75rem;
@@ -269,7 +269,6 @@ ol {
   font-weight: bold; }
 
 .current-page {
-  font-weight: bold !important;
   border-bottom: black solid 2px; }
 
 .one-word-per-line {
@@ -282,10 +281,14 @@ section:not(.flexblock):hover .backdrop {
   font-style: italic; }
 
 .content a {
-  color: palevioletred; }
+  color: #f097b5;
+  line-height: 1.75rem; }
+
+.content a:hover {
+  font-style: italic; }
 
 .backdrop {
-  color: rgba(1, 1, 230, 0.08) !important; }
+  color: rgba(107, 107, 212, 0.2) !important; }
 
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
@@ -296,7 +299,8 @@ section:not(.flexblock):hover .backdrop {
     justify-content: space-between;
     width: 100%;
     padding: 5px 10px;
-    border-bottom: mintcream solid 1px;
+    background: rgba(240, 152, 182, 0.123);
+    border-bottom: black solid 1px;
     z-index: 10; }
     .navbar div {
       height: 50px;
@@ -348,7 +352,7 @@ section:not(.flexblock):hover .backdrop {
       font-size: 60px; }
   .content {
     width: 90%;
-    margin: 0 auto; }
+    margin: 5vw auto; }
     .content .showcase {
       position: relative; }
       .content .showcase .title {
@@ -368,7 +372,6 @@ section:not(.flexblock):hover .backdrop {
       margin-top: 65px;
       position: relative; }
       .content .textblock .backdrop {
-        color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -45px; }
@@ -389,7 +392,6 @@ section:not(.flexblock):hover .backdrop {
         margin-top: 0.5rem;
         margin-left: auto; }
       .content .flexblock .backdrop {
-        color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -45px; }
@@ -438,7 +440,7 @@ section:not(.flexblock):hover .backdrop {
     .navbar ul {
       display: flex;
       justify-content: space-between;
-      width: 350px; }
+      width: 450px; }
   .content {
     width: 82%;
     margin: 0 auto; }
@@ -463,7 +465,6 @@ section:not(.flexblock):hover .backdrop {
       margin-top: 40px;
       margin-bottom: 90px; }
       .content .textblock .backdrop {
-        color: #70809077;
         font-size: 6rem;
         position: absolute;
         top: -4.2rem; }
@@ -487,7 +488,6 @@ section:not(.flexblock):hover .backdrop {
         margin-top: 0.5rem;
         margin-left: auto; }
       .content .flexblock .backdrop {
-        color: #70809077;
         font-size: calc(3rem + 3vw);
         position: absolute;
         top: calc(-15px - 3vw); }

@@ -11,28 +11,33 @@
 
 <body>
     <nav class="navbar">
-        <div>
-          <a href="#">
-            <img src="img/logo.svg" alt="TIILT">
-          </a>
-        </div>
-        <a href="#" id="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
-        <ul id="myNav" class="overlay">
-          <li><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></li>
-          <li>
-            <a href="people.html">people</a>
-          </li>
-          <li>
-            <a href="projects.html">projects</a>
-          </li>
-          <li>
-            <a href="papers.html">papers</a>
-          </li>
-          <li>
-            <a href="contact.html">contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <a href="#">
+          <img src="img/logo.svg" alt="TIILT">
+        </a>
+      </div>
+      <a href="#" id="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
+      <ul id="myNav" class="overlay">
+        <li>
+          <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        </li>
+        <li>
+          <a href="/">home</a>
+        </li>
+        <li>
+          <a href="people.html">people</a>
+        </li>
+        <li class="current-page">
+          <a href="projects.html">projects</a>
+        </li>
+        <li>
+          <a href="papers.html">papers</a>
+        </li>
+        <li>
+          <a href="contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
     
 
   <div class="content">
@@ -49,7 +54,7 @@
       <div class="proj-flex sub-projects">
         <div>
           <ul>
-            <li> <a href="subproject-1.html">sub-project demo</a></li>
+            <li> <a href="subproject-1.html">sub-project demo &#8599;</a></li>
             <li> sub-project </li>
             <li> sub-project </li>
           </ul>
@@ -75,7 +80,7 @@
     </section>
     <section class="project" id="project2">
 
-      <h1 class="title">tangicraft nah it's actually a long ass title, fuck fuck fuck </h1>
+      <h1 class="title">another project with a title that is a lot longer than what would expect </h1>
       <section class="pictures">
 
       </section>
@@ -86,8 +91,8 @@
       <div class="proj-flex sub-projects">
         <div>
           <ul>
-            <li> <a href="subproject-1.html">sub-project</a></li>
-            <li> sub-project </li>
+            <li> <a href="subproject-1.html">sub-project &#8599;</a></li>
+            <li> sub-project  </li>
             <li> sub-project </li>
           </ul>
           <ul>
@@ -108,7 +113,42 @@
         </div>
       </div>
     </section>
-
+    <section class="project no-photo" id="project3">
+    
+      <h1 class="title">another project with no photo and no subprojects </h1>
+      <!-- <section class="pictures">
+    
+      </section> -->
+      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu elementum.
+        Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis arcu, lobortis
+        dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla ex, ut aliquet
+        lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris erat, ut sollicitudin
+        nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque pharetra neque nec nulla
+        tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur. Phasellus at tincidunt
+        libero.
+      </p>
+      <div class="proj-flex sub-projects">
+        <div>
+          <ul>
+            <li>
+              
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span class="bold">team</span>
+            </li>
+          </ul>
+          <ul>
+            <li> <a href="/people.html"> first lastname &#8599;</a></li>
+            <li> first lastname </li>
+            <li> first lastname </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="nav.js"></script>
 </body>

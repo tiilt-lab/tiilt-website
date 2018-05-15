@@ -60,6 +60,7 @@
     margin: 0 auto; }
     .content .pictures {
       position: relative;
+      margin-top: 30px;
       outline: 1px blue solid;
       height: 350px;
       width: 100%;
@@ -301,14 +302,23 @@ section:not(.flexblock):hover .backdrop {
     font-size: 13px; }
   .navbar {
     position: fixed;
-    background: whitesmoke;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5px 10px;
-    border-bottom: black solid 1px;
+    padding: 15px 10px;
+    border-bottom: 0 none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
     z-index: 10;
     top: 0; }
+    .navbar #tiilt-logo {
+      font-size: 2rem; }
+    .navbar .menu {
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      height: 10px;
+      width: 25px;
+      margin: auto 10px auto; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -331,9 +341,10 @@ section:not(.flexblock):hover .backdrop {
       position: fixed;
       z-index: 1;
       top: 0;
-      left: 0;
+      right: 0;
       background-color: black;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: black;
+      opacity: 0;
       overflow-y: hidden;
       transition: 0.5s; }
     .navbar .overlay-content {
@@ -360,12 +371,13 @@ section:not(.flexblock):hover .backdrop {
   .content {
     width: 90%;
     margin: 5vw auto;
-    margin-top: 50px; }
+    margin-top: 85px; }
     .content .backdrop {
       font-size: 6rem;
       top: -55px; }
     .content .showcase {
-      position: relative; }
+      position: relative;
+      margin-top: 30px; }
       .content .showcase .title {
         display: none;
         word-spacing: 200px;

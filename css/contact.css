@@ -22,6 +22,7 @@
     margin: 0 auto; }
     .content .pictures {
       position: relative;
+      margin-top: 30px;
       outline: 1px blue solid;
       height: 350px;
       width: 100%;

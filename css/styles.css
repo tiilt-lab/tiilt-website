@@ -314,6 +314,7 @@ section:not(.flexblock):hover .backdrop {
     .navbar #tiilt-logo {
       font-size: 2rem; }
     .navbar .menu {
+      display: block;
       border-top: 2px solid #000;
       border-bottom: 2px solid #000;
       height: 10px;
@@ -432,7 +433,7 @@ section:not(.flexblock):hover .backdrop {
 /* Mobile Styles Done */
 /* Desktop Styles Start */
 @media only screen and (min-width: 640px) {
-  #burger {
+  .menu {
     display: none; }
   #closebtn {
     display: none; }

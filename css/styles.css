@@ -300,13 +300,15 @@ section:not(.flexblock):hover .backdrop {
   html {
     font-size: 13px; }
   .navbar {
+    position: fixed;
+    background: whitesmoke;
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px 10px;
-    background: rgba(240, 152, 182, 0.123);
     border-bottom: black solid 1px;
-    z-index: 10; }
+    z-index: 10;
+    top: 0; }
     .navbar div {
       height: 50px;
       width: 50px;
@@ -357,7 +359,8 @@ section:not(.flexblock):hover .backdrop {
       font-size: 60px; }
   .content {
     width: 90%;
-    margin: 5vw auto; }
+    margin: 5vw auto;
+    margin-top: 50px; }
     .content .backdrop {
       font-size: 6rem;
       top: -55px; }

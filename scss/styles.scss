@@ -122,14 +122,15 @@ section:not(.flexblock):hover {
     font-size: 13px;
   }
   .navbar {
-    // position: fixed;
+    position: fixed;
+    background: whitesmoke;
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 5px 10px;
-    background: hsla(340, 75%, 77%, 0.123);
     border-bottom: black solid 1px;
     z-index: 10;
+    top: 0;
     div {
       height: 50px;
       width: 50px;
@@ -189,8 +190,10 @@ section:not(.flexblock):hover {
     }
   }
   .content {
+
     width: 90%;
     margin: 5vw auto;
+    margin-top: 50px;
     .backdrop {
       font-size: 6rem;
       top: -55px;

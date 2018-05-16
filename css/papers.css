@@ -1,2 +1,22 @@
-.content .papers{position:relative;margin-top:100px}.content .papers .backdrop{font-size:10rem;position:absolute;top:-90px;left:0}.content .papers .paper{width:92%;line-height:1.75rem;margin-left:auto;margin-bottom:20px}.content .papers .paper a{text-align:right}.content .papers .paper p{margin-bottom:.5rem;color:#000}
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvcGFwZXJzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBQ0Usa0JBQWtCLEFBQ2xCLGdCQUFpQixDQUNsQixBQUVELDJCQUNFLGdCQUFnQixBQUNoQixrQkFBa0IsQUFDbEIsVUFBVSxBQUNWLE1BQU8sQ0FDUixBQUVELHdCQUNFLFVBQVUsQUFDVixvQkFBb0IsQUFDcEIsaUJBQWlCLEFBQ2pCLGtCQUFtQixDQVFwQixBQVpELDBCQU1JLGdCQUFpQixDQUNsQixBQVBILDBCQVNJLG9CQUFvQixBQUNwQixVQUFZLENBQ2IiLCJmaWxlIjoicGFwZXJzLmNzcyJ9 */
+.content .papers {
+  position: relative;
+  margin-top: 100px; }
+
+.content .papers .backdrop {
+  font-size: 10rem;
+  position: absolute;
+  top: -90px;
+  left: 0; }
+
+.content .papers .paper {
+  width: 92%;
+  line-height: 1.75rem;
+  margin-left: auto;
+  margin-bottom: 20px; }
+  .content .papers .paper a {
+    text-align: right; }
+  .content .papers .paper p {
+    margin-bottom: .5rem;
+    color: black; }
+
+/*# sourceMappingURL=papers.css.map */

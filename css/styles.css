@@ -22,7 +22,10 @@
       border: 1px solid black; }
     .content .person h1 {
       padding-top: 0.75rem;
-      padding-bottom: 0.75rem; }
+      padding-bottom: 0.75rem;
+      font-size: 1.75rem; }
+    .content .person p {
+      font-size: 1.25rem; }
 
 @media only screen and (max-width: 640px) {
   .content .people-group {
@@ -140,7 +143,8 @@ ul {
       margin-top: 10px;
       margin-bottom: 0px; }
     .project .sub-projects ul {
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      ext-align: right; }
     .project .proj-flex {
       justify-content: flex-end;
       padding: 1.25em 0.75em 0.0em 3rem; }
@@ -178,7 +182,8 @@ ul {
       margin-left: auto;
       margin-bottom: 1rem; }
     .content .project .sub-projects ul {
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      text-align: right; }
     .content .project .proj-flex {
       display: flex;
       justify-content: space-between;
@@ -267,7 +272,8 @@ h1 {
   font-weight: bold; }
 
 .current-page {
-  border-bottom: black solid 2px; }
+  font-weight: bold;
+  font-size: 1.1em; }
 
 .backdrop {
   color: rgba(107, 107, 212, 0.2);

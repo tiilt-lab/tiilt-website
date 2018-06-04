@@ -21,7 +21,10 @@
       border: 1px solid black; }
     .content .person h1 {
       padding-top: 0.75rem;
-      padding-bottom: 0.75rem; }
+      padding-bottom: 0.75rem;
+      font-size: 1.75rem; }
+    .content .person p {
+      font-size: 1.25rem; }
 
 @media only screen and (max-width: 640px) {
   .content .people-group {

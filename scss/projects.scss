@@ -5,6 +5,7 @@
 ul {
   list-style: none;
 }
+
 @media only screen and (max-width: 640px) {
   .proj-des {
     padding-top: 1rem;
@@ -38,6 +39,7 @@ ul {
 
     .sub-projects ul {
       margin-right: 2rem;
+      ext-align: right;
     }
 
     .proj-flex {
@@ -98,6 +100,7 @@ ul {
 
     .sub-projects ul {
       margin-right: 2rem;
+      text-align: right;
     }
 
     .proj-flex {

@@ -27,7 +27,8 @@ ul {
       margin-top: 10px;
       margin-bottom: 0px; }
     .project .sub-projects ul {
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      ext-align: right; }
     .project .proj-flex {
       justify-content: flex-end;
       padding: 1.25em 0.75em 0.0em 3rem; }
@@ -65,7 +66,8 @@ ul {
       margin-left: auto;
       margin-bottom: 1rem; }
     .content .project .sub-projects ul {
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      text-align: right; }
     .content .project .proj-flex {
       display: flex;
       justify-content: space-between;

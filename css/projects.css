@@ -2,7 +2,11 @@
   color: palevioletred !important; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  text-transform: capitalize; }
+
+.title {
+  text-transform: capitalize; }
 
 @media only screen and (max-width: 640px) {
   .proj-des {
@@ -28,12 +32,10 @@ ul {
       margin-bottom: 0px; }
     .project .sub-projects ul {
       margin-right: 2rem;
-      ext-align: right; }
+      text-align: right; }
     .project .proj-flex {
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3rem; }
-      .project .proj-flex div:not(:first-child) {
-        display: none; }
+      padding: 1.25em 0.0em 0.0em 0rem; }
       .project .proj-flex div {
         display: flex;
         justify-content: flex-end; }
@@ -49,6 +51,9 @@ ul {
   .no-photo .title {
     position: relative !important;
     margin-bottom: 3rem; }
+  .no-overlap .title {
+    position: relative !important;
+    margin-bottom: 4rem; }
   .content .project {
     position: relative;
     margin-bottom: 5rem; }

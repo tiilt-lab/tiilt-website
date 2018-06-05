@@ -4,6 +4,11 @@
 
 ul {
   list-style: none;
+  text-transform: capitalize;
+}
+
+.title {
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 640px) {
@@ -39,15 +44,15 @@ ul {
 
     .sub-projects ul {
       margin-right: 2rem;
-      ext-align: right;
+      text-align: right;
     }
 
     .proj-flex {
       div:not(:first-child) {
-        display: none;
+        // display: none;
       }
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3rem;
+      padding: 1.25em 0.0em 0.0em 0rem;
 
       div {
         display: flex;
@@ -74,6 +79,13 @@ ul {
     .title {
       position: relative !important;
       margin-bottom: 3rem;
+    }
+  }
+
+  .no-overlap {
+    .title {
+      position: relative !important;
+      margin-bottom: 4rem;
     }
   }
 

@@ -11,7 +11,7 @@
     margin-left: auto;
     position: relative; }
   .content .people-column {
-    width: 45%;
+    width: 30%;
     margin-left: 4%; }
   .content .person {
     width: 90%;
@@ -118,7 +118,11 @@
   color: palevioletred !important; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  text-transform: capitalize; }
+
+.title {
+  text-transform: capitalize; }
 
 @media only screen and (max-width: 640px) {
   .proj-des {
@@ -144,12 +148,10 @@ ul {
       margin-bottom: 0px; }
     .project .sub-projects ul {
       margin-right: 2rem;
-      ext-align: right; }
+      text-align: right; }
     .project .proj-flex {
       justify-content: flex-end;
-      padding: 1.25em 0.75em 0.0em 3rem; }
-      .project .proj-flex div:not(:first-child) {
-        display: none; }
+      padding: 1.25em 0.0em 0.0em 0rem; }
       .project .proj-flex div {
         display: flex;
         justify-content: flex-end; }
@@ -165,6 +167,9 @@ ul {
   .no-photo .title {
     position: relative !important;
     margin-bottom: 3rem; }
+  .no-overlap .title {
+    position: relative !important;
+    margin-bottom: 4rem; }
   .content .project {
     position: relative;
     margin-bottom: 5rem; }
@@ -235,7 +240,7 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "IBM Plex Sans", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto; }
@@ -245,13 +250,22 @@ p {
 
 a {
   text-decoration: none;
-  color: #575757;
-  font-weight: 600;
+  color: black;
   height: 100%; }
 
 a:link,
 a:visited {
   text-decoration: none; }
+
+.navbar ul a {
+  transition: color .5s;
+  color: #818181; }
+
+.navbar ul a:hover {
+  color: black; }
+
+.navbar ul .current-page a {
+  color: #000 !important; }
 
 nav li {
   list-style: none;
@@ -270,10 +284,6 @@ h1 {
 
 .bold {
   font-weight: bold; }
-
-.current-page {
-  font-weight: bold;
-  font-size: 1.1em; }
 
 .backdrop {
   color: rgba(107, 107, 212, 0.2);
@@ -480,9 +490,14 @@ section:not(.flexblock):hover .backdrop {
       .navbar div img {
         max-height: 100%; }
     .navbar ul {
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
-      width: 450px; }
+      font-size: 1.5rem;
+      justify-content: space-between; }
+      .navbar ul li:nth-child(-1n + 2) {
+        margin-left: 0; }
+      .navbar ul li {
+        margin-left: 1.5rem; }
   .content {
     width: 82%;
     margin: 0 auto; }

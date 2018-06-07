@@ -14,8 +14,8 @@
     width: 45%;
     margin-left: 4%; }
   .content .person {
-    width: 100%;
-    margin-bottom: 2rem; }
+    width: 90%;
+    margin-bottom: 3rem; }
     .content .person img {
       width: 100%;
       height: auto;
@@ -222,7 +222,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -282,20 +282,10 @@ h1 {
   z-index: -10; }
 
 #tiilt-logo img {
-  transition: all .05s linear; }
+  transition: all 0.05s linear; }
 
 #tiilt-logo img:hover {
   transform: rotate(21deg); }
-
-@media only screen and (min-width: 1000px) {
-  .backdrop {
-    font-size: 6rem;
-    top: -65px; } }
-
-@media only screen and (min-width: 800px) {
-  .backdrop {
-    font-size: 5rem;
-    top: -55px; } }
 
 div:not(.content):hover .backdrop {
   font-style: italic; }
@@ -317,6 +307,26 @@ section:not(.flexblock):hover .backdrop {
 
 .content a:hover {
   font-style: italic; }
+
+@media only screen and (min-width: 1000px) {
+  .content .backdrop {
+    font-size: 6rem;
+    top: -4.5rem; } }
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .content .backdrop {
+    font-size: 5rem;
+    top: -3.5rem; } }
+
+@media only screen and (min-width: 640px) and (max-width: 800px) {
+  .content .backdrop {
+    font-size: 4rem;
+    top: -2.5rem; } }
+
+@media only screen and (max-width: 640px) {
+  .content .backdrop {
+    font-size: 6rem;
+    top: -4.5rem; } }
 
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
@@ -395,9 +405,6 @@ section:not(.flexblock):hover .backdrop {
     width: 90%;
     margin: 5vw auto;
     margin-top: 85px; }
-    .content .backdrop {
-      font-size: 6rem;
-      top: -55px; }
     .content .showcase {
       position: relative;
       margin-top: 30px; }
@@ -479,9 +486,6 @@ section:not(.flexblock):hover .backdrop {
   .content {
     width: 82%;
     margin: 0 auto; }
-    .content .backdrop {
-      font-size: 4rem;
-      top: -45px; }
     .content .showcase {
       position: relative; }
       .content .showcase .title {

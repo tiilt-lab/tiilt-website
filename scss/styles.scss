@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #ffffff; 
   font-family: "IBM Plex Sans", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
@@ -81,25 +81,11 @@ h1 {
 }
 
 #tiilt-logo img {
-    transition: all .05s linear;
+  transition: all 0.05s linear;
 }
 
-#tiilt-logo img:hover{
+#tiilt-logo img:hover {
   transform: rotate(21deg);
-}
-
-@media only screen and (min-width: 1000px) {
-  .backdrop {
-    font-size: 6rem;
-    top: -65px;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .backdrop {
-    font-size: 5rem;
-    top: -55px;
-  }
 }
 
 div:not(.content):hover {
@@ -133,6 +119,32 @@ section:not(.flexblock):hover {
   }
   a:hover {
     font-style: italic; // letter-spacing: .px;
+  }
+  @media only screen and (min-width: 1000px) {
+    .backdrop {
+      font-size: 6rem;
+      top: -4.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .backdrop {
+      font-size: 5rem;
+      top: -3.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 640px) and (max-width: 800px) {
+    .backdrop {
+      font-size: 4rem;
+      top: -2.5rem;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .backdrop {
+      font-size: 6rem;
+      top: -4.5rem;
+    }
   }
 }
 
@@ -227,10 +239,6 @@ section:not(.flexblock):hover {
     width: 90%;
     margin: 5vw auto;
     margin-top: 85px;
-    .backdrop {
-      font-size: 6rem;
-      top: -55px;
-    }
     .showcase {
       position: relative;
       margin-top: 30px;
@@ -334,10 +342,6 @@ section:not(.flexblock):hover {
   .content {
     width: 82%;
     margin: 0 auto;
-    .backdrop {
-      font-size: 4rem;
-      top: -45px;
-    }
     .showcase {
       position: relative;
       .title {

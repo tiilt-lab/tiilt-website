@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,8 +23,11 @@
       <li>
         <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="/">home</a>
+      </li> -->
+      <li class="current-page">
+        <a href="/projects/">Projects</a>
       </li>
       <li class="current-page">
         <a href="/papers/">papers</a>
@@ -34,7 +39,7 @@
         <a href="/projects/">projects</a>
       </li>
       <li>
-        <a href="/contact/">contact</a>
+        <a href="/contact/">Contact</a>
       </li>
     </ul>
   </nav>
@@ -42,19 +47,56 @@
 
   <div class="content">
 
-    <section class="project" id="tangicraft">
+    <section class="project no-overlap" id="imr">
 
-      <h1 class="title">tangicraft</h1>
+      <h1 class="title"> IMR (Imagine, Make, Repeat) </h1>
       <section class="pictures">
-
+        <img src="/img/projects/imr-chute.JPG" alt="">
       </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
+      <p class="proj-des"> IMR (Imagine, Make, Repeat) works with educators to plan and implement Makerspace technologies and projects in classrooms
+        and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival, and has collaborated
+        with Chute Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward, the IMR
+        team looks to further develop and expand partnerships with educators and making communities across the Chicagoland
+        area.
+      </p>
+      <div class="proj-flex sub-projects">
+        <div>
+          <!-- <ul>
+                        <li>
+            
+                        </li>
+                      </ul> -->
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span class="bold">team</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/people/#bobbie-burgess"> bobbie burgess &#8599;</a>
+            </li>
+            <li>
+              <a href="/people/#sarah-lee"> sarah lee &#8599;</a>
+            </li>
+            <li>
+              <a href="/people/#melissa-perez"> melissa perez &#8599;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="project no-overlap" id="tangicraft">
+
+      <h1 class="title">Tangicraft</h1>
+      <section class="pictures">
+        <img src="/img/projects/tangicraft.JPG" alt="">
+      </section>
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -86,7 +128,7 @@
           </ul>
           <ul>
             <li>
-              <a href="/people/#shankar-salwan"> shankar salwan (shanks) &#8599;</a>
+              <a href="/people/#shankar-salwan"> shankar salwan &#8599;</a>
             </li>
             <li>
               <a href="/people/#david-barel"> david barel &#8599;</a>
@@ -102,18 +144,59 @@
       </div>
     </section>
 
-    <section class="project" id="loquacious-iterators">
-      <h1 class="title">loquacious iterators</h1>
-      <section class="pictures">
+    
 
+    <section class="project no-overlap" id="multicraft">
+      <h1 class="title"> Multicraft </h1>
+      <section class="pictures">
+        <img src="/img/projects/multicraft.jpg" alt="">
       </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
+      <p class="proj-des">
+        project description
+      </p>
+      <div class="proj-flex sub-projects">
+        <div>
+          <!-- <ul>
+            <li>
+              <a href="/projects/subproject/">sub-project &#8599;</a>
+            </li>
+            <li> sub-project </li>
+            <li> sub-project </li>
+          </ul>
+          <ul>
+            <li> sub-project </li>
+            <li> sub-project </li>
+            <li> sub-project </li>
+          </ul> -->
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span class="bold">team</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/people/#shankar-salwan"> shankar salwan &#8599;</a>
+            </li>
+            <li>
+              <a href="/people/#yasmeen-wood"> yasmeen wood &#8599;</a>
+            </li>
+            <li>
+              <a href="/people/#timothy-mwiti"> tim &#8599;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project no-overlap" id="loquacious-iterators">
+      <h1 class="title">Loquacious Iterators</h1>
+      <!-- <section class="pictures">
+
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -151,105 +234,13 @@
       </div>
     </section>
 
-    <section class="project no-photo" id="chute-imr">
-
-      <h1 class="title"> imr (imagine, make, repeat) </h1>
+    <section class="project no-overlap" id="families-and-making">
+      <h1 class="title">Families and Making</h1>
       <!-- <section class="pictures">
-            
-              </section> -->
-      <p class="proj-des"> 
-          IMR (Imagine, Make, Repeat) works with educators to plan and implement Makerspace technologies and projects in classrooms and Makerspaces throughout Evanston and Chicago . IMR has appeared at STEMFest, YEA! festival, and has collaborated with Chute Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward, the IMR team looks to further develop and expand partnerships with educators and making communities across the Chicagoland area.
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <!-- <ul>
-                    <li>
-        
-                    </li>
-                  </ul> -->
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#bobbie-burgess"> bobbie burgess &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#sarah-lee"> sarah lee &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#melissa-perez"> melissa perez &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> 
 
-    <section class="project" id="multicraft">
-      <h1 class="title"> multicraft </h1>
-      <section class="pictures">
-
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <!-- <ul>
-            <li>
-              <a href="/projects/subproject/">sub-project &#8599;</a>
-            </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul>
-          <ul>
-            <li> sub-project </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul> -->
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#shankar-salwan"> shankar salwan (shanks) &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#yasmeen-wood"> yasmeen wood &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#timothy-mwiti"> tim &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="project" id="families-and-making">
-      <h1 class="title">families and making</h1>
-      <section class="pictures">
-    
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu elementum.
-        Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis arcu, lobortis
-        dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla ex, ut aliquet
-        lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris erat, ut sollicitudin
-        nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque pharetra neque nec nulla
-        tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur. Phasellus at tincidunt
-        libero.
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -287,18 +278,13 @@
       </div>
     </section>
 
-    <section class="project" id="ultra">
-      <h1 class="title"> ultra </h1>
-      <section class="pictures">
-    
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu elementum.
-        Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis arcu, lobortis
-        dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla ex, ut aliquet
-        lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris erat, ut sollicitudin
-        nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque pharetra neque nec nulla
-        tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur. Phasellus at tincidunt
-        libero.
+    <section class="project no-overlap" id="ultra">
+      <h1 class="title"> Ultra </h1>
+      <!-- <section class="pictures">
+
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -333,18 +319,13 @@
       </div>
     </section>
 
-    <section class="project" id="mmla">
-      <h1 class="title">mmla - engagement with empaticas</h1>
-      <section class="pictures">
+    <section class="project no-overlap" id="mmla">
+      <h1 class="title">MMLA - Engagement with Empaticas</h1>
+      <!-- <section class="pictures">
 
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -376,18 +357,13 @@
       </div>
     </section>
 
-    <section class="project" id="pocket-records">
-      <h1 class="title"> pocket records </h1>
-      <section class="pictures">
+    <section class="project no-overlap" id="pocket-records">
+      <h1 class="title"> Pocket Records </h1>
+      <!-- <section class="pictures">
 
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -419,18 +395,13 @@
       </div>
     </section>
 
-    <section class="project" id="road-rage">
-      <h1 class="title"> road rage </h1>
-      <section class="pictures">
+    <section class="project no-overlap" id="road-rage">
+      <h1 class="title"> Road Rage </h1>
+      <!-- <section class="pictures">
 
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -461,19 +432,14 @@
         </div>
       </div>
     </section>
-    
-    <section class="project" id="summer-making-with-wrc">
-      <h1 class="title"> summer making with world relief chicago (wrc) </h1>
-      <section class="pictures">
 
-      </section>
-      <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu
-        elementum. Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis
-        arcu, lobortis dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla
-        ex, ut aliquet lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris
-        erat, ut sollicitudin nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque
-        pharetra neque nec nulla tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur.
-        Phasellus at tincidunt libero.
+    <section class="project no-overlap" id="summer-making-with-wrc">
+      <h1 class="title"> WRC x TIILT </h1>
+      <!-- <section class="pictures">
+
+      </section> -->
+      <p class="proj-des">
+        project description
       </p>
       <div class="proj-flex sub-projects">
         <div>
@@ -504,7 +470,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="project" id="">
+    <!-- <section class="project no-overlap" id="">
           <h1 class="title"> </h1>
           <section class="pictures">
         
@@ -547,7 +513,30 @@
           </div>
         </section> -->
   </div>
-  <script src="nav.js"></script>
+  <script>
+  // The function actually applying the offset
+    function offsetAnchor() {
+      if (window.innerWidth <= 640) {
+        if (location.hash.length !== 0) {
+          window.scrollTo(window.scrollX, window.scrollY - 100);
+        }
+      }
+      
+    }
+
+    // Captures click events of all a elements with href starting with #
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      // Click events are captured before hashchanges. Timeout
+      // causes offsetAnchor to be called after the page jump.
+      window.setTimeout(function () {
+        offsetAnchor();
+      }, 0);
+    });
+
+    // Set the offset when entering page with hash present in the url
+    window.setTimeout(offsetAnchor, 0);
+</script>
+<script src="/nav.js"></script>
 </body>
 
 </html>

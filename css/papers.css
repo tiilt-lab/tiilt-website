@@ -8,14 +8,14 @@
   top: -90px;
   left: 0; }
 
-.content .papers .paper {
+.content .papers .paper, .pub_entry {
   width: 92%;
   line-height: 1.75rem;
   margin-left: auto;
   margin-bottom: 20px; }
-  .content .papers .paper a {
+  .content .papers .paper a, .pub_entry a {
     text-align: right; }
-  .content .papers .paper p {
+  .content .papers .paper p, .pub_entry p {
     margin-bottom: .5rem;
     color: black; }
 

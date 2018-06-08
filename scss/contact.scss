@@ -36,8 +36,7 @@
     .pictures {
         position: relative;
         margin-top: 30px;
-        outline: 1px blue solid;
-        height: 350px;
+        min-height: 300px;
         width: 100%;
         margin-left: auto;
       }
@@ -66,9 +65,8 @@
     margin: 0 auto;
 
     .pictures {
-      position: relative; 
-      outline: 1px blue solid;
-      height: 500px;
+      position: relative;
+      min-height: 300px;
       width: 100%;
       margin-left: auto;
       margin-bottom: 100px;

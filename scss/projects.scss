@@ -29,9 +29,7 @@ ul {
 
     .pictures {
       position: relative;
-      outline: 1px blue solid;
-      background: #d6e9fe;
-      height: 25vh;
+      min-height: 25vh;
       width: 100%;
       margin-left: auto;
       margin-top: 10px;
@@ -98,9 +96,7 @@ ul {
 
     .pictures {
       position: relative;
-      outline: 1px blue solid;
-      background: #d6e9fe;
-      height: 500px;
+      min-height: 300px;
       width: 92%;
       margin-left: auto;
       margin-bottom: 1rem;

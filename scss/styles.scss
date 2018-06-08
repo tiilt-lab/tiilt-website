@@ -70,10 +70,6 @@ ol {
   padding-left: 4rem;
 }
 
-.pictures {
-  z-index: -1;
-}
-
 /* TEXT DECORATION */
 h1 {
   font-weight: 800 !important;
@@ -92,7 +88,9 @@ h1 {
 .pictures {
   img {
   width: 100%;
+  border: 1px solid #000;
   }
+  z-index: -1;
   overflow: hidden;
   height: auto;
 }

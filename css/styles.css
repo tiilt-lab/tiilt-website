@@ -121,9 +121,6 @@ ul {
   list-style: none;
   text-transform: capitalize; }
 
-.title {
-  text-transform: capitalize; }
-
 @media only screen and (max-width: 640px) {
   .proj-des {
     padding-top: 1rem;
@@ -212,14 +209,14 @@ ul {
   top: -90px;
   left: 0; }
 
-.content .papers .paper {
+.content .papers .paper, .pub_entry {
   width: 92%;
   line-height: 1.75rem;
   margin-left: auto;
   margin-bottom: 20px; }
-  .content .papers .paper a {
+  .content .papers .paper a, .pub_entry a {
     text-align: right; }
-  .content .papers .paper p {
+  .content .papers .paper p, .pub_entry p {
     margin-bottom: .5rem;
     color: black; }
 
@@ -290,6 +287,12 @@ h1 {
   position: absolute;
   left: 0;
   z-index: -10; }
+
+.pictures {
+  overflow: hidden;
+  height: auto; }
+  .pictures img {
+    width: 100%; }
 
 #tiilt-logo img {
   transition: all 0.05s linear; }

@@ -89,6 +89,14 @@ h1 {
   z-index: -10;
 }
 
+.pictures {
+  img {
+  width: 100%;
+  }
+  overflow: hidden;
+  height: auto;
+}
+
 #tiilt-logo img {
   transition: all 0.05s linear;
 }

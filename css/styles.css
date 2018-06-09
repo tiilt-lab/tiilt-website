@@ -248,16 +248,6 @@ a:link,
 a:visited {
   text-decoration: none; }
 
-.navbar ul a {
-  transition: color .5s;
-  color: #818181; }
-
-.navbar ul a:hover {
-  color: black; }
-
-.navbar ul .current-page a {
-  color: #000 !important; }
-
 nav li {
   list-style: none;
   padding: 2px; }
@@ -338,6 +328,8 @@ section:not(.flexblock):hover .backdrop {
 @media only screen and (max-width: 640px) {
   html {
     font-size: 13px; }
+  .current-page a {
+    color: #f1f1f1 !important; }
   .navbar {
     position: fixed;
     background: #ffffff;
@@ -471,6 +463,13 @@ section:not(.flexblock):hover .backdrop {
     display: none; }
   #closebtn {
     display: none; }
+  .navbar ul a {
+    transition: color .5s;
+    color: #818181; }
+  .navbar ul a:hover {
+    color: black; }
+  .navbar ul .current-page a {
+    color: #000 !important; }
   .navbar {
     width: 82%;
     padding: 50px 0;
@@ -490,7 +489,7 @@ section:not(.flexblock):hover .backdrop {
       display: flex;
       font-size: 1.5rem;
       justify-content: space-between; }
-      .navbar ul li:nth-child(-1n + 2) {
+      .navbar ul li:nth-child(-1n+2) {
         margin-left: 0; }
       .navbar ul li {
         margin-left: 1.5rem; }

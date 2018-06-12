@@ -243,15 +243,12 @@ section:not(.flexblock):hover {
     margin-top: 85px;
     .showcase {
       position: relative;
-      margin-top: 30px;
       .title {
-        display: none;
-        word-spacing: 200px;
-        font-size: 2rem;
-        width: 148px;
+        word-spacing: 0px;
+        font-size: 1.65rem;
         word-break: keep-all;
-        position: absolute;
-        top: 30px;
+        position: relative;
+        top: 10px;
       }
       .pictures {
         position: relative;
@@ -259,6 +256,11 @@ section:not(.flexblock):hover {
         height: 350px;
         width: 100%;
         margin-left: auto;
+        overflow-x: hidden;
+        img {
+          margin-left: auto;
+          height: 350px;
+        }
       }
     }
     .textblock {
@@ -329,6 +331,7 @@ section:not(.flexblock):hover {
     }
     .current-page a {
       color: #000 !important;
+      text-shadow: 1px 1px rgba(107, 107, 212, .3);
     }
   }
   .navbar {
@@ -367,6 +370,7 @@ section:not(.flexblock):hover {
       position: relative;
       .title {
         font-size: 2.5rem;
+        text-shadow: 3px 3px rgba(107, 107, 212, .3);
         width: 10%;
         word-break: keep-all;
         position: absolute;
@@ -384,6 +388,13 @@ section:not(.flexblock):hover {
         margin-left: auto;
         z-index: -1;
         margin-bottom: 100px;
+        overflow-x: hidden;
+        img {
+          margin-left: auto;
+          height: 500px;
+          filter: blur(1px);
+          opacity: 0.8;
+        }
       }
     }
     .textblock {

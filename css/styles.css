@@ -11,11 +11,11 @@
     margin-left: auto;
     position: relative; }
   .content .people-column {
-    width: 30%;
+    width: 100%;
     margin-left: 4%; }
   .content .person {
-    width: 90%;
-    margin-bottom: 4rem; }
+    width: 100%;
+    margin-bottom: 3rem; }
     .content .person img {
       width: 100%;
       height: auto;
@@ -28,6 +28,8 @@
       font-size: 1.25rem; }
 
 @media only screen and (max-width: 640px) {
+  .third-column {
+    display: none; }
   .content .people-group {
     flex-direction: column;
     width: 100%; }
@@ -39,6 +41,32 @@
     margin-left: 0; }
   .content .backdrop {
     top: -55px; } }
+
+@media only screen and (min-width: 640px) {
+  .faculty {
+    justify-content: left; }
+    .faculty .people-column {
+      width: 100%; }
+      .faculty .people-column #marcelo-worsley {
+        display: flex; }
+        .faculty .people-column #marcelo-worsley img {
+          border: 1px black solid;
+          width: 30.5%;
+          height: 100%; }
+        .faculty .people-column #marcelo-worsley div {
+          margin-left: 2rem; } }
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+  .third-column {
+    display: none; }
+  .extra {
+    display: block; } }
+
+@media only screen and (min-width: 900px) {
+  .third-column {
+    display: block; }
+  .extra {
+    display: none; } }
 
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
@@ -65,7 +93,6 @@
     .content .pictures {
       position: relative;
       margin-top: 30px;
-      min-height: 300px;
       width: 100%;
       margin-left: auto; }
   .flexbox {
@@ -404,22 +431,23 @@ section:not(.flexblock):hover .backdrop {
     margin: 5vw auto;
     margin-top: 85px; }
     .content .showcase {
-      position: relative;
-      margin-top: 30px; }
+      position: relative; }
       .content .showcase .title {
-        display: none;
-        word-spacing: 200px;
-        font-size: 2rem;
-        width: 148px;
+        word-spacing: 0px;
+        font-size: 1.65rem;
         word-break: keep-all;
-        position: absolute;
-        top: 30px; }
+        position: relative;
+        top: 10px; }
       .content .showcase .pictures {
         position: relative;
         outline: 1px blue solid;
         height: 350px;
         width: 100%;
-        margin-left: auto; }
+        margin-left: auto;
+        overflow-x: hidden; }
+        .content .showcase .pictures img {
+          margin-left: auto;
+          height: 350px; }
     .content .textblock {
       margin-top: 65px;
       position: relative; }
@@ -469,7 +497,8 @@ section:not(.flexblock):hover .backdrop {
   .navbar ul a:hover {
     color: black; }
   .navbar ul .current-page a {
-    color: #000 !important; }
+    color: #000 !important;
+    text-shadow: 1px 1px rgba(107, 107, 212, 0.3); }
   .navbar {
     width: 82%;
     padding: 50px 0;
@@ -500,6 +529,7 @@ section:not(.flexblock):hover .backdrop {
       position: relative; }
       .content .showcase .title {
         font-size: 2.5rem;
+        text-shadow: 3px 3px rgba(107, 107, 212, 0.3);
         width: 10%;
         word-break: keep-all;
         position: absolute;
@@ -514,7 +544,13 @@ section:not(.flexblock):hover .backdrop {
         width: 92%;
         margin-left: auto;
         z-index: -1;
-        margin-bottom: 100px; }
+        margin-bottom: 100px;
+        overflow-x: hidden; }
+        .content .showcase .pictures img {
+          margin-left: auto;
+          height: 500px;
+          filter: blur(1px);
+          opacity: 0.8; }
     .content .textblock {
       position: relative;
       margin-top: 40px;

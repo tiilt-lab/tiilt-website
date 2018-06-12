@@ -10,11 +10,11 @@
     margin-left: auto;
     position: relative; }
   .content .people-column {
-    width: 30%;
+    width: 100%;
     margin-left: 4%; }
   .content .person {
-    width: 90%;
-    margin-bottom: 4rem; }
+    width: 100%;
+    margin-bottom: 3rem; }
     .content .person img {
       width: 100%;
       height: auto;
@@ -27,6 +27,8 @@
       font-size: 1.25rem; }
 
 @media only screen and (max-width: 640px) {
+  .third-column {
+    display: none; }
   .content .people-group {
     flex-direction: column;
     width: 100%; }
@@ -38,5 +40,31 @@
     margin-left: 0; }
   .content .backdrop {
     top: -55px; } }
+
+@media only screen and (min-width: 640px) {
+  .faculty {
+    justify-content: left; }
+    .faculty .people-column {
+      width: 100%; }
+      .faculty .people-column #marcelo-worsley {
+        display: flex; }
+        .faculty .people-column #marcelo-worsley img {
+          border: 1px black solid;
+          width: 30.5%;
+          height: 100%; }
+        .faculty .people-column #marcelo-worsley div {
+          margin-left: 2rem; } }
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+  .third-column {
+    display: none; }
+  .extra {
+    display: block; } }
+
+@media only screen and (min-width: 900px) {
+  .third-column {
+    display: block; }
+  .extra {
+    display: none; } }
 
 /*# sourceMappingURL=people.css.map */

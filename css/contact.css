@@ -23,7 +23,6 @@
     .content .pictures {
       position: relative;
       margin-top: 30px;
-      min-height: 300px;
       width: 100%;
       margin-left: auto; }
   .flexbox {

@@ -497,8 +497,7 @@ section:not(.flexblock):hover .backdrop {
   .navbar ul a:hover {
     color: black; }
   .navbar ul .current-page a {
-    color: #000 !important;
-    text-shadow: 1px 1px rgba(107, 107, 212, 0.3); }
+    color: #000 !important; }
   .navbar {
     width: 82%;
     padding: 50px 0;
@@ -529,7 +528,6 @@ section:not(.flexblock):hover .backdrop {
       position: relative; }
       .content .showcase .title {
         font-size: 2.5rem;
-        text-shadow: 3px 3px rgba(107, 107, 212, 0.3);
         width: 10%;
         word-break: keep-all;
         position: absolute;

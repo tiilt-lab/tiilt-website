@@ -241,6 +241,9 @@ ul {
     margin-bottom: .5rem;
     color: black; }
 
+.class-group {
+  position: relative; }
+
 html {
   box-sizing: border-box;
   margin: 0;

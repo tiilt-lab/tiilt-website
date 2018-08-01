@@ -3,12 +3,14 @@
 @import "./projects.scss";
 @import "./papers.scss";
 @import "./classes.scss";
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans");
+
+// SITE WIDE
+
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,28 +25,21 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Plex", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font: caption;
   font-size: 1.3rem;
   max-width: 1200px !important;
   margin: auto;
 }
 
-p {
-  line-height: 1.6rem;
+// NAVIGATION
+
+#tiilt-logo img {
+  transition: all 0.05s linear;
 }
 
-a {
-  text-decoration: none;
-  color: black; // font-weight: 600;
-  height: 100%;
+#tiilt-logo img:hover {
+  transform: rotate(21deg);
 }
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-
 
 nav li {
   list-style: none;
@@ -56,71 +51,14 @@ ol {
   padding-left: 4rem;
 }
 
-/* TEXT DECORATION */
-
-h1 {
-  font-weight: 800 !important;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.backdrop {
-  color: rgba(107, 107, 212, 0.2);
-  position: absolute;
-  left: 0;
-  z-index: -10;
-}
-
-.pictures {
-  img {
-    width: 100%;
-    border: 1px solid #000;
-  }
-  z-index: -1;
-  overflow: hidden;
-  height: auto;
-}
-
-#tiilt-logo img {
-  transition: all 0.05s linear;
-}
-
-#tiilt-logo img:hover {
-  transform: rotate(21deg);
-}
-
-div:not(.content):hover {
-  .backdrop {
-    font-style: italic;
-  }
-}
-
-section:not(.flexblock):hover {
-  .backdrop {
-    font-style: italic;
-  }
-}
-
-.twitter {
-  border: 1px blue solid;
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-  div {
-    height: 100%;
-    overflow-y: scroll;
-  }
-}
+// TEXT DECORATION
 
 .content {
-  a {
-    color: #f097b5;
-    line-height: 1.75rem; // border-bottom: 1px solid #f097b5;
-  }
-  a:hover {
-    font-style: italic; // letter-spacing: .px;
+  .backdrop {
+    color: rgba(107, 107, 212, 0.2);
+    position: absolute;
+    left: 0;
+    z-index: -10;
   }
   @media only screen and (min-width: 1000px) {
     .backdrop {
@@ -145,6 +83,27 @@ section:not(.flexblock):hover {
       font-size: 6rem;
       top: -4.5rem;
     }
+  }
+}
+
+.pictures {
+  img {
+    width: 100%;
+    border: 1px solid #000;
+  }
+  z-index: -1;
+  overflow: hidden;
+  height: auto;
+}
+
+.twitter {
+  border: 1px rgba(107, 107, 212, 1) solid;
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  div {
+    height: 100%;
+    overflow-y: scroll;
   }
 }
 
@@ -221,7 +180,7 @@ section:not(.flexblock):hover {
     }
     .overlay a {
       padding: 8px;
-      text-decoration: none;
+
       font-size: 36px;
       color: #818181;
       display: block;
@@ -253,7 +212,7 @@ section:not(.flexblock):hover {
       }
       .pictures {
         position: relative;
-        outline: 1px blue solid;
+        outline: 1px rgba(107, 107, 212, 1) solid;
         height: 350px;
         width: 100%;
         margin-left: auto;
@@ -265,7 +224,7 @@ section:not(.flexblock):hover {
       }
     }
     .textblock {
-      margin-top: 65px;
+      margin-top: 40px;
       position: relative;
       .about_words {
         width: 92%;
@@ -322,18 +281,6 @@ section:not(.flexblock):hover {
   #closebtn {
     display: none;
   }
-  .navbar ul {
-    a {
-      transition: color .5s;
-      color: #818181;
-    }
-    a:hover {
-      color: black;
-    }
-    .current-page a {
-      color: #000 !important;
-    }
-  }
   .navbar {
     width: 82%;
     padding: 50px 0;
@@ -341,7 +288,7 @@ section:not(.flexblock):hover {
     display: flex;
     font-size: 1.3rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     div {
       height: 100px;
       width: 100px;
@@ -351,15 +298,25 @@ section:not(.flexblock):hover {
       }
     }
     ul {
-      padding: 1rem;
+      a {
+        transition: color 0.5s;
+        color: #818181;
+      }
+      a:hover {
+        color: black;
+      }
+      .current-page a {
+        color: #000 !important;
+      }
       display: flex;
       font-size: 1.5rem;
       justify-content: space-between; // width: 450px;
-      li:nth-child(-1n+2) {
+      li:nth-child(-1n + 2) {
         margin-left: 0;
       }
       li {
         margin-left: 1.5rem;
+        line-height: 100px;
       }
     }
   }
@@ -398,8 +355,8 @@ section:not(.flexblock):hover {
     }
     .textblock {
       position: relative;
-      margin-top: 40px;
-      margin-bottom: 90px;
+      width: 70%;
+      margin: 60px 100px 130px auto;
       p,
       ul,
       ol {

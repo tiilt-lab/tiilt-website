@@ -59,8 +59,8 @@ ul {
       top: 30px; }
     .content .project .pictures {
       position: relative;
-      min-height: 300px;
-      width: 92%;
+      max-height: 400px;
+      width: 100%;
       margin-left: auto;
       margin-bottom: 1rem; }
     .content .project .sub-projects ul {

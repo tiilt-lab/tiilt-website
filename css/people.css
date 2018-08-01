@@ -10,7 +10,8 @@
     margin-left: auto;
     position: relative; }
   .content .people-column {
-    width: 100%;
+    width: 100%; }
+  .content .people-column:not(:nth-child(2)) {
     margin-left: 4%; }
   .content .person {
     width: 100%;
@@ -31,13 +32,16 @@
     display: none; }
   .content .people-group {
     flex-direction: column;
+    margin-bottom: 0;
     width: 100%; }
     .content .people-group div {
-      width: 96%;
+      width: 100%;
       margin-left: auto; }
   .content .people-column {
     width: 100%;
     margin-left: 0; }
+    .content .people-column .person {
+      width: 100%; }
   .content .backdrop {
     top: -55px; } }
 

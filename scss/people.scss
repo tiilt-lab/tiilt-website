@@ -16,6 +16,9 @@
 
   .people-column {
     width: 100%;
+  }
+
+  .people-column:not(:nth-child(2)) {
     margin-left: 4%;
   }
 
@@ -47,15 +50,19 @@
   .content {
     .people-group {
       flex-direction: column;
+      margin-bottom: 0;
       width: 100%;
       div {
-        width: 96%;
+        width: 100%;
         margin-left: auto;
       }
     }
     .people-column {
       width: 100%;
       margin-left: 0;
+      .person {
+        width: 100%;
+      }
     }
     .backdrop {
       top: -55px;

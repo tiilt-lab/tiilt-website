@@ -1,3 +1,123 @@
-.class-group{
-    position: relative;  
+.content {
+  .group-large:hover {
+    .group-info {
+      margin: 3rem 5% 5rem auto;
+    }
+  }
+  .group-large {
+    position: relative;
+    .group-header {
+      font-size: calc(150% + 2vw);
+      margin-bottom: 2rem;
+      @media screen and (max-width: 640px) {
+        
+      }
+    }
+    .group-info:hover {
+      margin: 3rem 5% 5rem auto;
+    }
+    .group-info {
+      width: 89%;
+      margin: 4rem 1rem 4rem auto;
+      display: flex;
+      align-content: space-around;
+      transition: all 0.1s ease-in-out;
+      @media screen and (max-width: 640px) {
+        flex-direction: column;
+        .list {
+          width: 100% !important;
+          ul {
+            margin-bottom: 20px;
+            li {
+              display: inline-block;
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+      .list {
+        font-size: 1.75rem;
+        // line-height: 2.5rem;
+        width: 20%;
+        text-align: right;
+        margin-right: 20px;
+        li {
+          margin-bottom: 0.75rem;
+        }
+      }
+      .description {
+        width: 100%;
+      }
+    }
+    .lilink {
+      text-align: right;
+      margin-top: 1rem;
+    }
+    margin: 1rem auto;
+  }
+
+  .class-page {
+    .pictures {
+      max-height: 500px;
+      margin-bottom: 4rem;
+    }
+
+    .group-header {
+      
+    }
+    .group-info {
+      width: 89%;
+      margin: 3rem 5% 4rem auto !important;
+    }
+
+    .class-archive {
+      height: 400px;
+      margin-top: 20px;
+      border: solid black 1px;
+      background: rgba(227, 197, 249, 0.205);
+      width: 100%;
+      overflow: hidden;
+      .alert {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 6rem;
+        text-align: center;
+        line-height: 400px;
+        vertical-align: middle;
+      }
+    }
+    margin: 1rem auto;
+  }
+
+  .next-preview {
+    border-top: 2px solid lightgray;
+    margin-top: 50px;
+    padding-top: 25px;
+    height: 500px;
+    overflow: hidden;
+    a:hover {
+      font-style: normal;
+    }
+    .next-label {
+      padding-bottom: 25px;
+      display: block;
+    }
+    .pictures {
+      border: 1px solid black;
+      img {
+        border: 0;
+        transform: scale(1.07);
+        transition: all 0.15s ease-in-out;
+      }
+    }
+    .group-large {
+      margin: auto;
+    }
+  }
+
+  .next-preview:hover {
+    font-style: normal;
+    .pictures img {
+      transform: scale(1);
+    }
+  }
 }

@@ -1,31 +1,29 @@
-.content {
-  margin-top: 50px;
+.content .people-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  position: relative; }
+
+.content .people-column {
   width: 100%; }
-  .content .people-group:first-child {
-    margin-top: 50px; }
-  .content .people-group {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 4rem;
-    margin-left: auto;
-    position: relative; }
-  .content .people-column {
-    width: 100%; }
-  .content .people-column:not(:nth-child(2)) {
-    margin-left: 4%; }
-  .content .person {
+
+.content .people-column:not(:nth-child(2)) {
+  margin-left: 4%; }
+
+.content .person {
+  width: 100%;
+  margin-bottom: 3rem; }
+  .content .person img {
     width: 100%;
-    margin-bottom: 3rem; }
-    .content .person img {
-      width: 100%;
-      height: auto;
-      border: 1px solid black; }
-    .content .person h1 {
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      font-size: 1.75rem; }
-    .content .person p {
-      font-size: 1.25rem; }
+    height: auto;
+    border: 1px solid black; }
+  .content .person h1 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.75rem; }
+  .content .person p {
+    font-size: 1.25rem; }
 
 @media only screen and (max-width: 640px) {
   .third-column {

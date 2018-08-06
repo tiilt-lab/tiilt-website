@@ -1,11 +1,4 @@
 .content {
-  margin-top: 50px;
-  width: 100%;
-
-  .people-group:first-child {
-    margin-top: 50px;
-  }
-
   .people-group {
     display: flex;
     justify-content: flex-end;
@@ -94,7 +87,7 @@
   .third-column {
     display: none;
   }
-    .extra {
+  .extra {
     display: block;
   }
 }

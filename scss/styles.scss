@@ -17,6 +17,11 @@ $five: #cce3de;
 html {
   font: caption;
   font-size: 12px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html:focus {
+  outline: none;
 }
 
 body {
@@ -35,7 +40,7 @@ p {
   position: fixed;
   left: 0;
   padding: 15vh 10vw;
-  font-size: calc(4vh + 2vw);
+  font-size: calc(3.5vh + 2vw);
   color: rgba(0, 0, 0, 0.99);
   text-transform: uppercase;
 }
@@ -52,11 +57,13 @@ p {
   left: calc(50vw - 250px);
   display: flex;
   justify-content: space-around;
-  // flex-direction: column;
   .filter {
     @media screen and (max-width: 620px) {
       font-size: 1rem;
     }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 3rem;
     background: #fff;
     width: 25%;
@@ -64,13 +71,12 @@ p {
     box-shadow: 2px 3px;
     font-size: 1.25rem;
     font-weight: bold;
-    -webkit-user-select: none; /* Chrome all / Safari all */
-    -moz-user-select: none; /* Firefox all */
-    -ms-user-select: none; /* IE 10+ */
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     user-select: none;
     span {
       display: block;
-      margin: 0.5rem auto;
       text-align: center;
     }
   }
@@ -78,9 +84,9 @@ p {
     box-shadow: 0px 0px;
     transform: translate(2px, 3px);
   }
-  .filter:focus {
-    outline: none;
-  }
+  // .filter:focus {
+  //   outline: none;
+  // }
   #nav_about {
     outline-color: $one;
   }
@@ -290,6 +296,7 @@ p {
 
   .map {
     width: 400px;
+    overflow: hidden;
     // height: 300px;
     .header {
       background: $one;

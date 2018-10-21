@@ -2,119 +2,982 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>TIILT </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <meta charset="utf-8" />
+    <title>Technological ... Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+
+    <script src="/script.js"></script>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div>
-      <a id="tiilt-logo" href="/.">
-        <img src="/img/logo.svg" alt="TIILT">
-      </a>
+    <!-- <img class="logo" src="img/logo.svg" alt=""> -->
+
+    <div class="background_description">
+        Technological Innovations for Inclusive Learning &#38; Teaching (tiilt)
+        lab aims to improve
+        learning
+        opportunities
+        for students from under-served communities.
     </div>
-    <div onclick="openNav()" class="menu"></div>
-    <ul id="myNav" class="overlay">
-      <li>
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-      </li>
-      <!-- <li>
-                <a href="/">home</a>
-              </li> -->
-      <li class="current-page">
-        <a href="/papers/">papers</a>
-      </li>
-      <li>
-        <a href="/people/">people</a>
-      </li>
-      <li>
-        <a href="/projects/">projects</a>
-      </li>
-      <li>
-        <a href="/classes/">classes</a>
-      </li>
-    </ul>
-  </nav>
 
-  <div class="content">
-    <section class="textblock" id="home_about">
-      <h1 class="backdrop">about</h1>
-      <p>The Technological Innovations for Inclusive Learning and Teaching (tiilt) Lab aims to improve learning opportunities
-        for students from under-served communities. Our work with technological innovations includes: </p>
-      <ol>
-        <li>co-designing activities with teachers and learners</li>
-        <li>creating interfaces that broaden participation in meaningful learning experience</li>
-        <li>tools and analytic techniques for studying and supporting complex learning environments</li>
-      </ol>
-      <p>
-        We position our work as inclusive, in that we endeavor to address historic and contemporary disparities in inclusivity and
-        social, racial and economic inequity. Furthermore, we work with teachers, students, community members and parents,
-        in hope of supporting the development of positive learning ecosystems.
-      </p>
-    </section>
-    <section class="flexblock">
+    <nav class="nav primary_nav">
+        <div id="nav_projects" color="#F6FFF8" class="filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
+        <div id="nav_classes" color="#EAF4F4" class="filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
+        <div id="nav_papers" color="#CCE3DE" class="filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
+        <div id="nav_team" color="#A4C3B2" class="filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>  
+        <div id="nav_about" color="#6B9080" class="filter" onclick="filterWindows('aboutGroup', this)"><span>???</span></div>
+        
+    </nav>
 
-      <div class="project-peek">
-        <h1 class="backdrop">projects</h1>
-        <div>
-          <h1 class="title"> IMR (Imagine, Make, Repeat) </h1>
-          <p>IMR (Imagine, Make, Repeat) works with educators to plan and implement Makerspace technologies and projects in
-            classrooms and Makerspaces throughout Evanston and Chicago.</p>
-          <p class="proj-link">
-            <a href="/projects/#chute-imr">
-              learn more &#8599;
-            </a>
-          </p>
+    <section class="spacer"></section>
+
+    <section class="aGroup" id="papersGroup">
+        <div class="window papers" id="wip">
+            <div class="header">2018</div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (under review). A Multimodal Analysis of Making. International
+                    Journal
+                    of
+                    Artificial Intelligence
+                    in Education.
+                </p>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M., (in progress). Bridging Engineering Education and Conceptual Change: An Analysis of
+                    Changes in
+                    Students' Perceptions
+                    of Structural Stability during Hands-on, Collaborative Learning Tasks.
+                </p>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (under review). A Multimodal Analysis of Making. International
+                    Journal
+                    of
+                    Artificial Intelligence
+                    in Education.
+                </p>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M., (in progress). Bridging Engineering Education and Conceptual Change: An Analysis of
+                    Changes in
+                    Students' Perceptions
+                    of Structural Stability during Hands-on, Collaborative Learning Tasks.
+                </p>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (under review). A Multimodal Analysis of Making. International
+                    Journal
+                    of
+                    Artificial Intelligence
+                    in Education.
+                </p>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M., (in progress). Bridging Engineering Education and Conceptual Change: An Analysis of
+                    Changes in
+                    Students' Perceptions
+                    of Structural Stability during Hands-on, Collaborative Learning Tasks.
+                </p>
+            </div>
         </div>
-        <div>
-          <h1 class="title">Tangicraft</h1>
-          <p>Tangicraft is an interface to enable visually impaired individuals to play Minecraft. Our design includes two main
-            components...
-          </p>
-          <p class="proj-link">
-            <a href="/projects/#tangicraft">
-              learn more &#8599;
-            </a>
-          </p>
+
+        <div class="window papers" id="wip">
+            <div class="header">2017</div>
+            <div class="pub_entry">
+                <p>
+                    Andrade, A., &amp; Worsley, M. (2017). A methodological framework for the exploratory analysis of
+                    multimodal
+                    features in
+                    learning activities. CEUR Workshop Proceedings, 1828, 99-103.
+                </p>
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. (2017). Engineering design with everyday materials multimodal dataset. CEUR Workshop
+                    Proceedings,
+                    1828, 104-110.
+                </p>
+                <a href="">READ</a>
+                <a href="">PDF</a>
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2017). Reasoning Strategies in the Context of Engineering Design
+                    with
+                    Everyday
+                    Materials.
+                    The Journal of Pre-College Engineering Education Research, 6(2), 57-74.
+                </p>
+                <!-- <a href="">READ</a> |
+                                <a href="">PDF</a> -->
+            </div>
         </div>
-      </div>
-      <div class="twitter">
-        <h1 class="backdrop">twitter</h1>
-        <div>
-          <a class="twitter-timeline" href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw"></a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div class="window papers" id="2016">
+            <div class="header">2016</div>
+            <div class="pub_entry">
+                <p>
+                    Ochoa, X. &amp; Worsley, M. (2016). Augmenting Learning Analytics with Multimodal Sensory Data.
+                    Journal of
+                    Learning Analytics,
+                    3(2), 213â€“219.
+                </p>
+                <a href=" http://dx.doi.org/10.18608/jla.2016.32.10">READ</a>
+                <a href="papers/jla_ochoa_worsley_2016.pdf">PDF</a>
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Blikstein, P. &amp; Worsley, M. (2016). Multimodal Learning Analytics and Education Data Mining:
+                    using
+                    computational technologies
+                    to measure complex learning tasks. Journal of Learning Analytics, 3(2), 220-238.
+                    http://dx.doi.org/10.18608/jla.2016.32.11
+                </p>
+                <!-- <a href="">READ</a> | -->
+                <a href="papers/jla_blikstein_worsley_2016.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+
+                    Worsley, M., Abrahamson, D., Blikstein, P., Grover, S., Schneider, B., &amp; Tissenbaum, M. (2016).
+                    Situating multimodal
+                    learning analytics. In C.-K. Looi, J. L. Polman, U. Cress, &amp; P. Reimann (Eds.), "Transforming
+                    learning,
+                    empowering
+                    learners," Proceedings of the International Conference of the Learning Sciences (ICLS 2016) (Vol.
+                    2, pp.
+                    1346-1349).
+                    Singapore: International Society of the Learning Sciences.
+                </p>
+                <!-- <a href="">READ</a> | -->
+                <a href="papers/icls2016.pdf">PDF</a>
+            </div>
+
         </div>
-      </div>
+        <div class="window papers" id="2015">
+            <div class="header">2015</div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. Scherer, S., Morency, L.P., &amp; Blikstein, P. (2015). Exploring Behavior
+                    Representation for
+                    Learning Analytics.
+                    In Proceedings of the 2015 International Conference on Multimodal Interaction. ACM, New York, USA.
+                    pp.
+                    251-258.
+                </p>
+                <a href="papers/icmi2016.pdf">PDF</a>
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Worsley, M, Chiluiza, K., Grafsgaard, J., &amp; Ochoa, X.,. (2015). 2015 Multimodal Learning and
+                    Analytics
+                    Grand Challenge.
+                    In Proceedings of the 2015 International Conference on Multimodal Interaction. ACM, New York, USA.
+                    pp.
+                    525-529.
+                </p>
+                <a href="http://dl.acm.org/citation.cfm?id=2829995">READ</a>
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2015). Using Learning Analytics to Study Cognitive Disequilibrium
+                    in a
+                    Complex Learning
+                    Environments. In Proceedings of the 5th Annual Conference on Learning Analytics and Knowledge, ACM,
+                    New
+                    York, USA.
+                    pp. 426-247.
+                </p>
+                <a href="http://dl.acm.org/citation.cfm?id=2723659">READ</a>
+            </div>
+        </div>
+        <div class="window papers" id="2014">
+            <div class="header">2014</div>
+            <div class="pub_entry">
+                <p>
+
+                    Ochoa, X., Worsley, M., Chiluiza, K., &amp; Luz, S. (2014). MLA'14: Third Multimodal Learning
+                    Analytics
+                    Workshop and Grand
+                    Challenges. In Proceedings of the 16th International Conference on Multimodal Interaction (ICMI
+                    '14). ACM,
+                    New
+                    York, NY, USA. pp. 531-532.
+                </p>
+                <a href="http://dl.acm.org/citation.cfm?id=2723659">READ</a>
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. (2014). Multimodal Learning Analytics as a Tool for Bridging Learning Theory and
+                    Complex
+                    Learning Behaviors.
+                    In Proceedings of the 2014 ACM workshop on Multimodal Learning Analytics Workshop and Grand
+                    Challenge (MLA
+                    '14).
+                    ACM, New York, NY, USA. pp. 1-4.
+                </p>
+                <a href="papers/mla2014_1.pdf">PDF</a>
+
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2014). Deciphering the Practices and Affordances of Different
+                    Reasoning
+                    Strategies through
+                    Multimodal Learning Analytics. In Proceedings of the 2014 ACM workshop on Multimodal Learning
+                    Analytics
+                    Workshop
+                    and Grand Challenge (MLA '14). ACM, New York, NY, USA. pp. 21-27.
+                </p>
+                <a href="papers/mla2014_2.pdf">PDF</a>
+
+            </div>
+
+            <div class="pub_entry">
+                <p>
+                    Blikstein, P., Worsley, M., Piech, C., Gibbons, A., Sahami, M., &amp; Cooper, S. (2014).
+                    Programming
+                    Pluralism: Using Learning
+                    Analytics to Detect Patterns in Novices' Learning of Computer Programming. International Journal of
+                    the
+                    Learning
+                    Sciences. Vol. 23, Iss. 4. pp. 561-599.
+                </p>
+                <a href="papers/jls2014.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2014). The Impact of Principle-Based Reasoning on Hands-on,
+                    Project-Based
+                    Learning. In Proceedings
+                    of the 2014 International Conference of the Learning Sciences. Vol 3. pp 1147-1151.
+                </p>
+                <a href="papers/icls2014.pdf">PDF</a>
+
+            </div>
+
+
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2014). Using Multimodal Learning Analytics to Study Learning
+                    Mechanisms.
+                    In Proceedings
+                    of the 2014 Educational Data Mining Conference. pp. pp 431-432.
+                </p>
+                <a href="papers/edm2014.pdf">PDF</a>
+
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2014). Making Smarter not Harder: Using Principle-based Reasoning
+                    to
+                    Promote Object Closeness
+                    and Improve Making. In Proceedings of the 2014 FabLearn Conference.
+                </p>
+                <a href="papers/fl2014.pdf">PDF</a>
+
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2014). Analyzing Engineering Design through the Lens of
+                    Computation.
+                    Journal of Learning
+                    Analytics.
+                </p>
+                <a href="papers/jla2014.pdf">PDF</a>
+
+            </div>
+        </div>
+        <div class="window papers" id="2013">
+            <div class="header">2013</div>
+            <div class="pub_entry">
+                <p>
+                    Morency, L. Oviatt, S., Scherer, S. Weibel, N. &amp; Worsley, M. (2013). ICMI 2013 Grand Challenge
+                    Workshop
+                    on Multimodal
+                    Learning Analytics. In Proceedings of the 15th ACM international conference on Multimodal
+                    interaction (ICMI
+                    '13).
+                    ACM, New York, NY, USA.
+                </p>
+                <a href="papers/icmi_mmla_2013.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M., &amp;; Blikstein, P. (2013). Programming Pathways: A Technique for Analyzing Novice
+                    Programmers' Learning Trajectories.
+                    In Artificial Intelligence in Education. Springer Berlin Heidelberg. 844-847.
+                </p>
+                <a href="papers/aied_2013.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Gomes, J. Yassine, M., Worsley, M., &amp; Blikstein, P. (2013) Analysing Engineering Expertise of
+                    High
+                    School Students Using
+                    Eye Tracking and Multimodal Learning Analytics. In Proceedings of the Educational Data Mining 2013
+                    (EDM
+                    '13). Memphis,
+                    TN, USA. 375-377.
+                </p>
+                <a href="papers/edm_2013.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Blikstein, P. (2013). Toward the Development of Mulitmodal Action Based
+                    Assessment. In
+                    Proceedings of the
+                    Third International Conference on Learning Analytics and Knowledge (LAK '13). ACM, New York, NY,
+                    USA,
+                    94-101.
+                </p>
+                <a href="papers/lak_2013.pdf">PDF</a>
+            </div>
+        </div>
+        <div class="window papers" id="2012">
+            <div class="header">2012</div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. (2012). Multimodal Learning Analytics: Enabling the Future of Learning through
+                    Multimodal Data
+                    Analysis and Interfaces.
+                    In Proceedings of the 14th ACM international conference on Multimodal interaction (ICMI '12). ACM,
+                    New
+                    York, NY,
+                    USA. 353-356. Doctoral Consortium Best Paper Runner-up.
+                </p>
+                <a href="papers/icmi_2012.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+                    Scherer,S., Worsley,M. &amp; Morency, L. (2012). 1st international workshop on multimodal learning
+                    analytics: extended abstract.
+                    In Proceedings of the 14th ACM international conference on Multimodal interaction (ICMI '12). ACM,
+                    New
+                    York, NY,
+                    USA, 609-610.
+                </p>
+                <a href="papers/icmi_mmla_2012.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+
+                    Worsley, M. &amp; Blikstein, P. (2012). An Eye For Detail: Techniques For Using Eye Tracker Data to
+                    Explore
+                    Learning in Computer-Mediated
+                    Environments. In the Proceedings of the 2012 International Conference of the Learning Sciences
+                    (ICLS '12).
+                    Sydney,
+                    Australia. 561-562.
+                </p>
+                <a href="papers/icls_2012.pdf">PDF</a>
+
+            </div>
+        </div>
+        <div class="window papers" id="2011">
+            <div class="header">2011</div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M., Johnston, M. &amp; Blikstein P. (2011). OpenGesture: a low cost authoring framework
+                    for
+                    gesture and speech based
+                    application development and learning analytics. In Proceedings of the 10th International Conference
+                    on
+                    Interaction
+                    Design and Children (IDC '11). ACM, New York, NY, USA. 254-256.
+                </p>
+                <a href="papers/idc_2011.pdf">PDF</a>
+            </div>
+            <div class="pub_entry">
+                <p>
+
+                    Worsley, M. &amp; Blikstein P. (2011). What's an Expert? Using learning analytics to identify
+                    emergent
+                    markers of expertise
+                    through automated speech, sentiment and sketch analysis. In Proceedings for the 4th Annual
+                    Conference on
+                    Educational
+                    Data Mining. Eindhoven, Netherlands. 235-240.
+                </p>
+                <a href="papers/edm_2011.pdf">PDF</a>
+
+            </div>
+        </div>
+        <div class="window papers" id="2010">
+            <div class="header">2010</div>
+            <div class="pub_entry">
+                <p>
+                    Worsley, M. &amp; Johnston, M. (2010). Multimodal Interactive Spaces: MagicTV and MagicMAP. Spoken
+                    Language
+                    Technology Workshop
+                    (SLT '10), IEEE. San Francisco, CA, USA. 161-162.
+                </p>
+                <a href="papers/slt_2010.pdf">PDF</a>
+
+            </div>
+        </div>
     </section>
-    <section class="textblock" id="home_contact">
-      <h1 class="backdrop">contact</h1>
-      <p class="blurb">
-        At TIILT we love exploring the use and creation of multimodal technologies to facilitate learning and engagement. As such
-        we are always open to new ideas and collaborations. If you are interested in finding more about the lab, getting involved
-        with the lab, or working with the lab, shoot us an email.
-      </p>
-      <div class="flexbox">
-        <div class="visit-us">
-          <b>Visit Us:</b>
-          <a href="https://www.google.com/maps/place/Segal+Design+Institute/@42.0569238,-87.6765436,15z/data=!4m5!3m4!1s0x0:0x4c8ab242a80747a3!8m2!3d42.0569238!4d-87.6765436">
-            <br> Segal Design Institute, SB.340
-            <br> 2133 Sheridan Rd
-            <br> Evanston, IL 60208
-          </a>
+
+    <section class="aGroup" id="aboutGroup">
+        <div class="window" id="contact">
+            <div class="header">Contact</div>
+            <ul>
+                <li>email us at <a href="mailto:tiiltlab@gmail.com">tiiltlab@gmail.com</a></li>
+                <li>follow us on <a href="https://twitter.com/tiiltlab">twitter</a></li>
+                <li>come to Mudd</li>
+            </ul>
         </div>
-        <div class="contact-links">
-          <b>Email Us:</b>
-          <a href='mailto:tiiltlab@gmail.com'>
-            <br>tiiltlab@gmail.com
-          </a>
+
+        <div class="window twitter">
+            <div class="header">Twitter</div>
+            <div class="twitter-embed">
+                <a class="twitter-timeline" href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw"></a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
-      </div>
+
+        <div class="window map">
+            <div class="header">Map</div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Mudd%20Library&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
+                <style>
+                    .mapouter {
+                        text-align: right;
+                        height: 400px;
+                        width: 400px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 400px;
+                        width: 400px;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <!-- <div class="window image">
+            <div class="header">image</div>
+            <img class="lazy" alt="..." data-src="https://i.redd.it/nchuf4dxt3501.jpg">
+        </div> -->
     </section>
-  </div>
-  <script src="/nav.js"></script>
+
+    <section class="aGroup" id="peopleGroup">
+        <div class="grid">
+            <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
+            <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
+            <div class="col">
+                <div class="window person" id="marcelo-worsley">
+                    <div class="header">
+                        Marcelo Worsley — Director
+                    </div>
+                    <img class="lazy" alt="..." data-src="img/people/marcelo-worsley.jpg">
+                    <div class="">
+                        <p class="description">I am an assistant professor of Learning Sciences and Computer Science at
+                            Northwestern's School of Education and
+                            Social Policy and the McCormick School of Engineering. The goal of my research is to
+                            advance
+                            society's
+                            understanding
+                            of how students learn in complex learning environments by forging new opportunities for
+                            using
+                            multimodal
+                            technology.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="window person" id="kira-furuichi">
+                    <div class="header">Kira Furuichi — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/kira-furuichi.jpg">
+
+                    <p class="description">Kira is a junior in McCormick studying computer science with a minor in
+                        sociology. Her
+                        primary interest is in analyzing
+                        team dynamics and group work through looking at physiological responses. On her free time, you
+                        can
+                        find her
+                        running
+                        around Evanston, TA'ing EECS 330, or baking!
+                    </p>
+                </div>
+
+
+                <div class="window person third-item" id="simeon">
+                    <div class="header">
+                        Simeon — Student
+                    </div>
+
+                    <div class="">
+                        <p class="description">
+                            student, fourth year.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="window person third-item" id="bobbie-burgess">
+                    <div class="header">Bobbie Burgess — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/bobbie-burgess.jpg">
+
+                    <p class="description">Hiya! I am originally from the San Francisco Bay Area (Burlingame to be
+                        precise)
+                        and now I am at
+                        Northwestern as
+                        an undergraduate student (senior- winter '19) studying Manufacturing and Design
+                        Engineering. I
+                        am
+                        passionate
+                        about STEM education in MakerSpaces and how maker environments and curriculums can be
+                        crafted
+                        to
+                        empower students
+                        and teachers alike to be creative and make!
+                    </p>
+                </div>
+
+                <div class="window person third-item" id="eric-mertz">
+                    <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
+                    <div class="header">Eric Mertz — Student</div>
+                    <p class="description">
+                        Eric is graduating from Northwestern in June 2018 with a double major in Computer Science
+                        and
+                        Theatre. He
+                        mainly works on
+                        the Sony project and sometimes collaborates with David on the technology used in the lab at
+                        MetaMedia. He
+                        enjoys
+                        building tools that enable the users to achieve more.
+                    </p>
+                </div>
+
+                <div class="window person third-item" id="timothy-mwiti">
+                    <div class="header">Tim — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/timothy-mwiti.jpg">
+                    <p class="description">Tim is a junior majoring in Computer Science in the McCormick School of
+                        Engineering. He
+                        works as a research assistant
+                        at the lab. He is from Kenya and is passionate about how technology can be utilized to
+                        hasten
+                        development of
+                        third world countries.
+                    </p>
+                </div>
+
+                <div class="window person" id="deniz-sagnaklar">
+                    <div class="header">Deniz Sagnaklar — Student</div>
+                    <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
+                    <p class="description">
+                        I’m a senior from Istanbul, Turkey studying Computer Science in the McCormick School of
+                        Engineering. During my
+                        time at Northwestern,
+                        I have been a member of Women in Computing and I have had the honor of founding BuildHer,
+                        Chicago's
+                        first ever
+                        student-run women's hackathon hosted here on campus, alongside six other women from NU. My
+                        interests outside
+                        of academics include basketball, surfing and painting.
+                    </p>
+                </div>
+
+                <div class="window person" id="kya-suzuki">
+                    <div class="header">Kya Suzuki — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/kya-suzuki.jpg">
+
+                    <p class="description">
+                        I am a junior studying Computer Science in Weinberg, the school of Arts and Sciences. I am
+                        interested in the
+                        interdivality
+                        between language, narratives, music, and technology through the lens of education and
+                        coding.
+                    </p>
+                </div>
+
+                <div class="window person" id="connor-bain">
+                    <div class="header">Connor Bain — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/connor-bain.jpg">
+
+                    <p class="description">
+                        Connor is a Ph.D. student in Computer Science and Learning Sciences originally from
+                        Columbia,
+                        SC.
+                        He's a proud
+                        University
+                        of South Carolina alumnus who studies how to help teachers integrate computation into their
+                        classrooms and how
+                        to get students to think with computation.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
+            <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
+            <div class="col">
+
+                <div class="window person" id="sarah-lee">
+                    <div class="header">Sarah Lee — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/sarah-lee.jpg">
+                    <p class="description">
+                        Interested in the spaces around: making, memory, memorials, and museums, meaningful learning
+                        and
+                        engagement,
+                        empowerment,
+                        agentic memory identities and citizenship.
+                    </p>
+                </div>
+
+                <div class="window person" id="david-barel">
+                    <div class="header">David Barel — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/david-barel.jpg">
+                    <p class="description">
+                        Originally from Tel-Aviv, Israel and currently working on my PhD in Learning Sciences at
+                        Northwestern's School
+                        of Education
+                        and Social Policy. I am interested in out of school learning and particularly how children
+                        learn
+                        around popular
+                        culture and media.
+                    </p>
+                </div>
+
+                <div class="window person third-item" id="kit-martin">
+                    <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
+                    <div class="header">Kit Martin — Student</div>
+                    <p class="description">
+                        As such, I’ve become interested in multi-modal sensors. I see them as a bridge between agent
+                        based
+                        methods and
+                        my other evaluations
+                        frameworks.
+
+                    </p>
+                </div>
+
+                <div class="window person third-item" id="gabe-rojas-westall">
+                    <div class="header">Gabe Rojas-Westall — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/gabe-westall.jpeg">
+                    <p class="description">
+                        I’m a junior studying Computer Science. I’m very interested in language (Spanish, Portuguese,
+                        and
+                        French are my
+                        favs), music,
+                        soccer, and building things! I’m involved with the Society of Hispanic Professional Engineers,
+                        NU
+                        World Cup,
+                        multicultural Greek life, and I’m also a TA for a few CS classes.
+                    </p>
+                </div>
+
+                <div class="window person third-item" id="durell-gill">
+                    <div class="header">Durell Gill — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/durell-gill.jpg">
+                    <p class="description">
+                        I am a junior studying computer science in Weinberg who mostly interested in learning sciences,
+                        web
+                        development, and devices
+                        within the Internet of Things space. I'm also a huge fan of Brazilian Jiu Jitsu and Muay Thai.
+                    </p>
+                </div>
+
+                <div class="window person" id="emily-q-wang">
+                    <div class="header">Emily Q. Wang — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/emily-q-wang.png">
+                    <p class="description">
+                        Emily is a PhD student in the Technology and Social Behavior program. Her research in
+                        human-computer
+                        interaction focuses
+                        on creating accessible groupware systems for Deaf and hearing professionals. Before coming to
+                        Northwestern,
+                        Emily
+                        completed a self-designed engineering major with coursework in computer science, human-centered
+                        design, and
+                        psychology
+                        at Olin College of Engineering.
+
+                    </p>
+                </div>
+
+                <div class="window person" id="shankar-salwan">
+                    <div class="header">Shankar Salwan — Student</div>
+                    <p class="description">I am a Sophomore studying Computer Science, interested in the fields of
+                        Machine
+                        Learning and
+                        AI. Avid fan of soccer
+                        and will always dive into a conversation on "love, life and politics."
+                    </p>
+                </div>
+
+                <div class="window person" id="melissa-perez">
+                    <div class="header">Melissa Perez — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/melissa-perez.jpg">
+                    <p class="description">I'm a Junior studying Computer Science, with minors in Latino Studies and
+                        Sociology. I'm
+                        involved in the Society
+                        of Hispanic Professional Engineers and Women in Computing, as well as am a Peer Mentor for a
+                        few
+                        intro CS
+                        classes.
+                        My favorite past times are going to Chicago and eating with friends.
+                    </p>
+                </div>
+
+                <div class="window person" id="tom-large">
+                    <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
+                    <div class="header">Tom Large — Student</div>
+                    <p class="description">
+                        I am a student at Northwestern University studying computer science and math. Aside from my
+                        work at
+                        school and
+                        in the TIILT
+                        lab, I enjoy traveling, rock climbing, and some good music. I also love Cheez-Its.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
+            <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
+            <div class="col third-col">
+                <div class="window person" id="simeon">
+                    <div class="header">
+                        Simeon — Student
+                    </div>
+            
+                    <div class="">
+                        <p class="description">
+                            student, fourth year. kinda made this.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="window person" id="bobbie-burgess">
+                    <div class="header">Bobbie Burgess — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/bobbie-burgess.jpg">
+            
+                    <p class="description">Hiya! I am originally from the San Francisco Bay Area (Burlingame to be
+                        precise)
+                        and now I am at
+                        Northwestern as
+                        an undergraduate student (senior- winter '19) studying Manufacturing and Design Engineering. I
+                        am
+                        passionate
+                        about STEM education in MakerSpaces and how maker environments and curriculums can be crafted
+                        to
+                        empower students
+                        and teachers alike to be creative and make!
+                    </p>
+                </div>
+            
+                <div class="window person" id="eric-mertz">
+                    <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
+                    <div class="header">Eric Mertz — Student</div>
+                    <p class="description">
+                        Eric is graduating from Northwestern in June 2018 with a double major in Computer Science and
+                        Theatre. He
+                        mainly works on
+                        the Sony project and sometimes collaborates with David on the technology used in the lab at
+                        MetaMedia. He
+                        enjoys
+                        building tools that enable the users to achieve more.
+                    </p>
+                </div>
+            
+                <div class="window person" id="timothy-mwiti">
+                    <div class="header">Tim — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/timothy-mwiti.jpg">
+                    <p class="description">Tim is a junior majoring in Computer Science in the McCormick School of
+                        Engineering. He
+                        works as a research assistant
+                        at the lab. He is from Kenya and is passionate about how technology can be utilized to hasten
+                        development of
+                        third world countries.
+                    </p>
+                </div>
+            
+                <div class="window person" id="gabe-rojas-westall">
+                    <div class="header">Gabe Rojas-Westall — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/gabe-westall.jpeg">
+                    <p class="description">
+                        I’m a junior studying Computer Science. I’m very interested in language (Spanish, Portuguese,
+                        and
+                        French are my
+                        favs), music,
+                        soccer, and building things! I’m involved with the Society of Hispanic Professional Engineers,
+                        NU
+                        World Cup,
+                        multicultural Greek life, and I’m also a TA for a few CS classes.
+                    </p>
+                </div>
+            
+                <div class="window person " id="durell-gill">
+                    <div class="header">Durell Gill — Student</div>
+                    <img class="lazy" alt="..." data-src="img/people/durell-gill.jpg">
+                    <p class="description">
+                        I am a junior studying computer science in Weinberg who mostly interested in learning sciences,
+                        web
+                        development, and devices
+                        within the Internet of Things space. I'm also a huge fan of Brazilian Jiu Jitsu and Muay Thai.
+                    </p>
+                </div>
+            
+                <div class="window person" id="kit-martin">
+                    <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
+                    <div class="header">Kit Martin — Student</div>
+                    <p class="description">
+                        As such, I’ve become interested in multi-modal sensors. I see them as a bridge between agent
+                        based
+                        methods and
+                        my other evaluations
+                        frameworks.
+            
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="aGroup" id="classGroup">
+        <div class="window class">
+            <div class="header">Interactive Media and Technology for Learning</div>
+            <div class="description">
+                <p class="description">This is a hands-on projectcourse. All students will design and implement
+                    interactive
+                    technologies for supporting
+                    learning. Students will be expected to do computer programming as part of this class. During this
+                    course,
+                    students will get a hands-on introduction to designing novel interfaces with multimodal sensor
+                    technology.
+                    Each week students will explore a specific modality or theory, and complete one or more activities
+                    that
+                    will
+                    challenge them to utilize that theory or modality. In order to support a strong introduction to
+                    both
+                    theory
+                    and practice, every week will include one class session involving hands-on work, and another that
+                    uses
+                    a
+                    seminar style to discuss theory and closely examine the assigned READings. Students will be
+                    expected to
+                    use
+                    insights and ideas presented in the class in a collaborative final project.</p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>FALL 2018</li>
+                    <li>EECS 395</li>
+                    <li>LS 307</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="window class">
+            <div class="header">Designing Technology with New Media</div>
+            <div class="description">
+                <p class="description">uring this course students will complete a series of technology design
+                    activities that range from using speech and
+                    gesture technologies, to designing a toy for a kid. Students will be challenged to apply their
+                    knowledge of the
+                    learning sciences to real-world applications as they learn about different forms of new media that
+                    enable learners to
+                    experience and engage learning in new ways.</p>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>FALL 2018</li>
+                    <li>EECS 395</li>
+                    <li>LS 307</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="aGroup" id="projectGroup">
+        <div class="window project" onclick="hiddenBoxToggle(this)">
+            <div class="header">IMR (Imagine, Make, Repeat)</div>
+            <div class="group-info">
+                <div class="hidden_box">
+                    <img class="lazy" alt="..." data-src="img/projects/imr-chute.jpg">
+                </div>
+
+                <div class="description">
+                    <p class="description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
+                        Makerspace technologies and projects in classrooms
+                        and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival,
+                        and
+                        has collaborated with Chute
+                        Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward,
+                        the
+                        IMR team looks to further
+                        develop and expand partnerships with educators and making communities across the Chicagoland
+                        area.</p>
+                </div>
+
+                <div class="list">
+                    <ul>
+                        <li>Team</li>
+                        <li>Sarah</li>
+                        <li>Bobbie</li>
+                        <li>Melissa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="window image">
+            <div class="header">image</div>
+            <img class="lazy" alt="..." data-src="https://i.redd.it/nchuf4dxt3501.jpg">
+        </div> -->
+        <div class="window project">
+            <div class="header">Tangicraft</div>
+            <div class="group-info">
+                <div class="description">
+                    <p class="description">Tangicraft is an interface to enable visually impaired individuals to play
+                        Minecraft. Our design includes two main
+                        components, a wearable device that allows players to haptically sense what is on the screen,
+                        and a set of tangible
+                        blocks which allow players to physically construct objects and place them in the game world
+                        using speech commands and
+                        computer vision.
+                    </p>
+                </div>
+
+                <div class="hidden_box">
+                    <img src="" alt="" data-src="img/projects/multicraft.jpg" class="padded-img lazy">
+                    <img src="" alt="" data-src="img/projects/tangicraft.jpg" class="padded-img lazy">
+                </div>
+
+                <div class="list">
+                    <ul>
+                        <li>Team</li>
+                        <li>Shanks</li>
+                        <li>David Barel</li>
+                        <li>Tom Large</li>
+                        <li>Tim</li>
+                        <li>Yasmeen Wood</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-
-</html>

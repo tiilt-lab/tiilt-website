@@ -1,31 +1,63 @@
 function filterWindows(group, b) {
   tohide = document.getElementsByClassName("aGroup");
+  toshow = document.getElementById(group);
+
   for (let index = 0; index < tohide.length; index++) {
     tohide[index].style.display = "none";
   }
 
-  toshow = document.getElementById(group);
-
   if (toshow != cPage) {
-    for (let index = 0; index < document.getElementsByClassName("filter").length; index++) {
-      document.getElementsByClassName("filter")[index].style.backgroundColor = "#fff";
-    }
-    b.style.background = b.getAttribute("color");
-    zindex += 1;
-    document.getElementById(group).style.display = "block";
-    document.getElementById(group).style.opacity = "1";
-    document.getElementById(group).style.zIndex = zindex;
     cPage = document.getElementById(group);
+    for (
+      let index = 0;
+      index < document.getElementsByClassName("filter").length;
+      index++
+    ) {
+      document.getElementsByClassName("filter")[index].style.backgroundColor = "rgba(0,0,0,0)";
+    }
+
+    if (document.getElementsByClassName("current-filter")[0]) {
+      document
+        .getElementsByClassName("current-filter")[0]
+        .classList.remove("current-filter");
+    } 
+    b.style.backgroundColor = "rgba(0,0,0,0)";
+    document.body.style.backgroundColor = b.getAttribute("color");
+    b.classList.add("current-filter");
+    zindex += 1;
+    toshow.style.left = "0";
+    document.getElementById(group).style.display = "block";
+    document.getElementById(group).style.zIndex = zindex;
+    console.log(cPage.id);
+    
+    if (cPage.id == "peopleGroup") {
+      for (index = 0; index < document.getElementsByClassName("person").length; index++) {
+        // document.getElementsByClassName("person")[index].style.display = "block";
+        document.getElementsByClassName("person")[index].style.marginLeft =
+          String(
+            Math.random() *
+          (document.getElementsByClassName("col")[0].offsetWidth - document.getElementsByClassName("person")[index].offsetWidth)
+          ) + "px";
+      }
+    }
   } else {
-    cPage = null;''
-    b.style.background = "white";
-    document.getElementById(group).style.display = "none";
+    cPage = null;
+    b.style.backgroundColor = "rgba(0,0,0,0)";
+    b.classList.remove("current-filter");
+    document.body.style.backgroundColor = "white";
+    // document.getElementById(group).style.display = "none";
+    document.getElementById(group).style.left = "-100vw";
   }
 
   for (let index = 0; index < toshow.children.length; index++) {
-    toshow.children[index].style.marginRight = String(Math.random() * (toshow.offsetWidth - toshow.children[index].offsetWidth)) + "px";
-    toshow.children[index].style.marginBottom = String(Math.random() * 90 + 10) + "px";
-    toshow.style.marginTop = String(Math.random() * 1) + "vh"; 
+    toshow.children[index].style.marginRight =
+      String(
+        Math.random() *
+          (toshow.offsetWidth - toshow.children[index].offsetWidth)
+      ) + "px";
+    toshow.children[index].style.marginBottom =
+      String(Math.random() * 90 + 10) + "px";
+    toshow.style.marginTop = String(Math.random() * 1) + "vh";
   }
 }
 
@@ -35,6 +67,10 @@ function hiddenBoxToggle(e) {
   } else {
     e.classList.add("window-clicked");
   }
+}
+
+function latency() {
+  console.log('lag');
 }
 
 window.onload = () => {
@@ -58,31 +94,3 @@ window.onload = () => {
     };
   }
 };
-
-// document.addEventListener('click', function (e) {
-//   console.log(e);
-//   e = e || window.event;
-//   var target = e.target || e.srcElement,
-//     text = target.textContent || target.innerText;
-//   // if (target.classList.contains("window-clicked")) {
-//   //   target.classList.remove("window-clicked");
-//   // } else {
-//   //   target.classList.add("window-clicked");
-//   // }
-//   zindex += 1;
-//   target.style.zIndex = zindex;
-// }, false);
-
-// add margin-top to sections
-// for (
-//   let index = 0;
-//   index < document.getElementsByClassName("aGroup").length;
-//   index++
-// ) {
-//   // document.getElementsByClassName("aGroup")[index].style.Top = String(Math.random() * 15) + "vh";
-
-//   for (let index2 = 0; index < document.getElementsByClassName("aGroup")[index].children.length; index++) {
-//     // document.getElementsByClassName("aGroup")[index].children[index2].style.marginRight = String(Math.random() * 15) + "vw";
-//     // document.getElementsByClassName("aGroup")[index].children[index2].style.marginBottom = String(Math.random() * 150) + "px";
-//   }
-// }

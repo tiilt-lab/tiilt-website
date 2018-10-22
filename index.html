@@ -12,8 +12,6 @@
 </head>
 
 <body>
-    <!-- <img class="logo" src="img/logo.svg" alt=""> -->
-
     <div class="background_description">
         Technological Innovations for Inclusive Learning &#38; Teaching (tiilt)
         lab aims to improve
@@ -22,13 +20,21 @@
         for students from under-served communities.
     </div>
 
+    <div id="tiilt-logo">
+        <img class="lazy" src="" data-src="/img/logo.svg" alt="">
+    </div>
+
     <nav class="nav primary_nav">
-        <div id="nav_projects" color="#F6FFF8" class="filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
-        <div id="nav_classes" color="#EAF4F4" class="filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
-        <div id="nav_papers" color="#CCE3DE" class="filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
-        <div id="nav_team" color="#A4C3B2" class="filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>  
-        <div id="nav_about" color="#6B9080" class="filter" onclick="filterWindows('aboutGroup', this)"><span>???</span></div>
-        
+        <div class="stacked">
+            <h1>Technological Innovations for Inclusive Learning & Teaching</h1>
+            <div class="filters">
+                <div id="nav_projects" color="yellow" class="filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
+                <div id="nav_classes" color="red" class="filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
+                <div id="nav_papers" color="green" class="filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
+                <div id="nav_team" color="orange" class="filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>
+                <div id="nav_about" color="lightblue" class="filter" onclick="filterWindows('aboutGroup', this)"><span>___<span></div>
+            </div>
+        </div>
     </nav>
 
     <section class="spacer"></section>
@@ -483,7 +489,7 @@
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <div class="col">
-                <div class="window person" id="marcelo-worsley">
+                <div class="window person grid-item" id="marcelo-worsley">
                     <div class="header">
                         Marcelo Worsley — Director
                     </div>
@@ -503,7 +509,7 @@
                     </div>
                 </div>
 
-                <div class="window person" id="kira-furuichi">
+                <div class="window person grid-item" id="kira-furuichi">
                     <div class="header">Kira Furuichi — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/kira-furuichi.jpg">
 
@@ -519,7 +525,7 @@
                 </div>
 
 
-                <div class="window person third-item" id="simeon">
+                <div class="window person grid-item third-item" id="simeon">
                     <div class="header">
                         Simeon — Student
                     </div>
@@ -531,7 +537,7 @@
                     </div>
                 </div>
 
-                <div class="window person third-item" id="bobbie-burgess">
+                <div class="window person grid-item third-item" id="bobbie-burgess">
                     <div class="header">Bobbie Burgess — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/bobbie-burgess.jpg">
 
@@ -551,7 +557,7 @@
                     </p>
                 </div>
 
-                <div class="window person third-item" id="eric-mertz">
+                <div class="window person grid-item third-item" id="eric-mertz">
                     <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
                     <div class="header">Eric Mertz — Student</div>
                     <p class="description">
@@ -566,7 +572,7 @@
                     </p>
                 </div>
 
-                <div class="window person third-item" id="timothy-mwiti">
+                <div class="window person grid-item third-item" id="timothy-mwiti">
                     <div class="header">Tim — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/timothy-mwiti.jpg">
                     <p class="description">Tim is a junior majoring in Computer Science in the McCormick School of
@@ -579,7 +585,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="deniz-sagnaklar">
+                <div class="window person grid-item" id="deniz-sagnaklar">
                     <div class="header">Deniz Sagnaklar — Student</div>
                     <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
                     <p class="description">
@@ -595,7 +601,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="kya-suzuki">
+                <div class="window person grid-item" id="kya-suzuki">
                     <div class="header">Kya Suzuki — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/kya-suzuki.jpg">
 
@@ -608,7 +614,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="connor-bain">
+                <div class="window person grid-item" id="connor-bain">
                     <div class="header">Connor Bain — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/connor-bain.jpg">
 
@@ -631,7 +637,7 @@
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <div class="col">
 
-                <div class="window person" id="sarah-lee">
+                <div class="window person grid-item" id="sarah-lee">
                     <div class="header">Sarah Lee — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/sarah-lee.jpg">
                     <p class="description">
@@ -643,7 +649,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="david-barel">
+                <div class="window person grid-item" id="david-barel">
                     <div class="header">David Barel — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/david-barel.jpg">
                     <p class="description">
@@ -657,7 +663,7 @@
                     </p>
                 </div>
 
-                <div class="window person third-item" id="kit-martin">
+                <div class="window person grid-item third-item" id="kit-martin">
                     <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
                     <div class="header">Kit Martin — Student</div>
                     <p class="description">
@@ -670,7 +676,7 @@
                     </p>
                 </div>
 
-                <div class="window person third-item" id="gabe-rojas-westall">
+                <div class="window person grid-item third-item" id="gabe-rojas-westall">
                     <div class="header">Gabe Rojas-Westall — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/gabe-westall.jpeg">
                     <p class="description">
@@ -685,7 +691,7 @@
                     </p>
                 </div>
 
-                <div class="window person third-item" id="durell-gill">
+                <div class="window person grid-item third-item" id="durell-gill">
                     <div class="header">Durell Gill — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/durell-gill.jpg">
                     <p class="description">
@@ -696,7 +702,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="emily-q-wang">
+                <div class="window person grid-item" id="emily-q-wang">
                     <div class="header">Emily Q. Wang — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/emily-q-wang.png">
                     <p class="description">
@@ -714,7 +720,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="shankar-salwan">
+                <div class="window person grid-item" id="shankar-salwan">
                     <div class="header">Shankar Salwan — Student</div>
                     <p class="description">I am a Sophomore studying Computer Science, interested in the fields of
                         Machine
@@ -724,7 +730,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="melissa-perez">
+                <div class="window person grid-item" id="melissa-perez">
                     <div class="header">Melissa Perez — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/melissa-perez.jpg">
                     <p class="description">I'm a Junior studying Computer Science, with minors in Latino Studies and
@@ -738,7 +744,7 @@
                     </p>
                 </div>
 
-                <div class="window person" id="tom-large">
+                <div class="window person grid-item" id="tom-large">
                     <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
                     <div class="header">Tom Large — Student</div>
                     <p class="description">
@@ -755,19 +761,19 @@
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <div class="col third-col">
-                <div class="window person" id="simeon">
+                <div class="window person grid-item" id="simeon">
                     <div class="header">
                         Simeon — Student
                     </div>
             
                     <div class="">
                         <p class="description">
-                            student, fourth year. kinda made this.
+                            student, fourth year.
                         </p>
                     </div>
                 </div>
             
-                <div class="window person" id="bobbie-burgess">
+                <div class="window person grid-item" id="bobbie-burgess">
                     <div class="header">Bobbie Burgess — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/bobbie-burgess.jpg">
             
@@ -785,7 +791,7 @@
                     </p>
                 </div>
             
-                <div class="window person" id="eric-mertz">
+                <div class="window person grid-item" id="eric-mertz">
                     <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
                     <div class="header">Eric Mertz — Student</div>
                     <p class="description">
@@ -799,7 +805,7 @@
                     </p>
                 </div>
             
-                <div class="window person" id="timothy-mwiti">
+                <div class="window person grid-item" id="timothy-mwiti">
                     <div class="header">Tim — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/timothy-mwiti.jpg">
                     <p class="description">Tim is a junior majoring in Computer Science in the McCormick School of
@@ -811,7 +817,7 @@
                     </p>
                 </div>
             
-                <div class="window person" id="gabe-rojas-westall">
+                <div class="window person grid-item" id="gabe-rojas-westall">
                     <div class="header">Gabe Rojas-Westall — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/gabe-westall.jpeg">
                     <p class="description">
@@ -826,7 +832,7 @@
                     </p>
                 </div>
             
-                <div class="window person " id="durell-gill">
+                <div class="window person grid-item " id="durell-gill">
                     <div class="header">Durell Gill — Student</div>
                     <img class="lazy" alt="..." data-src="img/people/durell-gill.jpg">
                     <p class="description">
@@ -837,7 +843,7 @@
                     </p>
                 </div>
             
-                <div class="window person" id="kit-martin">
+                <div class="window person grid-item" id="kit-martin">
                     <!-- <img class="lazy" alt="..." data-src="img/somedude.jpg"> -->
                     <div class="header">Kit Martin — Student</div>
                     <p class="description">

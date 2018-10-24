@@ -1,8 +1,14 @@
-// $one: #80b39d;
-// $two: #a4c3b2;
-// $three: #f6fff8;
-// $four: #eaf4f4;
-// $five: #cce3de;
+@font-face {
+  font-family: "AHAMONO";
+  src: url("/assets/fonts/AHAMONO-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/AHAMONO-Regular.otf") format("opentype"),
+    url("/assets/fonts/AHAMONO-Regular.woff") format("woff"),
+    url("/assets/fonts/AHAMONO-Regular.ttf") format("/truetype"),
+    url("/assets/fonts/AHAMONO-Regular.svg#AHAMONO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 $one: #fff;
 $two: #fff;
@@ -18,7 +24,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  // font: caption;
   font-family: "AHAMONO";
   margin: 0;
   overscroll-behavior: none;
@@ -28,18 +33,37 @@ p {
   line-height: 1.3rem;
 }
 
+a {
+  transition: all 300ms ease-in-out;
+}
+
+a:hover {
+  letter-spacing: .1rem;
+}
+
+a:visited {
+  color: rgb(165, 85, 187);
+}
+
 //
 
 .background_description {
+  @media screen and (max-width: 800px) {
+    bottom: 0px;
+    padding: 10vw;
+  }
   font-family: "AHAMONO";
   font-size: calc(3vh + 2.5vw);
   z-index: -1;
   position: fixed;
   left: 0;
-  padding: 25vh 10vw;
+  padding: 20vh 10vw;
   color: rgba(0, 0, 0, 0.99);
   text-transform: uppercase;
-  // display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #tiilt-logo {
@@ -65,26 +89,55 @@ p {
   -o-transition: rotate(3600deg);
 }
 
+#tiilt-logo:hover {
+}
+
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav {
-  // width: 80vw;
+  @media screen and (max-width: 800px) {
+    top: 2px;
+    margin-right: 2px;
+    .stacked h1 {
+      font-size: 1.05rem;
+    }
+    .filters .filter {
+      font-size: 1.05rem;
+    }
+  }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-family: "AHAMONO";
   z-index: 1000;
   position: fixed;
   left: 3rem;
   top: 2.5rem;
+  cursor: pointer;
   .stacked {
     h1 {
       border: solid black;
@@ -130,10 +183,7 @@ p {
       // box-shadow: 2px 3px;
       font-size: 1.25rem;
       font-weight: bold;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+      padding: 0 5px;
       span {
         display: block;
         text-align: center;
@@ -145,7 +195,7 @@ p {
 .spacer {
   height: 175px;
   @media screen and (max-width: 620px) {
-    height: 120px;
+    height: 200px;
   }
 }
 
@@ -155,7 +205,7 @@ p {
   //   margin: 50px auto !important;
   // }
   max-width: 85vw;
-  background: rgba(254, 254, 254, 0.97);
+  background: rgba(254, 254, 254, 0.96);
   border: solid black 2px;
   // box-shadow: 2px 3px;
   margin: auto auto 100px auto;
@@ -227,10 +277,10 @@ p {
   @media screen and (max-width: 620px) {
     flex-direction: column;
     .col {
-      width: 100% !important;
+      width: 90% !important;
     }
     .grid-item {
-      margin: 20px auto !important;
+      // margin: 20px auto !important;
     }
   }
   @media screen and (max-width: 825px) {
@@ -328,7 +378,7 @@ p {
   }
 
   #contact {
-    width: 300px;
+    width: 400px;
     .header {
       background: $one;
     }
@@ -439,6 +489,17 @@ p {
       li:first-child {
         font-weight: bold;
       }
+    }
+  }
+}
+
+#randomGroup {
+  .window {
+    width: 500px;
+    .header {
+    }
+    .description {
+      margin: 10px 5px;
     }
   }
 }

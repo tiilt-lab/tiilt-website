@@ -4,6 +4,8 @@ function filterWindows(group, b) {
 
   for (let index = 0; index < tohide.length; index++) {
     tohide[index].style.display = "none";
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
   }
 
   if (toshow != cPage) {
@@ -13,7 +15,7 @@ function filterWindows(group, b) {
       index < document.getElementsByClassName("filter").length;
       index++
     ) {
-      document.getElementsByClassName("filter")[index].style.backgroundColor = "rgba(0,0,0,0)";
+      document.getElementsByClassName("filter")[index].style.background = "rgba(0,0,0,0)";
     }
 
     if (document.getElementsByClassName("current-filter")[0]) {
@@ -21,8 +23,8 @@ function filterWindows(group, b) {
         .getElementsByClassName("current-filter")[0]
         .classList.remove("current-filter");
     } 
-    b.style.backgroundColor = "rgba(0,0,0,0)";
-    document.body.style.backgroundColor = b.getAttribute("color");
+    b.style.background = "rgba(0,0,0,0)";
+    document.body.style.background = b.getAttribute("color");
     b.classList.add("current-filter");
     zindex += 1;
     toshow.style.left = "0";
@@ -42,14 +44,15 @@ function filterWindows(group, b) {
     }
   } else {
     cPage = null;
-    b.style.backgroundColor = "rgba(0,0,0,0)";
+    b.style.background = "rgba(0,0,0,0)";
     b.classList.remove("current-filter");
-    document.body.style.backgroundColor = "white";
+    document.body.style.background = "white";
     // document.getElementById(group).style.display = "none";
     document.getElementById(group).style.left = "-100vw";
   }
 
   for (let index = 0; index < toshow.children.length; index++) {
+    console.log(toshow.offsetWidth, toshow.children[index].offsetWidth);
     toshow.children[index].style.marginRight =
       String(
         Math.random() *

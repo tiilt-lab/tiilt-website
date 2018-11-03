@@ -1,3 +1,6 @@
 node_modules
 .bugs.done
 bugs
+stats
+.DS_Store
+.htaccess

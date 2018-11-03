@@ -74,48 +74,58 @@ a:visited {
   width: 4rem;
   height: 4rem;
   padding: 10px;
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 3000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 3000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 3000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  -o-transition: rotate(3600deg);
+  animation: tilt 1000ms 500ms linear;
+  // -webkit-animation-name: spin;
+  // -webkit-animation-duration: 3000ms;
+  // -webkit-animation-iteration-count: infinite;
+  // -webkit-animation-timing-function: linear;
+  // -moz-animation-name: spin;
+  // -moz-animation-duration: 3000ms;
+  // -moz-animation-iteration-count: infinite;
+  // -moz-animation-timing-function: linear;
+  // -ms-animation-name: spin;
+  // -ms-animation-duration: 3000ms;
+  // -ms-animation-iteration-count: infinite;
+  // -ms-animation-timing-function: linear;
+  // -o-transition: rotate(3600deg);
 }
 
 #tiilt-logo:hover {
 }
 
-@-moz-keyframes spin {
+@keyframes tilt {
   from {
-    -moz-transform: rotate(0deg);
+    transform: rotate(20deg);
   }
   to {
-    -moz-transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+// @-moz-keyframes spin {
+//   from {
+//     -moz-transform: rotate(0deg);
+//   }
+//   to {
+//     -moz-transform: rotate(360deg);
+//   }
+// }
+// @-webkit-keyframes spin {
+//   from {
+//     -webkit-transform: rotate(0deg);
+//   }
+//   to {
+//     -webkit-transform: rotate(360deg);
+//   }
+// }
+// @keyframes spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
 
 .nav {
   @media screen and (max-width: 800px) {

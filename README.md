@@ -1,15 +1,21 @@
-# tiilt-website
-the un-official tiilt website
+# TIILT WEBSITE
 
-- need to be on NU VPN to access webmin
-- once you sign in go to others -> file manager
-- for fonts: use .woff file format
-- in image directory: everything is split up by page
-- sass is a step up from css
-- sass allows you to nest easier
-- install node js
-- instead of pages everything is split into sections
-- if the div is a window it will show up as one of the info boxes (like one that holds marcelo’s paper)
-- if you have a hidden box put the image in it
-- CMS = content management system
-   - could have a text file (with consistent formatting) that can add content straight to the site without having to touch the HTML
+this is [this](https://tiilt.northwestern.edu/)
+
+## Setup
+
+- cd to root of repository
+- npm install -sass (optionally -g)
+- sass --watch scss/styles.scss css/styles.css
+
+## Master -> Live
+
+- ssh into tiilt.northwestern.edu with the webmin account username and password
+- cd into public_html
+- git pull
+
+## Structure 
+
+- #aGroup contains a "page"
+- .window is the box that contains a header and content
+- .hiddenBox contains a window's content that becomes visible onclick

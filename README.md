@@ -18,4 +18,4 @@ this is [this](https://tiilt.northwestern.edu/)
 
 - #aGroup contains a "page"
 - .window is the box that contains a window\_\_header and content
-- .window__\_\_hidden contains a window's content that becomes visible onclick
+- .window\_\_hidden contains a window's content that becomes visible onclick

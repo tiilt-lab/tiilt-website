@@ -1,85 +1,69 @@
 function filterWindows(group, b) {
-  tohide = document.getElementsByClassName("aGroup");
+  allGroups = document.getElementsByClassName("aGroup");
   toshow = document.getElementById(group);
 
-  for (let index = 0; index < tohide.length; index++) {
-    tohide[index].style.display = "none";
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  // scroll to the top of page
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
 
+  // hide all groups
+  for (let index = 0; index < allGroups.length; index++) {
+    allGroups[index].style.display = "none";
   }
 
-  if (toshow != cPage) {
-    cPage = document.getElementById(group);
-    for (
-      let index = 0;
-      index < document.getElementsByClassName("filter").length;
-      index++
-    ) {
-      document.getElementsByClassName("filter")[index].style.background = "rgba(0,0,0,0)";
-    }
+  // if new group selected
+  if (toshow != currentPage) {
+    currentPage = document.getElementById(group);
 
-    if (document.getElementsByClassName("current-filter")[0]) {
-      document
-        .getElementsByClassName("current-filter")[0]
-        .classList.remove("current-filter");
-    } 
-    b.style.background = "rgba(0,0,0,0)";
     document.body.style.background = b.getAttribute("color");
-    b.classList.add("current-filter");
-    zindex += 1;
-    toshow.style.left = "0";
+
+    if (document.getElementsByClassName("current-nav__filters__filter")[0]) {
+      document.getElementsByClassName("current-nav__filters__filter")[0].classList.remove("current-nav__filters__filter");
+    } 
+    b.classList.add("current-nav__filters__filter");
+
     document.getElementById(group).style.display = "block";
-    document.getElementById(group).style.zIndex = zindex;
-    console.log(cPage.id);
-    
-    if (cPage.id == "peopleGroup") {
-      for (index = 0; index < document.getElementsByClassName("person").length; index++) {
-        // document.getElementsByClassName("person")[index].style.display = "block";
-        document.getElementsByClassName("person")[index].style.marginLeft =
-          String(
-            Math.random() *
-          (document.getElementsByClassName("col")[0].offsetWidth - document.getElementsByClassName("person")[index].offsetWidth)
-          ) + "px";
-      }
-    }
   } else {
-    cPage = null;
+    currentPage = null;
     b.style.background = "rgba(0,0,0,0)";
-    b.classList.remove("current-filter");
+    b.classList.remove("current-nav__filters__filter");
     document.body.style.background = "white";
-    // document.getElementById(group).style.display = "none";
-    document.getElementById(group).style.left = "-100vw";
   }
 
+  // positions windows randomly horizontally and vertially using margin-top and margin-right
   for (let index = 0; index < toshow.children.length; index++) {
     console.log(toshow.offsetWidth, toshow.children[index].offsetWidth);
     toshow.children[index].style.marginRight =
       String(
         Math.random() *
-          (toshow.offsetWidth - toshow.children[index].offsetWidth)
+          (toshow.offsetWidth - toshow.children[index].offsetWidth*1.2)
       ) + "px";
     toshow.children[index].style.marginBottom =
       String(Math.random() * 90 + 10) + "px";
     toshow.style.marginTop = String(Math.random() * 1) + "vh";
   }
-}
 
-function hiddenBoxToggle(e) {
-  if (e.classList.contains("window-clicked")) {
-    e.classList.remove("window-clicked");
-  } else {
-    e.classList.add("window-clicked");
+  // positions grid__items horizontally using margin-left
+  for (index = 0; index < document.getElementsByClassName("grid__item").length; index++) {
+    document.getElementsByClassName("grid__item")[index].style.marginLeft =
+      String(
+        Math.random() *
+        (document.getElementsByClassName("grid__col")[0].offsetWidth - document.getElementsByClassName("grid__item")[index].offsetWidth)
+      ) + "px";
   }
 }
 
-function latency() {
-  console.log('lag');
+function hiddenBoxToggle(e) {
+  if (e.classList.contains("window--active")) {
+    e.classList.remove("window--active");
+  } else {
+    e.classList.add("window--active");
+  }
 }
 
 window.onload = () => {
   // variable declaration
   zindex = 0;
-  cPage = null;
+  currentPage = null;
 
   // lazy load
   var myLazyLoad = new LazyLoad({

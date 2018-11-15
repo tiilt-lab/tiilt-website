@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="background_description">
+    <div class="background_bio">
         Technological Innovations for Inclusive Learning &#38; Teaching (tiilt)
         lab at Northwestern University aims to improve
         learning
@@ -25,15 +25,15 @@
         <img class="lazy" src="" data-src="/assets/img/logo.svg" alt="">
     </div>
 
-    <nav class="nav primary_nav">
-        <div class="stacked">
-            <h1>Technological Innovations for Inclusive Learning & Teaching</h1>
-            <div class="filters">
-                <div id="nav_projects" color="#beaaff" class="filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
-                <div id="nav_classes" color="yellow" class="filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
-                <div id="nav_papers" color="#beeaff" class="filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
-                <div id="nav_team" color="#ff8859" class="filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>
-                <div id="nav_about" color="#57d694" class="filter" onclick="filterWindows('aboutGroup', this)"><span>Info<span></div>
+    <nav class="nav">
+        <div class="nav__partition">
+            <h1 class="nav__title">Technological Innovations for Inclusive Learning & Teaching</h1>
+            <div class="nav__filters">
+                <div id="nav_projects" color="#beaaff" class="nav__filters__filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
+                <div id="nav_classes" color="yellow" class="nav__filters__filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
+                <div id="nav_papers" color="#beeaff" class="nav__filters__filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
+                <div id="nav_team" color="#ff8859" class="nav__filters__filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>
+                <div id="nav_about" color="#57d694" class="nav__filters__filter" onclick="filterWindows('aboutGroup', this)"><span>Info<span></div>
             </div>
         </div>
     </nav>
@@ -41,9 +41,9 @@
     <section class="spacer"></section>
 
     <section class="aGroup" id="papersGroup">
-        <div class="window papers" id="wip">
-            <div class="header">2018</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="wip">
+            <div class="window__header">2018</div>
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (under review). A Multimodal Analysis of Making. International
                     Journal
@@ -52,7 +52,7 @@
                     in Education.
                 </p>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M., (in progress). Bridging Engineering Education and Conceptual Change: An Analysis of
                     Changes in
@@ -60,7 +60,7 @@
                     of Structural Stability during Hands-on, Collaborative Learning Tasks.
                 </p>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (under review). A Multimodal Analysis of Making. International
                     Journal
@@ -69,7 +69,7 @@
                     in Education.
                 </p>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M., (in progress). Bridging Engineering Education and Conceptual Change: An Analysis of
                     Changes in
@@ -77,7 +77,7 @@
                     of Structural Stability during Hands-on, Collaborative Learning Tasks.
                 </p>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (under review). A Multimodal Analysis of Making. International
                     Journal
@@ -86,7 +86,7 @@
                     in Education.
                 </p>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M., (in progress). Bridging Engineering Education and Conceptual Change: An Analysis of
                     Changes in
@@ -96,9 +96,9 @@
             </div>
         </div>
 
-        <div class="window papers" id="wip">
-            <div class="header">2017</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="wip">
+            <div class="window__header">2017</div>
+            <div class="window__paper">
                 <p>
                     Andrade, A., &amp; Worsley, M. (2017). A methodological framework for the exploratory analysis of
                     multimodal
@@ -107,7 +107,7 @@
                 </p>
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. (2017). Engineering design with everyday materials multimodal dataset. CEUR Workshop
                     Proceedings,
@@ -117,7 +117,7 @@
                 <a href="" target="_blank">PDF</a> -->
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2017). Reasoning Strategies in the Context of Engineering Design
                     with
@@ -130,9 +130,9 @@
             </div>
         </div>
 
-        <div class="window papers" id="2016">
-            <div class="header">2016</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2016">
+            <div class="window__header">2016</div>
+            <div class="window__paper">
                 <p>
                     Ochoa, X. &amp; Worsley, M. (2016). Augmenting Learning Analytics with Multimodal Sensory Data.
                     Journal of
@@ -143,7 +143,7 @@
                 <a href="assets/papers/jla_ochoa_worsley_2016.pdf" target="_blank">PDF</a>
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Blikstein, P. &amp; Worsley, M. (2016). Multimodal Learning Analytics and Education Data Mining:
                     using
@@ -154,7 +154,7 @@
                 <!-- <a href="" target="_blank">READ</a> | -->
                 <a href="assets/papers/jla_blikstein_worsley_2016.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
 
                     Worsley, M., Abrahamson, D., Blikstein, P., Grover, S., Schneider, B., &amp; Tissenbaum, M. (2016).
@@ -172,9 +172,9 @@
             </div>
 
         </div>
-        <div class="window papers" id="2015">
-            <div class="header">2015</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2015">
+            <div class="window__header">2015</div>
+            <div class="window__paper">
                 <p>
                     Worsley, M. Scherer, S., Morency, L.P., &amp; Blikstein, P. (2015). Exploring Behavior
                     Representation for
@@ -186,7 +186,7 @@
                 <a href="assets/papers/icmi2016.pdf" target="_blank">PDF</a>
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M, Chiluiza, K., Grafsgaard, J., &amp; Ochoa, X.,. (2015). 2015 Multimodal Learning and
                     Analytics
@@ -198,7 +198,7 @@
                 <a href="http://dl.acm.org/citation.cfm?id=2829995" target="_blank">READ</a>
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2015). Using Learning Analytics to Study Cognitive Disequilibrium
                     in a
@@ -211,9 +211,9 @@
                 <a href="http://dl.acm.org/citation.cfm?id=2723659" target="_blank">READ</a>
             </div>
         </div>
-        <div class="window papers" id="2014">
-            <div class="header">2014</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2014">
+            <div class="window__header">2014</div>
+            <div class="window__paper">
                 <p>
 
                     Ochoa, X., Worsley, M., Chiluiza, K., &amp; Luz, S. (2014). MLA'14: Third Multimodal Learning
@@ -227,7 +227,7 @@
                 <a href="http://dl.acm.org/citation.cfm?id=2723659" target="_blank">READ</a>
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. (2014). Multimodal Learning Analytics as a Tool for Bridging Learning Theory and
                     Complex
@@ -240,7 +240,7 @@
                 <a href="assets/papers/mla2014_1.pdf" target="_blank">PDF</a>
 
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2014). Deciphering the Practices and Affordances of Different
                     Reasoning
@@ -254,7 +254,7 @@
 
             </div>
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Blikstein, P., Worsley, M., Piech, C., Gibbons, A., Sahami, M., &amp; Cooper, S. (2014).
                     Programming
@@ -266,7 +266,7 @@
                 </p>
                 <a href="assets/papers/jls2014.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2014). The Impact of Principle-Based Reasoning on Hands-on,
                     Project-Based
@@ -278,7 +278,7 @@
             </div>
 
 
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2014). Using Multimodal Learning Analytics to Study Learning
                     Mechanisms.
@@ -288,7 +288,7 @@
                 <a href="assets/papers/edm2014.pdf" target="_blank">PDF</a>
 
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2014). Making Smarter not Harder: Using Principle-based Reasoning
                     to
@@ -298,7 +298,7 @@
                 <a href="assets/papers/fl2014.pdf" target="_blank">PDF</a>
 
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2014). Analyzing Engineering Design through the Lens of
                     Computation.
@@ -309,9 +309,9 @@
 
             </div>
         </div>
-        <div class="window papers" id="2013">
-            <div class="header">2013</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2013">
+            <div class="window__header">2013</div>
+            <div class="window__paper">
                 <p>
                     Morency, L. Oviatt, S., Scherer, S. Weibel, N. &amp; Worsley, M. (2013). ICMI 2013 Grand Challenge
                     Workshop
@@ -323,7 +323,7 @@
                 </p>
                 <a href="assets/papers/icmi_mmla_2013.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M., &amp;; Blikstein, P. (2013). Programming Pathways: A Technique for Analyzing Novice
                     Programmers' Learning Trajectories.
@@ -331,7 +331,7 @@
                 </p>
                 <a href="assets/papers/aied_2013.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Gomes, J. Yassine, M., Worsley, M., &amp; Blikstein, P. (2013) Analysing Engineering Expertise of
                     High
@@ -343,7 +343,7 @@
                 </p>
                 <a href="assets/papers/edm_2013.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Blikstein, P. (2013). Toward the Development of Mulitmodal Action Based
                     Assessment. In
@@ -355,9 +355,9 @@
                 <a href="assets/papers/lak_2013.pdf" target="_blank">PDF</a>
             </div>
         </div>
-        <div class="window papers" id="2012">
-            <div class="header">2012</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2012">
+            <div class="window__header">2012</div>
+            <div class="window__paper">
                 <p>
                     Worsley, M. (2012). Multimodal Learning Analytics: Enabling the Future of Learning through
                     Multimodal Data
@@ -369,7 +369,7 @@
                 </p>
                 <a href="assets/papers/icmi_2012.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
                     Scherer,S., Worsley,M. &amp; Morency, L. (2012). 1st international workshop on multimodal learning
                     analytics: extended abstract.
@@ -380,7 +380,7 @@
                 </p>
                 <a href="assets/papers/icmi_mmla_2012.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
 
                     Worsley, M. &amp; Blikstein, P. (2012). An Eye For Detail: Techniques For Using Eye Tracker Data to
@@ -395,9 +395,9 @@
 
             </div>
         </div>
-        <div class="window papers" id="2011">
-            <div class="header">2011</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2011">
+            <div class="window__header">2011</div>
+            <div class="window__paper">
                 <p>
                     Worsley, M., Johnston, M. &amp; Blikstein P. (2011). OpenGesture: a low cost authoring framework
                     for
@@ -409,7 +409,7 @@
                 </p>
                 <a href="assets/papers/idc_2011.pdf" target="_blank">PDF</a>
             </div>
-            <div class="pub_entry">
+            <div class="window__paper">
                 <p>
 
                     Worsley, M. &amp; Blikstein P. (2011). What's an Expert? Using learning analytics to identify
@@ -424,9 +424,9 @@
 
             </div>
         </div>
-        <div class="window papers" id="2010">
-            <div class="header">2010</div>
-            <div class="pub_entry">
+        <div class="window window--papers" id="2010">
+            <div class="window__header">2010</div>
+            <div class="window__paper">
                 <p>
                     Worsley, M. &amp; Johnston, M. (2010). Multimodal Interactive Spaces: MagicTV and MagicMAP. Spoken
                     Language
@@ -441,7 +441,7 @@
 
     <section class="aGroup" id="aboutGroup">
         <div class="window" id="contact">
-            <div class="header">Contact</div>
+            <div class="window__header">Contact</div>
             <ul>
                 <li>email us at <a href="mailto:tiiltlab@gmail.com">tiiltlab@gmail.com</a></li>
                 <li>follow us on <a href="https://twitter.com/tiiltlab">twitter</a></li>
@@ -450,7 +450,7 @@
         </div>
 
         <div class="window twitter">
-            <div class="header">Twitter</div>
+            <div class="window__header">Twitter</div>
             <div class="twitter-embed">
                 <a class="twitter-timeline" href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw"></a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -458,7 +458,7 @@
         </div>
 
         <div class="window map">
-            <div class="header">Location</div>
+            <div class="window__header">Location</div>
             <div class="mapouter">
                 <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Mudd%20Library&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
@@ -479,24 +479,20 @@
             </div>
         </div>
 
-        <!-- <div class="window image">
-            <div class="header">image</div>
-            <img class="lazy" alt="..." data-src="https://i.redd.it/nchuf4dxt3501.jpg">
-        </div> -->
     </section>
 
     <section class="aGroup" id="peopleGroup">
         <div class="grid">
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
-            <div class="col">
-                <div class="window person grid-item" id="marcelo-worsley">
-                    <div class="header">
+            <div class="grid__col">
+                <div class="window window--person grid__item" id="marcelo-worsley">
+                    <div class="window__header">
                         Marcelo Worsley — Director
                     </div>
                     <img class="lazy" alt="..." data-src="assets/img/people/marcelo-worsley.jpg">
                     <div class="">
-                        <p class="description">I am an assistant professor of Learning Sciences and Computer Science at
+                        <p class="window__description">I am an assistant professor of Learning Sciences and Computer Science at
                             Northwestern's School of Education and
                             Social Policy and the McCormick School of Engineering. The goal of my research is to
                             advance
@@ -510,11 +506,11 @@
                     </div>
                 </div>
 
-                <div class="window person grid-item" id="kira-furuichi">
-                    <div class="header">Kira Furuichi — Student</div>
+                <div class="window window--person grid__item" id="kira-furuichi">
+                    <div class="window__header">Kira Furuichi — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/kira-furuichi.jpg">
 
-                    <p class="description">Kira is a junior in McCormick studying computer science with a minor in
+                    <p class="window__description">Kira is a junior in McCormick studying computer science with a minor in
                         sociology. Her
                         primary interest is in analyzing
                         team dynamics and group work through looking at physiological responses. On her free time, you
@@ -526,23 +522,23 @@
                 </div>
 
 
-                <div class="window person grid-item third-item" id="simeon">
-                    <div class="header">
+                <div class="window window--person grid__item grid__item--third" id="simeon">
+                    <div class="window__header">
                         Simeon — Student
                     </div>
 
                     <div class="">
-                        <p class="description">
+                        <p class="window__description">
                             student, fourth year.
                         </p>
                     </div>
                 </div>
 
-                <div class="window person grid-item third-item" id="bobbie-burgess">
-                    <div class="header">Bobbie Burgess — Student</div>
+                <div class="window window--person grid__item grid__item--third" id="bobbie-burgess">
+                    <div class="window__header">Bobbie Burgess — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/bobbie-burgess.jpg">
 
-                    <p class="description">Hiya! I am originally from the San Francisco Bay Area (Burlingame to be
+                    <p class="window__description">Hiya! I am originally from the San Francisco Bay Area (Burlingame to be
                         precise)
                         and now I am at
                         Northwestern as
@@ -558,10 +554,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item third-item" id="eric-mertz">
+                <div class="window window--person grid__item grid__item--third" id="eric-mertz">
                     <!-- <img class="lazy" alt="..." data-src="assets/img/somedude.jpg"> -->
-                    <div class="header">Eric Mertz — Student</div>
-                    <p class="description">
+                    <div class="window__header">Eric Mertz — Student</div>
+                    <p class="window__description">
                         Eric is graduating from Northwestern in June 2018 with a double major in Computer Science
                         and
                         Theatre. He
@@ -573,10 +569,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item third-item" id="timothy-mwiti">
-                    <div class="header">Tim — Student</div>
+                <div class="window window--person grid__item grid__item--third" id="timothy-mwiti">
+                    <div class="window__header">Tim — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/timothy-mwiti.jpg">
-                    <p class="description">Tim is a junior majoring in Computer Science in the McCormick School of
+                    <p class="window__description">Tim is a junior majoring in Computer Science in the McCormick School of
                         Engineering. He
                         works as a research assistant
                         at the lab. He is from Kenya and is passionate about how technology can be utilized to
@@ -586,10 +582,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="deniz-sagnaklar">
-                    <div class="header">Deniz Sagnaklar — Student</div>
+                <div class="window window--person grid__item" id="deniz-sagnaklar">
+                    <div class="window__header">Deniz Sagnaklar — Student</div>
                     <!-- <img class="lazy" alt="..." data-src="assets/img/somedude.jpg"> -->
-                    <p class="description">
+                    <p class="window__description">
                         I’m a senior from Istanbul, Turkey studying Computer Science in the McCormick School of
                         Engineering. During my
                         time at Northwestern,
@@ -602,11 +598,11 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="kya-suzuki">
-                    <div class="header">Kya Suzuki — Student</div>
+                <div class="window window--person grid__item" id="kya-suzuki">
+                    <div class="window__header">Kya Suzuki — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/kya-suzuki.jpg">
 
-                    <p class="description">
+                    <p class="window__description">
                         I am a junior studying Computer Science in Weinberg, the school of Arts and Sciences. I am
                         interested in the
                         interdivality
@@ -615,11 +611,11 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="connor-bain">
-                    <div class="header">Connor Bain — Student</div>
+                <div class="window window--person grid__item" id="connor-bain">
+                    <div class="window__header">Connor Bain — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/connor-bain.jpg">
 
-                    <p class="description">
+                    <p class="window__description">
                         Connor is a Ph.D. student in Computer Science and Learning Sciences originally from
                         Columbia,
                         SC.
@@ -631,11 +627,11 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="khalil-anderson">
-                    <div class="header">Khalil Anderson — Student</div>
+                <div class="window window--person grid__item" id="khalil-anderson">
+                    <div class="window__header">Khalil Anderson — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/khalil-anderson.jpg">
 
-                    <p class="description">
+                    <p class="window__description">
                         Born in Bronxville, New York and raised in Ellicott City, Maryland, Khalil, a UMBC Alum, is  a
                         Computer Science PhD student with interests in Machine Learning.
                         More specifically with interests in Reinforcement Learning, NLP, and
@@ -649,12 +645,12 @@
 
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
-            <div class="col">
+            <div class="grid__col">
 
-                <div class="window person grid-item" id="sarah-lee">
-                    <div class="header">Sarah Lee — Student</div>
+                <div class="window window--person grid__item" id="sarah-lee">
+                    <div class="window__header">Sarah Lee — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/sarah-lee.jpg">
-                    <p class="description">
+                    <p class="window__description">
                         Interested in the spaces around: making, memory, memorials, and museums, meaningful learning
                         and
                         engagement,
@@ -663,10 +659,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="david-barel">
-                    <div class="header">David Barel — Student</div>
+                <div class="window window--person grid__item" id="david-barel">
+                    <div class="window__header">David Barel — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/david-barel.jpg">
-                    <p class="description">
+                    <p class="window__description">
                         Originally from Tel-Aviv, Israel and currently working on my PhD in Learning Sciences at
                         Northwestern's School
                         of Education
@@ -677,10 +673,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item third-item" id="kit-martin">
+                <div class="window window--person grid__item grid__item--third" id="kit-martin">
                     <!-- <img class="lazy" alt="..." data-src="assets/img/somedude.jpg"> -->
-                    <div class="header">Kit Martin — Student</div>
-                    <p class="description">
+                    <div class="window__header">Kit Martin — Student</div>
+                    <p class="window__description">
                         As such, I’ve become interested in multi-modal sensors. I see them as a bridge between agent
                         based
                         methods and
@@ -690,10 +686,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item third-item" id="gabe-rojas-westall">
-                    <div class="header">Gabe Rojas-Westall — Student</div>
+                <div class="window window--person grid__item grid__item--third" id="gabe-rojas-westall">
+                    <div class="window__header">Gabe Rojas-Westall — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/gabe-westall.jpeg">
-                    <p class="description">
+                    <p class="window__description">
                         I’m a junior studying Computer Science. I’m very interested in language (Spanish, Portuguese,
                         and
                         French are my
@@ -705,10 +701,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item third-item" id="durell-gill">
-                    <div class="header">Durell Gill — Student</div>
+                <div class="window window--person grid__item grid__item--third" id="durell-gill">
+                    <div class="window__header">Durell Gill — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/durell-gill.jpg">
-                    <p class="description">
+                    <p class="window__description">
                         I am a junior studying computer science in Weinberg who mostly interested in learning sciences,
                         web
                         development, and devices
@@ -716,10 +712,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="emily-q-wang">
-                    <div class="header">Emily Q. Wang — Student</div>
+                <div class="window window--person grid__item" id="emily-q-wang">
+                    <div class="window__header">Emily Q. Wang — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/emily-q-wang.png">
-                    <p class="description">
+                    <p class="window__description">
                         Emily is a PhD student in the Technology and Social Behavior program. Her research in
                         human-computer
                         interaction focuses
@@ -734,9 +730,9 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="shankar-salwan">
-                    <div class="header">Shankar Salwan — Student</div>
-                    <p class="description">I am a Sophomore studying Computer Science, interested in the fields of
+                <div class="window window--person grid__item" id="shankar-salwan">
+                    <div class="window__header">Shankar Salwan — Student</div>
+                    <p class="window__description">I am a Sophomore studying Computer Science, interested in the fields of
                         Machine
                         Learning and
                         AI. Avid fan of soccer
@@ -744,10 +740,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="melissa-perez">
-                    <div class="header">Melissa Perez — Student</div>
+                <div class="window window--person grid__item" id="melissa-perez">
+                    <div class="window__header">Melissa Perez — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/melissa-perez.jpg">
-                    <p class="description">I'm a Junior studying Computer Science, with minors in Latino Studies and
+                    <p class="window__description">I'm a Junior studying Computer Science, with minors in Latino Studies and
                         Sociology. I'm
                         involved in the Society
                         of Hispanic Professional Engineers and Women in Computing, as well as am a Peer Mentor for a
@@ -758,10 +754,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="tom-large">
+                <div class="window window--person grid__item" id="tom-large">
                     <!-- <img class="lazy" alt="..." data-src="assets/img/somedude.jpg"> -->
-                    <div class="header">Tom Large — Student</div>
-                    <p class="description">
+                    <div class="window__header">Tom Large — Student</div>
+                    <p class="window__description">
                         I am a student at Northwestern University studying computer science and math. Aside from my
                         work at
                         school and
@@ -774,24 +770,24 @@
 
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
             <!-- COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN COLUMN -->
-            <div class="col third-col">
-                <div class="window person grid-item" id="simeon">
-                    <div class="header">
+            <div class="grid__col grid__col--third">
+                <div class="window window--person grid__item" id="simeon">
+                    <div class="window__header">
                         Simeon — Student
                     </div>
 
                     <div class="">
-                        <p class="description">
+                        <p class="window__description">
                             student, fourth year.
                         </p>
                     </div>
                 </div>
 
-                <div class="window person grid-item" id="bobbie-burgess">
-                    <div class="header">Bobbie Burgess — Student</div>
+                <div class="window window--person grid__item" id="bobbie-burgess">
+                    <div class="window__header">Bobbie Burgess — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/bobbie-burgess.jpg">
 
-                    <p class="description">Hiya! I am originally from the San Francisco Bay Area (Burlingame to be
+                    <p class="window__description">Hiya! I am originally from the San Francisco Bay Area (Burlingame to be
                         precise)
                         and now I am at
                         Northwestern as
@@ -805,10 +801,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="eric-mertz">
+                <div class="window window--person grid__item" id="eric-mertz">
                     <!-- <img class="lazy" alt="..." data-src="assets/img/somedude.jpg"> -->
-                    <div class="header">Eric Mertz — Student</div>
-                    <p class="description">
+                    <div class="window__header">Eric Mertz — Student</div>
+                    <p class="window__description">
                         Eric is graduating from Northwestern in June 2018 with a double major in Computer Science and
                         Theatre. He
                         mainly works on
@@ -819,10 +815,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="timothy-mwiti">
-                    <div class="header">Tim — Student</div>
+                <div class="window window--person grid__item" id="timothy-mwiti">
+                    <div class="window__header">Tim — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/timothy-mwiti.jpg">
-                    <p class="description">Tim is a junior majoring in Computer Science in the McCormick School of
+                    <p class="window__description">Tim is a junior majoring in Computer Science in the McCormick School of
                         Engineering. He
                         works as a research assistant
                         at the lab. He is from Kenya and is passionate about how technology can be utilized to hasten
@@ -831,10 +827,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="gabe-rojas-westall">
-                    <div class="header">Gabe Rojas-Westall — Student</div>
+                <div class="window window--person grid__item" id="gabe-rojas-westall">
+                    <div class="window__header">Gabe Rojas-Westall — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/gabe-westall.jpeg">
-                    <p class="description">
+                    <p class="window__description">
                         I’m a junior studying Computer Science. I’m very interested in language (Spanish, Portuguese,
                         and
                         French are my
@@ -846,10 +842,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item " id="durell-gill">
-                    <div class="header">Durell Gill — Student</div>
+                <div class="window window--person grid__item " id="durell-gill">
+                    <div class="window__header">Durell Gill — Student</div>
                     <img class="lazy" alt="..." data-src="assets/img/people/durell-gill.jpg">
-                    <p class="description">
+                    <p class="window__description">
                         I am a junior studying computer science in Weinberg who mostly interested in learning sciences,
                         web
                         development, and devices
@@ -857,10 +853,10 @@
                     </p>
                 </div>
 
-                <div class="window person grid-item" id="kit-martin">
+                <div class="window window--person grid__item" id="kit-martin">
                     <!-- <img class="lazy" alt="..." data-src="assets/img/somedude.jpg"> -->
-                    <div class="header">Kit Martin — Student</div>
-                    <p class="description">
+                    <div class="window__header">Kit Martin — Student</div>
+                    <p class="window__description">
                         As such, I’ve become interested in multi-modal sensors. I see them as a bridge between agent
                         based
                         methods and
@@ -879,10 +875,42 @@
     </section>
 
     <section class="aGroup" id="classGroup">
-        <div class="window class">
-            <div class="header">Interactive Media and Technology for Learning</div>
-            <div class="description">
-                <p class="description">This is a hands-on projectcourse. All students will design and implement
+        <div class="window window--class">
+            <div class="window__header">Inclusive Making</div>
+            <div class="window__description">
+                <p class="window__description">Excitement for the Maker Movement continues to grow. Part of this growth stems
+                    from the idea that Making provides a
+                    means for democratization of fabrication and invention. While this is true, in part, the practices and
+                    people that are
+                    typically included under this brand are limited. In particular, issues of diversity, equity and inclusivity
+                    are seldom
+                    at the forefront of the design and implementation of Makerspaces, the tools used or the artifacts created.
+                    Hence, the
+                    purpose of this course is to bring issues of diversity, equity and inclusivity to the forefront. In
+                    particular, the
+                    course will push students to:
+                    <ol>
+                        <li>critically explore Making as a practice that promotes democratization.</li>
+                        <li>develop interfaces that allow a broader population of students to participate in digital
+                            fabrication.</li>
+                        <li>co-design artifacts that positively impact accessibility and inclusivity.</li>
+                    </ol> The course will include guest speakers, laboratory portions and a
+                    final project that encourages students to develop publishable scholarship and/or functional prototypes, as
+                    they work in
+                    interdisciplinary teams.
+            </div>
+            <div class="window__list">
+                <ul>
+                    <li>Winter 2019</li> 
+                    <!-- <a href=""><li>Apply</li></a> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="window window--class">
+            <div class="window__header">Interactive Media and Technology for Learning</div>
+            <div class="window__description">
+                <p class="window__description">This is a hands-on projectcourse. All students will design and implement
                     interactive
                     technologies for supporting
                     learning. Students will be expected to do computer programming as part of this class. During this
@@ -903,7 +931,7 @@
                     use
                     insights and ideas presented in the class in a collaborative final project.</p>
             </div>
-            <div class="list">
+            <div class="window__list">
                 <ul>
                     <li>FALL 2018</li>
                     <li>EECS 395</li>
@@ -912,29 +940,10 @@
             </div>
         </div>
 
-        <div class="window class">
-            <div class="header">Inclusive Making</div>
-            <div class="description">
-                <p class="description">An interdisciplinary group of faculty members from Computer Science, Communication, Learning Sciences and Design will
-                push students to:
-                <ol>
-                    <li>critically explore Making as a practice that promotes democratization.</li>
-                    <li>develop interfaces that allow a broader population of students to participate in digital fabrication.</li>
-                    <li>co-design artifacts that positively impact accessibility and inclusivity.</li>
-                </ol> The course will include guest speakers, laboratory portions and a final project
-                that encourages students to develop publishable scholarship and/or functional prototypes.</p>
-            </div>
-            <div class="list">
-                <ul>
-                    <li>Fall 2017</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="window class">
-            <div class="header">Designing Technology with New Media</div>
-            <div class="description">
-                <p class="description">During this course students will complete a series of technology design
+        <div class="window window--class">
+            <div class="window__header">Designing Technology with New Media</div>
+            <div class="window__description">
+                <p class="window__description">During this course students will complete a series of technology design
                     activities that range from using speech and
                     gesture technologies, to designing a toy for a kid. Students will be challenged to apply their
                     knowledge of the
@@ -942,7 +951,7 @@
                     enable learners to
                     experience and engage learning in new ways.</p>
             </div>
-            <div class="list">
+            <div class="window__list">
                 <ul>
                     <li>Spring 2017</li>
                 </ul>
@@ -952,14 +961,14 @@
 
     <section class="aGroup" id="projectGroup">
         <div class="window project" onclick="hiddenBoxToggle(this)">
-            <div class="header">IMR (Imagine, Make, Repeat)</div>
+            <div class="window__header">IMR (Imagine, Make, Repeat)</div>
             <div class="group-info">
-                <div class="hidden_box">
+                <div class="window__hidden">
                     <img class="lazy" alt="..." data-src="assets/img/projects/imr-chute.jpg">
                 </div>
 
-                <div class="description">
-                    <p class="description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
+                <div class="window__description">
+                    <p class="window__description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
                         Makerspace technologies and projects in classrooms
                         and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival,
                         and
@@ -971,7 +980,7 @@
                         area.</p>
                 </div>
 
-                <div class="list">
+                <div class="window__list">
                     <ul>
                         <li>Team</li>
                         <li>Sarah</li>
@@ -981,15 +990,15 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="window image">
-            <div class="header">image</div>
+        <!-- <div class="window window--image">
+            <div class="window__header">window--image</div>
             <img class="lazy" alt="..." data-src="https://i.redd.it/nchuf4dxt3501.jpg">
         </div> -->
         <div class="window project">
-            <div class="header">Tangicraft</div>
+            <div class="window__header">Tangicraft</div>
             <div class="group-info">
-                <div class="description">
-                    <p class="description">Tangicraft is an interface to enable visually impaired individuals to play
+                <div class="window__description">
+                    <p class="window__description">Tangicraft is an interface to enable visually impaired individuals to play
                         Minecraft. Our design includes two main
                         components, a wearable device that allows players to haptically sense what is on the screen,
                         and a set of tangible
@@ -999,12 +1008,12 @@
                     </p>
                 </div>
 
-                <div class="hidden_box">
-                    <img src="" alt="" data-src="assets/img/projects/multicraft.jpg" class="padded-img lazy">
-                    <img src="" alt="" data-src="assets/img/projects/tangicraft.jpg" class="padded-img lazy">
+                <div class="window__hidden">
+                    <img src="" alt="" data-src="assets/img/projects/multicraft.jpg" class="window__image lazy">
+                    <img src="" alt="" data-src="assets/img/projects/tangicraft.jpg" class="window__image lazy">
                 </div>
 
-                <div class="list">
+                <div class="window__list">
                     <ul>
                         <li>Team</li>
                         <li>Shanks</li>
@@ -1019,9 +1028,9 @@
     </section>
 
     <section class="aGroup" id="randomGroup">
-        <div class="window">
-            <div class="header"> HHHHHHHH </div>
-            <p class="description">
+        <div class="window window--random">
+            <div class="window__header"> HHHHHHHH </div>
+            <p class="window__description">
                 NOTHING TO SEE HERE ... YET
             </p>
         </div>

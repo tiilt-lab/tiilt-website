@@ -14,8 +14,8 @@ this is [this](https://tiilt.northwestern.edu/)
 - cd into public_html
 - git pull
 
-## Structure 
+## Structure
 
 - #aGroup contains a "page"
-- .window is the box that contains a header and content
+- .window is the box that contains a window\_\_header and content
 - .hiddenBox contains a window's content that becomes visible onclick

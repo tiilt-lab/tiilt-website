@@ -29,6 +29,8 @@ function filterWindows(group, b) {
     document.body.style.background = "white";
   }
 
+  document.getElementById("nav--primary").style.background = b.style.background;
+
   // positions windows randomly horizontally and vertially using margin-top and margin-right
   for (let index = 0; index < toshow.children.length; index++) {
     console.log(toshow.offsetWidth, toshow.children[index].offsetWidth);

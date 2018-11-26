@@ -16,42 +16,42 @@ function filterWindows(group, b) {
 
     document.body.style.background = b.getAttribute("color");
 
-    if (document.getElementsByClassName("current-nav__filters__filter")[0]) {
-      document.getElementsByClassName("current-nav__filters__filter")[0].classList.remove("current-nav__filters__filter");
+    if (document.getElementsByClassName("nav__filters__filter--current")[0]) {
+      document.getElementsByClassName("nav__filters__filter--current")[0].classList.remove("nav__filters__filter--current");
     } 
-    b.classList.add("current-nav__filters__filter");
+    b.classList.add("nav__filters__filter--current");
 
     document.getElementById(group).style.display = "block";
   } else {
     currentPage = null;
-    b.style.background = "rgba(0,0,0,0)";
-    b.classList.remove("current-nav__filters__filter");
+    b.classList.remove("nav__filters__filter--current");
     document.body.style.background = "white";
   }
 
   document.getElementById("nav--primary").style.background = b.style.background;
 
   // positions windows randomly horizontally and vertially using margin-top and margin-right
-  for (let index = 0; index < toshow.children.length; index++) {
-    console.log(toshow.offsetWidth, toshow.children[index].offsetWidth);
-    toshow.children[index].style.marginRight =
-      String(
-        Math.random() *
-          (toshow.offsetWidth - toshow.children[index].offsetWidth*1.2)
-      ) + "px";
-    toshow.children[index].style.marginBottom =
-      String(Math.random() * 90 + 10) + "px";
-    toshow.style.marginTop = String(Math.random() * 1) + "vh";
-  }
+  // for (let index = 0; index < toshow.children.length; index++) {
+    // console.log(toshow.offsetWidth, toshow.children[index].offsetWidth);
+    // toshow.children[index].style.marginRight =
+    //   String(
+    //     Math.random() *
+    //       (toshow.offsetWidth - toshow.children[index].offsetWidth*1.2)
+    //   ) + "px";
+
+    // toshow.children[index].style.marginBottom =
+    //   String(Math.random() * 90 + 10) + "px";
+    // toshow.style.marginTop = String(Math.random() * 1) + "vh";
+  // }
 
   // positions grid__items horizontally using margin-left
-  for (index = 0; index < document.getElementsByClassName("grid__item").length; index++) {
-    document.getElementsByClassName("grid__item")[index].style.marginLeft =
-      String(
-        Math.random() *
-        (document.getElementsByClassName("grid__col")[0].offsetWidth - document.getElementsByClassName("grid__item")[index].offsetWidth)
-      ) + "px";
-  }
+  // for (index = 0; index < document.getElementsByClassName("grid__item").length; index++) {
+  //   document.getElementsByClassName("grid__item")[index].style.marginLeft =
+  //     String(
+  //       Math.random() *
+  //       (document.getElementsByClassName("grid__col")[0].offsetWidth - document.getElementsByClassName("grid__item")[index].offsetWidth*1.2)
+  //     ) + "px";
+  // }
 }
 
 function hiddenBoxToggle(e) {

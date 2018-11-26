@@ -5,21 +5,23 @@
     <meta charset="utf-8" />
     <link href="/assets/img/favicon.ico" rel="shortcut icon" type="imtage/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIILT Lab</title>
+    <title>TIILT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
     <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
-    <div class="background_bio">
+    <!-- <div class="background_bio">
         Technological Innovations for Inclusive Learning &#38; Teaching (tiilt)
-        lab at Northwestern University aims to improve
+        lab aims to improve
         learning
         opportunities
         for students from under-served communities.
-    </div>
+    </div> -->
 
     <div id="tiilt-logo" color="url('/assets/img/repeat.png')" onclick="filterWindows('randomGroup', this)">
         <img class="lazy" src="" data-src="/assets/img/logo.svg" alt="">
@@ -27,17 +29,17 @@
 
     <nav class="nav" id="nav--primary">
         <div class="nav__partition">
-            <h1 class="nav__title">Technological Innovations for Inclusive Learning & Teaching</h1>
+            <h1 class="nav__title">Technological Innovations for Inclusive Learning & Teaching Lab</h1>
             <div class="nav__filters">
                 <div id="nav_projects" color="white" class="nav__filters__filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
                 <div id="nav_classes" color="white" class="nav__filters__filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
                 <div id="nav_papers" color="white" class="nav__filters__filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
                 <div id="nav_team" color="white" class="nav__filters__filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>
-                <div id="nav_about" color="white" class="nav__filters__filter" onclick="filterWindows('aboutGroup', this)"><span>Info<span></div>
+                <div id="nav_about" color="white" class="nav__filters__filter" onclick="filterWindows('aboutGroup', this)"><span>About<span></div>
             </div>
         </div>
     </nav>
-
+    
     <section class="spacer"></section>
 
     <section class="aGroup" id="papersGroup">
@@ -440,12 +442,36 @@
     </section>
 
     <section class="aGroup" id="aboutGroup">
+        <div class="window">
+            <div class="window__header"></div>
+            <p class="window__description">
+                The Technological Innovations for Inclusive Learning and Teaching (tiilt) Lab aims to improve learning opportunities
+                for students from under-served communities. Our work with technological innovations includes:
+            </p>
+                <ol>
+                    <li> co-designing activities with teachers and learners </li>
+                    <li>creating interfaces that broaden participation in meaningful learning experience</li>
+                    <li>tools and analytic techniques for studying and supporting complex learning environments</li>
+                </ol>
+                <p class="window__description">
+                We position our work as inclusive, in that we endeavor to address historic and contemporary disparities in inclusivity
+                and social, racial and economic inequity. Furthermore, we work with teachers, students, community members and parents,
+                in hope of supporting the development of positive learning ecosystems.
+            </p>
+                
+        </div>
         <div class="window" id="contact">
             <div class="window__header">Contact</div>
+            <p class="window__description">
+                At TIILT we love exploring the use and creation of multimodal technologies to facilitate learning and engagement.
+                As
+                such we are always open to new ideas and collaborations. If you are interested in finding more about the lab,
+                getting
+                involved with the lab, or working with the lab, shoot us an email.
+            </p>
             <ul>
-                <li>email us at <a href="mailto:tiiltlab@gmail.com">tiiltlab@gmail.com</a></li>
-                <li>follow us on <a href="https://twitter.com/tiiltlab">twitter</a></li>
                 <li>visit our lab in Mudd 3104</li>
+                <li>email us at <a href="mailto:tiiltlab@gmail.com">tiiltlab@gmail.com</a></li>
             </ul>
         </div>
 
@@ -492,16 +518,12 @@
                     </div>
                     <img class="lazy" alt="..." data-src="assets/img/people/marcelo-worsley.jpg">
                     <div class="">
-                        <p class="window__description">I am an assistant professor of Learning Sciences and Computer Science at
+                        <p class="window__description">Assistant professor of Learning Sciences and Computer Science at
                             Northwestern's School of Education and
-                            Social Policy and the McCormick School of Engineering. The goal of my research is to
-                            advance
-                            society's
-                            understanding
-                            of how students learn in complex learning environments by forging new opportunities for
-                            using
-                            multimodal
-                            technology.
+                            Social Policy and the McCormick School of Engineering. 
+                            
+                            Researches ways to advance society's understanding
+                            of how students learn in complex learning environments by forging new opportunities for using multimodal technology.
                         </p>
                     </div>
                 </div>
@@ -1035,6 +1057,14 @@
             <p class="window__description">
                 NOTHING TO SEE HERE ... YET
             </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="gri">
+            <div>
+                
+            </div>
         </div>
     </section>
 </body>

@@ -4,6 +4,19 @@
 @import "./papers.scss";
 @import "./classes.scss";
 
+// FONTS
+@font-face {
+  font-family: "AHAMONO";
+  src: url("../assets/fonts/AHAMONO-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/AHAMONO-Regular.otf") format("opentype"),
+    url("../assets/fonts/AHAMONO-Regular.woff") format("woff"),
+    url("../assets/fonts/AHAMONO-Regular.ttf") format("/truetype"),
+    url("../assets/fonts/AHAMONO-Regular.svg#AHAMONO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 // SITE WIDE
 
 html {
@@ -25,10 +38,15 @@ html {
 
 body {
   background-color: #ffffff;
-  font: caption;
+  font-family: "AHAMONO";
   font-size: 1.3rem;
   max-width: 1200px !important;
-  margin: auto;
+  height: 100vh;
+  // display: flex;
+}
+
+ul {
+  list-style: none;
 }
 
 // NAVIGATION
@@ -39,11 +57,6 @@ body {
 
 #tiilt-logo img:hover {
   transform: rotate(21deg);
-}
-
-nav li {
-  list-style: none;
-  padding: 2px;
 }
 
 ol {
@@ -106,6 +119,160 @@ ol {
     overflow-y: scroll;
   }
 }
+
+/* Desktop Styles Start */
+
+@media only screen and (min-width: 640px) {
+  .menu {
+    display: none;
+  }
+  #closebtn {
+    display: none;
+  }
+
+  nav {
+    margin: 3vh 5vw;
+    max-width: 55vw;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: solid black 2px;
+    div {
+      height: 100px;
+      width: 100px;
+      padding: 4px;
+      img {
+        max-height: 100%;
+      }
+    }
+    ul {
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: space-around;
+      li {
+        a {
+          transition: color 0.5s;
+          color: #818181;
+          text-decoration: none;
+          font-size: 1.5rem;
+          height: 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        a:hover {
+          color: black;
+        }
+        .current-page {
+          color: #000 !important;
+          text-decoration: underline;
+        }
+      }
+      
+    }
+  }
+  main {
+    width: 82%;
+    margin: 0 auto 0 0;
+    
+    .textblock {
+      margin: 0 5vw;
+      border: solid 2px black;
+      transition: box-shadow 0.2s linear;
+      h1 {
+        border-bottom: solid 2px black;
+        padding: 0.75rem;
+      }
+    }    
+    .textblock:hover {
+      box-shadow: 4px 5px;
+    }
+    .twitter {
+      margin-top: 1vh;
+      max-width: 500px;
+      // max-height: 300px;
+
+      .twitter-embed { 
+        overflow-y: scroll;
+        max-height: 300px;
+      }
+    }
+
+    .showcase {
+      position: relative;
+      .title {
+        font-size: 2.5rem;
+        width: 10%;
+        word-break: keep-all;
+        position: absolute;
+        top: 30px; // background: palevioletred;
+        span {
+          padding-right: 10px;
+          padding-left: 5px;
+        }
+      }
+      .pictures {
+        position: relative;
+        background: #ffffff;
+        height: 500px;
+        width: 92%;
+        margin-left: auto;
+        z-index: -1;
+        margin-bottom: 100px;
+        overflow-x: hidden;
+        img {
+          margin-left: auto;
+          height: 500px;
+          filter: blur(1px);
+          opacity: 0.8;
+        }
+      }
+    }
+    // .flexblock {
+    //   position: relative;
+    //   margin-top: 40px;
+    //   margin-bottom: 90px;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   div {
+    //     position: relative;
+    //   }
+    //   p,
+    //   ul,
+    //   ol {
+    //     width: 95%;
+    //     margin-top: 0.5rem;
+    //     margin-left: auto;
+    //   }
+    //   .project-peek {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 47%;
+    //     div {
+    //       // background: #5d6063;
+    //       width: 95%;
+    //       margin-left: auto; // height: 100px;
+    //       margin-bottom: 1rem;
+    //     }
+    //     .proj-link {
+    //       text-align: right;
+    //     }
+    //   }
+      
+    // }
+  }
+  .about {
+    p, ol{
+      width: 95%;
+      margin-right: auto;
+      margin: 0.75rem;
+    }
+    .textblock {
+      width: 70%;
+    }
+  }
+}
+
+/* Desktop Styles Done*/
 
 /* Mobile Styles Start*/
 
@@ -272,134 +439,4 @@ ol {
 
 /* Mobile Styles Done */
 
-/* Desktop Styles Start */
 
-@media only screen and (min-width: 640px) {
-  .menu {
-    display: none;
-  }
-  #closebtn {
-    display: none;
-  }
-  .navbar {
-    width: 82%;
-    padding: 50px 0;
-    margin: 0 auto;
-    display: flex;
-    font-size: 1.3rem;
-    justify-content: space-between;
-    align-items: top;
-    div {
-      height: 100px;
-      width: 100px;
-      padding: 4px;
-      img {
-        max-height: 100%;
-      }
-    }
-    ul {
-      a {
-        transition: color 0.5s;
-        color: #818181;
-      }
-      a:hover {
-        color: black;
-      }
-      .current-page a {
-        color: #000 !important;
-      }
-      display: flex;
-      font-size: 1.5rem;
-      justify-content: space-between; // width: 450px;
-      li:nth-child(-1n + 2) {
-        margin-left: 0;
-      }
-      li {
-        margin-left: 1.5rem;
-        line-height: 100px;
-      }
-    }
-  }
-  .content {
-    width: 82%;
-    margin: 0 auto;
-    .showcase {
-      position: relative;
-      .title {
-        font-size: 2.5rem;
-        width: 10%;
-        word-break: keep-all;
-        position: absolute;
-        top: 30px; // background: palevioletred;
-        span {
-          padding-right: 10px;
-          padding-left: 5px;
-        }
-      }
-      .pictures {
-        position: relative;
-        background: #ffffff;
-        height: 500px;
-        width: 92%;
-        margin-left: auto;
-        z-index: -1;
-        margin-bottom: 100px;
-        overflow-x: hidden;
-        img {
-          margin-left: auto;
-          height: 500px;
-          filter: blur(1px);
-          opacity: 0.8;
-        }
-      }
-    }
-    .textblock {
-      position: relative;
-      width: 70%;
-      margin: 60px 100px 130px auto;
-      p,
-      ul,
-      ol {
-        width: 92%;
-        margin-left: auto;
-      }
-    }
-    .flexblock {
-      position: relative;
-      margin-top: 40px;
-      margin-bottom: 90px;
-      display: flex;
-      justify-content: space-between;
-      div {
-        position: relative;
-      }
-      p,
-      ul,
-      ol {
-        width: 95%;
-        margin-top: 0.5rem;
-        margin-left: auto;
-      }
-      .project-peek {
-        display: flex;
-        flex-direction: column;
-        width: 47%;
-        div {
-          // background: #5d6063;
-          width: 95%;
-          margin-left: auto; // height: 100px;
-          margin-bottom: 1rem;
-        }
-        .proj-link {
-          text-align: right;
-        }
-      }
-      .twitter {
-        width: 47%;
-        height: 30rem;
-      }
-    }
-  }
-}
-
-/* Desktop Styles Done*/

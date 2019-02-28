@@ -30,6 +30,7 @@
 @media only screen and (max-width: 640px) {
   .third-column {
     display: none; }
+
   .content .people-group {
     flex-direction: column;
     margin-bottom: 0;
@@ -44,7 +45,6 @@
       width: 100%; }
   .content .backdrop {
     top: -55px; } }
-
 @media only screen and (min-width: 640px) {
   .faculty {
     justify-content: left; }
@@ -58,19 +58,18 @@
           height: 100%; }
         .faculty .people-column #marcelo-worsley div {
           margin-left: 2rem; } }
-
 @media only screen and (min-width: 640px) and (max-width: 900px) {
   .third-column {
     display: none; }
+
   .extra {
     display: block; } }
-
 @media only screen and (min-width: 900px) {
   .third-column {
     display: block; }
+
   .extra {
     display: none; } }
-
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
   .navbar {
@@ -90,6 +89,7 @@
       padding-top: 5px; }
       .navbar ul li {
         text-align: right; }
+
   .content {
     width: 100%;
     margin: 0 auto; }
@@ -98,6 +98,7 @@
       margin-top: 30px;
       width: 100%;
       margin-left: auto; }
+
   .flexbox {
     margin-top: 3rem;
     width: 92%;
@@ -108,54 +109,29 @@
       width: 40%; }
     .flexbox b {
       line-height: 2rem; } }
-
 @media only screen and (min-width: 640px) {
-  .content {
-    width: 82%;
-    margin: 0 auto;
-    margin-bottom: 100px; }
-    .content .pictures {
-      position: relative;
-      min-height: 300px;
-      width: 100%;
-      margin-left: auto;
-      margin-bottom: 100px; }
-    .content .contact {
-      position: relative;
-      margin-top: 80px; }
-      .content .contact .backdrop {
-        color: #70809077;
-        font-size: 6rem;
-        position: absolute;
-        top: -3.5rem; }
-      .content .contact .blurb {
-        width: 92%;
-        margin-left: auto; }
-    .content .flexbox {
-      margin-top: 3rem;
-      width: 92%;
-      margin-left: auto;
-      display: flex;
-      justify-content: space-between; }
-      .content .flexbox div {
-        width: 40%; }
-      .content .flexbox b {
-        line-height: 2rem; } }
-
+  .contact {
+    width: 40%; }
+    .contact ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px; } }
 .proj-flex a {
   color: palevioletred !important; }
-
-ul {
-  list-style: none;
-  text-transform: capitalize; }
 
 @media only screen and (max-width: 640px) {
   .proj-des {
     padding-top: 1rem;
     width: 95%;
     margin-left: auto; }
+
   .content {
     padding: 1rem; }
+
   .project {
     position: relative;
     margin-bottom: 50px; }
@@ -183,16 +159,18 @@ ul {
       .project .team p,
       .project .team ul {
         margin-right: 2rem; } }
-
 @media only screen and (min-width: 640px) {
   .proj-des {
     padding-top: 1rem; }
+
   .no-photo .title {
     position: relative !important;
     margin-bottom: 3rem; }
+
   .no-overlap .title {
     position: relative !important;
     margin-bottom: 4rem; }
+
   .content .project {
     position: relative;
     margin-bottom: 5rem; }
@@ -222,31 +200,27 @@ ul {
       .content .project .team p,
       .content .project .team ul {
         margin-right: 2rem; } }
-
-.content .papers {
-  position: relative;
-  margin-top: 100px; }
-
-.content .papers .backdrop {
-  font-size: 10rem;
-  position: absolute;
-  top: -90px;
-  left: 0; }
-
-.content .papers .paper, .pub_entry {
-  width: 92%;
-  line-height: 1.75rem;
-  margin-left: auto;
-  margin-bottom: 20px; }
-  .content .papers .paper a, .pub_entry a {
-    text-align: right; }
-  .content .papers .paper p, .pub_entry p {
-    margin-bottom: .5rem;
-    color: black; }
+.papers {
+  display: flex;
+  flex-direction: column; }
+  .papers .textblock {
+    width: 100%;
+    margin: 0 5vw;
+    margin-bottom: 2rem;
+    border: solid 2px black;
+    transition: box-shadow 0.2s linear; }
+    .papers .textblock h1 {
+      border-bottom: solid 2px black;
+      padding: 0.75rem; }
+    .papers .textblock .window-paper {
+      border-bottom: solid black 2px; }
+    .papers .textblock :last-child {
+      border-bottom: none; }
+    .papers .textblock p {
+      padding: 0.5rem; }
 
 .content .group-large:hover .group-info {
   margin: 3rem 5% 5rem auto; }
-
 .content .group-large {
   position: relative;
   margin: 1rem auto; }
@@ -283,7 +257,6 @@ ul {
   .content .group-large .lilink {
     text-align: right;
     margin-top: 1rem; }
-
 .content .class-page {
   margin: 1rem auto; }
   .content .class-page .pictures {
@@ -305,7 +278,6 @@ ul {
       text-align: center;
       line-height: 400px;
       vertical-align: middle; }
-
 .content .next-preview {
   border-top: 2px solid lightgray;
   margin-top: 50px;
@@ -325,12 +297,16 @@ ul {
       transition: all 0.15s ease-in-out; }
   .content .next-preview .group-large {
     margin: auto; }
-
 .content .next-preview:hover {
   font-style: normal; }
   .content .next-preview:hover .pictures img {
     transform: scale(1); }
 
+@font-face {
+  font-family: "AHAMONO";
+  src: url("../assets/fonts/AHAMONO-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/AHAMONO-Regular.otf") format("opentype"), url("../assets/fonts/AHAMONO-Regular.woff") format("woff"), url("../assets/fonts/AHAMONO-Regular.ttf") format("/truetype"), url("../assets/fonts/AHAMONO-Regular.svg#AHAMONO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 html {
   box-sizing: border-box;
   margin: 0;
@@ -348,20 +324,19 @@ html {
 
 body {
   background-color: #ffffff;
-  font: caption;
+  font-family: "AHAMONO";
   font-size: 1.3rem;
   max-width: 1200px !important;
-  margin: auto; }
+  height: 100vh; }
+
+ul {
+  list-style: none; }
 
 #tiilt-logo img {
   transition: all 0.05s linear; }
 
 #tiilt-logo img:hover {
   transform: rotate(21deg); }
-
-nav li {
-  list-style: none;
-  padding: 2px; }
 
 ol {
   margin: 0.75rem;
@@ -372,22 +347,18 @@ ol {
   position: absolute;
   left: 0;
   z-index: -10; }
-
 @media only screen and (min-width: 1000px) {
   .content .backdrop {
     font-size: 6rem;
     top: -4.5rem; } }
-
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   .content .backdrop {
     font-size: 5rem;
     top: -3.5rem; } }
-
 @media only screen and (min-width: 640px) and (max-width: 800px) {
   .content .backdrop {
     font-size: 4rem;
     top: -2.5rem; } }
-
 @media only screen and (max-width: 640px) {
   .content .backdrop {
     font-size: 6rem;
@@ -409,12 +380,104 @@ ol {
     height: 100%;
     overflow-y: scroll; }
 
+/* Desktop Styles Start */
+@media only screen and (min-width: 640px) {
+  .menu {
+    display: none; }
+
+  #closebtn {
+    display: none; }
+
+  nav {
+    margin: 3vh 5vw;
+    max-width: 55vw;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: solid black 2px; }
+    nav div {
+      height: 100px;
+      width: 100px;
+      padding: 4px; }
+      nav div img {
+        max-height: 100%; }
+    nav ul {
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: space-around; }
+      nav ul li a {
+        transition: color 0.5s;
+        color: #818181;
+        text-decoration: none;
+        font-size: 1.5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      nav ul li a:hover {
+        color: black; }
+      nav ul li .current-page {
+        color: #000 !important;
+        text-decoration: underline; }
+
+  main {
+    width: 82%;
+    margin: 0 auto 0 0; }
+    main .textblock {
+      margin: 0 5vw;
+      border: solid 2px black;
+      transition: box-shadow 0.2s linear; }
+      main .textblock h1 {
+        border-bottom: solid 2px black;
+        padding: 0.75rem; }
+    main .textblock:hover {
+      box-shadow: 4px 5px; }
+    main .twitter {
+      margin-top: 1vh;
+      max-width: 500px; }
+      main .twitter .twitter-embed {
+        overflow-y: scroll;
+        max-height: 300px; }
+    main .showcase {
+      position: relative; }
+      main .showcase .title {
+        font-size: 2.5rem;
+        width: 10%;
+        word-break: keep-all;
+        position: absolute;
+        top: 30px; }
+        main .showcase .title span {
+          padding-right: 10px;
+          padding-left: 5px; }
+      main .showcase .pictures {
+        position: relative;
+        background: #ffffff;
+        height: 500px;
+        width: 92%;
+        margin-left: auto;
+        z-index: -1;
+        margin-bottom: 100px;
+        overflow-x: hidden; }
+        main .showcase .pictures img {
+          margin-left: auto;
+          height: 500px;
+          filter: blur(1px);
+          opacity: 0.8; }
+
+  .about p, .about ol {
+    width: 95%;
+    margin-right: auto;
+    margin: 0.75rem; }
+  .about .textblock {
+    width: 70%; } }
+/* Desktop Styles Done*/
 /* Mobile Styles Start*/
 @media only screen and (max-width: 640px) {
   html {
     font-size: 13px; }
+
   .current-page a {
     color: #f1f1f1 !important; }
+
   .navbar {
     position: fixed;
     background: #ffffff;
@@ -483,6 +546,7 @@ ol {
       top: 20px;
       right: 45px;
       font-size: 60px; }
+
   .content {
     width: 90%;
     margin: 5vw auto;
@@ -540,109 +604,6 @@ ol {
         width: 100%;
         height: 400px;
         position: relative; } }
-
 /* Mobile Styles Done */
-/* Desktop Styles Start */
-@media only screen and (min-width: 640px) {
-  .menu {
-    display: none; }
-  #closebtn {
-    display: none; }
-  .navbar {
-    width: 82%;
-    padding: 50px 0;
-    margin: 0 auto;
-    display: flex;
-    font-size: 1.3rem;
-    justify-content: space-between;
-    align-items: top; }
-    .navbar div {
-      height: 100px;
-      width: 100px;
-      padding: 4px; }
-      .navbar div img {
-        max-height: 100%; }
-    .navbar ul {
-      display: flex;
-      font-size: 1.5rem;
-      justify-content: space-between; }
-      .navbar ul a {
-        transition: color 0.5s;
-        color: #818181; }
-      .navbar ul a:hover {
-        color: black; }
-      .navbar ul .current-page a {
-        color: #000 !important; }
-      .navbar ul li:nth-child(-1n + 2) {
-        margin-left: 0; }
-      .navbar ul li {
-        margin-left: 1.5rem;
-        line-height: 100px; }
-  .content {
-    width: 82%;
-    margin: 0 auto; }
-    .content .showcase {
-      position: relative; }
-      .content .showcase .title {
-        font-size: 2.5rem;
-        width: 10%;
-        word-break: keep-all;
-        position: absolute;
-        top: 30px; }
-        .content .showcase .title span {
-          padding-right: 10px;
-          padding-left: 5px; }
-      .content .showcase .pictures {
-        position: relative;
-        background: #ffffff;
-        height: 500px;
-        width: 92%;
-        margin-left: auto;
-        z-index: -1;
-        margin-bottom: 100px;
-        overflow-x: hidden; }
-        .content .showcase .pictures img {
-          margin-left: auto;
-          height: 500px;
-          filter: blur(1px);
-          opacity: 0.8; }
-    .content .textblock {
-      position: relative;
-      width: 70%;
-      margin: 60px 100px 130px auto; }
-      .content .textblock p,
-      .content .textblock ul,
-      .content .textblock ol {
-        width: 92%;
-        margin-left: auto; }
-    .content .flexblock {
-      position: relative;
-      margin-top: 40px;
-      margin-bottom: 90px;
-      display: flex;
-      justify-content: space-between; }
-      .content .flexblock div {
-        position: relative; }
-      .content .flexblock p,
-      .content .flexblock ul,
-      .content .flexblock ol {
-        width: 95%;
-        margin-top: 0.5rem;
-        margin-left: auto; }
-      .content .flexblock .project-peek {
-        display: flex;
-        flex-direction: column;
-        width: 47%; }
-        .content .flexblock .project-peek div {
-          width: 95%;
-          margin-left: auto;
-          margin-bottom: 1rem; }
-        .content .flexblock .project-peek .proj-link {
-          text-align: right; }
-      .content .flexblock .twitter {
-        width: 47%;
-        height: 30rem; } }
-
-/* Desktop Styles Done*/
 
 /*# sourceMappingURL=styles.css.map */

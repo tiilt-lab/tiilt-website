@@ -1,6 +1,5 @@
 .content .group-large:hover .group-info {
   margin: 3rem 5% 5rem auto; }
-
 .content .group-large {
   position: relative;
   margin: 1rem auto; }
@@ -37,7 +36,6 @@
   .content .group-large .lilink {
     text-align: right;
     margin-top: 1rem; }
-
 .content .class-page {
   margin: 1rem auto; }
   .content .class-page .pictures {
@@ -59,7 +57,6 @@
       text-align: center;
       line-height: 400px;
       vertical-align: middle; }
-
 .content .next-preview {
   border-top: 2px solid lightgray;
   margin-top: 50px;
@@ -79,7 +76,6 @@
       transition: all 0.15s ease-in-out; }
   .content .next-preview .group-large {
     margin: auto; }
-
 .content .next-preview:hover {
   font-style: normal; }
   .content .next-preview:hover .pictures img {

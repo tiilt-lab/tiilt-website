@@ -1,22 +1,20 @@
-.content .papers {
-  position: relative;
-  margin-top: 100px; }
-
-.content .papers .backdrop {
-  font-size: 10rem;
-  position: absolute;
-  top: -90px;
-  left: 0; }
-
-.content .papers .paper, .pub_entry {
-  width: 92%;
-  line-height: 1.75rem;
-  margin-left: auto;
-  margin-bottom: 20px; }
-  .content .papers .paper a, .pub_entry a {
-    text-align: right; }
-  .content .papers .paper p, .pub_entry p {
-    margin-bottom: .5rem;
-    color: black; }
+.papers {
+  display: flex;
+  flex-direction: column; }
+  .papers .textblock {
+    width: 100%;
+    margin: 0 5vw;
+    margin-bottom: 2rem;
+    border: solid 2px black;
+    transition: box-shadow 0.2s linear; }
+    .papers .textblock h1 {
+      border-bottom: solid 2px black;
+      padding: 0.75rem; }
+    .papers .textblock .window-paper {
+      border-bottom: solid black 2px; }
+    .papers .textblock :last-child {
+      border-bottom: none; }
+    .papers .textblock p {
+      padding: 0.5rem; }
 
 /*# sourceMappingURL=papers.css.map */

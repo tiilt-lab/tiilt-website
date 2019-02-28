@@ -7,563 +7,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div>
-      <a id="tiilt-logo" href="/.">
-        <img src="/img/logo.svg" alt="TIILT">
-      </a>
-    </div>
-    <div onclick="openNav()" class="menu"></div>
-    <ul id="myNav" class="overlay">
-      <li>
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-      </li>
-      <!-- <li>
-        <a href="/">home</a>
-      </li> -->
-      <li>
-        <a href="/papers/">papers</a>
-      </li>
-      <li>
-        <a href="/people/">people</a>
-      </li>
-      <li class="current-page">
-        <a href="/projects/">projects</a>
-      </li>
-      <li>
-        <a href="/classes/">classes</a>
-      </li>
-      <li>
-        <a href="/contact/">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    <header>
+        <nav class="navbar">
+            <!-- <div>
+              <a id="tiilt-logo" href="/.">
+                <img src="/img/logo.svg" alt="TIILT">
+              </a>
+            </div> -->
+            <!-- <div onclick="openNav()" class="menu"></div> -->
+            <ul id="myNav" class="overlay">
+              <!-- <li>
+                <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+              </li> -->
+              <li >
+                  <a href="/">home</a>
+              </li>
+              <li>
+                <a href="/papers/">papers</a>
+              </li>
+              <li>
+                <a href="/people/">people</a>
+              </li>
+              <li>
+                <a href="/projects/" class="current-page">projects</a>
+              </li>
+              <li>
+                <a href="/classes/">classes</a>
+              </li>
+              <li>
+                <a href="/contact/">contact</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
 
 
-  <div class="content">
-
-    <a href="subproject/">
-      <section class="group-large project">
-        <h1 class="group-header">IMR (Imagine, Make, Repeat)</h1>
-        <section class="pictures">
-          <img src="/img/projects/imr-chute.JPG" alt="">
-        </section>
-        <div class="group-info">
-          <div class="description">
-            <p class="description">IMR (Imagine, Make, Repeat) works with educators to plan and implement Makerspace technologies and projects in classrooms
-            and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival, and has collaborated with Chute
-            Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward, the IMR team looks to further
-            develop and expand partnerships with educators and making communities across the Chicagoland area.</p>
-          </div>
-        </div>
-      </section>
-    </a>
-
-    <a href="subproject/">
-      <section class="group-large project">
-        <h1 class="group-header">Tangicraft</h1>
-    
-        <div class="group-info">
-          <div class="description">
-            <p class="description">Tangicraft is an interface to enable visually impaired individuals to play Minecraft. Our design includes two main components,
-            a wearable device that allows players to haptically sense what is on the screen, and a set of tangible blocks which allow
-            players to physically construct objects and place them in the game world using speech commands and computer vision.</p>
-          </div>
-        </div>
-      </section>
-    </a>
-
-    <a href="subproject/">
-      <section class="group-large project">
-        <h1 class="group-header">Multicraft</h1>
-    
-        <div class="group-info">
-          <div class="description">
-            <p class="description">Multicraft is a multimodal, natural language interface into Minecraft. It incorporates speech based input and a natural language
-            understanding engine with eye tracking to both replace the existing keyboard and mouse, while also augmenting the ability
-            for the user to create complex structures quickly and efficiently.</p>
-          </div>
-        </div>
-      </section>
-    </a>
-
-    <section class="project no-overlap" id="imr">
-
-      <h1 class="title"> IMR (Imagine, Make, Repeat) </h1>
-      <section class="pictures">
-        <img src="/img/projects/imr-chute.JPG" alt="">
-      </section>
-      <p class="proj-des"> IMR (Imagine, Make, Repeat) works with educators to plan and implement Makerspace technologies and projects in classrooms
-        and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival, and has collaborated
-        with Chute Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward, the IMR
-        team looks to further develop and expand partnerships with educators and making communities across the Chicagoland
-        area.
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <!-- <ul>
-                        <li>
-            
-                        </li>
-                      </ul> -->
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#bobbie-burgess"> bobbie burgess &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#sarah-lee"> sarah lee &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#melissa-perez"> melissa perez &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="project no-overlap" id="tangicraft">
-
-      <h1 class="title">Tangicraft</h1>
-      <section class="pictures">
-        <img src="/img/projects/tangicraft.JPG" alt="">
-      </section>
-      <p class="proj-des">
-        Tangicraft is an interface to enable visually impaired individuals to play Minecraft. Our design includes two main components,
-        a wearable device that allows players to haptically sense what is on the screen, and a set of tangible blocks which
-        allow players to physically construct objects and place them in the game world using speech commands and computer
-        vision.
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-            <!-- subprojects-->
-            <!-- <li>
-              <a href="/projects/subproject/">sub-project demo &#8599;</a>
-            </li>
-            <li>
-              <a href="/projects/subproject/">sub-project demo &#8599;</a>
-            </li>
-            <li>
-              <a href="/projects/subproject/">sub-project demo &#8599;</a>
-            </li> -->
-          </ul>
-          <!--
-                <ul>
-                  <li> sub-project </li>
-                  <li> sub-project </li>
-                  <li> sub-project </li>
-                </ul>
-              -->
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#shankar-salwan"> shankar salwan &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#david-barel"> david barel &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#tom-large"> tom large &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#timothy-mwiti"> tim &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="project no-overlap" id="multicraft">
-      <h1 class="title"> Multicraft </h1>
-      <section class="pictures">
-        <img src="/img/projects/multicraft.jpg" alt="">
-      </section>
-      <p class="proj-des">
-        Multicraft is a multimodal, natural language interface into Minecraft. It incorporates speech based input and a natural language
-        understanding engine with eye tracking to both replace the existing keyboard and mouse, while also augmenting the
-        ability for the user to create complex structures quickly and efficiently.
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <!-- <ul>
-            <li>
-              <a href="/projects/subproject/">sub-project &#8599;</a>
-            </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul>
-          <ul>
-            <li> sub-project </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul> -->
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#shankar-salwan"> shankar salwan &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#yasmeen-wood"> yasmeen wood &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#timothy-mwiti"> tim &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="project no-overlap" id="loquacious-iterators">
-      <h1 class="title">Loquacious Iterators</h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-                    <li>
-                      <a href="/projects/subproject/">sub-project &#8599;</a>
-                    </li>
-                    <li> sub-project </li>
-                    <li> sub-project </li>
-                  </ul>
-                  <ul>
-                    <li> sub-project </li>
-                    <li> sub-project </li>
-                    <li> sub-project </li>
-                  </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#emily-q-wang"> emily q. wang &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#connor-bain"> connor bain &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#kit-martin"> kit martin &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="project no-overlap" id="families-and-making">
-      <h1 class="title">Families and Making</h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-                <li>
-                  <a href="/projects/subproject/">sub-project &#8599;</a>
-                </li>
-                <li> sub-project </li>
-                <li> sub-project </li>
-              </ul>
-              <ul>
-                <li> sub-project </li>
-                <li> sub-project </li>
-                <li> sub-project </li>
-              </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#sarah-lee"> sarah lee &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#melissa-perez"> melissa perez &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#kira-furuichi"> kira furuichi &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="project no-overlap" id="ultra">
-      <h1 class="title"> Ultra </h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-                <li>
-                  <a href="/projects/subproject/">sub-project &#8599;</a>
-                </li>
-                <li> sub-project </li>
-                <li> sub-project </li>
-              </ul>
-              <ul>
-                <li> sub-project </li>
-                <li> sub-project </li>
-                <li> sub-project </li>
-              </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#nnenna-nwagbo"> nnenna nwagbo &#8599;</a>
-            </li>
-            <li>
-              <a href="/people/#robert-bell"> robert bell &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="project no-overlap" id="mmla">
-      <h1 class="title">MMLA - Engagement with Empaticas</h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-            <li>
-              <a href="/projects/subproject/">sub-project &#8599;</a>
-            </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul>
-          <ul>
-            <li> sub-project </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#kira-furuichi"> kira furuichi &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="project no-overlap" id="pocket-records">
-      <h1 class="title"> Pocket Records </h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-            <li>
-              <a href="/projects/subproject/">sub-project &#8599;</a>
-            </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul>
-          <ul>
-            <li> sub-project </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#kya-suzuki"> kya suzuki &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="project no-overlap" id="road-rage">
-      <h1 class="title"> Road Rage </h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-            <li>
-              <a href="/projects/subproject/">sub-project &#8599;</a>
-            </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul>
-          <ul>
-            <li> sub-project </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#robert-bell"> robert bell &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="project no-overlap" id="summer-making-with-wrc">
-      <h1 class="title"> WRC x TIILT </h1>
-      <section>class="pictures">
-
-      </section>
-      <p class="proj-des">
-
-      </p>
-      <div class="proj-flex sub-projects">
-        <div>
-          <ul>
-            <li>
-              <a href="/projects/subproject/">sub-project &#8599;</a>
-            </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul>
-          <ul>
-            <li> sub-project </li>
-            <li> sub-project </li>
-            <li> sub-project </li>
-          </ul> 
-        </div>
-        <div>
-          <ul>
-            <li>
-              <span class="bold">team</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/people/#sarah-lee"> sarah lee &#8599;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section>class="project no-overlap" id="">
-          <h1 class="title"> </h1>
-          <section class="pictures">
-        
+  <main class="projects">
+          <section class="window project" onclick="hiddenBoxToggle(this)">
+              <div class="window__header">IMR (Imagine, Make, Repeat)</div>
+              <div class="group-info">
+                  <div class="window__hidden">
+                      <img class="lazy" alt="..." data-src="assets/img/projects/imr-chute.jpg">
+                  </div>
+  
+                  <div class="window__description">
+                      <p class="window__description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
+                          Makerspace technologies and projects in classrooms
+                          and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival,
+                          and
+                          has collaborated with Chute
+                          Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward,
+                          the
+                          IMR team looks to further
+                          develop and expand partnerships with educators and making communities across the Chicagoland
+                          area.</p>
+                  </div>
+  
+                  <div class="window__list">
+                      <ul>
+                          <li>Team</li>
+                          <li>Sarah</li>
+                          <li>Bobbie</li>
+                          <li>Melissa</li>
+                      </ul>
+                  </div>
+              </div>
           </section>
-          <p class="proj-des">Suspendisse congue sagittis consequat. Duis ultrices lacinia tortor at consectetur. Suspendisse pulvinar et dui eu elementum.
-            Vestibulum mattis lectus eu ultrices tincidunt. Cras sagittis rutrum ex eu congue. Morbi ultrices turpis arcu, lobortis
-            dignissim purus pharetra at. Sed at euismod nisl. Maecenas in tempor sapien. Proin scelerisque fringilla ex, ut aliquet
-            lorem pellentesque mollis. Mauris et pretium tortor, at rhoncus risus. Pellentesque sagittis mauris erat, ut sollicitudin
-            nibh sodales in. Pellentesque consectetur mi arcu, egestas bibendum nulla vehicula at. Quisque pharetra neque nec nulla
-            tempus fermentum. Etiam euismod pretium vestibulum. Praesent luctus fermentum risus ac efficitur. Phasellus at tincidunt
-            libero.
-          </p>
-          <div class="proj-flex sub-projects">
-            <div>
-              <ul>
-                <li>
-                  <a href="/projects/subproject/">sub-project &#8599;</a>
-                </li>
-                <li> sub-project </li>
-                <li> sub-project </li>
-              </ul>
-              <ul>
-                <li> sub-project </li>
-                <li> sub-project </li>
-                <li> sub-project </li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <span class="bold">team</span>
-                </li>
-              </ul>
-              <ul>
-                <li> first lastname </li>
-                <li> first lastname </li>
-                <li> first lastname </li>
-              </ul>
-            </div>
-          </div>
-        </section> -->
-  </div>
+          <section class="window project">
+              <div class="window__header">Tangicraft</div>
+              <div class="group-info">
+                  <div class="window__description">
+                      <p class="window__description">Tangicraft is an interface to enable visually impaired individuals to play
+                          Minecraft. Our design includes two main
+                          components, a wearable device that allows players to haptically sense what is on the screen,
+                          and a set of tangible
+                          blocks which allow players to physically construct objects and place them in the game world
+                          using speech commands and
+                          computer vision.
+                      </p>
+                  </div>
+  
+                  <div class="window__hidden">
+                      <img src="" alt="" data-src="assets/img/projects/multicraft.jpg" class="window__image lazy">
+                      <img src="" alt="" data-src="assets/img/projects/tangicraft.jpg" class="window__image lazy">
+                  </div>
+  
+                  <div class="window__list">
+                      <ul>
+                          <li>Team</li>
+                          <li>Shanks</li>
+                          <li>David Barel</li>
+                          <li>Tom Large</li>
+                          <li>Tim</li>
+                          <li>Yasmeen Wood</li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+      </>
+    
+  </main>
 
   <script>
     // The function actually applying the offset

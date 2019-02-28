@@ -1,17 +1,15 @@
 .proj-flex a {
   color: palevioletred !important; }
 
-ul {
-  list-style: none;
-  text-transform: capitalize; }
-
 @media only screen and (max-width: 640px) {
   .proj-des {
     padding-top: 1rem;
     width: 95%;
     margin-left: auto; }
+
   .content {
     padding: 1rem; }
+
   .project {
     position: relative;
     margin-bottom: 50px; }
@@ -39,16 +37,18 @@ ul {
       .project .team p,
       .project .team ul {
         margin-right: 2rem; } }
-
 @media only screen and (min-width: 640px) {
   .proj-des {
     padding-top: 1rem; }
+
   .no-photo .title {
     position: relative !important;
     margin-bottom: 3rem; }
+
   .no-overlap .title {
     position: relative !important;
     margin-bottom: 4rem; }
+
   .content .project {
     position: relative;
     margin-bottom: 5rem; }

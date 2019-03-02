@@ -13,6 +13,20 @@
     flex-wrap: wrap;
 
     outline: solid rosybrown 1px;
+    h1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .project_hidden {
+      border: 0; 
+      clip: rect(0 0 0 0); 
+      height: 1px; 
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
     .textblock {
       margin-top: 1em;
       flex-basis: 45rem;

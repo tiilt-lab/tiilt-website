@@ -10,131 +10,74 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <!-- <div>
+  <header>
+    <nav class="navbar">
+      <!-- <div>
               <a id="tiilt-logo" href="/.">
                 <img src="/img/logo.svg" alt="TIILT">
               </a>
             </div> -->
-            <!-- <div onclick="openNav()" class="menu"></div> -->
-            <ul id="myNav" class="overlay">
-              <!-- <li>
+      <!-- <div onclick="openNav()" class="menu"></div> -->
+      <ul id="myNav" class="overlay">
+        <!-- <li>
                 <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
               </li> -->
-              <li >
-                  <a href="/">home</a>
-              </li>
-              <li>
-                <a href="/papers/">papers</a>
-              </li>
-              <li>
-                <a href="/people/">people</a>
-              </li>
-              <li>
-                <a href="/projects/" class="current-page">projects</a>
-              </li>
-              <li>
-                <a href="/classes/">classes</a>
-              </li>
-              <li>
-                <a href="/contact/">contact</a>
-              </li>
-            </ul>
-          </nav>
-    </header>
+        <li>
+          <a href="/">home</a>
+        </li>
+        <li>
+          <a href="/papers/">papers</a>
+        </li>
+        <li>
+          <a href="/people/">people</a>
+        </li>
+        <li>
+          <a href="/projects/" class="current-page">projects</a>
+        </li>
+        <li>
+          <a href="/classes/">classes</a>
+        </li>
+        <li>
+          <a href="/contact/">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 
   <main class="projects">
-          <section class="window project" onclick="hiddenBoxToggle(this)">
-              <div class="window__header">IMR (Imagine, Make, Repeat)</div>
-              <div class="group-info">
-                  <div class="window__hidden">
-                      <img class="lazy" alt="..." data-src="assets/img/projects/imr-chute.jpg">
-                  </div>
-  
-                  <div class="window__description">
-                      <p class="window__description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
-                          Makerspace technologies and projects in classrooms
-                          and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival,
-                          and
-                          has collaborated with Chute
-                          Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward,
-                          the
-                          IMR team looks to further
-                          develop and expand partnerships with educators and making communities across the Chicagoland
-                          area.</p>
-                  </div>
-  
-                  <div class="window__list">
-                      <ul>
-                          <li>Team</li>
-                          <li>Sarah</li>
-                          <li>Bobbie</li>
-                          <li>Melissa</li>
-                      </ul>
-                  </div>
-              </div>
-          </section>
-          <section class="window project">
-              <div class="window__header">Tangicraft</div>
-              <div class="group-info">
-                  <div class="window__description">
-                      <p class="window__description">Tangicraft is an interface to enable visually impaired individuals to play
-                          Minecraft. Our design includes two main
-                          components, a wearable device that allows players to haptically sense what is on the screen,
-                          and a set of tangible
-                          blocks which allow players to physically construct objects and place them in the game world
-                          using speech commands and
-                          computer vision.
-                      </p>
-                  </div>
-  
-                  <div class="window__hidden">
-                      <img src="" alt="" data-src="assets/img/projects/multicraft.jpg" class="window__image lazy">
-                      <img src="" alt="" data-src="assets/img/projects/tangicraft.jpg" class="window__image lazy">
-                  </div>
-  
-                  <div class="window__list">
-                      <ul>
-                          <li>Team</li>
-                          <li>Shanks</li>
-                          <li>David Barel</li>
-                          <li>Tom Large</li>
-                          <li>Tim</li>
-                          <li>Yasmeen Wood</li>
-                      </ul>
-                  </div>
-              </div>
-          </section>
-      </>
-    
+    <section class="textblock" onclick="hiddenBoxToggle(this)">
+      <h1>IMR (Imagine, Make, Repeat)</h1>
+      <img class="lazy" alt="Group picture of students and researcher with a row of students sitting in the front cross-legged and several holding their laser cut projects."
+        src="../assets/img/projects/imr-chute.jpg">
+      <p class="window__description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
+        Makerspace technologies and projects in classrooms
+        and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival,
+        and
+        has collaborated with Chute
+        Middle School, MetaMedia at the Evanston YMCA, and the Evanston Public Library. Going forward,
+        the
+        IMR team looks to further
+        develop and expand partnerships with educators and making communities across the Chicagoland
+        area.
+      </p>
+    </section>
+
+    <section class="textblock" onclick="hiddenBoxToggle(this)">
+      <h1>Tangicraft</h1>
+      <img src="../assets/img/projects/multicraft.jpg" class="window__image lazy">
+      <!-- <img src="../assets/img/projects/tangicraft.jpg" class="window__image lazy"> -->
+      <p class="window__description">Tangicraft is an interface to enable visually impaired individuals to play
+        Minecraft. Our design includes two main
+        components, a wearable device that allows players to haptically sense what is on the screen,
+        and a set of tangible
+        blocks which allow players to physically construct objects and place them in the game world
+        using speech commands and
+        computer vision.
+      </p>
+      
+    </section>
   </main>
-
-  <script>
-    // The function actually applying the offset
-    function offsetAnchor() {
-      if (window.innerWidth <= 640) {
-        if (location.hash.length !== 0) {
-          window.scrollTo(window.scrollX, window.scrollY - 100);
-        }
-      }
-
-    }
-
-    // Captures click events of all a elements with href starting with #
-    $(document).on('click', 'a[href^="#"]', function (event) {
-      // Click events are captured before hashchanges. Timeout
-      // causes offsetAnchor to be called after the page jump.
-      window.setTimeout(function () {
-        offsetAnchor();
-      }, 0);
-    });
-
-    // Set the offset when entering page with hash present in the url
-    window.setTimeout(offsetAnchor, 0);
-  </script>
-  <script src="/nav.js"></script>
 </body>
 
 </html>

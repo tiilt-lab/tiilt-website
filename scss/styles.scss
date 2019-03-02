@@ -42,7 +42,6 @@ body {
   font-size: 1.3rem;
   max-width: 1200px !important;
   height: 100vh;
-  // display: flex;
 }
 
 ul {
@@ -131,23 +130,16 @@ ol {
   }
 
   nav {
-    margin: 3vh 5vw;
-    max-width: 55vw;
+    margin: 3rem 4rem;
+    max-width: 55rem;
     font-size: 1.3rem;
     font-weight: bold;
     border: solid black 2px;
-    div {
-      height: 100px;
-      width: 100px;
-      padding: 4px;
-      img {
-        max-height: 100%;
-      }
-    }
     ul {
       display: flex;
       font-size: 1.5rem;
       justify-content: space-around;
+      min-width: 40vh;
       li {
         a {
           transition: color 0.5s;
@@ -171,11 +163,10 @@ ol {
     }
   }
   main {
-    width: 82%;
-    margin: 0 auto 0 0;
+    width: 100%;
+    margin: 0 4rem;
     
     .textblock {
-      margin: 0 5vw;
       border: solid 2px black;
       transition: box-shadow 0.2s linear;
       h1 {

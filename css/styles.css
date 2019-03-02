@@ -120,100 +120,33 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
       padding-inline-start: 40px; } }
-.proj-flex a {
-  color: palevioletred !important; }
-
-@media only screen and (max-width: 640px) {
-  .proj-des {
-    padding-top: 1rem;
-    width: 95%;
-    margin-left: auto; }
-
-  .content {
-    padding: 1rem; }
-
-  .project {
-    position: relative;
-    margin-bottom: 50px; }
-    .project .title {
-      font-size: 2.5rem;
-      word-break: keep-all; }
-    .project .pictures {
-      position: relative;
-      min-height: 25vh;
-      width: 100%;
-      margin-left: auto;
-      margin-top: 10px;
-      margin-bottom: 0px; }
-    .project .sub-projects ul {
-      margin-right: 2rem;
-      text-align: right; }
-    .project .proj-flex {
-      justify-content: flex-end;
-      padding: 1.25em 0.0em 0.0em 0rem; }
-      .project .proj-flex div {
-        display: flex;
-        justify-content: flex-end; }
-    .project .team {
-      justify-content: flex-end !important; }
-      .project .team p,
-      .project .team ul {
-        margin-right: 2rem; } }
 @media only screen and (min-width: 640px) {
-  .proj-des {
-    padding-top: 1rem; }
-
-  .no-photo .title {
-    position: relative !important;
-    margin-bottom: 3rem; }
-
-  .no-overlap .title {
-    position: relative !important;
-    margin-bottom: 4rem; }
-
-  .content .project {
-    position: relative;
-    margin-bottom: 5rem; }
-    .content .project .title {
-      font-size: 2.5rem;
-      word-break: keep-all;
-      position: absolute;
-      top: 30px; }
-    .content .project .pictures {
-      position: relative;
-      max-height: 400px;
-      width: 100%;
-      margin-left: auto;
-      margin-bottom: 1rem; }
-    .content .project .sub-projects ul {
-      margin-right: 2rem;
-      text-align: right; }
-    .content .project .proj-flex {
-      display: flex;
-      justify-content: space-between;
-      padding: 1.25em 0.75em 0.0em 3rem; }
-      .content .project .proj-flex div {
-        display: flex;
-        justify-content: flex-start; }
-    .content .project .team {
-      justify-content: flex-end !important; }
-      .content .project .team p,
-      .content .project .team ul {
-        margin-right: 2rem; } }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    outline: solid rosybrown 1px; }
+    .projects .textblock {
+      margin-top: 1em;
+      flex-basis: 45rem;
+      max-height: 60rem; }
+      .projects .textblock img {
+        width: 100%; }
+      .projects .textblock p {
+        padding: 1rem; } }
 .papers {
   display: flex;
   flex-direction: column; }
   .papers .textblock {
-    width: 100%;
-    margin: 0 5vw;
-    margin-bottom: 2rem;
-    border: solid 2px black;
-    transition: box-shadow 0.2s linear; }
-    .papers .textblock h1 {
-      border-bottom: solid 2px black;
-      padding: 0.75rem; }
-    .papers .textblock .window-paper {
+    width: 85%;
+    margin-bottom: 2rem; }
+    .papers .textblock .window__paper {
       border-bottom: solid black 2px; }
+      .papers .textblock .window__paper a {
+        margin: 0 0 5px 5px; }
     .papers .textblock :last-child {
       border-bottom: none; }
     .papers .textblock p {
@@ -389,21 +322,16 @@ ol {
     display: none; }
 
   nav {
-    margin: 3vh 5vw;
-    max-width: 55vw;
+    margin: 3rem 4rem;
+    max-width: 55rem;
     font-size: 1.3rem;
     font-weight: bold;
     border: solid black 2px; }
-    nav div {
-      height: 100px;
-      width: 100px;
-      padding: 4px; }
-      nav div img {
-        max-height: 100%; }
     nav ul {
       display: flex;
       font-size: 1.5rem;
-      justify-content: space-around; }
+      justify-content: space-around;
+      min-width: 40vh; }
       nav ul li a {
         transition: color 0.5s;
         color: #818181;
@@ -420,10 +348,9 @@ ol {
         text-decoration: underline; }
 
   main {
-    width: 82%;
-    margin: 0 auto 0 0; }
+    width: 100%;
+    margin: 0 4rem; }
     main .textblock {
-      margin: 0 5vw;
       border: solid 2px black;
       transition: box-shadow 0.2s linear; }
       main .textblock h1 {

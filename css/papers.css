@@ -3,7 +3,7 @@
   flex-direction: column; }
   .papers .textblock {
     min-width: 300px;
-    max-width: 75%;
+    max-width: 60rem;
     margin-bottom: 2rem; }
     .papers .textblock .window__paper {
       border-bottom: solid black 2px; }

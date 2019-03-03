@@ -5,3 +5,4 @@ stats
 .DS_Store
 .htaccess
 package-lock.json
+.sass-cache

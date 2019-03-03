@@ -10,21 +10,24 @@
     .projects h1 {
       display: flex;
       justify-content: space-between; }
-    .projects .project_hidden {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px; }
+      .projects h1 span {
+        transform: rotate(0deg);
+        transition-delay: 50ms;
+        transition: all 450ms ease-in-out; }
+      .projects h1 .rotated {
+        transform: rotate(-540deg); }
     .projects .textblock {
       margin-top: 1em;
       flex-basis: 45rem;
-      max-height: 60rem; }
+      max-height: 90rem; }
       .projects .textblock img {
-        width: 100%; }
+        width: 100%;
+        height: auto;
+        max-height: 100rem;
+        transition: max-height 1s linear;
+        overflow: hidden; }
+      .projects .textblock img.img_hidden {
+        max-height: 0; }
       .projects .textblock p {
         padding: 1rem; } }
 

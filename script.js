@@ -1,12 +1,31 @@
 function showPicture(e) {
-    if (e.classList.contains("img_hidden")) {
-        e.classList.remove("img_hidden");
+    e.classList.toggle("img_hidden");
+}
+
+function rotate(e) {
+    if (e.classList.contains("rotated")) {
+        e.classList.remove("rotated");
     } else {
-        e.classList.add("img_hidden");
+        e.classList.add("rotated");
     }
 }
 
-window.onload = () => { 
-    const hiddenProjects = document.getElementsByClassName("img_hidden");
-    
+function hideImage(e) {
+    const spanElements = e.getElementsByTagName('span');
+    const span = spanElements[0];
+    rotate(span);
+
+    const imgElements = e.getElementsByTagName('img');
+    const imgElementsInArray = Array.from(imgElements);
+    imgElementsInArray.map((imgTag) => showPicture(imgTag));
 }
+
+window.onload = () => { 
+    const projectBoxes = document.getElementsByClassName('project_box');
+    const projectBoxesInArray = Array.from(projectBoxes);
+    projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+
+    const myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+};

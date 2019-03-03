@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+
 </head>
 
 <body>
@@ -46,11 +48,11 @@
 
 
   <main class="projects">
-    <section class="textblock" onclick="hiddenBoxToggle(this)">
+    <section class="textblock project_box">
       <h1>IMR (Imagine, Make, Repeat) <span>▼</span></h1>
-      <img class="lazy img_hidden" alt="Group picture of students and researcher with a row of students sitting in the front cross-legged and several holding their laser cut projects."
-        src="../assets/img/projects/imr-chute.jpg">
-      <p class="window__description">IMR (Imagine, Make, Repeat) works with educators to plan and implement
+      <img class="lazy img_hidden actor" alt="Group picture of students and researcher with a row of students sitting in the front cross-legged and several holding their laser cut projects."
+        data-src="../assets/img/projects/imr-chute.jpg">
+      <p class="window__description"><b>IMR (Imagine, Make, Repeat)</b> works with educators to plan and implement
         Makerspace technologies and projects in classrooms
         and Makerspaces throughout Evanston and Chicago. IMR has appeared at STEMFest, YEA! festival,
         and
@@ -63,20 +65,106 @@
       </p>
     </section>
 
-    <section class="textblock" onclick="hiddenBoxToggle(this)">
-      <h1>Tangicraft <span>▼</span></h1>
-      <img src="../assets/img/projects/multicraft.jpg" class="img_hidden lazy">
-      <!-- <img src="../assets/img/projects/tangicraft.jpg" class="window__image lazy"> -->
-      <p class="window__description">Tangicraft is an interface to enable visually impaired individuals to play
-        Minecraft. Our design includes two main
-        components, a wearable device that allows players to haptically sense what is on the screen,
-        and a set of tangible
-        blocks which allow players to physically construct objects and place them in the game world
-        using speech commands and
-        computer vision.
+    <section class="textblock project_box">
+      <h1>Multicraft + Tangicraft<span>▼</span></h1>
+      <img data-src="../assets/img/projects/multicraft.jpg" class="img_hidden lazy">
+      <img data-src="../assets/img/projects/tangicraft.jpg" class="img_hidden lazy">
+      <p class="window__description"><b>Multicraft + Tangicraft</b> works on multimodal interfaces to empower
+        individuals with
+        physical impairments to play and create in the popular video game Minecraft. Multicraft utilizes Gaze and
+        Speech to replace the traditional mouse and keyboard interface. By looking at a location on the screen and
+        uttering a command, users can build in the Minecraft world. Tangicraft utilizes tangible blocks with webcam
+        detectable codes. Users can construct a physical structure in front of a webcam and call it in the Minecraft
+        world by pressing a button on an Arduino microcontroller. Our team is currently conducting user tests to drive
+        iteration on our initial designs.
       </p>
-      
+
     </section>
+
+    <section class="textblock project_box">
+      <h1>Learning with Minecraft<span>▼</span></h1>
+      <img class="lazy img_hidden" src="">
+      <p class="window__description">Many in the media and the academia have touted Minecraft as a hotbed of learning.
+        <b>Learning with Minecraft</b> studies how children might learn spatial reasoning and programming skills within
+        and
+        around the game. We are currently conducting a comparative study of student collaboration under two conditions:
+        1) Completing a construction task in a traditional Minecraft server; and 2) Using the MakeCode interface in
+        Minecraft Education Edition. Additionally, we are using screen capture and eye tracking technologies to collect
+        data and investigate spatial reasoning processes in Minecraft gameplay.
+      </p>
+    </section>
+
+    <section class="textblock project_box">
+      <h1>Sony Project<span>▼</span></h1>
+      <img class="lazy img_hidden"   src="">
+      <p class="window__description">In collaboration with Sony, this team works on developing data-capture devices that provide educators with
+        real-time multimodal learning analytics. We use ReSpeaker Core v2.0 microphone arrays to show educators what
+        keywords have been said, a discussion timeline, direction of speech, and emotional tone indicators. We are also
+        working to incorporate body pose estimation into our analyses. We have tested our devices in multiple
+        classrooms and are continuing development and testing in the coming months.
+      </p>
+    </section>
+
+    <section class="textblock project_box">
+      <h1>Tinkering with Music<span>▼</span></h1>
+      <img class="lazy img_hidden"   src="">
+      <p class="window__description">
+          <b>Tinkering with Music</b> works closely with a local afterschool youth club to develop
+          activities that marry making with music appreciation. Our team is conducting the second
+          iteration of our curriculum Tinkering with Music. The curriculum invites middle school
+          participants to build instruments and take part in collaborative active listening and
+          discussion activities. Moreover, to promote prolonged engagement outside of the
+          curriculum, we are developing a tangible exhibit for active listening and song annotation.
+      </p>
+    </section>
+
+    <section class="textblock project_box">
+        <h1>FamJam!<span>▼</span></h1>
+        <img class="lazy img_hidden"   src="">
+        <p class="window__description">
+            <b>FamJam!</b> engages children and their families in a making, learning, and bonding experience.
+            Over three sessions, families use low- and high-tech tools to create a game based on a family
+            narrative or story. We seek to understand how we can meaningfully engage families in “making”
+            activities both in facilitated makerspaces and at home.
+        </p>
+    </section>
+    <section class="textblock project_box">
+        <h1>Sports Analytics at MetaMedia North (Family Focus)<span>▼</span></h1>
+        <img class="lazy img_hidden"   src="">
+        <p class="window__description">
+            In partnership with an organization in Evanston called Family Focus, Sports Analytics creates a
+            learning environment for participants that merges data analytics, computational thinking, and
+            sports. Our objective is to design a learning experience around different types of wearable
+            technologies such as kits featuring conductive thread, LED lights, sensors and other components
+            commonly found in high-tech garments. Participants will also work with, circuit boards that can
+            be programmed to direct the various devices attached to them. Activities are designed such that
+            students have access to data science tools such as Python statistical packages and R
+            programming tools prominently used by data scientists. Providing participants, the opportunity
+            to explore statistical questions that are meaningful to them and allow them to become creators of
+            data science artifacts.
+        </p>
+    </section>
+    <section class="textblock project_box">
+        <h1>Mekatilili Fellowship Program<span>▼</span></h1>
+        <img class="lazy img_hidden"   src="">
+        <p class="window__description">
+            The Mekatilili Fellowship Program is a project in collaboration with the <a href="http://mekatilili.media.mit.edu/" target="_blank"">MIT Media
+            Lab</a>. This project aims to support Kenyan students and professionals in developing
+            technologies within the context of agriculture, accessibility, and design for
+            manufacturing. We have partnered with three local Kenyan companies in order to allow
+            the participants to design for real applications using the ESP8266 IoT boards and IBM
+            Watson. The organizations work within the realms of accessibility, agriculture, and
+            design for manufacturing. Some of the applications students began developing include
+            auto-correcting humidity systems for growing crops, a system to save 3D print status in
+            case of a power outage, and a stabilizing spoon. The aims of this project is to provide
+            opportunities for students to apply their technical backgrounds in a real world setting
+            and create lasting relationships with the local Kenyan partners to help support
+            innovation.
+        </p>
+    </section>
+
+
+
   </main>
   <script src="../script.js"></script>
 </body>

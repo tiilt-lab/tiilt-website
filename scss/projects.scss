@@ -16,23 +16,30 @@
     h1 {
       display: flex;
       justify-content: space-between;
-    }
-    .project_hidden {
-      border: 0; 
-      clip: rect(0 0 0 0); 
-      height: 1px; 
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
+      span {
+        transform: rotate(0deg);
+        transition-delay: 50ms;
+        transition: all 450ms ease-in-out;
+      }
+      .rotated {
+        transform: rotate(-540deg);
+        
+      }
     }
     .textblock {
       margin-top: 1em;
       flex-basis: 45rem;
-      max-height: 60rem;
+      max-height: 90rem;
       img {
         width: 100%;
+        height: auto;
+        max-height: 100rem;
+        transition: max-height 1s linear;
+        overflow: hidden;
+      }
+      img.img_hidden {
+        max-height: 0;
+        // width: 1px;
       }
       p {
         padding: 1rem;

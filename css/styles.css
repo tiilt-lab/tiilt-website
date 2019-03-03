@@ -127,8 +127,7 @@
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
-    flex-wrap: wrap;
-    outline: solid rosybrown 1px; }
+    flex-wrap: wrap; }
     .projects h1 {
       display: flex;
       justify-content: space-between; }

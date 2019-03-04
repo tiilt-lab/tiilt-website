@@ -92,13 +92,12 @@ ol {
     main {
       
       margin: 0 1.2rem 2rem;
+
       .logo {
-        fill: #beb4d4;
-        background-color: transparent;
         position: fixed;
         bottom: 6rem;
         width: auto;
-        right: 0;
+        left: 0;
         z-index: -1;
       }
     }
@@ -190,7 +189,6 @@ main {
     }
   }
   .logo {
-    fill: #beb4d4;
     background-color: transparent;
     position: fixed;
     bottom: 0;

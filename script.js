@@ -1,5 +1,7 @@
 function showPicture(e) {
-    e.classList.toggle("img_hidden");
+    console.log(e);
+    
+    e.classList.toggle("visually_hidden");
 }
 
 function rotate(e) {
@@ -16,9 +18,19 @@ function hideImage(e) {
 }
 
 window.onload = () => { 
-    const projectBoxes = document.getElementsByClassName('project_box');
-    const projectBoxesInArray = Array.from(projectBoxes);
-    projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+    if (location.href.includes("projects")) {
+        const projectBoxes = document.getElementsByClassName('project_box');
+        const projectBoxesInArray = Array.from(projectBoxes);
+        projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+    }
+
+    if (location.href.includes("people")) {
+        const personImgs = document.getElementsByClassName('img_person');
+        const personImgsInArray = Array.from(personImgs);
+        console.log(personImgsInArray);
+        
+        personImgsInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+    }
 
     const myLazyLoad = new LazyLoad({
         elements_selector: ".lazy"

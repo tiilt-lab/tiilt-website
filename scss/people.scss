@@ -1,9 +1,19 @@
 .people {
-  article {
-    
-  }
   h1 {
     margin-bottom: 1rem;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: space-between;
+      span {
+        transform: rotate(0deg);
+        transition-delay: 50ms;
+        transition: all 450ms ease-in-out;
+      }
+      .rotated {
+        transform: rotate(-540deg);
+      }
   }
   div {
     display: flex;
@@ -23,7 +33,6 @@
         border: 2px solid #000;
         text-decoration: none;
         padding: .5rem;
-
       }
     }
   }

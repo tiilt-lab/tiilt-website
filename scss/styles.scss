@@ -70,6 +70,7 @@ ol {
           margin: 0;
           position: fixed;
           bottom: 0;
+          z-index: 99;
           width: 100vw;
 
           li {
@@ -89,9 +90,23 @@ ol {
       }
     }
     main {
+      
       margin: 0 1.2rem 2rem;
+      .logo {
+        fill: #beb4d4;
+        background-color: transparent;
+        position: fixed;
+        bottom: 6rem;
+        width: auto;
+        right: 0;
+        z-index: -1;
+      }
     }
-
+    .people {
+      .textblock {
+        flex-grow: 1;
+      }
+    }
   }
 }
 
@@ -150,12 +165,15 @@ main {
   .textblock {
     border: solid 2px black;
     transition: box-shadow 0.2s linear;
+    background-color: #ffffff;
 
     h1,
     h2 {
       border-bottom: solid 2px black;
       padding: 0.75rem;
+
     }
+    
   }
 
   .textblock:hover {
@@ -171,40 +189,25 @@ main {
       max-height: 300px;
     }
   }
-
-  .showcase {
-    position: relative;
-
-    .title {
-      font-size: 2.5rem;
-      width: 10%;
-      word-break: keep-all;
-      position: absolute;
-      top: 30px; // background: palevioletred;
-
-      span {
-        padding-right: 10px;
-        padding-left: 5px;
-      }
-    }
-
-    .pictures {
-      position: relative;
-      background: #ffffff;
-      height: 500px;
-      width: 92%;
-      margin-left: auto;
-      z-index: -1;
-      margin-bottom: 100px;
-      overflow-x: hidden;
-
-      img {
-        margin-left: auto;
-        height: 500px;
-        filter: blur(1px);
-        opacity: 0.8;
-      }
-    }
+  .logo {
+    fill: #beb4d4;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 2rem;
+    z-index: -1;
+    width: 43vw;
+  }
+  .visually_hidden {
+    display: block;
+    max-height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(1px);
+    white-space: nowrap;
+    position: absolute;
   }
 }
 
@@ -220,5 +223,6 @@ main {
   .textblock {
     max-width: 55rem;
     margin-bottom: 1vh;
+    margin-left: auto;
   }
 }

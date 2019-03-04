@@ -3,17 +3,12 @@ function showPicture(e) {
 }
 
 function rotate(e) {
-    if (e.classList.contains("rotated")) {
-        e.classList.remove("rotated");
-    } else {
-        e.classList.add("rotated");
-    }
+    e.classList.toggle("rotated");
 }
 
 function hideImage(e) {
-    const spanElements = e.getElementsByTagName('span');
-    const span = spanElements[0];
-    rotate(span);
+    const spanElement = e.querySelector('span');
+    rotate(spanElement);
 
     const imgElements = e.getElementsByTagName('img');
     const imgElementsInArray = Array.from(imgElements);

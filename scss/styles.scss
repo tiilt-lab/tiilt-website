@@ -47,40 +47,70 @@ ul {
   list-style: none;
 }
 
-// NAVIGATION
-
-#tiilt-logo img {
-  transition: all 0.05s linear;
-}
-
-#tiilt-logo img:hover {
-  transform: rotate(21deg);
-}
 
 ol {
   margin: 0.75rem;
   padding-left: 4rem;
 }
 
+/* Mobile Styles Start */
+@media only screen and (max-width: 640px) {
+  body {
+    padding-bottom: 7rem;
+    height: 100%;
+
+    header {
+      h1 {
+        margin: 3rem 1rem;
+      }
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          position: fixed;
+          bottom: 0;
+          width: 100vw;
+
+          li {
+            a {
+              font-size: 1rem;
+              display: flex;
+              flex-direction: column-reverse;
+              i {
+                font-size: 2rem;
+              }
+            }
+            .current-page {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    main {
+      margin: 0 1.2rem 2rem;
+    }
+
+  }
+}
+
+/* Mobile Styles End */
 
 /* Desktop Styles Start */
-
-
-
 header {
-  margin: 3rem;
-  max-width: 700px;
+
+
   h1 {
-    
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 5px;
+    margin: 3rem 3rem 0;
   }
 
   nav {
-    
-
     ul {
-
+      margin: 0 3rem 3rem;
+      background-color: white;
       display: flex;
       flex-wrap: wrap;
       font-size: 1.5rem;

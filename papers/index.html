@@ -7,31 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.3/css/unicons.css" />
 </head>
 
 <body>
     <header>
-      <h1>technological innovations for inclusive learning &amp; teaching</h1>
-
-        <nav class="navbar">
-            <ul id="myNav" class="overlay">
+        <h1>technological innovations for inclusive learning &amp; teaching</h1>
+        <nav>
+            <ul>
                 <li>
-                    <a href="/">home</a>
+                    <a href="/">
+                        home
+                        <i class='uil uil-home'></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="/papers/" class="current-page">papers</a>
+                    <a href="/papers/" class="current-page">papers
+                        <i class='uil uil-file-alt'></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="/people/">people</a>
+                    <a href="/people/">people
+                        <i class='uil uil-users-alt'></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="/projects/">projects</a>
+                    <a href="/projects/">projects
+                        <i class='uil uil-drill'></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="/classes/">classes</a>
+                    <a href="/classes/">classes
+                        <i class='uil uil-book'></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="/contact/">contact</a>
+                    <a href="/contact/">contact
+                        <i class='uil uil-envelope'></i></a>
                 </li>
             </ul>
         </nav>
@@ -148,8 +160,8 @@
                     computational technologies
                     to measure complex learning tasks. Journal of Learning Analytics, 3(2), 220-238.
                 </p>
-                    <a href="http://dx.doi.org/10.18608/jla.2016.32.11" target="_blank">READ</a>
-                    <a href="../assets/papers/jla_blikstein_worsley_2016.pdf" target="_blank">PDF</a>
+                <a href="http://dx.doi.org/10.18608/jla.2016.32.11" target="_blank">READ</a>
+                <a href="../assets/papers/jla_blikstein_worsley_2016.pdf" target="_blank">PDF</a>
             </div>
             <div class="window__paper">
                 <p>
@@ -435,32 +447,6 @@
             </div>
         </section>
     </main>
-
-
-    <script src="/nav.js"></script>
-    <script>
-        // The function actually applying the offset
-        function offsetAnchor() {
-            if (window.innerWidth <= 640) {
-                if (location.hash.length !== 0) {
-                    window.scrollTo(window.scrollX, window.scrollY - 100);
-                }
-            }
-
-        }
-
-        // Captures click events of all a elements with href starting with #
-        $(document).on('click', 'a[href^="#"]', function (event) {
-            // Click events are captured before hashchanges. Timeout
-            // causes offsetAnchor to be called after the page jump.
-            window.setTimeout(function () {
-                offsetAnchor();
-            }, 0);
-        });
-
-        // Set the offset when entering page with hash present in the url
-        window.setTimeout(offsetAnchor, 0);
-    </script>
 </body>
 
 </html>

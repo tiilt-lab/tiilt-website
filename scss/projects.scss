@@ -1,10 +1,4 @@
-
-
-
-@media only screen and (max-width: 640px) {
-}
-@media only screen and (min-width: 40px) {
-  .projects {
+.projects {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,7 +17,6 @@
       }
       .rotated {
         transform: rotate(-540deg);
-        
       }
     }
     .textblock {
@@ -36,9 +29,11 @@
         max-height: 100rem;
         transition: max-height 1s linear;
         overflow: hidden;
+        border-bottom: black 2px solid;
       }
       img.img_hidden {
         max-height: 0;
+        border: 0;
         // width: 1px;
       }
       p {
@@ -46,5 +41,3 @@
       }
     }
   }
-  
-}

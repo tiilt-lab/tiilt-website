@@ -1,14 +1,12 @@
-@media only screen and (min-width: 40px) {
-  .contact .textblock {
-    min-width: 300px;
-    max-width: 30%; }
-  .contact ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px; } }
+.contact .textblock {
+  max-width: 24rem; }
+.contact ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; }
 
 /*# sourceMappingURL=contact.css.map */

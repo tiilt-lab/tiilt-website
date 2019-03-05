@@ -89,6 +89,7 @@ ul {
       margin: 0 1.2rem 2rem;
 
       .logo {
+        display: none;
         position: fixed;
         bottom: 6rem;
         width: auto;
@@ -188,14 +189,14 @@ main {
     left: 2rem;
     z-index: -1;
     width: 43vw;
-    transition: opacity 60s;
+    transition: opacity 30s;
     opacity: 0;
   }
   .logo.loaded{
-    opacity: .4;
+    opacity: 1;
   }
 
-  .visually_hidden {
+  .visually_hidden { //https://accessibility.18f.gov/hidden-content/
     display: block;
     max-height: 1px;
     width: 1px;

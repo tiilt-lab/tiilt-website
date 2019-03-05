@@ -1,7 +1,7 @@
 
   .contact {
     .textblock {
-      max-width: 24rem;
+      max-width: 30rem;
     }
     
     ul {
@@ -18,5 +18,14 @@
       left: unset;
       right: 2rem;
     }
+    @media only screen and (max-width: 640px) {
+      .logo {
+        width: 27rem;
+        margin: auto;
+        left: 0;
+        bottom: 6rem;
+      }
+    }
+    
 
   }

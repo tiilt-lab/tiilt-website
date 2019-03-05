@@ -3,6 +3,7 @@
 @import "./projects.scss";
 @import "./papers.scss";
 @import "./classes.scss";
+@import "./events.scss";
 
 // FONTS
 @font-face {
@@ -45,12 +46,6 @@ body {
 
 ul {
   list-style: none;
-}
-
-
-ol {
-  margin: 0.75rem;
-  padding-left: 4rem;
 }
 
 /* Mobile Styles Start */
@@ -166,12 +161,11 @@ main {
     transition: box-shadow 0.2s linear;
     background-color: #ffffff;
 
-    h1, h2 {
+    h1 {
       border-bottom: solid 2px black;
       padding: 0.75rem;
-
     }
-    
+
   }
 
   .textblock:hover {
@@ -194,8 +188,13 @@ main {
     left: 2rem;
     z-index: -1;
     width: 43vw;
+    transition: opacity 60s;
+    opacity: 0;
+  }
+  .logo.loaded{
     opacity: .4;
   }
+
   .visually_hidden {
     display: block;
     max-height: 1px;
@@ -210,12 +209,14 @@ main {
 }
 
 .about {
-
   p,
   ol {
     width: 95%;
     margin-right: auto;
     margin: 0.75rem;
+  }
+  ol {
+    padding-left: 4rem;
   }
 
   .textblock {

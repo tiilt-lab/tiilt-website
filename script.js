@@ -24,13 +24,13 @@ window.onload = () => {
         projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
     }
 
-    if (location.href.includes("people")) {
-        const personImgs = document.getElementsByClassName('img_person');
-        const personImgsInArray = Array.from(personImgs);
-        console.log(personImgsInArray);
+    // if (location.href.includes("people")) {
+    //     const personImgs = document.getElementsByClassName('img_person');
+    //     const personImgsInArray = Array.from(personImgs);
+    //     console.log(personImgsInArray);
         
-        personImgsInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
-    }
+    //     personImgsInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+    // }
 
     const myLazyLoad = new LazyLoad({
         elements_selector: ".lazy"

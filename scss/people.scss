@@ -2,53 +2,84 @@
   h1 {
     margin-bottom: 1rem;
   }
-  
+
   h2 {
     display: flex;
     justify-content: space-between;
-      span {
-        transform: rotate(0deg);
-        transition-delay: 50ms;
-        transition: all 450ms ease-in-out;
-      }
-      .rotated {
-        transform: rotate(-540deg);
-      }
+
+    span {
+      transform: rotate(0deg);
+      transition-delay: 50ms;
+      transition: all 450ms ease-in-out;
+    }
+
+    .rotated {
+      transform: rotate(-540deg);
+    }
   }
-  div {
+
+  .people-group {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
+
     .textblock {
       flex-basis: 20rem;
       margin-bottom: 2rem;
-      p, a{
-        margin: .4rem 1rem ;
+
+      p,
+      a {
+        margin: .4rem 1rem;
       }
+
       a {
         display: inline-block;
         border: 2px solid #000;
         text-decoration: none;
         padding: .5rem;
       }
+      h2 {
+        border-bottom: solid 2px black;
+        padding: 0.75rem;
+      }
     }
+
     .top_dog {
       h2 {
         border: 0;
       }
+
       h3 {
         padding: 0 .75rem .75rem;
         border-bottom: 2px solid black;
         font-size: 1.2rem;
       }
+    } 
+  }
+
+  .alumni {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      min-height: 10rem;
+      li {
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 2px solid black;
+        padding: .5rem;
+      }
+
     }
   }
-  img {
-    width: 100%;
-    border-bottom: 2px solid #000;
-    user-select: none;
-  }
+}
+
+img {
+  width: 100%;
+  border-bottom: 2px solid #000;
+  user-select: none;
 }

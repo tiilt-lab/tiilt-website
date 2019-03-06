@@ -2,8 +2,10 @@
     .textblock {
         max-width: 60rem;
         margin-bottom: 2rem;
-        p {
-            padding: 1rem;
+
+        p,
+        ol {
+            margin: 0.75rem;
         }
     }
 

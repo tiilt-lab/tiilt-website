@@ -168,6 +168,10 @@ main {
       padding: 0.75rem;
     }
 
+    p, ol, ul {
+      margin: .75rem;
+      
+    }
   }
 
   .textblock:hover {
@@ -211,14 +215,8 @@ main {
 }
 
 .about {
-  p,
   ol {
-    width: 95%;
-    margin-right: auto;
     margin: 0.75rem;
-  }
-  ol {
-    padding-left: 4rem;
   }
 
   .textblock {
@@ -226,4 +224,8 @@ main {
     margin-bottom: 1vh;
     margin-left: auto;
   }
+}
+
+.list_with_padding {
+  padding-left: 3rem;
 }

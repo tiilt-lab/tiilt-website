@@ -8,6 +8,13 @@ function rotate(e) {
     e.classList.toggle("rotated");
 }
 
+function expandText(e) {
+    const p_Sibling = e.previousElementSibling; 
+    //conld be a better way to do this
+    
+    p_Sibling.classList.toggle("expanded_text");
+}
+
 function hideImage(e) {
     const spanElement = e.querySelector('span');
     rotate(spanElement);
@@ -24,13 +31,13 @@ window.onload = () => {
         projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
     }
 
-    // if (location.href.includes("people")) {
-    //     const personImgs = document.getElementsByClassName('img_person');
-    //     const personImgsInArray = Array.from(personImgs);
-    //     console.log(personImgsInArray);
+    if (location.href.includes("people")) {
+        const readMoreButtons = document.querySelectorAll('button');
+        const buttonArr = Array.from(readMoreButtons);
+        console.log(buttonArr);
         
-    //     personImgsInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
-    // }
+        buttonArr.map((button) => button.addEventListener('click', () => expandText(button)));
+    }
 
     const myLazyLoad = new LazyLoad({
         elements_selector: ".lazy"

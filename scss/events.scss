@@ -1,4 +1,7 @@
 .events {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     .textblock {
         margin-bottom: 1rem;
         max-width: 65rem;

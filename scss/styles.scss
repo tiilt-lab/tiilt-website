@@ -15,6 +15,7 @@
     url("../assets/fonts/AHAMONO-Regular.svg#AHAMONO-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 // SITE WIDE
@@ -131,7 +132,7 @@ header {
       li {
         a {
           transition: color 0.5s;
-          color: #818181;
+          color: #717171;
           text-decoration: none;
           font-size: 1.5rem;
           height: 5rem;

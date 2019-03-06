@@ -1,2 +1,2 @@
-.events .textblock{margin-bottom:1rem;max-width:65rem}.events .textblock h2,.events .textblock p{padding:0.25rem 0.75rem}.events .textblock ol{padding-left:2rem}.events .textblock ol li{margin-left:2rem}
+.events{display:flex;justify-content:space-between;flex-wrap:wrap}.events .textblock{margin-bottom:1rem;max-width:65rem}.events .textblock h2,.events .textblock p{padding:0.25rem 0.75rem}.events .textblock ol{padding-left:2rem}.events .textblock ol li{margin-left:2rem}
 /*# sourceMappingURL=events.css.map */

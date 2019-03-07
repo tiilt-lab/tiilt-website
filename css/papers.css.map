@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,OAAO,CACL,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,kBAAW,CACT,SAAS,CAAE,KAAK,CAChB,aAAa,CAAE,IAAI,CACnB,iCAAe,CACb,aAAa,CAAE,eAAe,CAC9B,mCAAE,CAEA,WAAW,CAAE,IAAI,CACjB,UAAU,CAAE,CAAC,CAGjB,8BAAW,CACT,aAAa,CAAE,IAAI",
-"sources": ["../scss/papers.scss"],
-"names": [],
-"file": "papers.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/papers.scss"],"names":[],"mappings":"AAAA,QACE,aACA,sBACA,mBACE,gBACA,mBACA,kCACE,6BACA,oCAEE,iBACA,aAGJ,+BACE","file":"papers.css"}

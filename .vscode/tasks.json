@@ -4,12 +4,29 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "sassy",
-            "type": "shell",
-            "command": "python -m http.server 8000 && sass --watch ./scss:./css --style compressed",
+            "label": "sassy serve",
+            "command" : "sassy serve",
+            "type" : "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "dependsOn":["sassy", "serve"]
+        },
+        {
+            "label": "sassy",
+            "type": "shell",
+            "command": "sass --watch ./scss:./css --style compressed",
+            "group": {
+                "kind": "build"
+            }
+        },
+        {
+            "label": "serve",
+            "type": "shell",
+            "command": "python -m http.server 8000",
+            "group": {
+                "kind": "build"
             }
         }
     ]

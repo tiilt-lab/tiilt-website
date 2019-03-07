@@ -9,6 +9,7 @@
       a {
         @extend %squared_button;
         font-weight: bold;
+        margin-top: 0;
       }
     }
     :last-child{

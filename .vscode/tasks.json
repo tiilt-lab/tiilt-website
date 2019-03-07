@@ -6,7 +6,7 @@
         {
             "label": "sassy",
             "type": "shell",
-            "command": "sass --watch ./:./css --style compressed",
+            "command": "sass --watch ./scss:./css --style compressed",
             "group": {
                 "kind": "build",
                 "isDefault": true

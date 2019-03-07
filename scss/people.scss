@@ -39,7 +39,7 @@
 
       a,
       button {
-        @extend %squared_button;
+        @extend %squared_button  !optional;
       }
     }
 
@@ -108,21 +108,4 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-}
-
-%squared_button {
-  margin: .4rem;
-  display: inline-block;
-  border: 2px solid #000;
-  text-decoration: none;
-  padding: .5rem;
-  font-size: 1rem;
-  background-color: white;
-  color: black;
-  transition: all .2s linear;
-
-  &:hover {
-    color: white;
-    background-color: black;
-  }
 }

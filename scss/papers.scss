@@ -7,7 +7,7 @@
     .window__paper {
       border-bottom: solid black 2px;
       a {
-        @extend %squared_button;
+        @extend %squared_button !optional;
         font-weight: bold;
         margin-top: 0;
       }

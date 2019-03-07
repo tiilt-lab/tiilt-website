@@ -11,10 +11,25 @@ function rotate(e) {
 function expandText(e) {
     const p_Sibling = e.previousElementSibling; 
     //conld be a better way to do this
-    
     p_Sibling.classList.toggle("expanded_text");
 }
 
+function addReadMoreButtons() {
+    const paragraphs = document.querySelectorAll("article:not(.leaders) > .people-group section p");
+    const paragraphArr = Array.from(paragraphs);
+    let filtered = paragraphArr.filter(para => para.clientHeight > 200);
+    
+    filtered.map((bigPara) => {
+        bigPara.classList.add('expanded_text');
+
+        const button = document.createElement("button"); 
+        const newContent = document.createTextNode("read more"); 
+        button.appendChild(newContent); 
+        button.addEventListener('click', () => expandText(button));
+
+        bigPara.after(button);
+    });
+}
 function hideImage(e) {
     const spanElement = e.querySelector('span');
     rotate(spanElement);
@@ -32,11 +47,8 @@ window.onload = () => {
     }
 
     if (location.href.includes("people")) {
-        const readMoreButtons = document.querySelectorAll('button');
-        const buttonArr = Array.from(readMoreButtons);
-        console.log(buttonArr);
-        
-        buttonArr.map((button) => button.addEventListener('click', () => expandText(button)));
+
+        addReadMoreButtons();
     }
 
     const myLazyLoad = new LazyLoad({

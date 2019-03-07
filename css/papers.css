@@ -1,2 +1,2 @@
-.papers{display:flex;flex-direction:column}.papers .textblock{max-width:75rem;margin-bottom:2rem}.papers .textblock .window__paper{border-bottom:solid black 2px}.papers .textblock .window__paper a{margin:0 0 5px 5px}.papers .textblock :last-child{border-bottom:none}.papers .textblock p{padding:0.5rem}
+.papers{display:flex;flex-direction:column}.papers .textblock{max-width:75rem;margin-bottom:2rem}.papers .textblock .window__paper{border-bottom:solid black 2px}.papers .textblock .window__paper a{margin:0 0 5px 5px}.papers .textblock :last-child{border-bottom:none}
 /*# sourceMappingURL=papers.css.map */

@@ -39,12 +39,7 @@
 
       a,
       button {
-        margin: .4rem;
-        display: inline-block;
-        border: 2px solid #000;
-        text-decoration: none;
-        padding: .5rem;
-        font-size: 1rem;
+        @extend %squared_button;
       }
     }
 
@@ -64,7 +59,7 @@
   article:not(.leaders) {
     p {
       -webkit-line-clamp: 60;
-      
+
       &.expanded_text {
         -webkit-box-orient: vertical;
         display: -webkit-box;
@@ -113,4 +108,21 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+
+%squared_button {
+  margin: .4rem;
+  display: inline-block;
+  border: 2px solid #000;
+  text-decoration: none;
+  padding: .5rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  transition: all .2s linear;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
 }

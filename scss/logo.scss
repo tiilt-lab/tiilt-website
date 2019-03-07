@@ -1,0 +1,149 @@
+.cls-1,
+.cls-10,
+.cls-11,
+.cls-13,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+    stroke: #3a2163;
+}
+
+.cls-1 {
+    stroke-width: 9.77px;
+}
+
+.cls-10,
+.cls-11,
+.cls-2,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+    stroke-width: 70px;
+}
+
+.cls-3 {
+    stroke-width: 70px;
+}
+
+.cls-4 {
+    stroke: #fbb040;
+}
+
+.cls-10,
+.cls-11,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+    stroke-linecap: round;
+}
+
+.cls-5 {
+    stroke: #f9ed32;
+}
+
+.cls-6 {
+    stroke: #8dc63f;
+}
+
+.cls-7 {
+    stroke: #00a79d;
+}
+
+.cls-8 {
+    stroke: #be1e2d;
+}
+
+.cls-13,
+.cls-9 {
+    stroke: #ec008c;
+}
+
+.cls-10 {
+    stroke: #ef4136;
+}
+
+.cls-11 {
+    stroke: #2e3192;
+}
+
+.cls-12 {
+    fill: #3a2163;
+}
+
+.cls-13 {
+    stroke-width: 0.01px;
+}
+
+#logo3 {
+    width: 43vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    animation: fade-in 60s ease forwards;
+    opacity: 0;
+
+    path {
+        fill: black;
+    }
+
+    >* {
+        stroke: black;
+    }
+
+    >line {
+        stroke-dasharray: 1200px;
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset 3s linear;
+    }
+
+    >polyline {
+        stroke-dasharray: 2000px;
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset 2s linear;
+    }
+
+    // >circle {
+    //     stroke-dasharray: 527px;
+    //     stroke-dashoffset: 0;
+    //     transition: stroke-dashoffset 1s linear;
+    // }
+    &:hover>line {
+        stroke-dashoffset: 100rem;
+    }
+
+    &:hover>polyline {
+        stroke-dashoffset: 2000px;
+    }
+
+    &:hover>circle {
+        stroke-dashoffset: 527px;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

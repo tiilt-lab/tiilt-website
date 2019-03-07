@@ -4,6 +4,7 @@
 @import "./papers.scss";
 @import "./classes.scss";
 @import "./events.scss";
+@import "./logo.scss";
 
 // FONTS
 @font-face {
@@ -59,6 +60,7 @@ ul {
       h1 {
         margin: 3rem 1rem;
       }
+
       nav {
         ul {
           display: flex;
@@ -74,10 +76,12 @@ ul {
               font-size: 1rem;
               display: flex;
               flex-direction: column-reverse;
+
               i {
                 font-size: 2rem;
               }
             }
+
             .current-page {
               text-decoration: none;
             }
@@ -85,11 +89,12 @@ ul {
         }
       }
     }
+
     main {
-      
+
       margin: 0 1.2rem 2rem;
 
-      .logo {
+      .logo, #logo3 {
         display: none;
         position: fixed;
         bottom: 6rem;
@@ -98,6 +103,7 @@ ul {
         z-index: -1;
       }
     }
+
     .people {
       .textblock {
         flex-grow: 1;
@@ -158,6 +164,10 @@ main {
   // width: 100%;
   margin: 0 3rem 3rem;
 
+  .list_with_padding {
+    padding-left: 3rem;
+  }
+
   .textblock {
     border: solid 2px black;
     transition: box-shadow 0.2s linear;
@@ -168,11 +178,14 @@ main {
       padding: 0.75rem;
     }
 
-    p, ol, ul {
+    p,
+    ol,
+    ul {
       margin: .75rem;
-      
     }
   }
+
+  
 
   .textblock:hover {
     box-shadow: 4px 5px;
@@ -180,13 +193,13 @@ main {
 
   .twitter {
     max-width: 500px;
-    // max-height: 300px;
 
     .twitter-embed {
       overflow-y: scroll;
       max-height: 300px;
     }
   }
+
   .logo {
     background-color: transparent;
     position: fixed;
@@ -197,10 +210,9 @@ main {
     transition: opacity 30s;
     opacity: 0;
   }
-  .logo.loaded{
+  .logo.loaded {
     opacity: 1;
   }
-
   .visually_hidden { //https://accessibility.18f.gov/hidden-content/
     display: block;
     max-height: 1px;
@@ -212,20 +224,24 @@ main {
     white-space: nowrap;
     position: absolute;
   }
-}
-
-.about {
-  ol {
-    margin: 0.75rem;
+  &.about {
+    ol {
+      margin: 0.75rem;
+    }
+  
+    .textblock {
+      max-width: 55rem;
+      margin-bottom: 1vh;
+      margin-left: auto;
+      position: relative;
+      z-index: 99;
+    }
   }
-
-  .textblock {
-    max-width: 55rem;
-    margin-bottom: 1vh;
-    margin-left: auto;
-  }
 }
 
-.list_with_padding {
-  padding-left: 3rem;
-}
+
+
+
+
+
+

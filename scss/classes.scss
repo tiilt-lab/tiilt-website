@@ -2,7 +2,10 @@
     .textblock {
         max-width: 60rem;
         margin-bottom: 2rem;
-
+        h1 {
+            display: flex;
+            justify-content: space-between;
+        }
         p,
         ol {
             margin: 0.75rem;

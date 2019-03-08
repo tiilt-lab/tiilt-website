@@ -8,10 +8,16 @@ function rotate(e) {
     e.classList.toggle("rotated");
 }
 
-function expandText(e) {
+function contractText(e) {
     const p_Sibling = e.previousElementSibling; 
     //conld be a better way to do this
-    p_Sibling.classList.toggle("expanded_text");
+    
+    const textContracted = p_Sibling.classList.toggle("contracted_text");
+    if (textContracted) {
+        e.innerHTML = "read more";
+    } else {
+        e.innerHTML = "read less";
+    }
 }
 
 function addReadMoreButtons() {
@@ -20,12 +26,12 @@ function addReadMoreButtons() {
     let filtered = paragraphArr.filter(para => para.clientHeight > 200);
     
     filtered.map((bigPara) => {
-        bigPara.classList.add('expanded_text');
+        bigPara.classList.add('contracted_text');
 
         const button = document.createElement("button"); 
         const newContent = document.createTextNode("read more"); 
         button.appendChild(newContent); 
-        button.addEventListener('click', () => expandText(button));
+        button.addEventListener('click', () => contractText(button));
 
         bigPara.after(button);
     });

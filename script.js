@@ -1,6 +1,4 @@
 function showPicture(e) {
-    console.log(e);
-    
     e.classList.toggle("visually_hidden");
 }
 
@@ -9,8 +7,8 @@ function rotate(e) {
 }
 
 function contractText(e) {
-    const p_Sibling = e.previousElementSibling; 
-    //conld be a better way to do this
+    const p_Sibling = e.parentElement.querySelector('p');
+    
     
     const textContracted = p_Sibling.classList.toggle("contracted_text");
     if (textContracted) {
@@ -23,7 +21,7 @@ function contractText(e) {
 function addReadMoreButtons() {
     const paragraphs = document.querySelectorAll("article:not(.leaders) > .people-group section p");
     const paragraphArr = Array.from(paragraphs);
-    let filtered = paragraphArr.filter(para => para.clientHeight > 200);
+    const filtered = paragraphArr.filter(para => para.clientHeight > 200);
     
     filtered.map((bigPara) => {
         bigPara.classList.add('contracted_text');

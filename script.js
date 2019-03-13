@@ -9,7 +9,6 @@ function rotate(e) {
 function contractText(e) {
     const p_Sibling = e.parentElement.querySelector('p');
     
-    
     const textContracted = p_Sibling.classList.toggle("contracted_text");
     if (textContracted) {
         e.innerHTML = "read more";
@@ -51,7 +50,6 @@ window.onload = () => {
     }
 
     if (location.href.includes("people")) {
-
         addReadMoreButtons();
     }
 

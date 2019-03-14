@@ -11,7 +11,28 @@
         p, ol {
             margin: .75rem
         }
-        
+        h3 {
+            margin: 0 .75rem
+        }
+    }
+    .schedule {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h1 {
+            flex: 0 0 100%;
+        }
+        h2 {
+            text-decoration-line: underline;
+        }
+        p {
+            margin: 0 .75rem;
+        }
+        section {
+            :last-child {
+                margin-bottom: .75rem;
+            }
+        }
     }
 
 

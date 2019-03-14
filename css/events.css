@@ -1,1 +1,2 @@
-.events{display:flex;justify-content:space-between;flex-wrap:wrap}.events .textblock{margin-bottom:1rem;max-width:65rem}.events .textblock h2,.events .textblock p,.events .textblock ol{margin:.75rem}/*# sourceMappingURL=events.css.map */
+.events{display:flex;justify-content:space-between;flex-wrap:wrap}.events .textblock{margin-bottom:1rem;max-width:65rem}.events .textblock h2,.events .textblock p,.events .textblock ol{margin:0.75rem}.events .textblock h3{margin:0 0.75rem}.events .schedule{display:flex;flex-wrap:wrap;justify-content:space-between}.events .schedule h1{flex:0 0 100%}.events .schedule h2{text-decoration-line:underline}.events .schedule p{margin:0 .75rem}.events .schedule section :last-child{margin-bottom:.75rem}
+/*# sourceMappingURL=events.css.map */

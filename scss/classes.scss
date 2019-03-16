@@ -11,6 +11,11 @@
         ol {
             margin: 0.75rem;
         }
+        span {
+            @extend %squared_button  !optional;
+            margin: 0.75rem;
+            font-weight: bold;
+        }
     }
 
 }

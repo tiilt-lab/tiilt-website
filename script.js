@@ -8,7 +8,7 @@ function rotate(e) {
 
 function contractText(e) {
     const p_Sibling = e.parentElement.querySelector('p');
-    
+
     const textContracted = p_Sibling.classList.toggle("contracted_text");
     if (textContracted) {
         e.innerHTML = "read more";
@@ -21,18 +21,19 @@ function addReadMoreButtons() {
     const paragraphs = document.querySelectorAll("article:not(.leaders) > .people-group section p");
     const paragraphArr = Array.from(paragraphs);
     const filtered = paragraphArr.filter(para => para.clientHeight > 200);
-    
+
     filtered.map((bigPara) => {
         bigPara.classList.add('contracted_text');
 
-        const button = document.createElement("button"); 
-        const newContent = document.createTextNode("read more"); 
-        button.appendChild(newContent); 
+        const button = document.createElement("button");
+        const newContent = document.createTextNode("read more");
+        button.appendChild(newContent);
         button.addEventListener('click', () => contractText(button));
 
         bigPara.after(button);
     });
 }
+
 function hideImage(e) {
     const spanElement = e.querySelector('span');
     rotate(spanElement);
@@ -42,7 +43,7 @@ function hideImage(e) {
     imgElementsInArray.map((imgTag) => showPicture(imgTag));
 }
 
-window.onload = () => { 
+window.onload = () => {
     if (location.href.includes("projects")) {
         const projectBoxes = document.getElementsByClassName('project_box');
         const projectBoxesInArray = Array.from(projectBoxes);
@@ -50,7 +51,11 @@ window.onload = () => {
     }
 
     if (location.href.includes("people")) {
-        addReadMoreButtons();
+        if (navigator.userAgent.indexOf("Firefox") !== -1) {
+            console.log('lol @ Firefox');
+        } else {
+            addReadMoreButtons();
+        }
     }
 
     const myLazyLoad = new LazyLoad({

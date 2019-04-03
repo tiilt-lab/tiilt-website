@@ -5,7 +5,7 @@
     align-items: flex-start;
     .textblock {
         margin-bottom: 1rem;
-        max-width: 65rem;
+        max-width: 70rem;
 
         h2,
         p, ol {
@@ -14,6 +14,9 @@
         h3 {
             margin: 0 .75rem
         }
+    }
+    .info { 
+        max-width: 20rem;
     }
     .schedule {
         display: flex;
@@ -28,6 +31,10 @@
         }
         p {
             margin: 0 .75rem;
+        }
+        a {
+            margin: 0  0 0 .75rem;
+            font-size: .9rem;
         }
         section {
             :last-child {

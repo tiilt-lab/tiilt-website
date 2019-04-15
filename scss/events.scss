@@ -33,10 +33,10 @@
             margin: 0 .75rem;
         }
         a {
-            margin: 0  0 0 .75rem;
-            font-size: .9rem;
+            // margin: 0  0 0 .75rem;
         }
         section {
+            max-width: 300px;
             :last-child {
                 margin-bottom: .75rem;
             }

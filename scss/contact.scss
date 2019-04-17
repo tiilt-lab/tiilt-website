@@ -1,23 +1,24 @@
 
   .contact {
+    
+
     .textblock {
       max-width: 30rem;
+      margin-top: 1rem;
     }
     
     ul {
       list-style-type: disc;
     }
-    .logo {
-      bottom: 2rem;
+    .big-logo {
       left: unset;
       right: 2rem;
     }
     @media only screen and (max-width: 640px) {
-      .logo {
-        width: 30vh;
-        margin: auto;
-        left: 0;
-        bottom: 6rem;
+      .big-logo {
+        display: none;
       }
     }
+    
+
 }

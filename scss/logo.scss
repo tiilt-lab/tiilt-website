@@ -92,21 +92,13 @@
     stroke-width: 0.01px;
 }
 
-#logo3 {
+.big-logo {
     width: 40vw;
     position: fixed;
     bottom: 2rem;
     z-index: 1;
     animation: fade-in 60s ease forwards;
     opacity: 0;
-
-    path {
-        fill: black;
-    }
-
-    >* {
-        stroke: black;
-    }
 
     >line {
         stroke-dasharray: 1200px;
@@ -136,6 +128,16 @@
     // &:hover>circle {
     //     stroke-dashoffset: 527px;
     // }
+}
+
+.black-logo {
+    path {
+        fill: black;
+    }
+
+    >* {
+        stroke: black;
+    }
 }
 
 @keyframes fade-in {

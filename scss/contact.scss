@@ -6,6 +6,12 @@
       max-width: 30rem;
       margin-top: 1rem;
     }
+    @media only screen and (max-width: 640px) {
+      .textblock {
+        max-width: 55rem;
+
+      }
+    }
     
     ul {
       list-style-type: disc;
@@ -13,11 +19,6 @@
     .big-logo {
       left: unset;
       right: 2rem;
-    }
-    @media only screen and (max-width: 640px) {
-      .big-logo {
-        display: none;
-      }
     }
     
 

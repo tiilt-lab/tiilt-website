@@ -128,6 +128,13 @@
     // &:hover>circle {
     //     stroke-dashoffset: 527px;
     // }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .big-logo {
+        display: none;
+    }
 }
 
 .black-logo {

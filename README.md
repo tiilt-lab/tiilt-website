@@ -10,7 +10,7 @@ this is [this](https://tiilt.northwestern.edu/)
 
 ## Master -> Live
 
-- ssh into tiilt.northwestern.edu with the webmin account username and password
+- ssh into tilt@tiilt.northwestern.edu with the webmin account username and password
 - cd into public_html
 - git pull
 

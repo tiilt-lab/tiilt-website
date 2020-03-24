@@ -16,8 +16,11 @@
 
 <body>
   <header>
-    <h1>technological innovations for inclusive learning &amp; teaching</h1>
-    <nav>
+    <h1 role="banner">technological innovations for inclusive learning &amp; teaching</h1>
+    <!-- Q: aria-labelledby here? -->
+    <!-- in an effort ot make this a role="banner" with a unique id -->
+    <nav aria-label= "Main Navigation"> 
+      <!-- Q: use of aria-labelled to identify each element in the navigation bar? -->
       <ul>
         <li>
           <a href="/" class="current-page">
@@ -78,13 +81,22 @@
       </p>
     </section>
 
+    <aside> <!-- complementary content -->
     <section class="textblock twitter">
       <h1>twitter</h1>
       <div class="twitter-embed">
-        <a class="twitter-timeline" href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw"></a>
+        <a class="twitter-timeline" 
+        href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw"
+        data-aria-polite = "assertive"></a> 
+        <!-- to prioritize updates to live regions -->
         <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </section>
+    </aside>
+
+<!--     <div role="banner" aria-label="TIILT logo">  -->
+      <!-- not sure about this^^^^* -->
+      <aside>
     <!-- <img class="lazy logo" data-src="/assets/img/logo.svg" alt="The TIILT Lab logo."> -->
     <svg class="big-logo black-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4501.98 4974">
         <title>tiilt-logo</title>
@@ -118,7 +130,11 @@
             transform="translate(1891.2 2126.6)" />
         <path class="cls-13" d="M1252.26,904.4l.19.49-.19-.49" transform="translate(1891.2 2126.6)" />
       </svg>
+    </aside>
+      </div>
+
     <script src="./script.js async defer"></script>
+  </main>
 </body>
 
 </html>

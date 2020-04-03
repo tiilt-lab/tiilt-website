@@ -44,6 +44,7 @@ function addReadMoreButtons() {
     });
 }
 
+// Makes function more versatile.
 function toggleHelper(e, f) {
     const spanElement = e.querySelector('span');
     rotate(spanElement);
@@ -60,6 +61,7 @@ window.onload = () => {
         const projectBoxesInArray = Array.from(projectBoxes);
         projectBoxesInArray.map((box) => box.addEventListener('click', function () { 
             toggleHelper(box, toggleImage); 
+            // This is to change the accessibility tags when the box does get expanded
             if (box.getAttribute('aria-expanded') == "true") { 
                 box.setAttribute('aria-expanded', "false")
             } else { 

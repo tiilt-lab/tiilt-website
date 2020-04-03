@@ -1,6 +1,5 @@
-// These functions were made for hovering, which is not included right now
 function onlyShow(e) { 
-    e.className = "lazy"
+    e.className = "lazy" 
 }
 
 function onlyHide(e) { 
@@ -79,30 +78,33 @@ window.onload = () => {
             }
         }));
 
-        // Hover feature doesn't really seem intuitive or make sense upon further inspection
-
-        // projectBoxesInArray.map(function(box) { 
-        //     var spanElement = box.querySelector('span') 
-        //     if (spanElement != null) {  
-        //         // box.addEventListener("mouseover",
-                   // Replace below line with above line to make the hovering on the box rather than the arrow
-        //         spanElement.addEventListener("mouseover", 
-        //             function() { 
-        //                 toggleHelper(box, onlyShow); 
-        //                 clearTimeout(timer); 
-        //             }
-        //         ); 
-        //     } 
-        // })
-        // projectBoxesInArray.map(function(box) { 
-        //     var spanElement = box.querySelector('span') 
-        //     if (spanElement != null) { 
-        //         // box.addEventListener("mouseover",
-                    // Replace below line with above line to make the hovering on the box rather than the arrow
-        //         spanElement.addEventListener("mouseout", 
-        //             () => timer = setTimeout(() => toggleHelper(box, onlyHide), 1000));
-        //     }
-        // })
+        // Here are the hover features
+        projectBoxesInArray.map(function(box) {
+            var headerElement = box.querySelector('h1')   
+            headerElement.addEventListener("mouseenter", 
+                function() {  
+                    toggleHelper(box, onlyShow); 
+                    clearTimeout(timer); 
+                    if (box.getAttribute('aria-expanded') == "true") { 
+                        box.setAttribute('aria-expanded', "false")
+                    } else { 
+                        box.setAttribute('aria-expanded', "true")
+                    } 
+                }
+            ); 
+        })
+        projectBoxesInArray.map(function(box) { 
+            box.addEventListener("mouseleave", () => timer = setTimeout(
+                function() { 
+                    toggleHelper(box, onlyHide); 
+                    if (box.getAttribute('aria-expanded') == "true") { 
+                        box.setAttribute('aria-expanded', "false")
+                    } else { 
+                        box.setAttribute('aria-expanded', "true")
+                    } 
+                }, 
+            1000));
+        })
     }
 
     if (location.href.includes("people")) {

@@ -1,12 +1,3 @@
-// These functions were made for hovering, which is not included right now
-function onlyShow(e) { 
-    e.className = "lazy"
-}
-
-function onlyHide(e) { 
-    e.className = "visually_hidden"
-}
-
 // These functions were renamed so that purpose will be more clear
 function toggleImage(e) {
     e.classList.toggle("visually_hidden");
@@ -78,31 +69,6 @@ window.onload = () => {
               }
             }
         }));
-
-        // Hover feature doesn't really seem intuitive or make sense upon further inspection
-
-        // projectBoxesInArray.map(function(box) { 
-        //     var spanElement = box.querySelector('span') 
-        //     if (spanElement != null) {  
-        //         // box.addEventListener("mouseover",
-                   // Replace below line with above line to make the hovering on the box rather than the arrow
-        //         spanElement.addEventListener("mouseover", 
-        //             function() { 
-        //                 toggleHelper(box, onlyShow); 
-        //                 clearTimeout(timer); 
-        //             }
-        //         ); 
-        //     } 
-        // })
-        // projectBoxesInArray.map(function(box) { 
-        //     var spanElement = box.querySelector('span') 
-        //     if (spanElement != null) { 
-        //         // box.addEventListener("mouseover",
-                    // Replace below line with above line to make the hovering on the box rather than the arrow
-        //         spanElement.addEventListener("mouseout", 
-        //             () => timer = setTimeout(() => toggleHelper(box, onlyHide), 1000));
-        //     }
-        // })
     }
 
     if (location.href.includes("people")) {

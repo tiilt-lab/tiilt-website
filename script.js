@@ -1,4 +1,5 @@
-function showPicture(e) {
+// These functions were renamed so that purpose will be more clear
+function toggleImage(e) {
     e.classList.toggle("visually_hidden");
 }
 
@@ -34,20 +35,40 @@ function addReadMoreButtons() {
     });
 }
 
-function hideImage(e) {
+// Makes function more versatile.
+function toggleHelper(e, f) {
     const spanElement = e.querySelector('span');
     rotate(spanElement);
 
     const imgElements = e.getElementsByTagName('img');
     const imgElementsInArray = Array.from(imgElements);
-    imgElementsInArray.map((imgTag) => showPicture(imgTag));
+    imgElementsInArray.map((imgTag) => f(imgTag));
 }
 
 window.onload = () => {
+    var timer = null;
     if (location.href.includes("projects")) {
         const projectBoxes = document.getElementsByClassName('project_box');
         const projectBoxesInArray = Array.from(projectBoxes);
-        projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+        projectBoxesInArray.map((box) => box.addEventListener('click', function () { 
+            toggleHelper(box, toggleImage); 
+            // This is to change the accessibility tags when the box does get expanded
+            if (box.getAttribute('aria-expanded') == "true") { 
+                box.setAttribute('aria-expanded', "false")
+            } else { 
+                box.setAttribute('aria-expanded', "true")
+            } 
+        }));
+        projectBoxesInArray.map((box) => box.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+              toggleHelper(box, toggleImage)
+              if (box.getAttribute('aria-expanded') == "true") { 
+                  box.setAttribute('aria-expanded', "false")
+              } else { 
+                  box.setAttribute('aria-expanded', "true")
+              }
+            }
+        }));
     }
 
     if (location.href.includes("people")) {

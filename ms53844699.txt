@@ -1,0 +1,5 @@
+{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "tiilt.northwestern.edu",
+  "Id": "267128b2-4562-411d-8fd5-7fbd3f861454"
+}

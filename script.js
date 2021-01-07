@@ -81,8 +81,8 @@ window.onload = () => {
 
         // Here are the hover features
         projectBoxesInArray.map(function(box) {
-            //var headerElement = box
-            var headerElement = box.querySelector('h1')   
+            var headerElement = box
+            //var headerElement = box.querySelector('h1')   
             headerElement.addEventListener("mouseenter", 
                 function() {  
                     clearTimeout(timer); 

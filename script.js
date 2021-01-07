@@ -58,6 +58,7 @@ window.onload = () => {
     if (location.href.includes("projects")) {
         const projectBoxes = document.getElementsByClassName('project_box');
         const projectBoxesInArray = Array.from(projectBoxes);
+        projectBoxesInArray.map((box) => box.setAttribute('aria-expanded', "false"))
         projectBoxesInArray.map((box) => box.addEventListener('click', function () { 
             toggleHelper(box, toggleImage); 
             // This is to change the accessibility tags when the box does get expanded
@@ -80,14 +81,13 @@ window.onload = () => {
 
         // Here are the hover features
         projectBoxesInArray.map(function(box) {
+            //var headerElement = box
             var headerElement = box.querySelector('h1')   
             headerElement.addEventListener("mouseenter", 
                 function() {  
-                    toggleHelper(box, onlyShow); 
                     clearTimeout(timer); 
-                    if (box.getAttribute('aria-expanded') == "true") { 
-                        box.setAttribute('aria-expanded', "false")
-                    } else { 
+                    if (box.getAttribute('aria-expanded') == "false") { 
+                        toggleHelper(box, onlyShow); 
                         box.setAttribute('aria-expanded', "true")
                     } 
                 }
@@ -96,11 +96,9 @@ window.onload = () => {
         projectBoxesInArray.map(function(box) { 
             box.addEventListener("mouseleave", () => timer = setTimeout(
                 function() { 
-                    toggleHelper(box, onlyHide); 
                     if (box.getAttribute('aria-expanded') == "true") { 
+                        toggleHelper(box, onlyHide); 
                         box.setAttribute('aria-expanded', "false")
-                    } else { 
-                        box.setAttribute('aria-expanded', "true")
                     } 
                 }, 
             1000));

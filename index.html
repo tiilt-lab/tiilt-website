@@ -16,37 +16,40 @@
 
 <body>
   <header>
-    <h1>technological innovations for inclusive learning &amp; teaching</h1>
-    <nav>
+    <h1 role="banner">technological innovations for inclusive learning &amp; teaching</h1>
+    <!-- Q: aria-labelledby here? -->
+    <!-- in an effort ot make this a role="banner" with a unique id -->
+    <nav aria-label= "Main Navigation"> 
+      <!-- Q: use of aria-labelled to identify each element in the navigation bar? -->
       <ul>
         <li>
-          <a href="/" class="current-page">
+          <a href="/" class="current-page" aria-label="Go to Home Page">
             home
             <i class='uil uil-home'></i>
           </a>
         </li>
         <li>
-          <a href="/projects/">projects
+          <a href="/projects/" aria-label="Info on projects">projects
             <i class='uil uil-drill'></i>
           </a>
         </li>
         <li>
-          <a href="/people/">people
+          <a href="/people/" aria-label="Info on the people">people
             <i class='uil uil-users-alt'></i>
           </a>
         </li>
         <li>
-          <a href="/papers/">papers
+          <a href="/papers/" aria-label="Info on papers">papers
             <i class='uil uil-file-alt'></i>
           </a>
         </li>
         <li>
-          <a href="/classes/">classes
+          <a href="/classes/" aria-label="Info on classes">classes
             <i class='uil uil-book'></i>
           </a>
         </li>
         <li>
-          <a href="/contact/">contact
+          <a href="/contact/" aria-label="Our Contact Info">contact
             <i class='uil uil-envelope'></i></a>
         </li>
         <!-- <li>
@@ -78,15 +81,24 @@
       </p>
     </section>
 
-    <section class="textblock twitter">
-      <h1>twitter</h1>
-      <div class="twitter-embed">
-        <a class="twitter-timeline" href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw"></a>
-        <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </section>
-    <!-- <img class="lazy logo" data-src="/assets/img/logo.svg" alt="The TIILT Lab logo."> -->
-    <svg class="big-logo black-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4501.98 4974">
+    <aside> <!-- complementary content -->
+    <!-- <section class="textblock twitter" aria-label="Our Twitter feed"> --> 
+    <!-- Should this be considered a carousel, and should this label be included? -->
+
+    <!-- I have absolutely no clue how to make this accessible. -->
+      <section class="textblock twitter">
+        <h1>twitter</h1>
+        <div class="twitter-embed">
+          <a class="twitter-timeline" href="https://twitter.com/tiiltlab?ref_src=twsrc%5Etfw" data-aria-polite= "assertive" aria-label= "Our Twitter account"> </a> 
+          <!-- to prioritize updates to live regions -->
+          <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </section>
+    </aside>
+
+    <aside>
+      <!-- <img class="lazy logo" data-src="/assets/img/logo.svg" alt="The TIILT Lab logo."> -->
+      <svg class="big-logo black-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4501.98 4974">
         <title>tiilt-logo</title>
         <path class="cls-1" d="M1404.38,2797.29" transform="translate(1891.2 2126.6)" />
         <path class="cls-2" d="M1597-516.95" transform="translate(1891.2 2126.6)" />
@@ -118,7 +130,10 @@
             transform="translate(1891.2 2126.6)" />
         <path class="cls-13" d="M1252.26,904.4l.19.49-.19-.49" transform="translate(1891.2 2126.6)" />
       </svg>
+    </aside>
+
     <script src="./script.js async defer"></script>
+  </main>
 </body>
 
 </html>

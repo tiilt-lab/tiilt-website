@@ -1,4 +1,13 @@
-function showPicture(e) {
+function onlyShow(e) { 
+    e.className = "lazy" 
+}
+
+function onlyHide(e) { 
+    e.className = "visually_hidden"
+}
+
+// These functions were renamed so that purpose will be more clear
+function toggleImage(e) {
     e.classList.toggle("visually_hidden");
 }
 
@@ -34,20 +43,68 @@ function addReadMoreButtons() {
     });
 }
 
-function hideImage(e) {
+// Makes function more versatile.
+function toggleHelper(e, f) {
     const spanElement = e.querySelector('span');
     rotate(spanElement);
 
     const imgElements = e.getElementsByTagName('img');
     const imgElementsInArray = Array.from(imgElements);
-    imgElementsInArray.map((imgTag) => showPicture(imgTag));
+    imgElementsInArray.map((imgTag) => f(imgTag));
 }
 
 window.onload = () => {
+    var timer = null;
     if (location.href.includes("projects")) {
         const projectBoxes = document.getElementsByClassName('project_box');
         const projectBoxesInArray = Array.from(projectBoxes);
-        projectBoxesInArray.map((box) => box.addEventListener('click', () => hideImage(box)));
+        projectBoxesInArray.map((box) => box.addEventListener('click', function () { 
+            var headerElement = box.querySelector('span')  
+            toggleHelper(box, toggleImage); 
+            // This is to change the accessibility tags when the box does get expanded
+            if (headerElement.getAttribute('aria-expanded') == "true") { 
+                headerElement.setAttribute('aria-expanded', "false")
+            } else { 
+                headerElement.setAttribute('aria-expanded', "true")
+            } 
+        }));
+        projectBoxesInArray.map((box) => box.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                var headerElement = box.querySelector('span') 
+              toggleHelper(box, toggleImage)
+              if (headerElement.getAttribute('aria-expanded') == "true") { 
+                  headerElement.setAttribute('aria-expanded', "false")
+              } else { 
+                  headerElement.setAttribute('aria-expanded', "true")
+              }
+            }
+        }));
+
+        // Here are the hover features
+        projectBoxesInArray.map(function(box) {
+            var headerElement = box.querySelector('h1') 
+            headerElement.addEventListener("mouseenter", 
+                function() {  
+                    var spanElement = box.querySelector('span')
+                    clearTimeout(timer);  
+                    if (spanElement.getAttribute('aria-expanded') == "false") { 
+                        toggleHelper(box, onlyShow); 
+                        spanElement.setAttribute('aria-expanded', "true")
+                    } 
+                }
+            ); 
+        })
+        projectBoxesInArray.map(function(box) { 
+            box.addEventListener("mouseleave", () => timer = setTimeout(
+                function() { 
+                    var headerElement = box.querySelector('span')
+                    if (headerElement.getAttribute('aria-expanded') == "true") { 
+                        toggleHelper(box, onlyHide); 
+                        headerElement.setAttribute('aria-expanded', "false")
+                    } 
+                }, 
+            1000));
+        })
     }
 
     if (location.href.includes("people")) {

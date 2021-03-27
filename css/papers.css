@@ -1,1 +1,18 @@
-.papers{display:flex;flex-direction:column}.papers .textblock{max-width:75rem;margin-bottom:2rem}.papers .textblock .window__paper{border-bottom:solid #000 2px}.papers .textblock .window__paper a{font-weight:bold;margin-top:0}.papers .textblock :last-child{border-bottom:none}/*# sourceMappingURL=papers.css.map */
+.papers {
+  display: flex;
+  flex-direction: column;
+}
+.papers .textblock {
+  max-width: 75rem;
+  margin-bottom: 2rem;
+}
+.papers .textblock .window__paper {
+  border-bottom: solid #000 2px;
+}
+.papers .textblock .window__paper a {
+  font-weight: bold;
+  margin-top: 0;
+}
+.papers .textblock :last-child {
+  border-bottom: none;
+} /*# sourceMappingURL=papers.css.map */

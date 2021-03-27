@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["../scss/projects.scss"],"names":[],"mappings":"AAAA,UACI,aACA,mBACA,8BACA,uBACA,yBACA,eAGA,aACE,aACA,8BACA,kBACE,uBACA,sBACA,iCAEF,sBACE,0BAGJ,qBACE,kBACA,iBACA,iBAEF,cACE,WACA,YACA,kBACA,gCACA,gBACA","file":"projects.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/projects.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,UACI,aACA,mBACA,8BACA,uBACA,yBACA,eAGA,aACE,aACA,8BACA,kBACE,uBACA,sBACA,iCAEF,sBACE,0BAGJ,qBACE,kBACA,iBACA,iBAEF,cACE,WACA,YACA,kBACA,gCACA,gBACA",
+  "file": "projects.css"
+}

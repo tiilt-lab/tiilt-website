@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["../scss/papers.scss"],"names":[],"mappings":"AAAA,QACE,aACA,sBACA,mBACE,gBACA,mBACA,kCACE,6BACA,oCAEE,iBACA,aAGJ,+BACE","file":"papers.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/papers.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,QACE,aACA,sBACA,mBACE,gBACA,mBACA,kCACE,6BACA,oCAEE,iBACA,aAGJ,+BACE",
+  "file": "papers.css"
+}

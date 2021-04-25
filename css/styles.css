@@ -101,4 +101,24 @@ main .visually_hidden {
     clip-path:inset(1px);
     white-space:nowrap;
 }
+
+.projectpages .textblock h2{ 
+    margin: 0.5em;
+    margin-top: 0.75em;
+}
+
+.projectpages .textblock li{ 
+    margin: 1.5em;
+}
+
+.projectpages .textblock ol li{ 
+    margin-left: 3em;
+}
+
+.projectpages .textblock ul{ 
+    list-style-type: disc;
+}
+
+
+
 main.about ol{margin:.75rem}main.about .textblock{max-width:55rem;margin-bottom:1vh;margin-left:auto;position:relative;z-index:99}/*# sourceMappingURL=styles.css.map */

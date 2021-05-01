@@ -93,6 +93,7 @@
 .people .people-group .textblock button, 
 .papers .textblock .window__paper a, 
 .projects .textblock .box,
+.projectpages .textblock .box,
 .classes .textblock span, 
 .classes .textblock a 
 {margin:.4rem;display:inline-block;border:2px solid #000;text-decoration:none;padding:.5rem;font-size:1rem;background-color:#fff;color:#000;transition:all .2s linear}.people .people-group .textblock a:hover,.people .people-group .textblock button:hover,.papers .textblock .window__paper a:hover,.classes .textblock span:hover,.classes .textblock a:hover{color:#fff;background-color:#000}@media only screen and (max-width: 640px){body{padding-bottom:7rem;height:100%}body header h1{margin:3rem 1rem}body header nav ul{display:flex;justify-content:space-around;margin:0;position:fixed;bottom:0;z-index:9999;width:100vw}body header nav ul li a{font-size:1rem;display:flex;flex-direction:column-reverse}body header nav ul li a i{font-size:2rem}body header nav ul li .current-page{text-decoration:none}body main{margin:0 1.2rem 2rem}body main .logo,body main #logo3{display:none;position:fixed;bottom:6rem;width:auto;left:0;z-index:-1}body .people .textblock{flex-grow:1}}header{position:relative;z-index:9999}header h1{font-size:2rem;padding:5px;margin:3rem 3rem 0}header nav ul{margin:0 3rem 3rem;background-color:#fff;display:flex;flex-wrap:wrap;font-size:1.5rem;justify-content:space-around;font-weight:bold;border:solid #000 2px}header nav ul li a{transition:all .5s;color:#717171;text-decoration:none;font-size:1.5rem;height:5rem;display:flex;justify-content:center;align-items:center}header nav ul li a:hover{color:#000;text-decoration:underline}header nav ul li .current-page{color:#000 !important;text-decoration:underline}main{margin:0 3rem 3rem}main .list_with_padding{padding-left:3rem}main .textblock{border:solid 2px #000;transition:box-shadow .2s linear;background-color:#fff}main .textblock:hover{box-shadow:4px 5px}main .textblock h1{border-bottom:solid 2px #000;padding:.75rem}main .textblock p,main .textblock ol,main .textblock ul{margin:.75rem}main .twitter{max-width:500px}main .twitter .twitter-embed{overflow-y:scroll;max-height:300px}main .logo{background-color:transparent;position:fixed;bottom:0;left:2rem;z-index:-1;width:43vw;transition:opacity 30s;opacity:0}main .logo.loaded{opacity:1}
@@ -126,6 +127,25 @@ main .visually_hidden {
     list-style-type: disc;
 }
 
+.projectpages section { 
+    word-wrap: break-word;
+}
 
+.projectpages img { 
+    margin-top: 10px;
+    height: 300px;
+    width: auto; 
+}
+
+.projectpages h1 { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pictures {
+    display: flex; 
+    justify-content: space-around;
+}
 
 main.about ol{margin:.75rem}main.about .textblock{max-width:55rem;margin-bottom:1vh;margin-left:auto;position:relative;z-index:99}/*# sourceMappingURL=styles.css.map */

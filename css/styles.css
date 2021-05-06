@@ -126,6 +126,14 @@ main .visually_hidden {
     list-style-type: disc;
 }
 
+.projectpages #pictures { 
+    display: flex;
+    justify-content: space-evenly;
+} 
 
+.projectpages #pictures img { 
+    height: 250px; 
+    width: auto;
+} 
 
 main.about ol{margin:.75rem}main.about .textblock{max-width:55rem;margin-bottom:1vh;margin-left:auto;position:relative;z-index:99}/*# sourceMappingURL=styles.css.map */

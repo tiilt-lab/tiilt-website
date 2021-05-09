@@ -526,7 +526,8 @@ ul {
         flex-grow:1 
     } 
 
-    .projectpages img {
+    .projectpages img, 
+    iframe {
         margin-top: 10px;
         max-width: 90vw;
         max-height: 30vh;

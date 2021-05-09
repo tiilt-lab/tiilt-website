@@ -1,11 +1,15 @@
 function headerGenerator() { 
     var header = document.getElementsByTagName("header")[0]; 
     var page = Array.from(document.getElementsByTagName("meta"))
+    var curr_page = window.location.href.slice(window.location.href.indexOf("edu") + 3)
     var rt = "/" 
     var srt = "./"
     if (page.some(m => m.content.includes("Project"))) { 
         rt = "../../" 
         srt = "../"
+    } else if (curr_page == "/") { 
+        rt = "/" 
+        srt = "/projects/"
     }
     header.innerHTML = 
     `<h1 role="banner">technological innovations for inclusive learning &amp; teaching</h1>
@@ -64,7 +68,6 @@ function headerGenerator() {
     </nav>`
 
     var links = Array.from(document.getElementsByTagName("a"))
-    var curr_page = window.location.href.slice(window.location.href.indexOf("edu") + 3)
     curr_page = curr_page.slice(0, curr_page.lastIndexOf("/") + 1)
     links = links.filter(l => window.location.href == l.href || l.href.slice(l.href.indexOf("edu") + 3) == curr_page) 
     links.forEach(l => l.setAttribute("class", "current-page"))

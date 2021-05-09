@@ -3,14 +3,15 @@ function headerGenerator() {
     var page = Array.from(document.getElementsByTagName("meta"))
     var curr_page = window.location.href.slice(window.location.href.indexOf("edu") + 3)
     var rt = "/" 
-    var srt = "./"
+    var srt = "/projects/"
     if (page.some(m => m.content.includes("Project"))) { 
         rt = "../../" 
         srt = "../"
-    } else if (curr_page == "/") { 
-        rt = "/" 
-        srt = "/projects/"
     }
+    // } else if (curr_page == "/") { 
+    //     rt = "/" 
+    //     srt = "/projects/"
+    // }
     header.innerHTML = 
     `<h1 role="banner">technological innovations for inclusive learning &amp; teaching</h1>
     <nav aria-label= "Main Navigation">

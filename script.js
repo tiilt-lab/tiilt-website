@@ -77,7 +77,7 @@ headerGenerator();
 
 function subset(l1, l2) { 
     if (l1.length == 0) { 
-        return False
+        return false
     }
     return l1.every(i => l2.includes(i))
 }

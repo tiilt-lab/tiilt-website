@@ -2,7 +2,7 @@ function headerGenerator() {
     var header = document.getElementsByTagName("header")[0]; 
     var page = Array.from(document.getElementsByTagName("meta"))
     var rt = "/" 
-    var srt = "/"
+    var srt = "./"
     if (page.some(m => m.content.includes("Project"))) { 
         rt = "../../" 
         srt = "../"

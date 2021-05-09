@@ -673,6 +673,7 @@ main .visually_hidden {
 .pictures {
     display: flex; 
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main.about ol { 

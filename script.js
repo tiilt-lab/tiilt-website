@@ -78,6 +78,9 @@ function changeToDropup() {
     if (window.screen.width < 640) { 
         var dropdown = document.getElementsByClassName("btn-group")[0] 
         dropdown.setAttribute("class", "btn-group dropup")
+
+        var arrow = document.querySelector(".btn-primary span") 
+        arrow.innerHTML = "▲"
     }
 }
 

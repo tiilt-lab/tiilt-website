@@ -528,10 +528,10 @@ ul {
 
     .projectpages img {
         margin-top: 10px;
-        height: 250px;
-        width: clamp(auto, auto, 90vw);
+        max-width: 90vw;
+        max-height: 30vh;
         height: auto;
-        
+        width: auto;
     }
 } 
 

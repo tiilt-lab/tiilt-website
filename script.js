@@ -20,7 +20,7 @@ function headerGenerator() {
             <li>
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary">
-                        <a href=${rt + "projects/"} class="current-page">projects
+                        <a href=${rt + "projects/"}>projects
                             <i class='uil uil-drill'></i>
                         </a>
                     </button>
@@ -64,7 +64,7 @@ function headerGenerator() {
     </nav>`
 
     var links = Array.from(document.getElementsByTagName("a"))
-    links = links.filter(l => window.location.href == l.href) 
+    links = links.filter(l => window.location.href.includes(l.href)) 
     links[0].setAttribute("class", "current-page")
 }
 

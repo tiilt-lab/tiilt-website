@@ -74,7 +74,15 @@ function headerGenerator() {
     links.forEach(l => l.setAttribute("class", "current-page"))
 }
 
+function changeToDropup() { 
+    if (window.screen.width < 640) { 
+        var dropdown = document.getElementsByClassName("btn-group")[0] 
+        dropdown.setAttribute("class", "btn-group dropup")
+    }
+}
+
 headerGenerator();
+changeToDropup();
 
 function subset(l1, l2) { 
     if (l1.length == 0) { 

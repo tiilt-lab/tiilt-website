@@ -68,7 +68,7 @@ function headerGenerator() {
     </nav>`
 
     var links = Array.from(document.getElementsByTagName("a"))
-    curr_page = curr_page.slice(0, curr_page.slice(1).indexOf("/") + 1)
+    curr_page = curr_page.slice(0, curr_page.slice(1).indexOf("/") + 2)
     links = links.filter(l => window.location.href == l.href || l.href.slice(l.href.indexOf("edu") + 3) == curr_page) 
     links.forEach(l => l.setAttribute("class", "current-page"))
 }

@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>TIILT</title>
-    <meta name="Description" content="Blinc Project" />
+    <meta name="Description" content="Minecraft Project" />
     <meta name="theme-color" content="#ccc4df" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.3/css/unicons.css" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
 </head>
@@ -25,9 +26,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../../projects/" class="current-page">projects
-                        <i class='uil uil-drill'></i>
-                    </a>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">
+                            <a href="../../projects/" class="current-page">projects
+                                <i class='uil uil-drill'></i>
+                            </a>
+                        </button>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span>▼</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="../blinc/">blinc</a>
+                            <a href="../famjam/">famjam</a>
+                            <a href="../imr/">imr</a>
+                            <a href="../minecraft/">minecraft</a>
+                            <a href="../multicraft/">multicraft</a>
+                            <a href="../sportsanalytics/">sport analytics</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a href="../../people/">people

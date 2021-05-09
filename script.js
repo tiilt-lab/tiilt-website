@@ -1,3 +1,71 @@
+function headerGenerator() { 
+    var header = document.getElementsByTagName("header")[0]; 
+    var page = Array.from(document.getElementsByTagName("meta"))
+    var rt = "/" 
+    var srt = "/"
+    if (page.some(m => m.content.includes("Project"))) { 
+        rt = "../../" 
+        srt = "../"
+    }
+    header.innerHTML = 
+    `<h1 role="banner">technological innovations for inclusive learning &amp; teaching</h1>
+    <nav aria-label= "Main Navigation">
+        <ul>
+            <li>
+                <a href=${rt}>
+                    home
+                    <i class='uil uil-home'></i>
+                </a>
+            </li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">
+                        <a href=${rt + "projects/"} class="current-page">projects
+                            <i class='uil uil-drill'></i>
+                        </a>
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href=${srt + "blinc/"}>blinc</a>
+                        <a href=${srt + "famjam/"}>famjam</a>
+                        <a href=${srt + "imr/"}>imr</a>
+                        <a href=${srt + "minecraft/"}>minecraft</a>
+                        <a href=${srt + "multicraft/"}>multicraft</a>
+                        <a href=${srt + "sportsanalytics/"}>sport analytics</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href=${rt + "people/"}>people
+                    <i class='uil uil-users-alt'></i>
+                </a>
+            </li>
+            <li>
+                <a href=${rt + "papers/"}>papers
+                    <i class='uil uil-file-alt'></i>
+                </a>
+            </li>
+            <li>
+                <a href=${rt + "classes/"}>classes
+                    <i class='uil uil-book'></i>
+                </a>
+            </li>
+            <li>
+                <a href=${rt + "contact/"}>contact
+                    <i class='uil uil-envelope'></i></a>
+            </li>
+            <!-- <li>
+                <a href=${rt + "events/"} class="current-page">events
+                    <i class='uil uil-meeting-board'></i></a>
+            </li> -->
+        </ul>
+    </nav>`
+}
+
+headerGenerator();
+
 function onlyShow(e) { 
     e.className = "lazy" 
 }

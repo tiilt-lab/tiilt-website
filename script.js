@@ -20,7 +20,7 @@ function headerGenerator() {
             <li>
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary">
-                        <a href=${rt + "projects/"} class="current-page">projects
+                        <a href=${rt + "projects/"}>projects
                             <i class='uil uil-drill'></i>
                         </a>
                     </button>

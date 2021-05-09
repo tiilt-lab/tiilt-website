@@ -65,7 +65,7 @@ function headerGenerator() {
 
     var links = Array.from(document.getElementsByTagName("a"))
     var curr_page = window.location.href.slice(window.location.href.indexOf("edu") + 3)
-    curr_page = window.location.href.slice(window.location.href.lastIndexOf("/"))
+    curr_page = curr_page.slice(curr_page.lastIndexOf("/"))
     links = links.filter(l => window.location.href == l.href || l.href.includes(curr_page)) 
     links.forEach(l => l.setAttribute("class", "current-page"))
 }

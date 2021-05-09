@@ -68,7 +68,7 @@ function headerGenerator() {
     </nav>`
 
     var links = Array.from(document.getElementsByTagName("a"))
-    curr_page = curr_page.split("/")
+    curr_page = curr_page.split("/").filter(i => i != "")
     links = links.filter(l => window.location.href == l.href || subset(l.href.slice(l.href.indexOf("edu") + 3).split("/"), curr_page)) 
     links.forEach(l => l.setAttribute("class", "current-page"))
 }
@@ -77,7 +77,7 @@ headerGenerator();
 
 function subset(l1, l2) { 
     console.log(l1, l2)
-    return l1.every((v, i) => v == l2[i])
+    return l1.every(i => l2.includes(i))
 }
 
 function onlyShow(e) { 

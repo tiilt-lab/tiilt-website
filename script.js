@@ -68,12 +68,17 @@ function headerGenerator() {
     </nav>`
 
     var links = Array.from(document.getElementsByTagName("a"))
-    curr_page = curr_page.slice(0, curr_page.slice(1).indexOf("/") + 2)
-    links = links.filter(l => window.location.href == l.href || l.href.slice(l.href.indexOf("edu") + 3) == curr_page) 
+    curr_page = curr_page.split("/")
+    links = links.filter(l => window.location.href == l.href || subset(l.href.slice(l.href.indexOf("edu") + 3).split("/"), curr_page)) 
     links.forEach(l => l.setAttribute("class", "current-page"))
 }
 
 headerGenerator();
+
+function subset(l1, l2) { 
+    console.log(l1, l2)
+    return l1.every((v, i) => v == l2[i])
+}
 
 function onlyShow(e) { 
     e.className = "lazy" 

@@ -74,18 +74,27 @@ function headerGenerator() {
     links.forEach(l => l.setAttribute("class", "current-page"))
 }
 
-function changeToDropup() { 
+function changeDropdown() { 
     if (window.screen.width < 640) { 
         var dropdown = document.getElementsByClassName("btn-group")[0] 
         dropdown.setAttribute("class", "btn-group dropup")
 
         var arrow = document.querySelector(".btn-primary span") 
         arrow.innerHTML = "▲"
+    } else { 
+        var dropdown = document.getElementsByClassName("btn-group")[0] 
+        dropdown.setAttribute("class", "btn-group")
+
+        var arrow = document.querySelector(".btn-primary span") 
+        arrow.innerHTML = "▼"
     }
 }
 
 headerGenerator();
-changeToDropup();
+
+window.addEventListener("resize", function(event) {
+    changeDropdown();
+})
 
 function subset(l1, l2) { 
     if (l1.length == 0) { 

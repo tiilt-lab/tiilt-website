@@ -116,6 +116,10 @@
     align-items: center;
 }
 
+.projectpages h1 span { 
+    flex-shrink: 0;
+}
+
 .pictures {
     display: flex; 
     justify-content: space-around;
@@ -526,11 +530,18 @@ ul {
         flex-grow:1 
     } 
 
-    .projectpages img, 
-    iframe {
+    .projectpages img {
         margin-top: 10px;
         max-width: 90vw;
         max-height: 30vh;
+        height: auto;
+        width: auto;
+    }
+
+    iframe {
+        margin-top: 10px;
+        max-width: 90vw;
+        max-height: 90vh;
         height: auto;
         width: auto;
     }

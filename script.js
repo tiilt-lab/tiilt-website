@@ -96,6 +96,10 @@ window.addEventListener("resize", function(event) {
     changeDropdown();
 })
 
+window.addEventListener("orientationchange", function(event) {
+    changeDropdown();
+})
+
 function subset(l1, l2) { 
     if (l1.length == 0) { 
         return false

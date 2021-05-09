@@ -486,6 +486,12 @@ ul {
     body .people .textblock { 
         flex-grow:1 
     } 
+
+    .projectpages img {
+        margin-top: 10px;
+        width: 90vw;
+        height: auto;
+    }
 } 
 
 header { 

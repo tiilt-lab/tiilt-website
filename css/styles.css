@@ -594,7 +594,14 @@ header nav ul {
 .open>.dropdown-toggle.btn-primary:active:hover, 
 .open>.dropdown-toggle.btn-primary, 
 .open>.dropdown-toggle.btn-primary:focus, 
-.open>.dropdown-toggle.btn-primary:hover { 
+.open>.dropdown-toggle.btn-primary:hover, 
+.btn-primary.active:hover, 
+.btn-primary.active:focus, 
+.btn-primary:active.focus, 
+.btn-primary.active.focus, 
+.open>.dropdown-toggle.btn-primary.focus 
+.btn-primary.active, 
+.btn-primary.focus { 
     transition: none;
     border-color: white;
     background-color: white;

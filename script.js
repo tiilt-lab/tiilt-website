@@ -116,6 +116,7 @@ function iosPatch() {
 }
 
 headerGenerator();
+changeDropdown();
 
 window.addEventListener("resize", function(event) {
     changeDropdown();

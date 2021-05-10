@@ -74,19 +74,44 @@ function headerGenerator() {
     links.forEach(l => l.setAttribute("class", "current-page"))
 }
 
+function wide() { 
+    var dropdown = document.getElementsByClassName("btn-group")[0] 
+    dropdown.setAttribute("class", "btn-group dropup")
+
+    var arrow = document.querySelector(".btn-primary span") 
+    arrow.innerHTML = "▲"
+}
+
+function narrow() { 
+    var dropdown = document.getElementsByClassName("btn-group")[0] 
+    dropdown.setAttribute("class", "btn-group")
+
+    var arrow = document.querySelector(".btn-primary span") 
+    arrow.innerHTML = "▼"
+}
+
 function changeDropdown() { 
     if (window.screen.width < 640) { 
-        var dropdown = document.getElementsByClassName("btn-group")[0] 
-        dropdown.setAttribute("class", "btn-group dropup")
-
-        var arrow = document.querySelector(".btn-primary span") 
-        arrow.innerHTML = "▲"
+        wide()
     } else { 
-        var dropdown = document.getElementsByClassName("btn-group")[0] 
-        dropdown.setAttribute("class", "btn-group")
+        narrow()
+    }
+}
 
-        var arrow = document.querySelector(".btn-primary span") 
-        arrow.innerHTML = "▼"
+function iosPatch() { 
+    if (!window.orientation){
+        if (window.innerWidth < window.innerHeight){
+            wide()
+        } else { 
+            narrow()
+        }
+    } else { 
+        switch(window.orientation) {  
+            case -90: case 90:
+                wide()
+            default:
+                narrow()
+        }
     }
 }
 
@@ -97,7 +122,7 @@ window.addEventListener("resize", function(event) {
 })
 
 window.addEventListener("orientationchange", function(event) {
-    changeDropdown();
+    iosPatch();
 })
 
 function subset(l1, l2) { 

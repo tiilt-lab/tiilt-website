@@ -58,7 +58,7 @@ function headerGenerator() {
                 </a>
             </li>
             <li>
-                <a href=${rt + "contact/"} aria-label="Read our Blog">blog
+                <a href=${rt + "blog/"} aria-label="Read our Blog">blog
                     <i class='uil uil-pen'></i>
                 </a>
             </li>

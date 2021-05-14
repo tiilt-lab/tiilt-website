@@ -1,3 +1,5 @@
+// TODO: Clean up legacy code. Left due to the Mekatilili Fellowship Program, which has a picture in the project page. 
+
 function headerGenerator() { 
     var header = document.getElementsByTagName("header")[0]; 
     var page = Array.from(document.getElementsByTagName("meta"))
@@ -138,23 +140,6 @@ function subset(l1, l2) {
     return l1.every(i => l2.includes(i))
 }
 
-function onlyShow(e) { 
-    e.className = "lazy" 
-}
-
-function onlyHide(e) { 
-    e.className = "visually_hidden"
-}
-
-// These functions were renamed so that purpose will be more clear
-function toggleImage(e) {
-    e.classList.toggle("visually_hidden");
-}
-
-function rotate(e) {
-    e.classList.toggle("rotated");
-}
-
 function contractText(e) {
     const p_Sibling = e.parentElement.querySelector('p');
 
@@ -181,6 +166,25 @@ function addReadMoreButtons() {
 
         bigPara.after(button);
     });
+}
+
+
+// Goal is to remove everything from here and beyond. Seems like it's only dependent on the project page. 
+function onlyShow(e) { 
+    e.className = "lazy" 
+}
+
+function onlyHide(e) { 
+    e.className = "visually_hidden"
+}
+
+// These functions were renamed so that purpose will be more clear
+function toggleImage(e) {
+    e.classList.toggle("visually_hidden");
+}
+
+function rotate(e) {
+    e.classList.toggle("rotated");
 }
 
 // Makes function more versatile.

@@ -17,7 +17,7 @@ function headerGenerator() {
     <nav aria-label= "Main Navigation">
         <ul>
             <li>
-                <a href=${rt}>
+                <a href=${rt} aria-label="Go to Home Page">
                     home
                     <i class='uil uil-home'></i>
                 </a>
@@ -25,7 +25,7 @@ function headerGenerator() {
             <li>
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary">
-                        <a href=${rt + "projects/"}>projects
+                        <a href=${rt + "projects/"} aria-label="Info on projects">projects
                             <i class='uil uil-drill'></i>
                         </a>
                     </button>
@@ -33,32 +33,37 @@ function headerGenerator() {
                       <span>▼</span>
                     </button>
                     <div class="dropdown-menu">
-                        <a href=${srt + "blinc/"}>blinc</a>
-                        <a href=${srt + "famjam/"}>famjam</a>
-                        <a href=${srt + "imr/"}>imr</a>
-                        <a href=${srt + "minecraft/"}>minecraft</a>
-                        <a href=${srt + "multicraft/"}>multicraft</a>
-                        <a href=${srt + "sportsanalytics/"}>sport analytics</a>
+                        <a href=${srt + "blinc/"} aria-label="Info on Blinc Project">blinc</a>
+                        <a href=${srt + "famjam/"} aria-label="Info on Famjam Project">famjam</a>
+                        <a href=${srt + "imr/"} aria-label="Info on IMR Project">imr</a>
+                        <a href=${srt + "minecraft/"} aria-label="Info on Minecraft Project">minecraft</a>
+                        <a href=${srt + "multicraft/"} aria-label="Info on Multicraft Project">multicraft</a>
+                        <a href=${srt + "sportsanalytics/"} aria-label="Info on Sports Analytics Project">sport analytics</a>
                     </div>
                 </div>
             </li>
             <li>
-                <a href=${rt + "people/"}>people
+                <a href=${rt + "people/"} aria-label="Info on the people">people
                     <i class='uil uil-users-alt'></i>
                 </a>
             </li>
             <li>
-                <a href=${rt + "papers/"}>papers
+                <a href=${rt + "papers/"} aria-label="Info on papers">papers
                     <i class='uil uil-file-alt'></i>
                 </a>
             </li>
             <li>
-                <a href=${rt + "classes/"}>classes
+                <a href=${rt + "classes/"} aria-label="Info on classes">classes
                     <i class='uil uil-book'></i>
                 </a>
             </li>
             <li>
-                <a href=${rt + "contact/"}>contact
+                <a href=${rt + "contact/"} aria-label="Read our Blog">blog
+                    <i class='uil uil-pen'></i>
+                </a>
+            </li>
+            <li>
+                <a href=${rt + "contact/"} aria-label="Our Contact Info">contact
                     <i class='uil uil-envelope'></i></a>
             </li>
             <!-- <li>

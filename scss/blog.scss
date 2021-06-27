@@ -1,0 +1,34 @@
+.blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    span {
+      transform: rotate(0deg);
+      transition-delay: 50ms;
+      transition: all 450ms ease-in-out;
+    }
+    .rotated {
+      transform: rotate(-540deg);
+    }
+  }
+  .textblock {
+    margin-bottom: 10em;
+    flex-basis: 45rem;
+    max-height: 90rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100rem;
+    transition: max-height 1s linear;
+    overflow: hidden;
+    border-bottom: black 2px solid;
+  }
+}

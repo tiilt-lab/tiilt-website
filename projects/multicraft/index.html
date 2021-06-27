@@ -4,59 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <title>TIILT</title>
-    <meta name="Description" content="Blinc Project" />
+    <meta name="Description" content="Multicraft Project" />
     <meta name="theme-color" content="#ccc4df" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.3/css/unicons.css" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1 role="banner">technological innovations for inclusive learning &amp; teaching</h1>
-        <nav aria-label= "Main Navigation"> 
-            <ul>
-                <li>
-                    <a href="../../">
-                        home
-                        <i class='uil uil-home'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../projects/">projects
-                        <i class='uil uil-drill'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../people/">people
-                        <i class='uil uil-users-alt'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../papers/">papers
-                        <i class='uil uil-file-alt'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../classes/">classes
-                        <i class='uil uil-book'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../contact/">contact
-                        <i class='uil uil-envelope'></i></a>
-                </li>
-                <!-- <li>
-                    <a href="/events/" class="current-page">events
-                        <i class='uil uil-meeting-board'></i></a>
-                </li> -->
-            </ul>
-        </nav> 
-    </header>
+    <header></header>
 
     <main class="projectpages"> 
+        <section class="textblock">
+            <h1>Multicraft + Tangicraft</h1>
+            <div class="pictures">
+                <img src="../../assets/img/projects/multicraft.jpg" alt="">
+                <img alt="Example set up. Wooden workbench with wood blocks sitting to the right of a laptop running minecraft software" src="../../assets/img/projects/tangicraft.jpg">
+            </div>
+            <p class="window__description">
+              <b>Multicraft + Tangicraft</b> works on multimodal interfaces to empower
+              individuals with
+              physical impairments to play and create in the popular video game Minecraft. Multicraft utilizes Gaze and
+              Speech to replace the traditional mouse and keyboard interface. By looking at a location on the screen and
+              uttering a command, users can build in the Minecraft world. Tangicraft utilizes tangible blocks with webcam
+              detectable codes. Users can construct a physical structure in front of a webcam and call it in the Minecraft
+              world by pressing a button on an Arduino microcontroller. Our team is currently conducting user tests to drive
+              iteration on our initial designs.
+            </p>
+        </section>
+        
+        <br>
+        
         <section class="textblock">
             <h1> Multicraft + Tangicraft </h1>
             <h2> Eye Tracking with Multicraft </h2>
@@ -78,5 +59,11 @@
         </section>
         <br>
     </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

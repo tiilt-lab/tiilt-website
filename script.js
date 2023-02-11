@@ -40,7 +40,7 @@ function headerGenerator() {
                         <a href=${srt + "imr/"} aria-label="Info on IMR Project">imr</a>
                         <a href=${srt + "minecraft/"} aria-label="Info on Minecraft Project">minecraft</a>
                         <a href=${srt + "multicraft/"} aria-label="Info on Multicraft Project">multicraft</a>
-                        <a href=${srt + "sportsanalytics/"} aria-label="Info on Sports Analytics Project">sport analytics</a>
+                        <a href=${srt + "sportsense/"} aria-label="Info on SportSense Project">sportsense</a>
                     </div>
                 </div>
             </li>
